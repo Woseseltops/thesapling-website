@@ -1,18 +1,24 @@
-from os import listdir
-from shutil import copyfile
+from os import listdir, mkdir
+from os.path import isdir
+from shutil import copytree, rmtree
 
 def generate_static_website():
 
 	PAGES_TO_GENERATE_FOLDER = 'pages_to_generate/'
 	MAIN_TEMPLATE_LOCATION = 'main_template.html'
 	GOAL_LOCATION = 'latest_website/'
-	STYLESHEET_NAME = 'style.css'
+	STATIC_FOLDER = 'static/'
+
+	#Empty last
+	if isdir(GOAL_LOCATION):
+		rmtree(GOAL_LOCATION)
+		mkdir(GOAL_LOCATION)
 
 	for filename in listdir(PAGES_TO_GENERATE_FOLDER):
 		full_content = open(MAIN_TEMPLATE_LOCATION).read().replace('{{content}}',open(PAGES_TO_GENERATE_FOLDER+filename).read())
 		open(GOAL_LOCATION+filename,'w').write(full_content)
 
-	copyfile(STYLESHEET_NAME,GOAL_LOCATION+STYLESHEET_NAME)
+	copytree(STATIC_FOLDER,GOAL_LOCATION+STATIC_FOLDER)
 
 if __name__ == '__main__':
 	generate_static_website()
