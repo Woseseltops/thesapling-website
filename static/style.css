@@ -1,0 +1,41 @@
+body
+{
+  background: radial-gradient(hsl(106, 23%, 22%), hsl(109, 11%, 20%));
+  color: white;
+  text-align: center;
+  font-family: 'Muli', sans-serif;	
+}
+
+h3
+{
+	font-size:25px;
+    margin-bottom: -15px;
+}
+
+p
+{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    font-weight: 100;	
+}
+
+button
+{
+	color: white;
+    background-color: hsla(0, 0%, 0%,0);
+    padding: 8px;
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin: 25px;
+    width: 230px;	
+}
+
+#main_column
+{
+    width: 750px;
+    margin: auto;
+}
