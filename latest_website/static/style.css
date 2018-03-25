@@ -34,6 +34,28 @@ button
     width: 230px;	
 }
 
+.separator_logo
+{
+    margin-top: 30px;    
+}
+
+.icon_label_bar
+{
+    margin: 45px;
+}
+
+.iconlabel
+{
+    width: 140px;
+    display:inline-block;
+}
+
+.icon
+{
+    height: 45px;
+    margin: 8px;
+}
+
 #main_column
 {
     width: 750px;
