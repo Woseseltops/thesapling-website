@@ -12,7 +12,7 @@ h3
     margin-bottom: -15px;
 }
 
-p
+p, .footer_link
 {
     font-size: 18px;
     line-height: 25px;
@@ -31,7 +31,8 @@ button
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     margin: 25px;
-    width: 230px;	
+    width: 230px;
+    cursor: pointer;	
 }
 
 .separator_logo
@@ -56,8 +57,62 @@ button
     margin: 8px;
 }
 
+.credits
+{
+    color: hsl(108, 20%, 13%);
+    margin: 20px;
+    font-size: 20px;    
+}
+
+.footer_link
+{
+    margin: 50px;
+}
+
+.textfield
+{
+    margin: 10px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;    
+    background-color: hsla(0, 0%, 100%, 0.2);
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    color: white;
+
+    font-family: Muli;
+    font-size: 20px;
+    width: 210px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.3);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.3);
+}
+
+a
+{
+    color:white;
+}
+
 #main_column
 {
     width: 750px;
     margin: auto;
+}
+
+#email
+{
+    width: 440px;
 }
