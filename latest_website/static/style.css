@@ -6,10 +6,16 @@ body
   font-family: 'Muli', sans-serif;	
 }
 
-h3
+h3, h4
 {
 	font-size:25px;
     margin-bottom: -15px;
+}
+
+h4
+{
+    letter-spacing: 8px;
+    font-weight: 100;
 }
 
 p, .footer_link
@@ -35,6 +41,13 @@ button
     cursor: pointer;	
 }
 
+button:hover
+{
+    background-color: hsl(0, 0%, 87%);
+    color: #31442c;
+    font-weight:500;
+}
+
 .separator_logo
 {
     margin-top: 30px;    
@@ -49,6 +62,7 @@ button
 {
     width: 140px;
     display:inline-block;
+    cursor:pointer;
 }
 
 .icon
@@ -115,4 +129,13 @@ a
 #email
 {
     width: 440px;
+}
+
+#once_per_month
+{
+    font-size: 16px;
+    color: hsla(0, 0%, 100%, 0.37);
+    font-weight: 100;
+    margin: 20px;
+    letter-spacing: 4px;    
 }
