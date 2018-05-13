@@ -1,0 +1,1510 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mark",
+				"markdown_lines"
+			],
+			[
+				"class",
+				"class_info"
+			],
+			[
+				"scup",
+				"sculptingToolsAreUnlocked"
+			],
+			[
+				"until",
+				"delayedFunctionUntil"
+			],
+			[
+				"del",
+				"delayedFunctionUntil"
+			],
+			[
+				"curre",
+				"currentPhaseIndex"
+			],
+			[
+				"sta",
+				"startWithPause"
+			],
+			[
+				"cla",
+				"clarifyProblemTextWithAttentionGettersWhenDone"
+			],
+			[
+				"atte",
+				"attentionGetterOnJointDot"
+			],
+			[
+				"jointD",
+				"jointDotController"
+			],
+			[
+				"ste",
+				"stepNames"
+			],
+			[
+				"GetC",
+				"GetCurrentStepName"
+			],
+			[
+				"tuto",
+				"tutorialController"
+			],
+			[
+				"tut",
+				"tutorialController"
+			],
+			[
+				"cur",
+				"currentStepIndex"
+			],
+			[
+				"Update",
+				"UpdateUnlockedFunctionalityForThePlantEditor"
+			],
+			[
+				"scu",
+				"sculptingToolsAreUnlocked"
+			],
+			[
+				"la",
+				"loadingPlantEditor"
+			],
+			[
+				"controller",
+				"tutorialController"
+			],
+			[
+				"mile",
+				"milestone"
+			],
+			[
+				"mileS",
+				"milestones"
+			],
+			[
+				"inde",
+				"indexOfFirstMileStoneAvailable"
+			],
+			[
+				"Tut",
+				"TutorialPhase"
+			],
+			[
+				"Tutor",
+				"TutorialPhase"
+			],
+			[
+				"Tuto",
+				"TutorialController"
+			],
+			[
+				"relat",
+				"relativeEnergySaved"
+			],
+			[
+				"energy",
+				"energySaved"
+			],
+			[
+				"fruitB",
+				"fruitBasePositionsAsArray"
+			],
+			[
+				"ovuleB",
+				"ovuleBasePositions"
+			],
+			[
+				"fruitAs",
+				"fruitsAsArray"
+			],
+			[
+				"game",
+				"gameObject"
+			],
+			[
+				"fru",
+				"fruitsAsArray"
+			],
+			[
+				"connection",
+				"connections"
+			],
+			[
+				"acti",
+				"activation_function"
+			],
+			[
+				"previous",
+				"previous_layer_neuron_index"
+			],
+			[
+				"neuron",
+				"neuron_index"
+			],
+			[
+				"outpu",
+				"output_value"
+			],
+			[
+				"input",
+				"input_value"
+			],
+			[
+				"fir",
+				"first_layer_neuron"
+			],
+			[
+				"layer",
+				"layers"
+			],
+			[
+				"Nu",
+				"Neuron"
+			],
+			[
+				"conn",
+				"connections"
+			],
+			[
+				"conne",
+				"connections"
+			],
+			[
+				"rand",
+				"random_values"
+			],
+			[
+				"connections",
+				"connections_for_this_neuron"
+			],
+			[
+				"re",
+				"ReLU"
+			],
+			[
+				"Ma",
+				"MAIN_TEMPLATE_LOCATION"
+			],
+			[
+				"pro",
+				"progress"
+			],
+			[
+				"pr",
+				"progress"
+			],
+			[
+				"gameO",
+				"gameObject"
+			],
+			[
+				"ener",
+				"energySaved"
+			],
+			[
+				"goal",
+				"fruitGoalScale"
+			],
+			[
+				"new",
+				"newestFruitPosition"
+			],
+			[
+				"alraed",
+				"alreadyExisting"
+			],
+			[
+				"already",
+				"alreadyExisting"
+			],
+			[
+				"fruit",
+				"fruitPositions"
+			],
+			[
+				"anim",
+				"positionsOfFruitsAlreadyAnimated"
+			],
+			[
+				"curren",
+				"currentlyGrowingFruit"
+			],
+			[
+				"Set",
+				"SetFruitProgress"
+			],
+			[
+				"current",
+				"currentlyGrowingFruit"
+			],
+			[
+				"old",
+				"gameObjectOldVersion"
+			],
+			[
+				"Ga",
+				"GameObjectNameStartsWith"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"soo",
+				"soloAllowed"
+			],
+			[
+				"solo",
+				"soloAllowed"
+			],
+			[
+				"plantView",
+				"plantViewsArea0"
+			],
+			[
+				"g",
+				"growingRate"
+			],
+			[
+				"ageW",
+				"ageToGrowOld"
+			],
+			[
+				"cellI",
+				"cellIndexOfThisLifeForm"
+			],
+			[
+				"time",
+				"timesTheYoungVersionWillGrow"
+			],
+			[
+				"sunlig",
+				"sunLightCollectedPerDay"
+			],
+			[
+				"plant",
+				"plantStatsCalculator"
+			],
+			[
+				"liv",
+				"livingPlantA"
+			],
+			[
+				"minif",
+				"minifiedDescription"
+			],
+			[
+				"torsp",
+				"torsoPartCurrentlyWorkingOn"
+			],
+			[
+				"lowe",
+				"lowestDisplacement"
+			],
+			[
+				"high",
+				"highestMouthHeight"
+			],
+			[
+				"energyCrea",
+				"energyCreatedFromOneMeal"
+			],
+			[
+				"energC",
+				"energyCreatedFromOneMeal"
+			],
+			[
+				"envi",
+				"environmentFeaturesEnabled"
+			],
+			[
+				"envir",
+				"environmentToolsEnabled"
+			],
+			[
+				"model",
+				"modelMeshOldVersion"
+			],
+			[
+				"use",
+				"useYoungVersions"
+			],
+			[
+				"organ",
+				"organismView"
+			],
+			[
+				"abs",
+				"abstractedForm"
+			],
+			[
+				"idel",
+				"idleAnimation"
+			],
+			[
+				"siz",
+				"sizeFactorWhenYoung"
+			],
+			[
+				"stemP",
+				"stemPart"
+			],
+			[
+				"you",
+				"youngVersion"
+			],
+			[
+				"cam",
+				"camera"
+			],
+			[
+				"sky",
+				"skyColorsLow"
+			],
+			[
+				"sk",
+				"skyColorsMedium"
+			],
+			[
+				"currentD",
+				"currentDayNr"
+			],
+			[
+				"CreateS",
+				"CreateSimpleAnimalDefinition"
+			],
+			[
+				"fle",
+				"flexibilityInterval"
+			],
+			[
+				"noise",
+				"noisePitch"
+			],
+			[
+				"nr",
+				"nrOfMouths"
+			],
+			[
+				"existi",
+				"existingSpeciesCryButton"
+			],
+			[
+				"exist",
+				"existingSpeciesColorButton"
+			],
+			[
+				"low",
+				"lowestDetectablePitch"
+			],
+			[
+				"Prop",
+				"PropertyToSelectWithListView"
+			],
+			[
+				"species",
+				"species"
+			],
+			[
+				"prop",
+				"propertyValue"
+			],
+			[
+				"numbe",
+				"numberOfNaturalOrganisms"
+			],
+			[
+				"spec",
+				"speciesAvailable"
+			],
+			[
+				"StarterAn",
+				"GenerateStarterAnimal"
+			],
+			[
+				"exi",
+				"existingSpeciesCryButton"
+			],
+			[
+				"button",
+				"pickSpeciesButton"
+			],
+			[
+				"stim",
+				"stimulusText"
+			],
+			[
+				"indexOfIn",
+				"indexOfHoveredInstinctListItem"
+			],
+			[
+				"Make",
+				"MakeSureInstinctIsWithinBoundaries"
+			],
+			[
+				"In",
+				"InstinctDefinition"
+			],
+			[
+				"soundC",
+				"soundCellIndex"
+			],
+			[
+				"insi",
+				"instinctivelyInterestedInCellWithIndex"
+			],
+			[
+				"action",
+				"actionIsInstinctivelyPrioritized"
+			],
+			[
+				"prio",
+				"actionIsInstinctivelyPrioritized"
+			],
+			[
+				"numbDa",
+				"numberOfDaysBetweenCry"
+			],
+			[
+				"instIN",
+				"instinctIndex"
+			],
+			[
+				"cryin",
+				"cryingAllowed"
+			],
+			[
+				"age",
+				"ageAtLastCry"
+			],
+			[
+				"cond",
+				"conditionValue"
+			],
+			[
+				"sound",
+				"sound"
+			],
+			[
+				"soundsCre",
+				"soundCreatedInThisArea"
+			],
+			[
+				"clo",
+				"closestSeeingDistance"
+			],
+			[
+				"distance",
+				"distanceToClosestTriggerCell"
+			],
+			[
+				"distan",
+				"distanceToClosestTriggerCell"
+			],
+			[
+				"trigg",
+				"triggerOrganismCellIndex"
+			],
+			[
+				"Inst",
+				"InstinctAction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "todo.txt",
+			"settings":
+			{
+				"buffer_size": 206,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main_template.html",
+			"settings":
+			{
+				"buffer_size": 1293,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "generate_static_website.py",
+			"settings":
+			{
+				"buffer_size": 2426,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "devlogs/test1.md",
+			"settings":
+			{
+				"buffer_size": 383,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "devlogs/test2.md",
+			"settings":
+			{
+				"buffer_size": 377,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 38.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Wessel/Desktop/thesapling-website",
+		"/C/Users/Wessel/Desktop/thesapling-website/devlogs"
+	],
+	"file_history":
+	[
+		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test.md",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/TutorialController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PlantEditor/PlantEditorView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PlantEditor/PlantEditorUIView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PlantEditor/PlantEditorController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/todo.txt",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/SaveGameController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/AlertView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/UIAnimator.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/WorldUIView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/AbstractEditorController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Objective/ScenarioDefinition.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Objective/ScenarioDefinitionTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/TestScenarios/json2/2.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/TestScenarios/json2/1.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/TestScenarios/json2/0.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/TestScenarios/json1/2.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/TestScenarios/json1/3.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/TestScenarios/json1/1.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/TestScenarios/json1/0.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/Scenarios/json/3.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/Scenarios/json/2.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/Scenarios/json/1.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/Scenarios/json/0.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PlantEditor/PlantEditorControllerTests.js",
+		"/C/Users/Wessel/Desktop/nn.py",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/WorldView.js",
+		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
+		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
+		"/C/Users/Wessel/Desktop/thesapling-website/main_template.html",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/tutorial.txt",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/OverallController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/MainMenu/MainMenuController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/WorldController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/AlertViewController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Objective/ObjectiveDefinition.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/ObjectiveListView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/ObjectiveListViewTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/playdevclub",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/PlantView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/Conductor/Conductor.js",
+		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/LifeFormTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantStatsTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/TestScripts/TestRunner.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/PlantViewTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantObjectBuilder.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/TimeLineTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantObjectBuilderTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/LifeForm.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/SpeciesListView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/OrganismView.js",
+		"/C/Users/Wessel/Desktop/thesapling-website/style.css",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Website/main_template.html",
+		"/C/Users/Wessel/Desktop/personal-website/style.css",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismObjectBuilder.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalObjectBuilder.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/WeatherView.js",
+		"/C/Users/Wessel/Desktop/personal-website/index.html",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/TimeLine.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/BuildTools/build.py",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GrowingFruitAnimation.fbx",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/AnimalView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/WorldViewTests.js",
+		"/C/Users/Wessel/Desktop/personal-website/texts/onze.html",
+		"/C/Users/Wessel/Desktop/personal-website/texts/reepjes.html",
+		"/C/Users/Wessel/Desktop/personal-website/texts/snotneus.html",
+		"/C/Users/Wessel/Desktop/personal-website/texts/plasterk.html",
+		"/C/Users/Wessel/Desktop/personal-website/texts/style.css",
+		"/C/Users/Wessel/Downloads/dbbackup_03_04_2018.sql/dbbackup_03_04_2018.sql",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalDefinition.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalStatsTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalStats.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismBlenderTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismProblemDetection.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismProblemDetectionTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantDefinition.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/AnimalEditor/AnimalEditorController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/SpeciesDefinitionTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantDefinitionTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantStats.js",
+		"/C/Users/Wessel/Desktop/personal-website/todo.txt",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/MinifiedDescription.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/BuilderTestController.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/scratch.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalMutator.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/AnimalEditor/AnimalEditorUIView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismObjectFileImporter.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/MainMenu/MainMenuView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/GeneralScripts/HoverToDelegate.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/trailer.txt",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/ProceduralAnimation/AnimationSpecializer.js",
+		"/C/Users/Wessel/.ssh/id_rsa",
+		"/C/Users/Wessel/Desktop/private.ppk",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Animation/Bones.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Editor/GameBuilder.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/HeatTexture.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Plugins/PostProcessing/Editor/Models/ColorGradingModelEditor.cs",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionRamp.cs",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Editor/ImageEffects/ColorCorrectionLookupEditor.cs",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PPController.cs",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Plugins/PPController.cs",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/PPController.cs",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PostProcessing/PPController.cs",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PostProcessing/Sapling.asset",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/InstinctDefinition.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/InstinctDefinitionTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Prefabs/ObjectiveNotYetPassedIcon.prefab",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Mouth/herbivore.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Mouth/canine.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Mouth/carnivore.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Mouth/teeth.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Mouth/hole.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/slow.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/fast.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/knee.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/foot.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/fin.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/SpeciesListViewTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/SpeciesDefinition.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/AnimalEditor/InstinctView.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/GeneralScripts/UITools.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalDefinitionTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/Plugins/SimpleJSON.cs",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/WorldArea.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/InstinctDefinition.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/WorldState.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/GeneralScripts/UserInputController.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"content"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "todo.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								137,
+								137
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main_template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								849,
+								849
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "generate_static_website.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2426,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1093,
+								1093
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "devlogs/test1.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								383,
+								383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "devlogs/test2.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								374,
+								374
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 83.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "The Sapling website.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"alert",
+				"Assets\\World\\Views\\AlertView.js"
+			],
+			[
+				"worlduiv",
+				"Assets\\World\\Views\\WorldUIView.js"
+			],
+			[
+				"animator",
+				"Assets\\Standard Assets\\UIAnimator.js"
+			],
+			[
+				"plaevi",
+				"Assets\\PlantEditor\\PlantEditorView.js"
+			],
+			[
+				"tod",
+				"Assets\\todo.txt"
+			],
+			[
+				"tutcon",
+				"Assets\\GeneralScripts\\TutorialController.js"
+			],
+			[
+				"pleduivie",
+				"Assets\\PlantEditor\\PlantEditorUIView.js"
+			],
+			[
+				"planedcon",
+				"Assets\\PlantEditor\\PlantEditorController.js"
+			],
+			[
+				"plantediv",
+				"Assets\\PlantEditor\\PlantEditorView.js"
+			],
+			[
+				"pluivi",
+				"Assets\\PlantEditor\\PlantEditorUIView.js"
+			],
+			[
+				"uiview",
+				"Assets\\World\\Views\\WorldUIView.js"
+			],
+			[
+				"plaecon",
+				"Assets\\PlantEditor\\PlantEditorController.js"
+			],
+			[
+				"planedvi",
+				"Assets\\PlantEditor\\PlantEditorView.js"
+			],
+			[
+				"abedcon",
+				"Assets\\GeneralScripts\\AbstractEditorController.js"
+			],
+			[
+				"tutocon",
+				"Assets\\GeneralScripts\\TutorialController.js"
+			],
+			[
+				"savegameco",
+				"Assets\\GeneralScripts\\SaveGameController.js"
+			],
+			[
+				"3.js",
+				"Assets\\Resources\\Scenarios\\json\\3.json"
+			],
+			[
+				"2.js",
+				"Assets\\Resources\\Scenarios\\json\\2.json"
+			],
+			[
+				"1.js",
+				"Assets\\Resources\\Scenarios\\json\\1.json"
+			],
+			[
+				"0.js",
+				"Assets\\Resources\\Scenarios\\json\\0.json"
+			],
+			[
+				"plaeduiv",
+				"Assets\\PlantEditor\\PlantEditorUIView.js"
+			],
+			[
+				"plaedvi",
+				"Assets\\PlantEditor\\PlantEditorView.js"
+			],
+			[
+				"worldvi",
+				"Assets\\World\\Views\\WorldView.js"
+			],
+			[
+				"tut",
+				"Assets\\tutorial.txt"
+			],
+			[
+				"plantedicon",
+				"Assets\\PlantEditor\\PlantEditorController.js"
+			],
+			[
+				"overalcon",
+				"Assets\\GeneralScripts\\OverallController.js"
+			],
+			[
+				"alertvi",
+				"Assets\\World\\Views\\AlertViewController.js"
+			],
+			[
+				"savegamec",
+				"Assets\\GeneralScripts\\SaveGameController.js"
+			],
+			[
+				"obje",
+				"Assets\\Objective\\ObjectiveDefinition.js"
+			],
+			[
+				"tutorial",
+				"Assets\\GeneralScripts\\TutorialController.js"
+			],
+			[
+				"objectdef",
+				"Assets\\Objective\\ObjectiveDefinition.js"
+			],
+			[
+				"worldcon",
+				"Assets\\World\\WorldController.js"
+			],
+			[
+				"savega",
+				"Assets\\GeneralScripts\\SaveGameController.js"
+			],
+			[
+				"plaedcon",
+				"Assets\\PlantEditor\\PlantEditorController.js"
+			],
+			[
+				"worlcon",
+				"Assets\\World\\WorldController.js"
+			],
+			[
+				"obj",
+				"Assets\\Objective\\ObjectiveDefinition.js"
+			],
+			[
+				"scenar",
+				"Assets\\Objective\\ScenarioDefinition.js"
+			],
+			[
+				"0.j",
+				"Assets\\Resources\\Scenarios\\json\\0.json"
+			],
+			[
+				"play",
+				"Assets\\playdevclub"
+			],
+			[
+				"condu",
+				"Assets\\Standard Assets\\Conductor\\Conductor.js"
+			],
+			[
+				"savegamcon",
+				"Assets\\GeneralScripts\\SaveGameController.js"
+			],
+			[
+				"testru",
+				"Assets\\Standard Assets\\TestScripts\\TestRunner.js"
+			],
+			[
+				"lifefote",
+				"Assets\\World\\Models\\LifeFormTests.js"
+			],
+			[
+				"plantsttes",
+				"Assets\\Organism\\PlantStatsTests.js"
+			],
+			[
+				"timelint",
+				"Assets\\World\\Models\\TimeLineTests.js"
+			],
+			[
+				"tuto",
+				"Assets\\tutorial.txt"
+			],
+			[
+				"plaobjb",
+				"Assets\\Organism\\PlantObjectBuilder.js"
+			],
+			[
+				"todo",
+				"Assets\\todo.txt"
+			],
+			[
+				"organisvie",
+				"Assets\\World\\Views\\OrganismView.js"
+			],
+			[
+				"plantview",
+				"Assets\\World\\Views\\PlantView.js"
+			],
+			[
+				"objbuil",
+				"Assets\\Organism\\PlantObjectBuilder.js"
+			],
+			[
+				"plantobj",
+				"Assets\\Organism\\PlantObjectBuilder.js"
+			],
+			[
+				"plantvi",
+				"Assets\\World\\Views\\PlantView.js"
+			],
+			[
+				"plantedvie",
+				"Assets\\PlantEditor\\PlantEditorView.js"
+			],
+			[
+				"lifefor",
+				"Assets\\World\\Models\\LifeForm.js"
+			],
+			[
+				"worldview",
+				"Assets\\World\\Views\\WorldView.js"
+			],
+			[
+				"plantvie",
+				"Assets\\World\\Views\\PlantView.js"
+			],
+			[
+				"planee",
+				"Assets\\PlantEditor\\PlantEditorView.js"
+			],
+			[
+				"planobj",
+				"Assets\\Organism\\PlantObjectBuilder.js"
+			],
+			[
+				"weatherv",
+				"Assets\\World\\Views\\WeatherView.js"
+			],
+			[
+				"savegamecon",
+				"Assets\\GeneralScripts\\SaveGameController.js"
+			],
+			[
+				"build",
+				"BuildTools\\build.py"
+			],
+			[
+				"testrunn",
+				"Assets\\Standard Assets\\TestScripts\\TestRunner.js"
+			],
+			[
+				"gif",
+				"Assets\\GrowingFruitAnimation.fbx"
+			],
+			[
+				"testrun",
+				"Assets\\Standard Assets\\TestScripts\\TestRunner.js"
+			],
+			[
+				"plantobje",
+				"Assets\\Organism\\PlantObjectBuilder.js"
+			],
+			[
+				"plantbuil",
+				"Assets\\Organism\\PlantObjectBuilder.js"
+			],
+			[
+				"organivi",
+				"Assets\\World\\Views\\OrganismView.js"
+			],
+			[
+				"anidef",
+				"Assets\\Organism\\AnimalDefinition.js"
+			],
+			[
+				"animalstattest",
+				"Assets\\Organism\\AnimalStatsTests.js"
+			],
+			[
+				"animalst",
+				"Assets\\Organism\\AnimalStats.js"
+			],
+			[
+				"plantst",
+				"Assets\\Organism\\PlantStatsTests.js"
+			],
+			[
+				"organisbletest",
+				"Assets\\Organism\\OrganismBlenderTests.js"
+			],
+			[
+				"organiprob",
+				"Assets\\Organism\\OrganismProblemDetection.js"
+			],
+			[
+				"plantstatstes",
+				"Assets\\Organism\\PlantStatsTests.js"
+			],
+			[
+				"orgaprobtes",
+				"Assets\\Organism\\OrganismProblemDetectionTests.js"
+			],
+			[
+				"plantve",
+				"Assets\\World\\Views\\PlantView.js"
+			],
+			[
+				"plantviewt",
+				"Assets\\World\\Views\\PlantViewTests.js"
+			],
+			[
+				"plantviewtest",
+				"Assets\\World\\Views\\PlantViewTests.js"
+			],
+			[
+				"planteidcon",
+				"Assets\\PlantEditor\\PlantEditorController.js"
+			],
+			[
+				"plantdef",
+				"Assets\\Organism\\PlantDefinition.js"
+			],
+			[
+				"animaledicon",
+				"Assets\\AnimalEditor\\AnimalEditorController.js"
+			],
+			[
+				"playd",
+				"Assets\\playdevclub"
+			],
+			[
+				"worldviewtests",
+				"Assets\\World\\Views\\WorldViewTests.js"
+			],
+			[
+				"timelintest",
+				"Assets\\World\\Models\\TimeLineTests.js"
+			],
+			[
+				"plantdeftes",
+				"Assets\\Organism\\PlantDefinitionTests.js"
+			],
+			[
+				"specideftest",
+				"Assets\\Organism\\SpeciesDefinitionTests.js"
+			],
+			[
+				"worldvietes",
+				"Assets\\World\\Views\\WorldViewTests.js"
+			],
+			[
+				"plast",
+				"Assets\\Organism\\PlantStatsTests.js"
+			],
+			[
+				"plansta",
+				"Assets\\Organism\\PlantStats.js"
+			],
+			[
+				"plantstats",
+				"Assets\\Organism\\PlantStats.js"
+			],
+			[
+				"timeline",
+				"Assets\\World\\Models\\TimeLine.js"
+			],
+			[
+				"lifefo",
+				"Assets\\World\\Models\\LifeForm.js"
+			],
+			[
+				"animalsta",
+				"Assets\\Organism\\AnimalStats.js"
+			],
+			[
+				"minifiedd",
+				"Assets\\Organism\\MinifiedDescription.js"
+			],
+			[
+				"aniobjbui",
+				"Assets\\Organism\\AnimalObjectBuilder.js"
+			],
+			[
+				"tester",
+				"Assets\\Organism\\BuilderTestController.js"
+			],
+			[
+				"scrat",
+				"Assets\\scratch.js"
+			],
+			[
+				"aniedicon",
+				"Assets\\AnimalEditor\\AnimalEditorController.js"
+			],
+			[
+				"animobjbu",
+				"Assets\\Organism\\AnimalObjectBuilder.js"
+			],
+			[
+				"animstats",
+				"Assets\\Organism\\AnimalStats.js"
+			],
+			[
+				"animobjbuil",
+				"Assets\\Organism\\AnimalObjectBuilder.js"
+			],
+			[
+				"animaldef",
+				"Assets\\Organism\\AnimalDefinition.js"
+			],
+			[
+				"animedc",
+				"Assets\\AnimalEditor\\AnimalEditorController.js"
+			],
+			[
+				"aniedui",
+				"Assets\\AnimalEditor\\AnimalEditorUIView.js"
+			],
+			[
+				"planu",
+				"Assets\\PlantEditor\\PlantEditorUIView.js"
+			],
+			[
+				"planted",
+				"Assets\\PlantEditor\\PlantEditorController.js"
+			],
+			[
+				"animastat",
+				"Assets\\Organism\\AnimalStats.js"
+			],
+			[
+				"importer",
+				"Assets\\Organism\\OrganismObjectFileImporter.js"
+			],
+			[
+				"animdef",
+				"Assets\\Organism\\AnimalDefinition.js"
+			],
+			[
+				"mainmenuco",
+				"Assets\\MainMenu\\MainMenuController.js"
+			],
+			[
+				"savegamco",
+				"Assets\\GeneralScripts\\SaveGameController.js"
+			],
+			[
+				"savegame",
+				"Assets\\GeneralScripts\\SaveGameController.js"
+			],
+			[
+				"planedicon",
+				"Assets\\PlantEditor\\PlantEditorController.js"
+			],
+			[
+				"mainmec",
+				"Assets\\MainMenu\\MainMenuController.js"
+			],
+			[
+				"mainmenuv",
+				"Assets\\MainMenu\\MainMenuView.js"
+			],
+			[
+				"worldoc",
+				"Assets\\World\\WorldController.js"
+			],
+			[
+				"organismv",
+				"Assets\\World\\Views\\OrganismView.js"
+			],
+			[
+				"organiview",
+				"Assets\\World\\Views\\OrganismView.js"
+			],
+			[
+				"orgavi",
+				"Assets\\World\\Views\\OrganismView.js"
+			],
+			[
+				"planvi",
+				"Assets\\World\\Views\\PlantView.js"
+			],
+			[
+				"animspec",
+				"Assets\\ProceduralAnimation\\AnimationSpecializer.js"
+			],
+			[
+				"animalview",
+				"Assets\\World\\Views\\AnimalView.js"
+			],
+			[
+				"animspe",
+				"Assets\\ProceduralAnimation\\AnimationSpecializer.js"
+			],
+			[
+				"builder",
+				"Assets\\Organism\\BuilderTestController.js"
+			],
+			[
+				"mainmencon",
+				"Assets\\MainMenu\\MainMenuController.js"
+			],
+			[
+				"overcon",
+				"Assets\\GeneralScripts\\OverallController.js"
+			],
+			[
+				"worcon",
+				"Assets\\World\\WorldController.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 700.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

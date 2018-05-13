@@ -1,0 +1,21 @@
+Main page
+=========
+Dynamic part: devlog
+Style devlog part
+Checkbox
+
+Devlog
+======
+Style
+* Lead
+* Pull quote
+* Date
+* Tags
+* Name & photo
+
+After list:
+* Buttons
+
+Devlog list
+===========
+Generate dynamically
