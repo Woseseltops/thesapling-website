@@ -48,6 +48,11 @@ button:hover
     font-weight:500;
 }
 
+hr
+{
+    margin-bottom: 50px;
+}
+
 .separator_logo
 {
     margin-top: 30px;    
@@ -63,6 +68,11 @@ button:hover
     width: 140px;
     display:inline-block;
     cursor:pointer;
+}
+
+.iconlabel a
+{
+    text-decoration: none;    
 }
 
 .icon
@@ -102,6 +112,51 @@ button:hover
     width: 210px;
 }
 
+.nonselected_tag, .selected_tag
+{
+    border-style: solid;
+    width: 160px;
+    padding: 6px;
+    border-width: 1px;
+    border-radius: 10px;
+    float: left;
+    margin: 10px;
+}
+
+.selected_tag
+{
+    color: hsl(106, 23%, 22%);
+    background-color: white;
+}
+
+.main, .devlog
+{
+    width: 750px;   
+}
+
+.devlog p
+{
+    text-align: left;
+    margin-bottom: 45px;
+    line-height: 20px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.85);
+}
+
+p.pull_quote
+{
+    font-size: 27px;
+    line-height: 37px;
+    padding-left: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    margin-top: -25px;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(255, 255, 255, 0.3);
     opacity: 1; /* Firefox */
@@ -122,7 +177,6 @@ a
 
 #main_column
 {
-    width: 750px;
     margin: auto;
 }
 
@@ -138,4 +192,33 @@ a
     font-weight: 100;
     margin: 20px;
     letter-spacing: 4px;    
+}
+
+#label_bar
+{
+    height: 50px;
+}
+
+#first_p
+{
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 35px;    
+    color: white;
+}
+
+#date
+{
+    color: hsla(0, 0%, 100%, 0.55);
+    font-size: 13px;    
+}
+
+#first_character {
+  color: white;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }

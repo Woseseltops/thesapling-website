@@ -1,7 +1,7 @@
 Title
 =====
 
-| Game design |
+| Behind the scenes |
 
 This is the first alinea. This is the first alinea. This is the first alinea.
 

@@ -7,10 +7,7 @@ Checkbox
 Devlog
 ======
 Style
-* Lead
 * Pull quote
-* Date
-* Tags
 * Name & photo
 
 After list:

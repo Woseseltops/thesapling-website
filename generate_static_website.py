@@ -26,9 +26,12 @@ def parse_devlog(raw_markdown,tags):
 	html = markdown.markdown('\n'.join(markdown_lines[:-1])).split('\n')
 
 	#And replace some html lines by what we now from the parsing of the markdown
+	alinea_index = 0
+	pull_quote_mode = False
+
 	for n,line in enumerate(html):
 		if '<p>|' in line:
-			html[n] = '<div>' 
+			html[n] = '<div id="label_bar">' 
 
 			for tag in tags:
 
@@ -40,6 +43,22 @@ def parse_devlog(raw_markdown,tags):
 				html[n] += '<div class="'+class_info+'">'+tag+'</div>'
 
 			html[n] += '</div>'
+
+		elif '<p>' in line:
+			if alinea_index == 0:
+				html[n] = html[n].replace('<p>','<p id="first_p">')
+				alinea_index += 1
+			elif alinea_index == 1:
+				html[n] = '<p><span id="first_character">'+line[3]+'</span>'+line[4:]
+				alinea_index += 1			
+			elif pull_quote_mode:
+				html[n] = html[n].replace('<p>','<p class="pull_quote">')
+
+		elif '<hr />' in line:
+			if pull_quote_mode:
+				pull_quote_mode = False
+			else:
+				pull_quote_mode = True
 
 	html.append('<p id="date">Published '+devlog.date.strftime("%A %d %B %Y")+'</p>')
 
@@ -55,6 +74,10 @@ class DevLog():
 		self.timestamp = 0
 		self.tags = []
 		self.date = None
+
+def create_page(template_location,content,page_type):
+
+	return open(template_location).read().replace('{{content}}',content).replace('{{page_type}}',page_type)
 
 def generate_static_website():
 
@@ -76,13 +99,13 @@ def generate_static_website():
 
 	#Generate basic pages
 	for filename in listdir(PAGES_TO_GENERATE_FOLDER):
-		full_content = open(MAIN_TEMPLATE_LOCATION).read().replace('{{content}}',open(PAGES_TO_GENERATE_FOLDER+filename).read())
+		full_content = create_page(MAIN_TEMPLATE_LOCATION,open(PAGES_TO_GENERATE_FOLDER+filename).read(),'main')
 		open(GOAL_LOCATION+filename,'w').write(full_content)
 
 	#Generate devlogs
 	for filename in listdir(DEVLOGS_FOLDER):
 		html = parse_devlog(open(DEVLOGS_FOLDER+filename).read(),DEVLOG_TAGS).html
-		full_content = open(MAIN_TEMPLATE_LOCATION).read().replace('{{content}}',html)
+		full_content = create_page(MAIN_TEMPLATE_LOCATION,html,'devlog')
 		filename = filename.replace('.md','.html')
 		open(GOAL_LOCATION+'devlogs/'+filename,'w').write(full_content)
 
