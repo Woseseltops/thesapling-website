@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"get_",
+				"get_pretty_date"
+			],
+			[
+				"even",
+				"evenorodd"
+			],
+			[
+				"templ",
+				"template_location"
+			],
+			[
+				"page",
+				"page_type"
+			],
+			[
+				"temp",
+				"template_location"
+			],
+			[
+				"repl",
+				"replacement"
+			],
+			[
+				"devl",
+				"devlog_list_item_template"
+			],
+			[
+				"list",
+				"listview_content"
+			],
+			[
+				"dev",
+				"devlogs"
+			],
+			[
 				"fiot",
 				"font-weight"
 			],
@@ -478,42 +514,6 @@
 			[
 				"insi",
 				"instinctivelyInterestedInCellWithIndex"
-			],
-			[
-				"action",
-				"actionIsInstinctivelyPrioritized"
-			],
-			[
-				"prio",
-				"actionIsInstinctivelyPrioritized"
-			],
-			[
-				"numbDa",
-				"numberOfDaysBetweenCry"
-			],
-			[
-				"instIN",
-				"instinctIndex"
-			],
-			[
-				"cryin",
-				"cryingAllowed"
-			],
-			[
-				"age",
-				"ageAtLastCry"
-			],
-			[
-				"cond",
-				"conditionValue"
-			],
-			[
-				"sound",
-				"sound"
-			],
-			[
-				"soundsCre",
-				"soundCreatedInThisArea"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "todo.txt",
 			"settings":
 			{
-				"buffer_size": 272,
+				"buffer_size": 276,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,9 +532,19 @@
 			"file": "generate_static_website.py",
 			"settings":
 			{
-				"buffer_size": 3473,
+				"buffer_size": 4801,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "devlog_list_item_template.html",
+			"settings":
+			{
+				"buffer_size": 247,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<"
 			}
 		},
 		{
@@ -615,11 +625,7 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Wessel/Desktop/thesapling-website",
-		"/C/Users/Wessel/Desktop/thesapling-website/devlogs",
-		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate",
-		"/C/Users/Wessel/Desktop/thesapling-website/static",
-		"/C/Users/Wessel/Desktop/thesapling-website/static/svg"
+		"/C/Users/Wessel/Desktop/thesapling-website"
 	],
 	"file_history":
 	[
@@ -754,7 +760,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -768,6 +774,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"identifier",
+			"=\"\"",
+			"full_",
+			"',",
+			"full_list = []",
 			"DEVLOG_TITLE_AREA_FILE_LOCATION",
 			"content",
 			"uli'",
@@ -800,15 +811,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 272,
+						"buffer_size": 276,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								140,
-								140
+								252,
+								252
 							]
 						],
 						"settings":
@@ -828,15 +839,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3473,
+						"buffer_size": 4801,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								880,
-								880
+								3953,
+								3953
 							]
 						],
 						"settings":
@@ -845,14 +856,47 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 324.0,
+						"translation.y": 2160.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "devlog_list_item_template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 247,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							],
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "main_title_area.html",
 					"semi_transient": false,
 					"settings":
@@ -876,11 +920,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "devlog_title_area.html",
 					"semi_transient": false,
 					"settings":
@@ -904,11 +948,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "static/style.css",
 					"semi_transient": false,
 					"settings":
@@ -934,11 +978,11 @@
 						"translation.y": 3760.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "devlogs/test1.md",
 					"semi_transient": false,
 					"settings":
@@ -962,11 +1006,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "devlogs/test2.md",
 					"semi_transient": false,
 					"settings":
@@ -990,7 +1034,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
