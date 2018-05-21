@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"fiot",
+				"font-weight"
+			],
+			[
+				"DE",
+				"DEVLOG_TITLE_AREA_FILE_LOCATION"
+			],
+			[
+				"titl",
+				"title_area_file_location"
+			],
+			[
 				"wide",
 				"wide_class"
 			],
@@ -502,18 +514,6 @@
 			[
 				"soundsCre",
 				"soundCreatedInThisArea"
-			],
-			[
-				"clo",
-				"closestSeeingDistance"
-			],
-			[
-				"distance",
-				"distanceToClosestTriggerCell"
-			],
-			[
-				"distan",
-				"distanceToClosestTriggerCell"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "todo.txt",
 			"settings":
 			{
-				"buffer_size": 241,
+				"buffer_size": 272,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,16 +532,25 @@
 			"file": "generate_static_website.py",
 			"settings":
 			{
-				"buffer_size": 3068,
+				"buffer_size": 3473,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "main_template.html",
+			"file": "main_title_area.html",
 			"settings":
 			{
-				"buffer_size": 1538,
+				"buffer_size": 110,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "devlog_title_area.html",
+			"settings":
+			{
+				"buffer_size": 165,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -550,7 +559,7 @@
 			"file": "static/style.css",
 			"settings":
 			{
-				"buffer_size": 3539,
+				"buffer_size": 3864,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -559,7 +568,7 @@
 			"file": "devlogs/test1.md",
 			"settings":
 			{
-				"buffer_size": 5859,
+				"buffer_size": 5919,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -614,6 +623,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Wessel/Desktop/thesapling-website/main_template.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test.md",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/TutorialController.js",
@@ -644,7 +654,6 @@
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/WorldView.js",
 		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
 		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
-		"/C/Users/Wessel/Desktop/thesapling-website/main_template.html",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/tutorial.txt",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/OverallController.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/MainMenu/MainMenuController.js",
@@ -759,6 +768,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"DEVLOG_TITLE_AREA_FILE_LOCATION",
+			"content",
 			"uli'",
 			"print",
 			"’",
@@ -780,7 +791,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -789,15 +800,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 241,
+						"buffer_size": 272,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								194,
-								194
+								140,
+								140
 							]
 						],
 						"settings":
@@ -808,7 +819,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -817,15 +828,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3068,
+						"buffer_size": 3473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1340,
-								1340
+								880,
+								880
 							]
 						],
 						"settings":
@@ -834,7 +845,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -842,48 +853,75 @@
 				},
 				{
 					"buffer": 2,
-					"file": "main_template.html",
+					"file": "main_title_area.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1538,
+						"buffer_size": 110,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								494,
-								494
+								110,
+								110
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "static/style.css",
+					"file": "devlog_title_area.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3539,
+						"buffer_size": 165,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								263,
-								263
+								96,
+								96
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "static/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3404,
+								3404
 							]
 						],
 						"settings":
@@ -893,27 +931,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3760.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "devlogs/test1.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5859,
+						"buffer_size": 5919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								450,
-								450
+								72,
+								72
 							]
 						],
 						"settings":
@@ -924,11 +962,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "devlogs/test2.md",
 					"semi_transient": false,
 					"settings":
@@ -952,7 +990,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]

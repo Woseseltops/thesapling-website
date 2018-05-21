@@ -30,7 +30,10 @@ def parse_devlog(raw_markdown,tags):
 	pull_quote_mode = False
 
 	for n,line in enumerate(html):
-		if '<p>|' in line:
+		if '<h1>' in line:
+			html[n] = ''
+
+		elif '<p>|' in line:
 			html[n] = '<div id="label_bar">' 
 
 			for tag in tags:
@@ -75,9 +78,10 @@ class DevLog():
 		self.tags = []
 		self.date = None
 
-def create_page(template_location,content,page_type):
+def create_page(template_location,title_area_file_location,title,content,page_type):
 
-	return open(template_location).read().replace('{{content}}',content).replace('{{page_type}}',page_type)
+	title_area = open(title_area_file_location).read()
+	return open(template_location).read().replace('{{title_area}}',title_area).replace('{{title}}',title).replace('{{content}}',content).replace('{{page_type}}',page_type)
 
 def generate_static_website():
 
@@ -85,6 +89,9 @@ def generate_static_website():
 	DEVLOGS_FOLDER = 'devlogs/'
 
 	MAIN_TEMPLATE_LOCATION = 'main_template.html'
+	MAIN_TITLE_AREA_FILE_LOCATION = 'main_title_area.html'
+	DEVLOG_TITLE_AREA_FILE_LOCATION = 'devlog_title_area.html'
+
 	GOAL_LOCATION = 'latest_website/'
 	STATIC_FOLDER = 'static/'
 
@@ -99,13 +106,13 @@ def generate_static_website():
 
 	#Generate basic pages
 	for filename in listdir(PAGES_TO_GENERATE_FOLDER):
-		full_content = create_page(MAIN_TEMPLATE_LOCATION,open(PAGES_TO_GENERATE_FOLDER+filename).read(),'main')
+		full_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',open(PAGES_TO_GENERATE_FOLDER+filename).read(),'main')
 		open(GOAL_LOCATION+filename,'w').write(full_content)
 
 	#Generate devlogs
 	for filename in listdir(DEVLOGS_FOLDER):
-		html = parse_devlog(open(DEVLOGS_FOLDER+filename).read(),DEVLOG_TAGS).html
-		full_content = create_page(MAIN_TEMPLATE_LOCATION,html,'devlog')
+		devlog = parse_devlog(open(DEVLOGS_FOLDER+filename).read(),DEVLOG_TAGS)
+		full_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_TITLE_AREA_FILE_LOCATION,devlog.title.upper(),devlog.html,'devlog')
 		filename = filename.replace('.md','.html')
 		open(GOAL_LOCATION+'devlogs/'+filename,'w').write(full_content)
 

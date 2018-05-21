@@ -1,5 +1,5 @@
-Title
-=====
+Procedural animation in the Sapling
+===================================
 
 | Technical details |
 

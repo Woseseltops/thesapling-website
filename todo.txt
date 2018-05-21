@@ -3,16 +3,15 @@ NOW
 
 Main page
 ---------
-Title part
 Dynamic part: devlog
 Style devlog part
+Hover effects
 Checkbox
 
 Devlog
 ------
-Title
-Name & photo
-
+Buttons:
+* Redesign community icon
 
 Devlog list
 -----------
@@ -23,3 +22,4 @@ BACKLOG
 =======
 After devlog list: Buttons devlog page
 Responsive
+Landing page
