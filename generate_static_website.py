@@ -100,7 +100,7 @@ def create_page(template_location,title_area_file_location,title,content,page_ty
 
 def devlog_to_list_item(devlog,devlog_list_item_template_location,even):
 
-	NR_OF_CHARS_IN_LEAD = 40;
+	NR_OF_CHARS_IN_LEAD = 150;
 
 	if even:
 		evenorodd = 'even'
@@ -148,12 +148,12 @@ def generate_static_website():
 		devlogs.append(devlog)
 
 	#Generate the devlog listview
-	listview_content = '<h2>DEVLOGS</h2>'
+	listview_content = '<h3 class="page_header">DEVLOGS</h3>'
 
 	for n,devlog in enumerate(devlogs):
 		listview_content += devlog_to_list_item(devlog,DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,n%2==0)
 	
-	listview_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',listview_content,'main')
+	listview_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',listview_content,'devlog_list')
 	open(GOAL_LOCATION+'devlogs/index.html','w').write(listview_content)
 
 	#Move over the static files

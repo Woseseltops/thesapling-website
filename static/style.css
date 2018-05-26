@@ -71,6 +71,8 @@ hr
 
 .separator_logo
 {
+    display: block;
+    margin: auto;
     margin-top: 30px;    
 }
 
@@ -137,6 +139,7 @@ hr
     border-radius: 10px;
     float: left;
     margin: 38px;
+    text-align: center;
 }
 
 .selected_tag
@@ -162,6 +165,40 @@ hr
     font-weight:300;
     letter-spacing: 1px;
     color: hsla(0, 0%, 100%, 0.85);
+}
+
+.devlog_list_item
+{
+    text-align: left;
+    padding: 30px;
+    padding-top: 1px;
+}
+
+.odd
+{
+    background-color: hsla(0, 0%, 100%, 0.15);    
+}
+
+.devlog_list_item .selected_tag
+{
+    margin: 0px;
+    margin-top: 30px;
+    float: none;
+    margin-bottom: 30px;
+    font-size: 10px;
+    width: 89px;
+    border-radius: 6px;
+}
+
+.devlog_list_item p
+{
+    font-size: 16px;
+}
+
+.devlog_list_item_content
+{
+    width: 750px;
+    margin: auto;    
 }
 
 p.pull_quote
@@ -191,6 +228,15 @@ p.pull_quote
     font-weight: 300;
     padding-top: 145px;
     letter-spacing: 10px;
+}
+
+.page_header
+{
+    text-align: left;
+    width: 750px;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 35px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

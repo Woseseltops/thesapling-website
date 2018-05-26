@@ -523,7 +523,7 @@
 			"file": "todo.txt",
 			"settings":
 			{
-				"buffer_size": 276,
+				"buffer_size": 206,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,7 +532,7 @@
 			"file": "generate_static_website.py",
 			"settings":
 			{
-				"buffer_size": 4801,
+				"buffer_size": 4829,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,35 +541,17 @@
 			"file": "devlog_list_item_template.html",
 			"settings":
 			{
-				"buffer_size": 247,
+				"buffer_size": 375,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
 				"name": "<"
 			}
 		},
 		{
-			"file": "main_title_area.html",
-			"settings":
-			{
-				"buffer_size": 110,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "devlog_title_area.html",
-			"settings":
-			{
-				"buffer_size": 165,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "static/style.css",
 			"settings":
 			{
-				"buffer_size": 3864,
+				"buffer_size": 4489,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -625,10 +607,13 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Wessel/Desktop/thesapling-website"
+		"/C/Users/Wessel/Desktop/thesapling-website",
+		"/C/Users/Wessel/Desktop/thesapling-website/devlogs"
 	],
 	"file_history":
 	[
+		"/C/Users/Wessel/Desktop/thesapling-website/devlog_title_area.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/main_title_area.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/main_template.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test.md",
@@ -754,13 +739,11 @@
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalDefinitionTests.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/Plugins/SimpleJSON.cs",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/WorldArea.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/InstinctDefinition.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/WorldState.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/GeneralScripts/UserInputController.js"
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/InstinctDefinition.js"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -811,15 +794,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 276,
+						"buffer_size": 206,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								252,
-								252
+								114,
+								114
 							]
 						],
 						"settings":
@@ -839,15 +822,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4801,
+						"buffer_size": 4829,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3953,
-								3953
+								4343,
+								4343
 							]
 						],
 						"settings":
@@ -856,10 +839,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2160.0,
+						"translation.y": 2106.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -868,19 +851,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 247,
+						"buffer_size": 375,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								60,
-								60
-							],
-							[
-								175,
-								175
+								368,
+								368
 							]
 						],
 						"settings":
@@ -892,80 +871,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "main_title_area.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								110,
-								110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "devlog_title_area.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 165,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								96,
-								96
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "static/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3864,
+						"buffer_size": 4489,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3404,
-								3404
+								3310,
+								3310
 							]
 						],
 						"settings":
@@ -975,14 +898,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3760.0,
+						"translation.y": 3734.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 4,
 					"file": "devlogs/test1.md",
 					"semi_transient": false,
 					"settings":
@@ -1006,11 +929,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "devlogs/test2.md",
 					"semi_transient": false,
 					"settings":
@@ -1034,7 +957,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
