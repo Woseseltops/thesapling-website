@@ -77,7 +77,6 @@ class DevLog():
 
 		self.title = ''
 		self.html = ''
-		self.timestamp = 0
 		self.tags = []
 		self.date = None
 		self.lead = ''
@@ -85,18 +84,21 @@ class DevLog():
 	def get_pretty_date(self):
 		return self.date.strftime("%A %d %B %Y")		
 
-def fill_template(template_location,vars):
-
-	template = open(template_location).read()
+def fill_template(template,vars):
 
 	for key, replacement in vars.items():
 		template = template.replace('{{'+key+'}}',replacement)
+
 	return template
 
-def create_page(template_location,title_area_file_location,title,content,page_type):
+def create_page(template_location,title_area_file_location,title,content,page_type,content_variables = None):
 
 	title_area = open(title_area_file_location).read()
-	return fill_template(template_location,{'title_area':title_area,'title':title,'content':content,'page_type':page_type})
+
+	if content_variables != None:
+		content = fill_template(content,content_variables)
+
+	return fill_template(open(template_location).read(),{'title_area':title_area,'title':title,'content':content,'page_type':page_type})
 
 def devlog_to_list_item(devlog,devlog_list_item_template_location,even):
 
@@ -107,7 +109,7 @@ def devlog_to_list_item(devlog,devlog_list_item_template_location,even):
 	else:
 		evenorodd = 'odd'
 
-	return fill_template(devlog_list_item_template_location,{'identifier':devlog.identifier,'title':devlog.title,'date':devlog.get_pretty_date(),
+	return fill_template(open(devlog_list_item_template_location).read(),{'identifier':devlog.identifier,'title':devlog.title,'date':devlog.get_pretty_date(),
 																'lead':devlog.lead[:NR_OF_CHARS_IN_LEAD],'tag':devlog.tags[0],'evenorodd':evenorodd})
 
 def generate_static_website():
@@ -132,11 +134,6 @@ def generate_static_website():
 	mkdir(GOAL_LOCATION)
 	mkdir(GOAL_LOCATION+'devlogs/')
 
-	#Generate basic pages
-	for filename in listdir(PAGES_TO_GENERATE_FOLDER):
-		full_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',open(PAGES_TO_GENERATE_FOLDER+filename).read(),'main')
-		open(GOAL_LOCATION+filename,'w').write(full_content)
-
 	#Generate devlogs
 	devlogs = []
 
@@ -147,6 +144,8 @@ def generate_static_website():
 		open(GOAL_LOCATION+'devlogs/'+filename,'w').write(full_content)
 		devlogs.append(devlog)
 
+	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
+
 	#Generate the devlog listview
 	listview_content = '<h3 class="page_header">DEVLOGS</h3>'
 
@@ -155,6 +154,12 @@ def generate_static_website():
 	
 	listview_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',listview_content,'devlog_list')
 	open(GOAL_LOCATION+'devlogs/index.html','w').write(listview_content)
+
+	#Generate basic pages
+	for filename in listdir(PAGES_TO_GENERATE_FOLDER):
+		full_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',open(PAGES_TO_GENERATE_FOLDER+filename).read(),'main',
+									content_variables={'latest_devlog':devlog_to_list_item(devlogs[0],DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,False)})
+		open(GOAL_LOCATION+filename,'w').write(full_content)
 
 	#Move over the static files
 	copytree(STATIC_FOLDER,GOAL_LOCATION+STATIC_FOLDER)
