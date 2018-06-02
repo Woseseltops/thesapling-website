@@ -100,17 +100,25 @@ def create_page(template_location,title_area_file_location,title,content,page_ty
 
 	return fill_template(open(template_location).read(),{'title_area':title_area,'title':title,'content':content,'page_type':page_type})
 
-def devlog_to_list_item(devlog,devlog_list_item_template_location,even):
-
-	NR_OF_CHARS_IN_LEAD = 150;
+def devlog_to_list_item(devlog,devlog_list_item_template_location,even,simplified):
 
 	if even:
 		evenorodd = 'even'
 	else:
 		evenorodd = 'odd'
 
+	if simplified:
+		display = 'none'
+		salient = 'salient_title'
+		nr_of_chars = 350
+
+	else:
+		display = 'block'
+		salient = ''
+		nr_of_chars = 150
+
 	return fill_template(open(devlog_list_item_template_location).read(),{'identifier':devlog.identifier,'title':devlog.title,'date':devlog.get_pretty_date(),
-																'lead':devlog.lead[:NR_OF_CHARS_IN_LEAD],'tag':devlog.tags[0],'evenorodd':evenorodd})
+																'lead':devlog.lead[:nr_of_chars],'tag':devlog.tags[0],'evenorodd':evenorodd,'display':display,'salient_title':salient})
 
 def generate_static_website():
 
@@ -150,7 +158,7 @@ def generate_static_website():
 	listview_content = '<h3 class="page_header">DEVLOGS</h3>'
 
 	for n,devlog in enumerate(devlogs):
-		listview_content += devlog_to_list_item(devlog,DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,n%2==0)
+		listview_content += devlog_to_list_item(devlog,DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,n%2==0,False)
 	
 	listview_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',listview_content,'devlog_list')
 	open(GOAL_LOCATION+'devlogs/index.html','w').write(listview_content)
@@ -158,7 +166,7 @@ def generate_static_website():
 	#Generate basic pages
 	for filename in listdir(PAGES_TO_GENERATE_FOLDER):
 		full_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',open(PAGES_TO_GENERATE_FOLDER+filename).read(),'main',
-									content_variables={'latest_devlog':devlog_to_list_item(devlogs[0],DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,False)})
+									content_variables={'latest_devlog':devlog_to_list_item(devlogs[0],DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,False,True)})
 		open(GOAL_LOCATION+filename,'w').write(full_content)
 
 	#Move over the static files

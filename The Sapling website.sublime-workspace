@@ -523,7 +523,7 @@
 			"file": "todo.txt",
 			"settings":
 			{
-				"buffer_size": 206,
+				"buffer_size": 212,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,16 +532,56 @@
 			"file": "generate_static_website.py",
 			"settings":
 			{
-				"buffer_size": 5072,
+				"buffer_size": 5246,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "devlog_title_area.html",
+			"file": "devlogs/test1.md",
 			"settings":
 			{
-				"buffer_size": 165,
+				"buffer_size": 5919,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages_to_generate/index.html",
+			"settings":
+			{
+				"buffer_size": 1444,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main_template.html",
+			"settings":
+			{
+				"buffer_size": 1439,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "devlog_list_item_template.html",
+			"settings":
+			{
+				"buffer_size": 459,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "body\n{\n  background: radial-gradient(hsl(106, 23%, 22%), hsl(109, 11%, 20%));\n  color: white;\n  text-align: center;\n  font-family: 'Muli', sans-serif;\t\n  margin: 0px;\n}\n\nh1\n{\n    font-family: 'Montserrat', sans-serif;  \n    font-size: 70px;\n    font-weight: 500;\n    margin-bottom: -15px;\n}\n\nh2\n{\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 500;\n    color: hsla(0, 0%, 100%, 0.75);    \n}\n\nh3, h4\n{\n\tfont-size:25px;\n    margin-bottom: -15px;\n}\n\nh4\n{\n    letter-spacing: 8px;\n    font-weight: 100;\n}\n\np, .footer_link\n{\n    font-size: 18px;\n    line-height: 25px;\n    letter-spacing: 3px;\n    font-weight: 300;\t\n}\n\nbutton\n{\n\tcolor: white;\n    background-color: hsla(0, 0%, 0%,0);\n    padding: 8px;\n    border-radius: 15px;\n    border-width: 3px;\n    border-style: solid;\n    font-family: 'Muli', sans-serif;\n    font-size: 16px;\n    margin: 25px;\n    width: 230px;\n    cursor: pointer;\t\n}\n\nbutton:hover\n{\n    background-color: hsl(0, 0%, 87%);\n    color: #31442c;\n    font-weight:500;\n}\n\nhr\n{\n    margin-bottom: 50px;\n}\n\n.separator_logo\n{\n    display: block;\n    margin: auto;\n    margin-top: 30px;    \n}\n\n.icon_label_bar\n{\n    margin: 45px;\n}\n\n.iconlabel\n{\n    width: 140px;\n    display:inline-block;\n    cursor:pointer;\n}\n\n.iconlabel a\n{\n    text-decoration: none;    \n}\n\n.icon\n{\n    height: 45px;\n    margin: 8px;\n}\n\n.credits\n{\n    color: hsl(108, 20%, 13%);\n    margin: 20px;\n    font-size: 20px;    \n}\n\n.footer_link\n{\n    margin: 50px;\n}\n\n.textfield\n{\n    margin: 10px;\n    height: 40px;\n    border-radius: 10px;\n    border-style: none;    \n    background-color: hsla(0, 0%, 100%, 0.2);\n\n    padding-left: 20px;\n    padding-right: 20px;\n    padding-bottom: 25px;\n    padding-top: 25px;\n    color: white;\n\n    font-family: Muli;\n    font-size: 20px;\n    width: 210px;\n}\n\n.nonselected_tag, .selected_tag\n{\n    border-style: solid;\n    width: 160px;\n    padding: 6px;\n    border-width: 1px;\n    border-radius: 10px;\n    float: left;\n    margin: 38px;\n    text-align: center;\n}\n\n.selected_tag\n{\n    color: hsl(106, 23%, 22%);\n    background-color: white;\n}\n\n.main, .devlog\n{\n    width: 750px;   \n}\n\n.devlog p\n{\n    text-align: left;\n    margin-bottom: 45px;\n    line-height: 20px;\n    font-size: 17px;\n    letter-spacing: 2px;\n    line-height: 25px;\n    font-size: 17px;\n    font-weight:300;\n    letter-spacing: 1px;\n    color: hsla(0, 0%, 100%, 0.85);\n}\n\n.devlog_list_item\n{\n    text-align: left;\n    padding: 30px;\n    padding-top: 1px;\n}\n\n.odd\n{\n    background-color: hsla(0, 0%, 100%, 0.15);    \n}\n\n.devlog_list_item .selected_tag\n{\n    margin: 0px;\n    margin-top: 30px;\n    float: none;\n    margin-bottom: 30px;\n    font-size: 10px;\n    width: 89px;\n    border-radius: 6px;\n}\n\n.devlog_list_item p\n{\n    font-size: 16px;\n}\n\n.devlog_list_item_content\n{\n    width: 750px;\n    margin: auto;    \n}\n\np.pull_quote\n{\n    font-size: 27px;\n    line-height: 37px;\n    padding-left: 20px;\n    letter-spacing: 3px;\n    margin-bottom: 25px;\n    margin-top: -25px;\n}\n\n.devlog_title, .devlog_label\n{\n    text-align: left;\n    width: 970px;\n    margin: auto;\n}\n\n.devlog_title\n{\n    height: 260px;\n}\n\n.devlog_label\n{\n    font-weight: 300;\n    padding-top: 145px;\n    letter-spacing: 10px;\n}\n\n.page_header\n{\n    text-align: left;\n    width: 750px;\n    margin: auto;\n    margin-top: 35px;\n    font-size: 35px;\n}\n\n.salient_title\n{\n    margin-bottom:20px;\n    margin-top:55px;\n}\n\n.salient_title a\n{\n    text-decoration: none;\n    text-transform: uppercase;\n}\n\n::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */\n    color: rgba(255, 255, 255, 0.3);\n    opacity: 1; /* Firefox */\n}\n\n:-ms-input-placeholder { /* Internet Explorer 10-11 */\n    color: rgba(255, 255, 255, 0.3);\n}\n\n::-ms-input-placeholder { /* Microsoft Edge */\n    color: rgba(255, 255, 255, 0.3);\n}\n\na\n{\n    color:white;\n}\n\n#title_area\n{\n    width: 100%;\n    height: 500px;\n    background-color: hsl(122, 15%, 50%);\n}\n\n#main_logo\n{\n    margin-top: 65px;    \n}\n\n#main_column\n{\n    margin: auto;\n}\n\n#email\n{\n    width: 440px;\n}\n\n#once_per_month\n{\n    font-size: 16px;\n    color: hsla(0, 0%, 100%, 0.37);\n    font-weight: 100;\n    margin: 20px;\n    letter-spacing: 4px;    \n}\n\n#label_bar\n{\n    height: 50px;\n    margin-top: 120px;    \n}\n\n#first_p\n{\n    font-size: 24px;\n    font-weight: 100;\n    letter-spacing: 3px;\n    line-height: 35px;    \n    color: white;\n}\n\n#date\n{\n    color: hsla(0, 0%, 100%, 0.55);\n    font-size: 13px;    \n}\n\n#first_character {\n  color: white;\n  float: left;\n  font-size: 75px;\n  line-height: 60px;\n  padding-top: 4px;\n  padding-right: 8px;\n  padding-left: 3px;\n}\n\n#portrait\n{\n    height: 120px;\n}\n\n#portrait_label\n{\n    font-weight: 700;\n}\n\n#latest_devlog\n{\n    margin-left:-100vw;\n    margin-right:-100vw;    \n}",
+			"file": "static/style.css",
+			"file_size": 6504,
+			"file_write_time": 131724475544660282,
+			"settings":
+			{
+				"buffer_size": 4707,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -579,19 +619,18 @@
 	"expanded_folders":
 	[
 		"/C/Users/Wessel/Desktop/thesapling-website",
-		"/C/Users/Wessel/Desktop/thesapling-website/devlogs",
-		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate"
+		"/C/Users/Wessel/Desktop/thesapling-website/devlogs"
 	],
 	"file_history":
 	[
+		"/C/Users/Wessel/Desktop/thesapling-website/devlog_title_area.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/main_template.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test2.md",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test1.md",
 		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlog_list_item_template.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/devlog_title_area.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/main_title_area.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/main_template.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test.md",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/TutorialController.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PlantEditor/PlantEditorView.js",
@@ -715,7 +754,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -761,7 +800,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -770,15 +809,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 206,
+						"buffer_size": 212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								105,
-								105
+								54,
+								54
 							]
 						],
 						"settings":
@@ -789,7 +828,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -798,15 +837,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5072,
+						"buffer_size": 5246,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4876,
-								4876
+								3085,
+								3085
 							]
 						],
 						"settings":
@@ -815,27 +854,55 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2186.0,
+						"translation.y": 1862.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "devlog_title_area.html",
+					"file": "devlogs/test1.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 165,
+						"buffer_size": 5919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5916,
+								5916
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pages_to_generate/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1125,
+								1125
 							]
 						],
 						"settings":
@@ -847,6 +914,93 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "main_template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								863,
+								900
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "devlog_list_item_template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "static/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4707,
+								4707
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6204.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -900,6 +1054,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"style",
+				"static\\style.css"
+			],
+			[
+				"d",
+				"devlog_list_item_template.html"
+			],
 			[
 				"alert",
 				"Assets\\World\\Views\\AlertView.js"
@@ -1403,14 +1565,6 @@
 			[
 				"mainmencon",
 				"Assets\\MainMenu\\MainMenuController.js"
-			],
-			[
-				"overcon",
-				"Assets\\GeneralScripts\\OverallController.js"
-			],
-			[
-				"worcon",
-				"Assets\\World\\WorldController.js"
 			]
 		],
 		"width": 0.0

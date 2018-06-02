@@ -239,6 +239,18 @@ p.pull_quote
     font-size: 35px;
 }
 
+.salient_title
+{
+    margin-bottom:20px;
+    margin-top:55px;
+}
+
+.salient_title a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(255, 255, 255, 0.3);
     opacity: 1; /* Firefox */
@@ -327,4 +339,10 @@ a
 #portrait_label
 {
     font-weight: 700;
+}
+
+#latest_devlog
+{
+    margin-left:-100vw;
+    margin-right:-100vw;    
 }

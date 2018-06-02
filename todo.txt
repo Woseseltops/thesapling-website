@@ -3,9 +3,7 @@ NOW
 
 Main page
 ---------
-Dynamic part: devlog
-Style devlog part
-Hover effects
+Hover effects: inline SVG
 Checkbox
 
 Devlog
@@ -16,6 +14,8 @@ Buttons:
 
 BACKLOG
 =======
+Button moet echt werken
 RSS
 Responsive
 Landing page
+Presskit
