@@ -105,6 +105,14 @@ hr
     fill-opacity: 1 !important; /*this is because we want to overwrite the locally specified color in the svg*/
 }
 
+.checkbox
+{
+    width: 20px;
+    border-radius: 6px;
+    height: 20px;
+    background-color: hsla(0, 0%, 100%, 0.42);    
+}
+
 .credits
 {
     color: hsl(108, 20%, 13%);
