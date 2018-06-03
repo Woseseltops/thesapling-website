@@ -99,6 +99,12 @@ hr
     margin: 8px;
 }
 
+.selected_icon
+{
+    fill: white !important; /*this is because we want to overwrite the locally specified color in the svg*/
+    fill-opacity: 1 !important; /*this is because we want to overwrite the locally specified color in the svg*/
+}
+
 .credits
 {
     color: hsl(108, 20%, 13%);

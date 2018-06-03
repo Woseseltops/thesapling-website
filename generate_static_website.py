@@ -120,6 +120,15 @@ def devlog_to_list_item(devlog,devlog_list_item_template_location,even,simplifie
 	return fill_template(open(devlog_list_item_template_location).read(),{'identifier':devlog.identifier,'title':devlog.title,'date':devlog.get_pretty_date(),
 																'lead':devlog.lead[:nr_of_chars],'tag':devlog.tags[0],'evenorodd':evenorodd,'display':display,'salient_title':salient})
 
+def get_svg_images(images,static_folder):
+
+	result = {}
+
+	for image in images:
+		result[image] = open(static_folder+'svg/'+image+'.svg').read().replace('<svg','<svg class="icon"')
+
+	return result		
+
 def generate_static_website():
 
 	PAGES_TO_GENERATE_FOLDER = 'pages_to_generate/'
@@ -164,9 +173,12 @@ def generate_static_website():
 	open(GOAL_LOCATION+'devlogs/index.html','w').write(listview_content)
 
 	#Generate basic pages
+	content_variables = get_svg_images(['rss_icon','devlog_icon','twitter_icon','steam_icon','itch_icon'],STATIC_FOLDER)
+	content_variables['latest_devlog'] = devlog_to_list_item(devlogs[0],DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,False,True)
+
 	for filename in listdir(PAGES_TO_GENERATE_FOLDER):
 		full_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',open(PAGES_TO_GENERATE_FOLDER+filename).read(),'main',
-									content_variables={'latest_devlog':devlog_to_list_item(devlogs[0],DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,False,True)})
+									content_variables=content_variables)
 		open(GOAL_LOCATION+filename,'w').write(full_content)
 
 	#Move over the static files

@@ -4,11 +4,29 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="/static/style.css">
 	<title>The Sapling - a game about life and evolution</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script type="text/javascript">
+
+ 	$(document).ready(function()
+ 	{
+	    $('.iconlabel').mouseenter(function()
+	    {
+	    	$(this).find('path').addClass('selected_icon');
+	    });
+
+	    $('.iconlabel').mouseleave(function()
+	    {
+	    	$(this).find('path').removeClass('selected_icon');
+	    });
+	});
+ 	</script>
+
 </head>
 <body>
 	<div id="title_area">
 		<h2 class="devlog_label">DEVLOG</h2>
-<h1 class="devlog_title">{{title}}</h1>
+<h1 class="devlog_title">TITLE</h1>
 <img id="portrait" src="/static/png/wessel.png">
 <p id="portrait_label">Wessel Stoop</p>
 	</div>
