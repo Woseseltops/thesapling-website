@@ -110,7 +110,15 @@ hr
     width: 20px;
     border-radius: 6px;
     height: 20px;
-    background-color: hsla(0, 0%, 100%, 0.42);    
+    background-color: hsla(0, 0%, 100%, 0.2);    
+
+    margin-left: 185px;
+    margin-bottom: -20px;
+}
+
+.selected_checkbox
+{
+
 }
 
 .credits
@@ -359,4 +367,21 @@ a
 {
     margin-left:-100vw;
     margin-right:-100vw;    
+}
+
+.selected_checkbox
+{
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;    
+    left: 3px;
+    top: 3px;
+    position: relative;
+}
+
+#checkboxlabel
+{
+    width: 350px;
+    margin: auto;    
 }

@@ -19,6 +19,20 @@
 	    {
 	    	$(this).find('path').removeClass('selected_icon');
 	    });
+
+	    $('.checkbox').click(function()
+	    {
+	    	var checkbox_inside = $(this).find('div');
+
+	    	if (checkbox_inside.hasClass('selected_checkbox'))
+	    	{
+	    		checkbox_inside.removeClass('selected_checkbox');
+	    	}
+	    	else
+	    	{
+	    		checkbox_inside.addClass('selected_checkbox');
+	    	}
+	    });
 	});
  	</script>
 
@@ -434,7 +448,7 @@
 			<div id="once_per_month">Roughly once per month</div>
 			<input class="textfield" id="first_name" placeholder="First name"><input class="textfield" id="last_name" placeholder="Last name"><br>
 			<input class="textfield" id="email" placeholder="Email"><br>
-			<div><div class="checkbox"></div>Only the ones that announce new content</div>
+			<div><div class="checkbox"><div id="checkbox_inside"></div></div><div id="checkboxlabel">Only the ones that announce new content</div>
 			<button>Subscribe</button>
 
 			<br><img src="/static/svg/shadow_logo.svg" class="separator_logo">

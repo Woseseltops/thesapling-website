@@ -3,8 +3,6 @@ NOW
 
 Main page
 ---------
-Hover effects: inline SVG
-Checkbox
 
 Devlog
 ------
@@ -14,8 +12,8 @@ Buttons:
 
 BACKLOG
 =======
-Button moet echt werken
+Landing page
+Aanmelden moet echt werken
 RSS
 Responsive
-Landing page
 Presskit
