@@ -6,9 +6,9 @@ Main page
 
 Devlog
 ------
-Buttons:
 * Redesign community icon
-* next previous list
+* next previous list: echte knoppen toevoegen
+* Listview: checkbox staat niet goed door wijde formaat
 
 BACKLOG
 =======
