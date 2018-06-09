@@ -131,6 +131,25 @@ def get_svg_images(images,static_folder):
 
 	return result		
 
+def create_navigation_buttons(items,n):
+
+	result = ''
+
+	try:
+		result += '<div class="iconlabel"><a href="'+items[n+1].identifier+'.html">Older</a></div>'
+	except IndexError:
+		pass
+
+	result += '<div class="iconlabel"><a href="/devlogs">Overview</a></div>'
+
+	if n > 0:
+		try:
+			result += '<div class="iconlabel"><a href="'+items[n-1].identifier+'.html">Newer</a></div>'
+		except IndexError:
+			pass
+
+	return result
+
 def generate_static_website():
 
 	PAGES_TO_GENERATE_FOLDER = 'pages_to_generate/'
@@ -158,12 +177,14 @@ def generate_static_website():
 
 	for filename in listdir(DEVLOGS_FOLDER):
 		devlog = parse_devlog(filename.split('.')[0],open(DEVLOGS_FOLDER+filename).read(),DEVLOG_TAGS)
-		full_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_TITLE_AREA_FILE_LOCATION,devlog.title.upper(),devlog.html,'devlog')
-		filename = filename.replace('.md','.html')
-		open(GOAL_LOCATION+'devlogs/'+filename,'w').write(full_content)
 		devlogs.append(devlog)
 
 	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
+
+	for n,devlog in enumerate(devlogs):
+		navigation_buttons = create_navigation_buttons(devlogs,n)		
+		full_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_TITLE_AREA_FILE_LOCATION,devlog.title.upper(),devlog.html+navigation_buttons,'devlog')
+		open(GOAL_LOCATION+'devlogs/'+devlog.identifier+'.html','w').write(full_content)
 
 	#Generate the devlog listview
 	listview_content = '<h3 class="page_header">DEVLOGS</h3>'
