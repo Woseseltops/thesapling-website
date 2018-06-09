@@ -114,6 +114,7 @@ hr
 
     margin-left: 185px;
     margin-bottom: -20px;
+    cursor: pointer;    
 }
 
 .selected_checkbox
