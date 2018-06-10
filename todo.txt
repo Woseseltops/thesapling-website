@@ -7,13 +7,12 @@ Main page
 Devlog
 ------
 * Redesign community icon
-* next previous list: echte knoppen toevoegen
 * Listview: checkbox staat niet goed door wijde formaat
 
 BACKLOG
 =======
-Landing page
-Aanmelden moet echt werken
 RSS
 Responsive
+Player content page
 Presskit
+Aanmelden moet echt werken

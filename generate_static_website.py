@@ -131,34 +131,39 @@ def get_svg_images(images,static_folder):
 
 	return result		
 
-def create_navigation_buttons(items,n):
+def create_navigation_buttons(items,n,svg_images):
 
 	result = ''
 
 	try:
-		result += '<div class="iconlabel"><a href="'+items[n+1].identifier+'.html">Older</a></div>'
+		result += '<div class="iconlabel"><a href="'+items[n+1].identifier+'.html">'+svg_images['arrow_left']+'<br>Older</a></div>'
 	except IndexError:
 		pass
 
-	result += '<div class="iconlabel"><a href="/devlogs">Overview</a></div>'
+	result += '<div class="iconlabel"><a href="/devlogs">'+svg_images['arrow_up']+'<br>Overview</a></div>'
 
 	if n > 0:
 		try:
-			result += '<div class="iconlabel"><a href="'+items[n-1].identifier+'.html">Newer</a></div>'
+			result += '<div class="iconlabel"><a href="'+items[n-1].identifier+'.html">'+svg_images['arrow_right']+'<br>Newer</a></div>'
 		except IndexError:
 			pass
 
 	return result
 
+def devlogs_to_rss(devlogs):
+	pass
+
+
 def generate_static_website():
 
 	PAGES_TO_GENERATE_FOLDER = 'pages_to_generate/'
 	DEVLOGS_FOLDER = 'devlogs/'
+	TEMPLATE_FOLDER = 'templates/'
 
-	MAIN_TEMPLATE_LOCATION = 'main_template.html'
-	MAIN_TITLE_AREA_FILE_LOCATION = 'main_title_area.html'
-	DEVLOG_TITLE_AREA_FILE_LOCATION = 'devlog_title_area.html'
-	DEVLOG_LIST_ITEM_TEMPLATE_LOCATION = 'devlog_list_item_template.html'
+	MAIN_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'main_template.html'
+	MAIN_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'main_title_area.html'
+	DEVLOG_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_title_area.html'
+	DEVLOG_LIST_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'devlog_list_item_template.html'
 
 	GOAL_LOCATION = 'latest_website/'
 	STATIC_FOLDER = 'static/'
@@ -172,6 +177,9 @@ def generate_static_website():
 	mkdir(GOAL_LOCATION)
 	mkdir(GOAL_LOCATION+'devlogs/')
 
+	#Get images
+	svg_images = get_svg_images(['rss_icon','devlog_icon','twitter_icon','steam_icon','itch_icon','arrow_left','arrow_up','arrow_right'],STATIC_FOLDER)	
+
 	#Generate devlogs
 	devlogs = []
 
@@ -182,7 +190,7 @@ def generate_static_website():
 	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
 
 	for n,devlog in enumerate(devlogs):
-		navigation_buttons = create_navigation_buttons(devlogs,n)		
+		navigation_buttons = create_navigation_buttons(devlogs,n,svg_images)		
 		full_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_TITLE_AREA_FILE_LOCATION,devlog.title.upper(),devlog.html+navigation_buttons,'devlog')
 		open(GOAL_LOCATION+'devlogs/'+devlog.identifier+'.html','w').write(full_content)
 
@@ -196,7 +204,7 @@ def generate_static_website():
 	open(GOAL_LOCATION+'devlogs/index.html','w').write(listview_content)
 
 	#Generate basic pages
-	content_variables = get_svg_images(['rss_icon','devlog_icon','twitter_icon','steam_icon','itch_icon'],STATIC_FOLDER)
+	content_variables = svg_images
 	content_variables['latest_devlog'] = devlog_to_list_item(devlogs[0],DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,False,True)
 
 	for filename in listdir(PAGES_TO_GENERATE_FOLDER):

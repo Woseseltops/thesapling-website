@@ -1,0 +1,6 @@
+ <item>
+  <title>{{title}}</title>
+  <description>{{lead}}</description>
+  <link>http://www.thesaplinggame.com/devlogs/{{identifier}}</link>
+  <pubDate>{{date}}</pubDate>
+ </item>
