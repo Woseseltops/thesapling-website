@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>The Sapling devlogs</title>
+ <description>The developer logs for the videogame The Sapling, a game about life and evolution</description>
+ <link>http://www.thesaplinggame.com</link>
+ <lastBuildDate>Wed, 13 Jun 2018 00:00:00 -0000</lastBuildDate>
+ <pubDate>Wed, 13 Jun 2018 00:00:00 -0000</pubDate>
+
+  <item>
+  <title>Procedural animation in the Sapling</title>
+  <description>We're standing on the side of a highway in Budapest, trying to hitch a ride. I'm elegantly dressed for a proper afternoon at the National Gallery in a green embroidered dress and a knotted cotton scarf. Jeff appears to have just walked off the set of a western shot in Brooklyn. His grandfather's 1950s Stetson, cocked lazily to the side, is accompanied by a pair of fiery red chinos and a striped navy sweater.</description>
+  <link>http://www.thesaplinggame.com/devlogs/test1</link>
+  <guid>http://www.thesaplinggame.com/devlogs/test1</guid>
+  <pubDate>Fri, 13 Jul 2018 00:00:00 -0000</pubDate>
+ </item>
+ <item>
+  <title>Title</title>
+  <description>This is the first alinea. This is the first alinea. This is the first alinea.</description>
+  <link>http://www.thesaplinggame.com/devlogs/test2</link>
+  <guid>http://www.thesaplinggame.com/devlogs/test2</guid>
+  <pubDate>Wed, 13 Jun 2018 00:00:00 -0000</pubDate>
+ </item>
+ <item>
+  <title>Title</title>
+  <description>This is the first alinea. This is the first alinea. This is the first alinea.</description>
+  <link>http://www.thesaplinggame.com/devlogs/test3</link>
+  <guid>http://www.thesaplinggame.com/devlogs/test3</guid>
+  <pubDate>Wed, 13 Jun 2018 00:00:00 -0000</pubDate>
+ </item>
+ <item>
+  <title>Title</title>
+  <description>This is the first alinea. This is the first alinea. This is the first alinea.</description>
+  <link>http://www.thesaplinggame.com/devlogs/test4</link>
+  <guid>http://www.thesaplinggame.com/devlogs/test4</guid>
+  <pubDate>Wed, 13 Jun 2018 00:00:00 -0000</pubDate>
+ </item>
+
+
+</channel>
+</rss>

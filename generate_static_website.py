@@ -1,6 +1,7 @@
 from os import listdir, mkdir
 from os.path import isdir
 from shutil import copytree, rmtree
+from email.utils import format_datetime
 
 import datetime
 import markdown
@@ -150,9 +151,15 @@ def create_navigation_buttons(items,n,svg_images):
 
 	return result
 
-def devlogs_to_rss(devlogs):
-	pass
+def devlogs_to_rss(devlogs,template_location,item_template_location):
 
+	rss_items = []
+
+	for devlog in devlogs:
+		rss_items.append(fill_template(open(item_template_location).read(),{'title':devlog.title,'lead':devlog.lead,'identifier':devlog.identifier,
+																			'date':format_datetime(devlog.date)}))
+
+	return fill_template(open(template_location,'r').read(),{'items':''.join(rss_items),'date':format_datetime(devlog.date)})
 
 def generate_static_website():
 
@@ -164,6 +171,9 @@ def generate_static_website():
 	MAIN_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'main_title_area.html'
 	DEVLOG_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_title_area.html'
 	DEVLOG_LIST_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'devlog_list_item_template.html'
+
+	RSS_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_template.xml'
+	RSS_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_item_template.xml'
 
 	GOAL_LOCATION = 'latest_website/'
 	STATIC_FOLDER = 'static/'
@@ -202,6 +212,10 @@ def generate_static_website():
 	
 	listview_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',listview_content,'devlog_list')
 	open(GOAL_LOCATION+'devlogs/index.html','w').write(listview_content)
+
+	#Generate the devlog rss
+	rss = devlogs_to_rss(devlogs,RSS_TEMPLATE_LOCATION,RSS_ITEM_TEMPLATE_LOCATION)
+	open(GOAL_LOCATION+'devlogs.rss','w').write(rss)
 
 	#Generate basic pages
 	content_variables = svg_images
