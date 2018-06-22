@@ -386,3 +386,44 @@ a
     width: 350px;
     margin: auto;    
 }
+
+@media only screen and (max-width: 1000px)
+{
+    .main, .devlog
+    {
+        width: inherit;   
+    }
+
+    #latest_devlog
+    {
+        margin-left: inherit;
+        margin-right: inherit;
+        padding: inherit;
+    }
+
+    .devlog_list_item_content
+    {
+        width: inherit;
+    }
+
+    #email
+    {
+        width: inherit;
+    }
+
+    .page_header
+    {
+        width: inherit;
+    }
+
+    .devlog_title
+    {
+        width: inherit;
+        font-size: 45px;
+    }
+
+    .devlog_label
+    {
+        width: inherit;
+    }
+}

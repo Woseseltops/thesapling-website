@@ -1,8 +1,10 @@
 NOW
 ===
 
-Main page
----------
+Responsive
+----------
+Hoofdpagina: iconen niet goed
+Devlog: tags niet goed, pijlknoppen niet goed
 
 Devlog
 ------
@@ -11,7 +13,6 @@ Devlog
 
 BACKLOG
 =======
-Responsive
 Player content page
 Presskit
 Aanmelden moet echt werken

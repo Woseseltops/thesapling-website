@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"rss",
+				"rss_items"
+			],
+			[
+				"id",
+				"identifier"
+			],
+			[
+				"item",
+				"item_template_location"
+			],
+			[
+				"fil",
+				"fill_template"
+			],
+			[
+				"RSS",
+				"RSS_ITEM_TEMPLATE_LOCATION"
+			],
+			[
 				"check",
 				"checkbox_inside"
 			],
@@ -494,26 +514,6 @@
 			[
 				"StarterAn",
 				"GenerateStarterAnimal"
-			],
-			[
-				"exi",
-				"existingSpeciesCryButton"
-			],
-			[
-				"button",
-				"pickSpeciesButton"
-			],
-			[
-				"stim",
-				"stimulusText"
-			],
-			[
-				"indexOfIn",
-				"indexOfHoveredInstinctListItem"
-			],
-			[
-				"Make",
-				"MakeSureInstinctIsWithinBoundaries"
 			]
 		]
 	},
@@ -523,25 +523,7 @@
 			"file": "todo.txt",
 			"settings":
 			{
-				"buffer_size": 180,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/style.css",
-			"settings":
-			{
-				"buffer_size": 5376,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "main_template.html",
-			"settings":
-			{
-				"buffer_size": 2210,
+				"buffer_size": 276,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -550,7 +532,25 @@
 			"file": "pages_to_generate/index.html",
 			"settings":
 			{
-				"buffer_size": 1264,
+				"buffer_size": 1290,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/main_template.html",
+			"settings":
+			{
+				"buffer_size": 2265,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/style.css",
+			"settings":
+			{
+				"buffer_size": 5930,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -559,16 +559,25 @@
 			"file": "generate_static_website.py",
 			"settings":
 			{
-				"buffer_size": 5602,
+				"buffer_size": 7275,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "devlog_list_item_template.html",
+			"file": "templates/rss_template.xml",
 			"settings":
 			{
-				"buffer_size": 459,
+				"buffer_size": 361,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/rss_item_template.xml",
+			"settings":
+			{
+				"buffer_size": 248,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -608,20 +617,26 @@
 	[
 		"/C/Users/Wessel/Desktop/thesapling-website",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs",
-		"/C/Users/Wessel/Desktop/thesapling-website/static",
-		"/C/Users/Wessel/Desktop/thesapling-website/static/svg"
+		"/C/Users/Wessel/Desktop/thesapling-website/static"
 	],
 	"file_history":
 	[
+		"/C/Users/Wessel/Desktop/thesapling-website/templates/rss_item_template.xml",
+		"/C/Users/Wessel/Desktop/thesapling-website/templates/rss_template.html",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/The Sapling.sublime-workspace",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/The Sapling.sublime-project",
+		"/C/Users/Wessel/Desktop/thesapling-website/templates/tss_item_teplate.xml",
+		"/C/Users/Wessel/Desktop/thesapling-website/devlog_list_item_template.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/main_title_area.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/landing1.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/main_template.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
+		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test1.md",
 		"/C/Users/Wessel/Desktop/thesapling-website/static/svg/devlog_icon.svg",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlog_title_area.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/main_template.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test2.md",
-		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
-		"/C/Users/Wessel/Desktop/thesapling-website/devlog_list_item_template.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/main_title_area.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test.md",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/TutorialController.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PlantEditor/PlantEditorView.js",
@@ -649,7 +664,6 @@
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/PlantEditor/PlantEditorControllerTests.js",
 		"/C/Users/Wessel/Desktop/nn.py",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/WorldView.js",
-		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/tutorial.txt",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/OverallController.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/MainMenu/MainMenuController.js",
@@ -734,23 +748,18 @@
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Mouth/hole.json",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/slow.json",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/fast.json",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/knee.json",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/foot.json",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/fin.json",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/SpeciesListViewTests.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/SpeciesDefinition.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/AnimalEditor/InstinctView.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/GeneralScripts/UITools.js"
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/knee.json"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
 		"height": 104.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -758,6 +767,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"width",
+			"750",
+			"link",
+			"date)",
+			"format_date",
+			"formatdate",
+			".date",
+			"rss",
+			"-",
+			"= '",
+			"+' ",
+			"create_nav",
+			"'+items",
+			"filename",
+			"wessel stoop",
+			"title",
+			"fill_template",
 			"div",
 			"icon",
 			"a.i",
@@ -786,6 +812,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -805,15 +832,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 180,
+						"buffer_size": 276,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								130,
-								130
+								106,
+								106
 							]
 						],
 						"settings":
@@ -829,49 +856,47 @@
 				},
 				{
 					"buffer": 1,
-					"file": "static/style.css",
+					"file": "pages_to_generate/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5376,
+						"buffer_size": 1290,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5291,
-								5291
+								1266,
+								1267
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 6558.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "main_template.html",
+					"file": "templates/main_template.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2210,
+						"buffer_size": 2265,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1001,
-								1001
+								64,
+								64
 							]
 						],
 						"settings":
@@ -888,30 +913,32 @@
 				},
 				{
 					"buffer": 3,
-					"file": "pages_to_generate/index.html",
+					"file": "static/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1264,
+						"buffer_size": 5930,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								537,
-								537
+								5921,
+								5921
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7344.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -920,15 +947,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5602,
+						"buffer_size": 7275,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5026,
-								5026
+								131,
+								131
 							]
 						],
 						"settings":
@@ -937,7 +964,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1368.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
@@ -945,24 +972,56 @@
 				},
 				{
 					"buffer": 5,
-					"file": "devlog_list_item_template.html",
+					"file": "templates/rss_template.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 459,
+						"buffer_size": 361,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								113,
-								113
+								0,
+								361
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templates/rss_item_template.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							],
+							[
+								207,
+								207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1022,6 +1081,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"rss",
+				"templates\\rss_template.xml"
+			],
+			[
+				"gener",
+				"generate_static_website.py"
+			],
 			[
 				"style",
 				"static\\style.css"
@@ -1525,14 +1592,6 @@
 			[
 				"animspe",
 				"Assets\\ProceduralAnimation\\AnimationSpecializer.js"
-			],
-			[
-				"builder",
-				"Assets\\Organism\\BuilderTestController.js"
-			],
-			[
-				"mainmencon",
-				"Assets\\MainMenu\\MainMenuController.js"
 			]
 		],
 		"width": 0.0
