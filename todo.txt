@@ -1,15 +1,21 @@
 NOW
 ===
+Checkbox staat op aantal pagina's niet goed, ook checken responsive
 
-Responsive
-----------
-Hoofdpagina: iconen niet goed
-Devlog: tags niet goed, pijlknoppen niet goed
+Links leggen met
+----------------
+Twitter #madeinunity
+Mailchimp
+Reddit /r/gamedev
+Gmail signature
+
+Hacker News #ShowHN
+TigSource
+Forums
 
 Devlog
 ------
 * Redesign community icon
-* Listview: checkbox staat niet goed door wijde formaat
 
 BACKLOG
 =======

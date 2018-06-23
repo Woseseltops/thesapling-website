@@ -389,6 +389,11 @@ a
 
 @media only screen and (max-width: 1000px)
 {
+    #main_area
+    {
+        padding: 10px;
+    }
+
     .main, .devlog
     {
         width: inherit;   
@@ -425,5 +430,17 @@ a
     .devlog_label
     {
         width: inherit;
+    }
+
+    .iconlabel
+    {
+        margin: 25px;
+    }
+
+    .nonselected_tag, .selected_tag
+    {
+        margin: 3px;
+        font-size: 10px;
+        width: 110px;
     }
 }
