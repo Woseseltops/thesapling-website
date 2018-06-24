@@ -5,9 +5,9 @@ Checkbox staat op aantal pagina's niet goed, ook checken responsive
 Links leggen met
 ----------------
 Twitter #madeinunity
-Mailchimp
 Reddit /r/gamedev
 Gmail signature
+Mailchimp
 
 Hacker News #ShowHN
 TigSource
