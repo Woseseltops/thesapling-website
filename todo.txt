@@ -1,10 +1,11 @@
 NOW
 ===
 Checkbox staat op aantal pagina's niet goed, ook checken responsive
+Onthouden waar je al ooit connectie mee hebt gelegd
 
 Links leggen met
 ----------------
-Twitter #madeinunity
+Twitter #madeinunity		x
 Reddit /r/gamedev
 Gmail signature
 Mailchimp
