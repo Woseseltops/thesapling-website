@@ -1,12 +1,17 @@
 NOW
 ===
-Checkbox staat op aantal pagina's niet goed, ook checken responsive
-Onthouden waar je al ooit connectie mee hebt gelegd
+
+Website
+* Checkbox staat op aantal pagina's niet goed, ook checken responsive
+
+Publisher:
+* URLs naar de devlogs moeten goed gaan
+* Onthouden waar je al ooit connectie mee hebt gelegd
 
 Links leggen met
 ----------------
 Twitter #madeinunity		x
-Reddit /r/gamedev
+Reddit /r/gamedev			x
 Gmail signature
 Mailchimp
 
