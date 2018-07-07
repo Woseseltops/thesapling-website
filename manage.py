@@ -4,6 +4,11 @@ from json import load
 from twython import Twython
 from praw import Reddit
 
+#All necessary for gmail
+from apiclient.discovery import build
+from httplib2 import Http
+from oauth2client import file, client, tools
+
 from devlog import parse_devlog
 
 class PlatformManager():
@@ -56,11 +61,45 @@ class RedditManager(PlatformManager):
 
 		subreddit.submit('Devlog: '+devlog.title, url=self.base_url+devlog.identifier)
 		
+class GmailManager(PlatformManager):
+
+	letter_identifier = 'G'	
+	SIGNATURE_TEXT_PREFIX = 'Check out the latest devlog '
+
+	def __init__(self,base_url):
+
+		self.base_url = base_url
+
+		SCOPES = 'https://www.googleapis.com/auth/gmail.settings.basic'
+		store = file.Storage('credentials/gmail.json')
+		creds = store.get()
+
+		if not creds or creds.invalid:
+		    flow = client.flow_from_clientsecrets('credentials/gmail_client_secret.json', SCOPES)
+		    creds = tools.run_flow(flow, store)
+
+		self.connection = build('gmail', 'v1', http=creds.authorize(Http()))
+
+	def publish(self,devlog):
+
+		primary_alias = None
+		aliases = self.connection.users().settings().sendAs().list(userId='me').execute()
+
+		for alias in aliases.get('sendAs'):
+		    if alias.get('isPrimary'):
+		        primary_alias = alias
+		        break
+
+		sendAsConfiguration = {'signature': self.SIGNATURE_TEXT_PREFIX+' \''+devlog.title+'\': '+self.base_url+devlog.identifier}
+		result = self.connection.users().settings().sendAs().patch(userId='me',sendAsEmail=primary_alias.get('sendAsEmail'),body=sendAsConfiguration).execute()		
+
 def show_status(devlogs):
 
-	for devlog in devlogs:
-		print(devlog.title)
-		print('===========')
+	for n, devlog in enumerate(devlogs):
+		header = str(n) + '. '+ devlog.title
+
+		print(header)
+		print('='*len(header))
 
 		platforms_published = []
 		platforms_not_published = []
@@ -79,7 +118,7 @@ def show_status(devlogs):
 if __name__ == '__main__':
 	DEVLOG_FOLDER = 'devlogs/'
 	BASE_URL = 'http://thesaplinggame.com/devlogs/'
-	PLATFORM_MANAGERS = [TwitterManager(BASE_URL), RedditManager(BASE_URL)]
+	PLATFORM_MANAGERS = [TwitterManager(BASE_URL), RedditManager(BASE_URL), GmailManager(BASE_URL)]
 
 	platforms_by_letter = {platform.letter_identifier: platform for platform in PLATFORM_MANAGERS}
 	devlogs = []
