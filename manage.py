@@ -3,6 +3,7 @@ from json import load
 
 from twython import Twython
 from praw import Reddit
+from mailchimp3 import MailChimp
 
 #All necessary for gmail
 from apiclient.discovery import build
@@ -93,6 +94,27 @@ class GmailManager(PlatformManager):
 		sendAsConfiguration = {'signature': self.SIGNATURE_TEXT_PREFIX+' \''+devlog.title+'\': '+self.base_url+devlog.identifier}
 		result = self.connection.users().settings().sendAs().patch(userId='me',sendAsEmail=primary_alias.get('sendAsEmail'),body=sendAsConfiguration).execute()		
 
+class MailChimpManager(PlatformManager):
+
+	letter_identifier = 'M'	
+	EMAIL_TITLE_PREFIX = 'New devlog: '
+
+	def __init__(self,base_url):
+
+		PASSWORD_FILE_LOCATION = 'credentials/mailchimp.json'		
+		passwords = load(open(PASSWORD_FILE_LOCATION))
+
+		self.connection = MailChimp(mc_api=passwords['api_key'], mc_user=passwords['username'])
+
+	def publish(self,devlog):
+		response = self.connection.campaigns.create(data={'type':'regular', 'recipients':{'list_id':'cee6f2fdcf'},
+		 										'settings':{'subject_line': self.EMAIL_TITLE_PREFIX+devlog.title, 'from_name': 'Wessel Stoop', 'reply_to': 'thesaplinggame@gmail.com'}})
+
+		print(response['id'])
+		#self.connection.campaigns.content.update(campaign_id='5a056544ca',data={'url':'<h1>This is a test.</h1>'})
+
+		#print('Campaign created, but you still need to log in and send!')
+
 def show_status(devlogs):
 
 	for n, devlog in enumerate(devlogs):
@@ -118,7 +140,7 @@ def show_status(devlogs):
 if __name__ == '__main__':
 	DEVLOG_FOLDER = 'devlogs/'
 	BASE_URL = 'http://thesaplinggame.com/devlogs/'
-	PLATFORM_MANAGERS = [TwitterManager(BASE_URL), RedditManager(BASE_URL), GmailManager(BASE_URL)]
+	PLATFORM_MANAGERS = [TwitterManager(BASE_URL), RedditManager(BASE_URL), GmailManager(BASE_URL), MailChimpManager(BASE_URL)]
 
 	platforms_by_letter = {platform.letter_identifier: platform for platform in PLATFORM_MANAGERS}
 	devlogs = []
