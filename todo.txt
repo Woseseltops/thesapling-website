@@ -2,12 +2,13 @@ NOW
 ===
 
 MailChimp:
-* Personalized TO field
-* Template maken voor campaign
-  * inclusief gepersonaliseerde groet
-  * automatisch selecteren
-* Website koppelen aan lijst
-* 
+* Hele ding verder stylen
+  * Nadenken: waar doe ik 'Hi Wessel, a new devlog about the Sapling was published!'
+  * Style mee
+  * Smallere kolom
+  * Text-align
+  * Titel in beeld, tags in beeld
+* Website Register form koppelen aan Mailchimp lijst
 
 Website
 * Checkbox staat op aantal pagina's niet goed, ook checken responsive

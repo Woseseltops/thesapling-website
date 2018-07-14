@@ -108,10 +108,12 @@ class MailChimpManager(PlatformManager):
 
 	def publish(self,devlog):
 		response = self.connection.campaigns.create(data={'type':'regular', 'recipients':{'list_id':'cee6f2fdcf'},
-		 										'settings':{'subject_line': self.EMAIL_TITLE_PREFIX+devlog.title, 'from_name': 'Wessel Stoop', 'reply_to': 'thesaplinggame@gmail.com'}})
+		 										'settings':{'subject_line': self.EMAIL_TITLE_PREFIX+devlog.title, 
+		 										'from_name': 'Wessel Stoop', 
+		 										'reply_to': 'thesaplinggame@gmail.com',
+		 										'to_name': '*|FNAME|**|LNAME|*'}})
 
-		print(response['id'])
-		#self.connection.campaigns.content.update(campaign_id='5a056544ca',data={'url':'<h1>This is a test.</h1>'})
+		self.connection.campaigns.content.update(campaign_id=response['id'],data={'html':devlog.html})
 
 		#print('Campaign created, but you still need to log in and send!')
 
@@ -139,6 +141,9 @@ def show_status(devlogs):
 
 if __name__ == '__main__':
 	DEVLOG_FOLDER = 'devlogs/'
+	EMAIL_TEMPLATE_LOCATION = 'templates/email_template.html'
+	STYLESHEET_LOCATION = 'static/style.css'
+
 	BASE_URL = 'http://thesaplinggame.com/devlogs/'
 	PLATFORM_MANAGERS = [TwitterManager(BASE_URL), RedditManager(BASE_URL), GmailManager(BASE_URL), MailChimpManager(BASE_URL)]
 
