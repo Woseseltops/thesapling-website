@@ -11,6 +11,7 @@ from httplib2 import Http
 from oauth2client import file, client, tools
 
 from devlog import parse_devlog
+from template import fill_template
 
 class PlatformManager():
 
@@ -98,6 +99,8 @@ class MailChimpManager(PlatformManager):
 
 	letter_identifier = 'M'	
 	EMAIL_TITLE_PREFIX = 'New devlog: '
+	EMAIL_TEMPLATE_LOCATION = 'templates/email_template.html'
+	STYLESHEET_LOCATION = 'static/style.css'
 
 	def __init__(self,base_url):
 
@@ -113,7 +116,9 @@ class MailChimpManager(PlatformManager):
 		 										'reply_to': 'thesaplinggame@gmail.com',
 		 										'to_name': '*|FNAME|**|LNAME|*'}})
 
-		self.connection.campaigns.content.update(campaign_id=response['id'],data={'html':devlog.html})
+		page = fill_template(open(self.EMAIL_TEMPLATE_LOCATION).read(),{'style': open(self.STYLESHEET_LOCATION).read(),'content':devlog.html,'title':devlog.title.upper()})
+
+		self.connection.campaigns.content.update(campaign_id=response['id'],data={'html':page})
 
 		#print('Campaign created, but you still need to log in and send!')
 
@@ -141,8 +146,7 @@ def show_status(devlogs):
 
 if __name__ == '__main__':
 	DEVLOG_FOLDER = 'devlogs/'
-	EMAIL_TEMPLATE_LOCATION = 'templates/email_template.html'
-	STYLESHEET_LOCATION = 'static/style.css'
+	DEVLOG_TAGS = ['Announcement','Behind the scenes','Technical details']
 
 	BASE_URL = 'http://thesaplinggame.com/devlogs/'
 	PLATFORM_MANAGERS = [TwitterManager(BASE_URL), RedditManager(BASE_URL), GmailManager(BASE_URL), MailChimpManager(BASE_URL)]
@@ -153,7 +157,7 @@ if __name__ == '__main__':
 	#Get the devlogs
 	for devlog_file in listdir(DEVLOG_FOLDER):
 
-		devlog = parse_devlog(devlog_file.split('.')[0],open(DEVLOG_FOLDER+devlog_file).read(),[])
+		devlog = parse_devlog(devlog_file.split('.')[0],open(DEVLOG_FOLDER+devlog_file).read(),DEVLOG_TAGS)
 		devlogs.append(devlog)
 
 	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)

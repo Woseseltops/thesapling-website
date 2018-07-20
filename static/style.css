@@ -274,6 +274,12 @@ p.pull_quote
     text-transform: uppercase;
 }
 
+.email_column
+{
+    text-align: left;
+    width: 800px;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(255, 255, 255, 0.3);
     opacity: 1; /* Firefox */

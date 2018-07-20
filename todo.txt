@@ -3,7 +3,6 @@ NOW
 
 MailChimp:
 * Hele ding verder stylen
-  * Nadenken: waar doe ik 'Hi Wessel, a new devlog about the Sapling was published!'
   * Style mee
   * Smallere kolom
   * Text-align
@@ -25,8 +24,8 @@ Gmail signature
 Mailchimp
 
 Hacker News #ShowHN
-TigSource
-Forums
+TigSource Forums
+IndieDB
 
 Devlog
 ------
@@ -34,6 +33,5 @@ Devlog
 
 BACKLOG
 =======
-Player content page
 Presskit
-Aanmelden moet echt werken
+Player content page

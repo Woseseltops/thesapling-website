@@ -4,15 +4,7 @@ from shutil import copytree, rmtree
 from email.utils import format_datetime
 
 from devlog import parse_devlog
-
-def fill_template(template,vars):
-
-	#Do it multiple times, as one iteration might create opportunities for the next one
-	for i in range(0,2):
-		for key, replacement in vars.items():
-			template = template.replace('{{'+key+'}}',replacement)
-
-	return template
+from template import fill_template
 
 def create_page(template_location,title_area_file_location,title,content,page_type,content_variables = None):
 
