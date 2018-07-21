@@ -280,6 +280,18 @@ p.pull_quote
     width: 800px;
 }
 
+.devlog_title_email
+{
+    height: inherit;
+    margin-top: 35px;
+    font-weight: inherit;    
+}
+
+.email_column #label_bar
+{
+    margin-top: inherit;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(255, 255, 255, 0.3);
     opacity: 1; /* Firefox */

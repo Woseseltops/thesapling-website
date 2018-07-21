@@ -2,11 +2,7 @@ NOW
 ===
 
 MailChimp:
-* Hele ding verder stylen
-  * Style mee
-  * Smallere kolom
-  * Text-align
-  * Titel in beeld, tags in beeld
+* Kleuren komen niet goed mee in echte email
 * Website Register form koppelen aan Mailchimp lijst
 
 Website
