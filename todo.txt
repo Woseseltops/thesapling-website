@@ -4,10 +4,7 @@ NOW
 MailChimp:
 * Website Register form koppelen aan Mailchimp lijst
 * Layout:
-  * Lead weg
-  * Alle letters wit
   * Vorm van de labels
-  * Lettertype
   * Vorm van de pullquote
 
 Website
