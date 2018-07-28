@@ -2,8 +2,13 @@ NOW
 ===
 
 MailChimp:
-* Kleuren komen niet goed mee in echte email
 * Website Register form koppelen aan Mailchimp lijst
+* Layout:
+  * Lead weg
+  * Alle letters wit
+  * Vorm van de labels
+  * Lettertype
+  * Vorm van de pullquote
 
 Website
 * Checkbox staat op aantal pagina's niet goed, ook checken responsive

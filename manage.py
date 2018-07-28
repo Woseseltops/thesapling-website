@@ -99,8 +99,7 @@ class MailChimpManager(PlatformManager):
 
 	letter_identifier = 'M'	
 	EMAIL_TITLE_PREFIX = 'New devlog: '
-	EMAIL_TEMPLATE_LOCATION = 'templates/email_template.html'
-	STYLESHEET_LOCATION = 'static/style.css'
+	TEMPLATE_ID = 36269
 
 	def __init__(self,base_url):
 
@@ -116,11 +115,11 @@ class MailChimpManager(PlatformManager):
 		 										'reply_to': 'thesaplinggame@gmail.com',
 		 										'to_name': '*|FNAME|**|LNAME|*'}})
 
-		page = fill_template(open(self.EMAIL_TEMPLATE_LOCATION).read(),{'style': open(self.STYLESHEET_LOCATION).read(),'content':devlog.html,'title':devlog.title.upper()})
+		#Deprecated
+		#page = fill_template(open(self.EMAIL_TEMPLATE_LOCATION).read(),{'style': open(self.STYLESHEET_LOCATION).read(),'content':devlog.html,'title':devlog.title.upper()})
 
-		self.connection.campaigns.content.update(campaign_id=response['id'],data={'html':page})
-
-		#print('Campaign created, but you still need to log in and send!')
+		self.connection.campaigns.content.update(campaign_id=response['id'],data={'template':{'id':self.TEMPLATE_ID,'sections':{'header':devlog.title.upper(),'content':devlog.html}}})
+		print('Campaign created, but you still need to log in and send!')
 
 def show_status(devlogs):
 
