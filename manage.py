@@ -1,5 +1,6 @@
 from os import listdir
 from json import load
+import webbrowser
 
 from twython import Twython
 from praw import Reddit
@@ -121,6 +122,16 @@ class MailChimpManager(PlatformManager):
 		self.connection.campaigns.content.update(campaign_id=response['id'],data={'template':{'id':self.TEMPLATE_ID,'sections':{'header':devlog.title.upper(),'content':devlog.html}}})
 		print('Campaign created, but you still need to log in and send!')
 
+class HackerNewsManager(PlatformManager):
+
+	letter_identifier = 'H'	
+
+	def __init__(self,base_url):
+		self.base_url = base_url
+
+	def publish(self,devlog):
+		webbrowser.open('https://news.ycombinator.com/submitlink?u='+self.base_url+devlog.identifier+'&t='+devlog.title)
+
 def show_status(devlogs):
 
 	for n, devlog in enumerate(devlogs):
@@ -148,7 +159,7 @@ if __name__ == '__main__':
 	DEVLOG_TAGS = ['Announcement','Behind the scenes','Technical details']
 
 	BASE_URL = 'http://thesaplinggame.com/devlogs/'
-	PLATFORM_MANAGERS = [TwitterManager(BASE_URL), RedditManager(BASE_URL), GmailManager(BASE_URL), MailChimpManager(BASE_URL)]
+	PLATFORM_MANAGERS = [TwitterManager(BASE_URL), RedditManager(BASE_URL), GmailManager(BASE_URL), MailChimpManager(BASE_URL), HackerNewsManager(BASE_URL)]
 
 	platforms_by_letter = {platform.letter_identifier: platform for platform in PLATFORM_MANAGERS}
 	devlogs = []

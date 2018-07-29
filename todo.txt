@@ -18,10 +18,10 @@ Links leggen met
 ----------------
 Twitter #madeinunity		x
 Reddit /r/gamedev			x
-Gmail signature
+Gmail signature				x
 Mailchimp
 
-Hacker News #ShowHN
+Hacker News #ShowHN			x
 TigSource Forums
 IndieDB
 
