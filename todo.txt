@@ -1,14 +1,9 @@
 NOW
 ===
 
-MailChimp:
-* Website Register form koppelen aan Mailchimp lijst
-* Layout:
-  * Vorm van de labels
-  * Vorm van de pullquote
-
-Website
+Checkbox:
 * Checkbox staat op aantal pagina's niet goed, ook checken responsive
+* Checkbox integreren met mailchimp?
 
 Publisher:
 * URLs naar de devlogs moeten goed gaan

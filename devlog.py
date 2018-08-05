@@ -74,8 +74,10 @@ def parse_devlog(identifier,raw_markdown,tags):
 		elif '<hr />' in line:
 			if pull_quote_mode:
 				pull_quote_mode = False
+				html[n] = html[n].replace('<hr />','<hr class="pull_quote_end" />')				
 			else:
 				pull_quote_mode = True
+				html[n] = html[n].replace('<hr />','<hr class="pull_quote_start" />')				
 
 	html.append('<p id="date">Published '+devlog.get_pretty_date()+'</p>')
 

@@ -108,6 +108,7 @@ class MailChimpManager(PlatformManager):
 		passwords = load(open(PASSWORD_FILE_LOCATION))
 
 		self.connection = MailChimp(mc_api=passwords['api_key'], mc_user=passwords['username'])
+		self.base_url = base_url
 
 	def publish(self,devlog):
 		response = self.connection.campaigns.create(data={'type':'regular', 'recipients':{'list_id':'cee6f2fdcf'},
@@ -119,7 +120,8 @@ class MailChimpManager(PlatformManager):
 		#Deprecated
 		#page = fill_template(open(self.EMAIL_TEMPLATE_LOCATION).read(),{'style': open(self.STYLESHEET_LOCATION).read(),'content':devlog.html,'title':devlog.title.upper()})
 
-		self.connection.campaigns.content.update(campaign_id=response['id'],data={'template':{'id':self.TEMPLATE_ID,'sections':{'header':devlog.title.upper(),'content':devlog.html}}})
+		self.connection.campaigns.content.update(campaign_id=response['id'],data={'template':{'id':self.TEMPLATE_ID,'sections':{'header':devlog.title.upper(),'content':devlog.html,
+																																'link':'<a href="'+self.base_url+devlog.identifier+'" target="_blank">View this email in your browser</a>'}}})
 		print('Campaign created, but you still need to log in and send!')
 
 class HackerNewsManager(PlatformManager):
