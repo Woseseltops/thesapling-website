@@ -5,16 +5,14 @@ Checkbox:
 * Checkbox staat op aantal pagina's niet goed, ook checken responsive
 * Checkbox integreren met mailchimp?
 
-Publisher:
-* URLs naar de devlogs moeten goed gaan
-* Onthouden waar je al ooit connectie mee hebt gelegd
+Publisher: checken of de indices nog goed gaan op het moment dat er nieuwe devlogs bijkomen
 
 Links leggen met
 ----------------
 Twitter #madeinunity		x
 Reddit /r/gamedev			x
 Gmail signature				x
-Mailchimp
+mailchimp					x
 
 Hacker News #ShowHN			x
 TigSource Forums

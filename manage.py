@@ -1,5 +1,5 @@
 from os import listdir
-from json import load
+from json import load, dump
 import webbrowser
 
 from twython import Twython
@@ -136,6 +136,8 @@ class HackerNewsManager(PlatformManager):
 
 def show_status(devlogs):
 
+	print()
+
 	for n, devlog in enumerate(devlogs):
 		header = str(n) + '. '+ devlog.title
 
@@ -146,7 +148,7 @@ def show_status(devlogs):
 		platforms_not_published = []
 
 		for platform in PLATFORM_MANAGERS:
-			if devlog in platform.devlogs_published:
+			if platform.devlogs_published[n]:
 				platforms_published.append(platform.letter_identifier)
 			else:
 				platforms_not_published.append(platform.letter_identifier)
@@ -157,16 +159,18 @@ def show_status(devlogs):
 
 
 if __name__ == '__main__':
+
+	#Settings
 	DEVLOG_FOLDER = 'devlogs/'
 	DEVLOG_TAGS = ['Announcement','Behind the scenes','Technical details']
 
 	BASE_URL = 'http://thesaplinggame.com/devlogs/'
-	PLATFORM_MANAGERS = [TwitterManager(BASE_URL), RedditManager(BASE_URL), GmailManager(BASE_URL), MailChimpManager(BASE_URL), HackerNewsManager(BASE_URL)]
-
-	platforms_by_letter = {platform.letter_identifier: platform for platform in PLATFORM_MANAGERS}
-	devlogs = []
+	PLATFORM_MANAGERS = [TwitterManager, RedditManager, GmailManager, MailChimpManager, HackerNewsManager]
+	SAVE_FILE_LOCATION = 'manage.save'
 
 	#Get the devlogs
+	devlogs = []
+
 	for devlog_file in listdir(DEVLOG_FOLDER):
 
 		devlog = parse_devlog(devlog_file.split('.')[0],open(DEVLOG_FOLDER+devlog_file).read(),DEVLOG_TAGS)
@@ -174,8 +178,20 @@ if __name__ == '__main__':
 
 	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
 
+	#Load the save file
+	saved_state = load(open(SAVE_FILE_LOCATION,'r'))
+
+	#Initialize the platforms
+	platforms = [platform(BASE_URL) for platform in PLATFORM_MANAGERS]
+	platforms_by_letter = {platform.letter_identifier: platform for platform in platforms}
+
 	for platform_manager in PLATFORM_MANAGERS:
 		platform_manager.devlogs = devlogs
+
+		try:
+			platform_manager.devlogs_published = saved_state[platform_manager.letter_identifier]
+		except KeyError:
+			platform_manager.devlogs_published = [False for devlog in devlogs]
 
 	print('commands: status, publish <devlog #> <platform IDs>')
 
@@ -187,8 +203,12 @@ if __name__ == '__main__':
 			show_status(devlogs)
 
 		elif keyword == 'publish':
-			devlog = devlogs[int(command.split()[1])]
+			devlog_index = int(command.split()[1])
+			devlog = devlogs[devlog_index]
 			platforms = [platforms_by_letter[platform_letter] for platform_letter in command.split()[2]]
 
 			for platform in platforms:
 				platform.publish(devlog)
+				platform.devlogs_published[devlog_index] = True
+				saved_state[platform.letter_identifier] = platform.devlogs_published
+				dump(saved_state,open(SAVE_FILE_LOCATION,'w'))
