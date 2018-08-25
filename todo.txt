@@ -1,10 +1,8 @@
 NOW
 ===
+Player content-artikel schrijven
 
-Checkbox:
-* Checkbox staat op aantal pagina's niet goed, ook checken responsive
-* Checkbox integreren met mailchimp?
-
+Checkbox staat op aantal pagina's niet goed, ook checken responsive
 Publisher: checken of de indices nog goed gaan op het moment dat er nieuwe devlogs bijkomen
 
 Links leggen met
@@ -15,14 +13,10 @@ Gmail signature				x
 mailchimp					x
 
 Hacker News #ShowHN			x
-TigSource Forums
 IndieDB
-
-Devlog
-------
-* Redesign community icon
+TigSource Forums
+Itch.io
 
 BACKLOG
 =======
 Presskit
-Player content page

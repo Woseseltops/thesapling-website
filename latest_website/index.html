@@ -24,15 +24,17 @@
 
 	    $('.checkbox').click(function()
 	    {
-	    	var checkbox_inside = $(this).find('div');
+	    	var checkbox_inside = $('#checkbox_inside');
 
 	    	if (checkbox_inside.hasClass('selected_checkbox'))
 	    	{
 	    		checkbox_inside.removeClass('selected_checkbox');
+	    		$('#newcontent').val('');
 	    	}
 	    	else
 	    	{
 	    		checkbox_inside.addClass('selected_checkbox');
+	    		$('#newcontent').val('yes');
 	    	}
 	    });
 	});
@@ -452,10 +454,11 @@
 
 				<input class="textfield" name="FNAME" id="first_name" placeholder="First name"><input class="textfield" name="LNAME" id="last_name" placeholder="Last name"><br>
 				<input class="textfield" name="EMAIL" id="email" placeholder="Email"><br>
-				<div>
+				<input type="hidden" name="NEWCONTENT" id="newcontent" value=""><br>
+				<div class="checkbox_area">
 					<div class="checkbox"><div id="checkbox_inside"></div></div><div id="checkboxlabel">Only the ones that announce new content</div>
-					<button>Subscribe</button>
 				</div>
+				<button>Subscribe</button>
 			</form>
 
 			<br><img src="/static/svg/shadow_logo.svg" class="separator_logo">

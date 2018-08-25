@@ -105,6 +105,12 @@ hr
     fill-opacity: 1 !important; /*this is because we want to overwrite the locally specified color in the svg*/
 }
 
+.checkbox_area
+{
+    width: 350px;
+    margin: auto;    
+}
+
 .checkbox
 {
     width: 20px;
@@ -112,7 +118,6 @@ hr
     height: 20px;
     background-color: hsla(0, 0%, 100%, 0.2);    
 
-    margin-left: 185px;
     margin-bottom: -20px;
     cursor: pointer;    
 }
@@ -401,8 +406,7 @@ a
 
 #checkboxlabel
 {
-    width: 350px;
-    margin: auto;    
+    margin-left: 30px;
 }
 
 @media only screen and (max-width: 1000px)

@@ -24,15 +24,17 @@
 
 	    $('.checkbox').click(function()
 	    {
-	    	var checkbox_inside = $(this).find('div');
+	    	var checkbox_inside = $('#checkbox_inside');
 
 	    	if (checkbox_inside.hasClass('selected_checkbox'))
 	    	{
 	    		checkbox_inside.removeClass('selected_checkbox');
+	    		$('#newcontent').val('');
 	    	}
 	    	else
 	    	{
 	    		checkbox_inside.addClass('selected_checkbox');
+	    		$('#newcontent').val('yes');
 	    	}
 	    });
 	});
@@ -52,9 +54,9 @@
 <div id="label_bar"><div class="nonselected_tag">Announcement</div><div class="selected_tag">Behind the scenes</div><div class="nonselected_tag">Technical details</div></div>
 <p id="first_p">This is the first alinea. This is the first alinea. This is the first alinea.</p>
 <p class="non_first_p"><span id="first_character">T</span>his is a normal alinea. This is a normal alinea. This is a normal alinea. This is a normal alinea.</p>
-<hr />
+<hr class="pull_quote_start" />
 <p class="pull_quote">This is a pull quote</p>
-<hr />
+<hr class="pull_quote_end" />
 <p class="non_first_p">This is a normal alinea. This is a normal alinea. This is a normal alinea. This is a normal alinea.</p>
 <p class="non_first_p">This is the last alinea.</p>
 <p id="date">Published Wednesday 13 June 2018</p><div class="iconlabel"><a href="test3.html"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -268,10 +270,11 @@
 
 				<input class="textfield" name="FNAME" id="first_name" placeholder="First name"><input class="textfield" name="LNAME" id="last_name" placeholder="Last name"><br>
 				<input class="textfield" name="EMAIL" id="email" placeholder="Email"><br>
-				<div>
+				<input type="hidden" name="NEWCONTENT" id="newcontent" value=""><br>
+				<div class="checkbox_area">
 					<div class="checkbox"><div id="checkbox_inside"></div></div><div id="checkboxlabel">Only the ones that announce new content</div>
-					<button>Subscribe</button>
 				</div>
+				<button>Subscribe</button>
 			</form>
 
 			<br><img src="/static/svg/shadow_logo.svg" class="separator_logo">
