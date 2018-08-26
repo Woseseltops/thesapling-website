@@ -1,4 +1,4 @@
-from os import listdir
+from os import listdir, system
 from json import load, dump
 import webbrowser
 
@@ -14,6 +14,8 @@ from oauth2client import file, client, tools
 from devlog import parse_devlog
 from template import fill_template
 
+#======= General functionality ============
+
 class PlatformManager():
 
 	base_url = ''
@@ -22,6 +24,40 @@ class PlatformManager():
 	devlogs_published = []
 
 	letter_identifier = None
+
+def show_status(devlogs):
+
+	print()
+
+	for n, devlog in enumerate(devlogs):
+		header = str(n) + '. '+ devlog.title
+
+		print(header)
+		print('='*len(header))
+
+		platforms_published = []
+		platforms_not_published = []
+
+		for platform in PLATFORM_MANAGERS:
+			if platform.devlogs_published[n]:
+				platforms_published.append(platform.letter_identifier)
+			else:
+				platforms_not_published.append(platform.letter_identifier)
+
+		print('Published:',' '.join(platforms_published))
+		print('Not published:',' '.join(platforms_not_published))
+		print()
+
+def add_to_clipboard(text,remove_linebreaks):
+
+    if remove_linebreaks:
+        command = 'echo | set /p nul="' + text.replace('\n','').strip() + '"| clip'
+    else:
+        command = 'echo | set /p nul="' + text.strip() + '"| clip'
+
+    system(command)
+
+#======= Individual managers ==========
 
 class TwitterManager(PlatformManager):
 
@@ -134,29 +170,24 @@ class HackerNewsManager(PlatformManager):
 	def publish(self,devlog):
 		webbrowser.open('https://news.ycombinator.com/submitlink?u='+self.base_url+devlog.identifier+'&t='+devlog.title)
 
-def show_status(devlogs):
+class IndieDBManager(PlatformManager):
 
-	print()
+	letter_identifier = 'I'
 
-	for n, devlog in enumerate(devlogs):
-		header = str(n) + '. '+ devlog.title
+	def __init__(self,base_url):
+		self.base_url = base_url
 
-		print(header)
-		print('='*len(header))
+	def publish(self,devlog):
+		webbrowser.open('https://www.indiedb.com/games/olvand/articles/add/#articlesform')
+		add_to_clipboard(devlog.title,False)
+		input('Title on clipboard. Enter for next item.')
+		add_to_clipboard(devlog.lead,False)
+		input('Lead on clipboard. Enter for next item.')
+		add_to_clipboard(devlog.html,True)
+		print('HTML on clipboard.')
+		#input('Content on clipboard. Enter for next item.')
 
-		platforms_published = []
-		platforms_not_published = []
-
-		for platform in PLATFORM_MANAGERS:
-			if platform.devlogs_published[n]:
-				platforms_published.append(platform.letter_identifier)
-			else:
-				platforms_not_published.append(platform.letter_identifier)
-
-		print('Published:',' '.join(platforms_published))
-		print('Not published:',' '.join(platforms_not_published))
-		print()
-
+# ==================================
 
 if __name__ == '__main__':
 
@@ -165,7 +196,7 @@ if __name__ == '__main__':
 	DEVLOG_TAGS = ['Announcement','Behind the scenes','Technical details']
 
 	BASE_URL = 'http://thesaplinggame.com/devlogs/'
-	PLATFORM_MANAGERS = [TwitterManager, RedditManager, GmailManager, MailChimpManager, HackerNewsManager]
+	PLATFORM_MANAGERS = [TwitterManager, RedditManager, GmailManager, MailChimpManager, HackerNewsManager, IndieDBManager]
 	SAVE_FILE_LOCATION = 'manage.save'
 
 	#Get the devlogs
