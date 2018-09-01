@@ -11,4 +11,5 @@
 4. Summarizing a lifeform
    * Interactive: summary -> lifeform
 
-5. 
+5. Dev highs en lows -> juice ('How juice save the Sapling')
+   * Interactive: dropping a plant
