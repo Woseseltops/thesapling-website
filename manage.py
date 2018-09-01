@@ -183,9 +183,24 @@ class IndieDBManager(PlatformManager):
 		input('Title on clipboard. Enter for next item.')
 		add_to_clipboard(devlog.lead,False)
 		input('Lead on clipboard. Enter for next item.')
-		add_to_clipboard(devlog.html,True)
+		add_to_clipboard(devlog.bare_html,True)
 		print('HTML on clipboard.')
-		#input('Content on clipboard. Enter for next item.')
+
+class GamaSutraManager(PlatformManager):
+
+	letter_identifier = 'S'
+
+	def __init__(self,base_url):
+		self.base_url = base_url
+
+	def publish(self,devlog):
+		webbrowser.open('http://gamasutra.com/blogs/edit/blog/item/')
+		add_to_clipboard(devlog.title,False)
+		input('Title on clipboard. Enter for next item.')
+		add_to_clipboard(devlog.lead,False)
+		input('Lead on clipboard. Enter for next item.')
+		add_to_clipboard(devlog.bare_html,True)
+		print('HTML on clipboard.')
 
 # ==================================
 
@@ -196,7 +211,8 @@ if __name__ == '__main__':
 	DEVLOG_TAGS = ['Announcement','Behind the scenes','Technical details']
 
 	BASE_URL = 'http://thesaplinggame.com/devlogs/'
-	PLATFORM_MANAGERS = [TwitterManager, RedditManager, GmailManager, MailChimpManager, HackerNewsManager, IndieDBManager]
+	PLATFORM_MANAGERS = [TwitterManager, RedditManager, GmailManager, MailChimpManager, HackerNewsManager, 
+							IndieDBManager, GamaSutraManager]
 	SAVE_FILE_LOCATION = 'manage.save'
 
 	#Get the devlogs

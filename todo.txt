@@ -1,7 +1,8 @@
 NOW
 ===
-Player content-artikel schrijven
 Publisher: checken of de indices nog goed gaan op het moment dat er nieuwe devlogs bijkomen
+
+Player content-artikel schrijven
 IndieDB: aantrekkelijk plaatje van 120x90px maken
 
 Links leggen met
@@ -12,8 +13,8 @@ Gmail signature				x
 mailchimp					x
 
 Hacker News #ShowHN			x
-IndieDB
-TigSource Forums
+IndieDB						x
+Gamasutra					x
 Itch.io
 
 BACKLOG

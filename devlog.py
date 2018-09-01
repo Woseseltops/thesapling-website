@@ -1,5 +1,6 @@
 import datetime
 import markdown
+from copy import copy
 
 class DevLog():
 
@@ -9,6 +10,7 @@ class DevLog():
 
 		self.title = ''
 		self.html = ''
+		self.bare_html = ''
 		self.tags = []
 		self.date = None
 		self.lead = ''
@@ -35,6 +37,7 @@ def parse_devlog(identifier,raw_markdown,tags):
 
 	#Then generate the html
 	html = markdown.markdown('\n'.join(markdown_lines[:-1])).split('\n')
+	bare_html = copy(html)
 
 	#And replace some html lines by what we now from the parsing of the markdown
 	alinea_index = 0
@@ -43,6 +46,7 @@ def parse_devlog(identifier,raw_markdown,tags):
 	for n,line in enumerate(html):
 		if '<h1>' in line:
 			html[n] = ''
+			bare_html[n] = ''
 
 		elif '<p>|' in line:
 			html[n] = '<div id="label_bar">' 
@@ -57,17 +61,20 @@ def parse_devlog(identifier,raw_markdown,tags):
 				html[n] += '<div class="'+class_info+'">'+tag+'</div>'
 
 			html[n] += '</div>'
+			bare_html[n] = ''
 
 		elif '<p>' in line:
 			if alinea_index == 0:
 				devlog.lead = html[n].replace('<p>','').replace('</p>','')
 				html[n] = html[n].replace('<p>','<p id="first_p">')
+				bare_html[n] = ''
 				alinea_index += 1
 			elif alinea_index == 1:
 				html[n] = '<p class="non_first_p"><span id="first_character">'+line[3]+'</span>'+line[4:]
 				alinea_index += 1			
 			elif pull_quote_mode:
 				html[n] = html[n].replace('<p>','<p class="pull_quote">')
+				bare_html[n] = ''
 			else:
 				html[n] = html[n].replace('<p>','<p class="non_first_p">')
 
@@ -79,7 +86,10 @@ def parse_devlog(identifier,raw_markdown,tags):
 				pull_quote_mode = True
 				html[n] = html[n].replace('<hr />','<hr class="pull_quote_start" />')				
 
+			bare_html[n] = ''
+
 	html.append('<p id="date">Published '+devlog.get_pretty_date()+'</p>')
 
 	devlog.html = '\n'.join(html);
+	devlog.bare_html = '\n'.join(bare_html)
 	return devlog
