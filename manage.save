@@ -1,1 +1,1 @@
-{"H": [true, false, true, false], "I": [true, false, false, false]}
+{"S": {"test3": false, "test2": false, "test1": true, "test4": false}, "I": {"test3": false, "test2": false, "test1": true, "test4": false}}

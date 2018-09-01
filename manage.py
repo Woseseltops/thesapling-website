@@ -29,8 +29,8 @@ def show_status(devlogs):
 
 	print()
 
-	for n, devlog in enumerate(devlogs):
-		header = str(n) + '. '+ devlog.title
+	for devlog in devlogs:
+		header = devlog.title + ' ('+devlog.identifier+')'
 
 		print(header)
 		print('='*len(header))
@@ -39,7 +39,7 @@ def show_status(devlogs):
 		platforms_not_published = []
 
 		for platform in PLATFORM_MANAGERS:
-			if platform.devlogs_published[n]:
+			if platform.devlogs_published[devlog.identifier]:
 				platforms_published.append(platform.letter_identifier)
 			else:
 				platforms_not_published.append(platform.letter_identifier)
@@ -238,9 +238,9 @@ if __name__ == '__main__':
 		try:
 			platform_manager.devlogs_published = saved_state[platform_manager.letter_identifier]
 		except KeyError:
-			platform_manager.devlogs_published = [False for devlog in devlogs]
+			platform_manager.devlogs_published = {devlog.identifier: False for devlog in devlogs}
 
-	print('commands: status, publish <devlog #> <platform IDs>')
+	print('commands: status, publish <devlog ID> <platform IDs>')
 
 	while True:
 		command = input('> ')
@@ -250,12 +250,16 @@ if __name__ == '__main__':
 			show_status(devlogs)
 
 		elif keyword == 'publish':
-			devlog_index = int(command.split()[1])
-			devlog = devlogs[devlog_index]
+			devlog_identifier = command.split()[1]
+
+			for devlog in devlogs:
+				if devlog.identifier == devlog_identifier:
+					break
+
 			platforms = [platforms_by_letter[platform_letter] for platform_letter in command.split()[2]]
 
 			for platform in platforms:
 				platform.publish(devlog)
-				platform.devlogs_published[devlog_index] = True
+				platform.devlogs_published[devlog.identifier] = True
 				saved_state[platform.letter_identifier] = platform.devlogs_published
 				dump(saved_state,open(SAVE_FILE_LOCATION,'w'))
