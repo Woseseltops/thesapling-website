@@ -466,3 +466,35 @@ a
         width: 110px;
     }
 }
+
+.devlog h2, .devlog h3
+{
+    color: white;
+    text-align: left;
+    letter-spacing: 4px;
+}
+
+.devlog h2
+{
+    font-size: 25px;
+    margin-left: 16px;   
+    margin-top: 80px;
+}
+
+.devlog h3
+{
+    font-size: 20px;
+}
+
+.devlog li
+{
+    margin-bottom: -20px;
+}
+
+code
+{
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 3px;
+    padding-left: 2px;
+    padding-right: 2px;    
+}

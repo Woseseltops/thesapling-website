@@ -32,7 +32,7 @@ def parse_devlog(identifier,raw_markdown,tags):
 		elif len(line) > 0:
 			if line[0] == '|':
 				devlog.tags = [tag.strip() for tag in line.split('|')[1:-1]]
-			elif len(line) > 5 and line[2] == '-' and line[5] == '-':
+			elif len(line) > 5 and line[2] == '-' and line[5] == '-' and not line[0] == '-':
 				devlog.date = datetime.datetime.strptime( line.strip(), "%d-%m-%y" )
 
 	#Then generate the html
