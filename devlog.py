@@ -63,6 +63,10 @@ def parse_devlog(identifier,raw_markdown,tags):
 			html[n] += '</div>'
 			bare_html[n] = ''
 
+		elif 'alt="youtube"' in line:
+			html[n] = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+line[27:38]+'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+			bare_html[n] = ''
+
 		elif '<p>' in line:
 			if alinea_index == 0:
 				devlog.lead = html[n].replace('<p>','').replace('</p>','')

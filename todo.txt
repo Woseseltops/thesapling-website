@@ -1,13 +1,15 @@
 NOW
 ===
-Publisher: checken of de indices nog goed gaan op het moment dat er nieuwe devlogs bijkomen
-
 Player content-artikel schrijven
-* Sheet music maken met flat.io
 * Maken dat alle benodigheden bij de build op de juiste plek staan en dat benoemen.
 * Probleem met .meta-files oplossen
-* CSS:
-  * Youtube
+* Export separate layers main theme
+
+Achtergrondfilmpje kan eigenlijk wel gemaakt wordt
+
+Alle knoppen op de hoofdpagina laten werken
+
+Presskit installeren
 
 IndieDB: aantrekkelijk plaatje van 120x90px maken
 
@@ -22,7 +24,3 @@ Hacker News #ShowHN			x
 IndieDB						x
 Gamasutra					x
 Itch.io
-
-BACKLOG
-=======
-Presskit
