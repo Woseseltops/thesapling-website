@@ -89,6 +89,7 @@ def generate_static_website():
 
 	GOAL_LOCATION = 'latest_website/'
 	STATIC_FOLDER = 'static/'
+	PRESS_FOLDER = 'press/'
 
 	DEVLOG_TAGS = ['Announcement','Behind the scenes','Technical details']
 
@@ -140,6 +141,7 @@ def generate_static_website():
 
 	#Move over the static files
 	copytree(STATIC_FOLDER,GOAL_LOCATION+STATIC_FOLDER)
+	copytree(PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
 
 if __name__ == '__main__':
 	generate_static_website()
