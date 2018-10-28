@@ -5,13 +5,14 @@ Player content-artikel schrijven
 * Probleem met .meta-files oplossen
 * Export separate layers main theme
 
-Achtergrondfilmpje kan eigenlijk wel gemaakt wordt
-
 Alle knoppen op de hoofdpagina laten werken
 
-Presskit installeren
-
+Achtergrondfilmpje kan eigenlijk wel gemaakt wordt
 IndieDB: aantrekkelijk plaatje van 120x90px maken
+
+Backlog
+-------
+Presskit verder afmaken
 
 Links leggen met
 ----------------
