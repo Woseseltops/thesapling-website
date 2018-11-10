@@ -19,7 +19,7 @@ h2
 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: hsla(0, 0%, 100%, 0.75);    
+    color: hsla(0, 0%, 100%, 0.4);    
 }
 
 h3, h4
@@ -318,13 +318,19 @@ a
 #title_area
 {
     width: 100%;
-    height: 500px;
+    height: 540px;
     background-color: hsl(122, 15%, 50%);
 }
 
 #main_logo
 {
     margin-top: 65px;    
+}
+
+#title_wrapper
+{
+    position: relative;
+    margin-top:-500px;    
 }
 
 #main_column

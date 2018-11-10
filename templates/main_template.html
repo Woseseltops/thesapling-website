@@ -43,8 +43,13 @@
 </head>
 <body>
 	<div id="title_area">
-		<section data-bg-video="https://www.youtube.com/watch?v=kiqZetTXpLw"></section>
-		{{title_area}}
+		<video autoplay muted loop id="myVideo">
+	  		<source src="static/mp4/parallax_wide.mp4" type="video/mp4">
+			</video>
+
+		<div id="title_wrapper">
+			{{title_area}}
+		</div>
 	</div>
 	<div id="main_column"  class="{{page_type}}">
 		<div id="main_area">
