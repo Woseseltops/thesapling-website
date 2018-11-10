@@ -43,11 +43,16 @@
 </head>
 <body>
 	<div id="title_area">
-		<section data-bg-video="https://www.youtube.com/watch?v=kiqZetTXpLw"></section>
-		<a href="/"><img src="/static/svg/logo.svg" id="main_logo"></a>
+		<video autoplay muted loop id="myVideo">
+	  		<source src="static/mp4/parallax_wide.mp4" type="video/mp4">
+			</video>
+
+		<div id="title_wrapper">
+			<a href="/"><img src="/static/svg/logo.svg" id="main_logo"></a>
 <h1>THE SAPLING</h1>
 <h2>A game about life and evolution</h2>
 
+		</div>
 	</div>
 	<div id="main_column"  class="main">
 		<div id="main_area">
@@ -448,7 +453,7 @@
 <button>Info for creators</button>
 		</div>
 		<div id="footer_area">
-			<img id="screenshot" src="">
+			<div id="footer_screenshot_container"><img id="footer_screenshot" src="/static/png/parallax.png"></div>
 			<h4>Get the devlog in your email!</h4>
 			<div id="once_per_month">Roughly once per month</div>
 			<form action="https://thesaplinggame.us18.list-manage.com/subscribe/post?u=bca4144605fedfb39489b6173&amp;id=cee6f2fdcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

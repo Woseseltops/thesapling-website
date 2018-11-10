@@ -43,11 +43,16 @@
 </head>
 <body>
 	<div id="title_area">
-		<section data-bg-video="https://www.youtube.com/watch?v=kiqZetTXpLw"></section>
-		<h2 class="devlog_label">DEVLOG</h2>
+		<video autoplay muted loop id="myVideo">
+	  		<source src="static/mp4/parallax_wide.mp4" type="video/mp4">
+			</video>
+
+		<div id="title_wrapper">
+			<h2 class="devlog_label">DEVLOG</h2>
 <h1 class="devlog_title">TITLE</h1>
 <img id="portrait" src="/static/png/wessel.png">
 <p id="portrait_label">Wessel Stoop</p>
+		</div>
 	</div>
 	<div id="main_column"  class="devlog">
 		<div id="main_area">
@@ -197,7 +202,7 @@
 <br>Newer</a></div>
 		</div>
 		<div id="footer_area">
-			<img id="screenshot" src="">
+			<div id="footer_screenshot_container"><img id="footer_screenshot" src="/static/png/parallax.png"></div>
 			<h4>Get the devlog in your email!</h4>
 			<div id="once_per_month">Roughly once per month</div>
 			<form action="https://thesaplinggame.us18.list-manage.com/subscribe/post?u=bca4144605fedfb39489b6173&amp;id=cee6f2fdcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

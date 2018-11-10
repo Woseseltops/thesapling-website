@@ -8,9 +8,9 @@ Player content-artikel schrijven
 Alle knoppen op de hoofdpagina laten werken
 
 Achtergrondfilmpje:
+* Geschiedvervalsing: weghalen uit git
 * Wat doet al die ruimte daar rechts?
 * Zorgen dat het op alle pagina's goed gaat: screenshot voor andere pagina's?
-* Screenshot boven footer
 
 IndieDB: aantrekkelijk plaatje van 120x90px maken
 
