@@ -82,6 +82,7 @@ def generate_static_website():
 	MAIN_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'main_template.html'
 	MAIN_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'main_title_area.html'
 	DEVLOG_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_title_area.html'
+	DEVLOG_LIST_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_list_title_area.html'
 	DEVLOG_LIST_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'devlog_list_item_template.html'
 
 	RSS_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_template.xml'
@@ -123,7 +124,7 @@ def generate_static_website():
 	for n,devlog in enumerate(devlogs):
 		listview_content += devlog_to_list_item(devlog,DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,n%2==0,False)
 	
-	listview_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',listview_content,'devlog_list')
+	listview_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_LIST_TITLE_AREA_FILE_LOCATION,'The Sapling',listview_content,'devlog_list')
 	open(GOAL_LOCATION+'devlogs/index.html','w').write(listview_content)
 
 	#Generate the devlog rss

@@ -5,12 +5,7 @@ Player content-artikel schrijven
 * Probleem met .meta-files oplossen
 * Export separate layers main theme
 
-Alle knoppen op de hoofdpagina laten werken
-
-Achtergrondfilmpje:
-* Geschiedvervalsing: weghalen uit git
-* Wat doet al die ruimte daar rechts?
-* Zorgen dat het op alle pagina's goed gaat: screenshot voor andere pagina's?
+Achtergrondfilmpje: web bij mobile, alleen al omdat hij alles aan de kant duwt
 
 IndieDB: aantrekkelijk plaatje van 120x90px maken
 
