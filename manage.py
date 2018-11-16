@@ -202,6 +202,21 @@ class GamaSutraManager(PlatformManager):
 		add_to_clipboard(devlog.bare_html,True)
 		print('HTML on clipboard.')
 
+class ItchManager(PlatformManager):
+
+	letter_identifier = 'C'
+
+	def __init__(self,base_url):
+		self.base_url = base_url
+
+	def publish(self,devlog):
+		webbrowser.open('https://itch.io/dashboard/game/328633/new-devlog')
+		add_to_clipboard(devlog.title,False)
+		input('Title on clipboard. Enter for next item.')
+		add_to_clipboard(devlog.bare_html,True)
+		print('HTML on clipboard.')
+
+
 # ==================================
 
 if __name__ == '__main__':
@@ -212,7 +227,7 @@ if __name__ == '__main__':
 
 	BASE_URL = 'http://thesaplinggame.com/devlogs/'
 	PLATFORM_MANAGERS = [TwitterManager, RedditManager, GmailManager, MailChimpManager, HackerNewsManager, 
-							IndieDBManager, GamaSutraManager]
+							IndieDBManager, GamaSutraManager, ItchManager]
 	SAVE_FILE_LOCATION = 'manage.save'
 
 	#Get the devlogs
@@ -226,7 +241,10 @@ if __name__ == '__main__':
 	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
 
 	#Load the save file
-	saved_state = load(open(SAVE_FILE_LOCATION,'r'))
+	try:
+		saved_state = load(open(SAVE_FILE_LOCATION,'r'))
+	except FileNotFoundError:
+		saved_state = {}
 
 	#Initialize the platforms
 	platforms = [platform(BASE_URL) for platform in PLATFORM_MANAGERS]
