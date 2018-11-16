@@ -3,16 +3,24 @@ NOW
 Player content-artikel schrijven
 * Maken dat alle benodigheden bij de build op de juiste plek staan en dat benoemen.
 * Probleem met .meta-files oplossen
-* Export separate layers main theme
+* Export separate layers main theme: shimmer nog
+* Gameplay statistics
 
-Achtergrondfilmpje: web bij mobile, alleen al omdat hij alles aan de kant duwt
+Achtergrondfilmpje: weg bij mobile, alleen al omdat hij alles aan de kant duwt
 
-IndieDB: aantrekkelijk plaatje van 120x90px maken
+Toevoegen aan:
+* Kartridge
+* GameJolt
+
+Cover images:
+* IndieDB: 120x90 
+* Itch: 630x500
 
 Backlog
 -------
 Alles responsive, alle browsers
 Presskit verder afmaken
+Matomo installeren
 
 Links leggen met
 ----------------
@@ -24,4 +32,5 @@ mailchimp					x
 Hacker News #ShowHN			x
 IndieDB						x
 Gamasutra					x
-Itch.io
+Itch.io						x
+Steam
