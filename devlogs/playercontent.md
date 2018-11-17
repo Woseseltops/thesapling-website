@@ -12,6 +12,7 @@ To get a first idea of what is possible and what is not, you might want to have 
 
 1 Repurpose material from the game for your own creations
 ---------------------------------------------------------
+Reusing material from the Sapling for non-commercial creative purposes is highly encouraged. These three things should help with that:
 
 ### 1.1 Music
 
@@ -38,6 +39,22 @@ In the animal editor, a number of `.json` files are also created besides the `.o
 * `ExportedAnimation_<ANIMATION_NAME>.json`, for each of the animations the game uses, containing information on how each bone moves at each point in time during this animation.
 
 The JSON format can easily be interpreted by any programming language, so it should be easy to write a script to import it to your 3D animation software of choice. I use animation software Blender with Python as a scripting language; a setup for importing animals and their animations can be found in `ImportJSON.blend`.
+
+### 1.3 Using gameplay statistics
+
+To get a better understanding of the way people play the game, various gameplay statistics are collected anonymously. They are saved in the form of _events_, logged in a separate file per IP address. Examples of events are:
+
+* Open an editor
+
+* Toggle the species list view
+
+* Toggle random mutations
+
+* Reach a milestone
+
+* Fail a scenario
+
+I hope to have set up this system in such way that I can turn these raw data into useful statistics as soon as I have a quantitative question in the future. However, this dataset is much too interesting to keep for myself. For that reason [[to be continued]]. If you're interested, you can use this data to create things like beautiful infographics, realtime dashboards, interactive visualizations, you name it.
 
 2 Extending the game
 --------------------
