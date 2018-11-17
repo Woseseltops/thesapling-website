@@ -102,7 +102,7 @@ def generate_static_website():
 	mkdir(GOAL_LOCATION+'devlogs/')
 
 	#Get images
-	svg_images = get_svg_images(['rss_icon','devlog_icon','twitter_icon','steam_icon','itch_icon','arrow_left','arrow_up','arrow_right'],STATIC_FOLDER)	
+	svg_images = get_svg_images(['rss_icon','devlog_icon','twitter_icon','steam_icon','itch_icon','kartridge_icon','gamejolt_icon','arrow_left','arrow_up','arrow_right'],STATIC_FOLDER)	
 
 	#Generate devlogs
 	devlogs = []

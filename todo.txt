@@ -1,20 +1,23 @@
 NOW
 ===
+Trailer: 
+* overzicht maken van benodigde shots
+
 Player content-artikel schrijven
+* Links naar de nieuwe download
 * Maken dat alle benodigheden bij de build op de juiste plek staan en dat benoemen.
 * Probleem met .meta-files oplossen
-* Export separate layers main theme: shimmer nog
 * Gameplay statistics
 
-Achtergrondfilmpje: weg bij mobile, alleen al omdat hij alles aan de kant duwt
+Website:
+* Logo's Kartridge en GameJolt toevoegen
 
-Toevoegen aan:
-* Kartridge
-* GameJolt
+Achtergrondfilmpje: weg bij mobile, alleen al omdat hij alles aan de kant duwt
 
 Cover images:
 * IndieDB: 120x90 
 * Itch: 630x500
+* GameJolt: rectangular
 
 Backlog
 -------
