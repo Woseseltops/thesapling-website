@@ -530,6 +530,12 @@ code
     padding-right: 2px;    
 }
 
+ul
+{
+    margin-top: -25px;
+    margin-bottom: 75px;    
+}
+
 .devlog_title_area, .devlog_list_title_area
 {
     background-image: url('/static/png/parallax.png');

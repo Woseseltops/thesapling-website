@@ -1,9 +1,5 @@
 NOW
 ===
-Player content filmpje:
-* overzicht maken van benodigde shots
-* die shots ook echt al opnemen
-
 Trailer: 
 * overzicht maken van benodigde shots
 
@@ -11,6 +7,7 @@ Website:
 * Achtergrondfilmpje: weg bij mobile, alleen al omdat hij alles aan de kant duwt
 
 Player content-artikel schrijven
+* Bodypartgedeelte verder uitwerken
 * Maken dat alle benodigheden bij de build op de juiste plek staan en dat benoemen.
 * Probleem met .meta-files oplossen
 
