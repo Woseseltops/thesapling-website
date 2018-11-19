@@ -4,7 +4,7 @@ Trailer:
 * overzicht maken van benodigde shots
 
 Website:
-* Achtergrondfilmpje: weg bij mobile, alleen al omdat hij alles aan de kant duwt
+* Website staat nog helemaal aan de zijkant op echte mobiele telefoon
 
 Player content-artikel schrijven
 * Bodypartgedeelte verder uitwerken

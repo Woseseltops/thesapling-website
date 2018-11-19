@@ -442,9 +442,32 @@ a
 
 @media only screen and (max-width: 1000px)
 {
+    video
+    {
+        visibility: hidden;
+        width: 360px;
+    }
+
+    #title_area
+    {
+        background-image: url('/static/png/parallax.png');
+        background-position-y: -235px;
+        background-position-x: -230px;
+    }
+
+    #title_wrapper
+    {
+        margin-top: -550px;
+    }
+
     #main_area
     {
         padding: 10px;
+    }
+
+    #footer_screenshot_container
+    {
+        margin-left: 0px;
     }
 
     .main, .devlog
