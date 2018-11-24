@@ -1,15 +1,30 @@
 NOW
 ===
-Trailer: 
-* overzicht maken van benodigde shots
+Trailer shots: 
+* Tijdje stilstaan op een plant, dan ovule erop, klik oke -> draaiend eiland, planten plaatsen, detail view
+* Mooiere plant maken met dikker stuk, groter, blaadjes, takken, en drie ovules
+* Shot dat een plant heel snel het eiland verovert
+* Basic animal maken en een beetje spelen, klik oke -> bestaande wereld, ander level, met heel andere planten, tijdje volgen
+* Shot van een dier in de editor dat er wat beter uitziet, met ogen etc.
+* Gekke planten evolueren, zelf gekke dieren toevoegen, normale camera positie filmen, dan uitzoomen en daar lang wachten
+* 3x ronddraaiend eiland
+* 1x shot met kleine planten en 1 hoge, zijwaarts voor die hoge langs bewegen
+* 2x shot met middelgrote planten en 1 hoge, zijwaarts voor die hoge langs bewegen
+* 3x Mooie hoge planten (oa boom met veel tak 3) en schattige dieren maken, tijd stilzetten op avond
+  * zijwaarts bewegen
+  * voorwaarts bewegen
+  * achterwaarts bewegen
+  * top down bewegen
+  * detail view
+* Editor shots hoe ik een paar van die mooie planten maak
 
 Website:
 * Website staat nog helemaal aan de zijkant op echte mobiele telefoon
 
 Player content-artikel schrijven
-* Bodypartgedeelte verder uitwerken
-* Maken dat alle benodigheden bij de build op de juiste plek staan en dat benoemen.
 * Probleem met .meta-files oplossen
+
+Start Steampagina
 
 Na test Jordy
 -------------
