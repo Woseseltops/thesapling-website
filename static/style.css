@@ -354,7 +354,7 @@ a
 .devlog_list_title_area #title_wrapper
 {
     position: relative;
-    margin-top: 55px;    
+    margin-top: 20px;    
 }
 
 #main_column
@@ -440,7 +440,7 @@ a
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1024px)
 {
     video
     {
@@ -453,11 +453,12 @@ a
         background-image: url('/static/png/parallax.png');
         background-position-y: -235px;
         background-position-x: -230px;
+        width: 120%;
     }
 
     #title_wrapper
     {
-        margin-top: -550px;
+        margin-top: -90px;
     }
 
     #main_area
@@ -468,11 +469,23 @@ a
     #footer_screenshot_container
     {
         margin-left: 0px;
+        width: 100%
     }
 
-    .main, .devlog
+    .main
     {
-        width: inherit;   
+        width: 120%;   
+    }
+
+    .devlog
+    {
+        width: 120%;
+        overflow: scroll;
+    }
+
+    .devlog_list
+    {
+        width: 120%;
     }
 
     #latest_devlog
@@ -499,13 +512,16 @@ a
 
     .devlog_title
     {
-        width: inherit;
+        width: 90%;
+        margin-left: 20px;
         font-size: 45px;
+        overflow: scroll;
     }
 
     .devlog_label
     {
-        width: inherit;
+        width: 90%;
+        margin-left: 20px;
     }
 
     .iconlabel
