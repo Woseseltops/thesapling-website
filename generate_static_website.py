@@ -1,7 +1,8 @@
-from os import listdir, mkdir
+from os import listdir, mkdir, system
 from os.path import isdir
 from shutil import copytree, rmtree
 from email.utils import format_datetime
+from subprocess import Popen
 
 from devlog import parse_devlog
 from template import fill_template
@@ -94,6 +95,9 @@ def generate_static_website():
 
 	DEVLOG_TAGS = ['Announcement','Behind the scenes','Technical details']
 
+	#Stop the webserver
+	system("taskkill /im Civetweb64.exe")
+
 	#Empty last
 	if isdir(GOAL_LOCATION):
 		rmtree(GOAL_LOCATION)
@@ -143,6 +147,9 @@ def generate_static_website():
 	#Move over the static files
 	copytree(STATIC_FOLDER,GOAL_LOCATION+STATIC_FOLDER)
 	copytree(PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
+
+	#Start the webserver
+	Popen(['C:\\Users\\Wessel\\Downloads\\CivetWeb_Win32+64_V1.9.1\\CivetWeb64.exe'])
 
 if __name__ == '__main__':
 	generate_static_website()
