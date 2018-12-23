@@ -109,8 +109,8 @@ hr
 {
     overflow: hidden;
     height: 500px;
-    margin-left: -100vw;
-    margin-right: -100vw;
+    width: 100vw;
+    margin-left: -30vw;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -351,6 +351,12 @@ a
     margin-top:-500px;    
 }
 
+.devlog_list_title_area #title_wrapper
+{
+    position: relative;
+    margin-top: 20px;    
+}
+
 #main_column
 {
     margin: auto;
@@ -404,6 +410,7 @@ a
 #portrait
 {
     height: 120px;
+    margin-top: 45px;
 }
 
 #portrait_label
@@ -413,8 +420,8 @@ a
 
 #latest_devlog
 {
-    margin-left:-100vw;
-    margin-right:-100vw;    
+    width: 100vw;
+    margin-left:-30vw;
 }
 
 .selected_checkbox
@@ -433,16 +440,52 @@ a
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1024px)
 {
+    video
+    {
+        visibility: hidden;
+        width: 360px;
+    }
+
+    #title_area
+    {
+        background-image: url('/static/png/parallax.png');
+        background-position-y: -235px;
+        background-position-x: -230px;
+        width: 120%;
+    }
+
+    #title_wrapper
+    {
+        margin-top: -90px;
+    }
+
     #main_area
     {
         padding: 10px;
     }
 
-    .main, .devlog
+    #footer_screenshot_container
     {
-        width: inherit;   
+        margin-left: 0px;
+        width: 100%
+    }
+
+    .main
+    {
+        width: 120%;   
+    }
+
+    .devlog
+    {
+        width: 120%;
+        overflow: scroll;
+    }
+
+    .devlog_list
+    {
+        width: 120%;
     }
 
     #latest_devlog
@@ -469,13 +512,16 @@ a
 
     .devlog_title
     {
-        width: inherit;
+        width: 90%;
+        margin-left: 20px;
         font-size: 45px;
+        overflow: scroll;
     }
 
     .devlog_label
     {
-        width: inherit;
+        width: 90%;
+        margin-left: 20px;
     }
 
     .iconlabel
@@ -507,7 +553,7 @@ a
 
 .devlog h3
 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .devlog li
@@ -521,4 +567,24 @@ code
     border-radius: 3px;
     padding-left: 2px;
     padding-right: 2px;    
+}
+
+ul
+{
+    margin-top: -25px;
+    margin-bottom: 75px;    
+}
+
+.devlog_title_area, .devlog_list_title_area
+{
+    background-image: url('/static/png/parallax.png');
+    background-position-y: -250px;
+}
+
+#dark_overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.2);
+    margin-bottom: -540px;    
 }

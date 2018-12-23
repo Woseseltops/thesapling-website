@@ -18,31 +18,39 @@ Trailer shots:
   * detail view
 * Editor shots hoe ik een paar van die mooie planten maak
 
-Website:
-* Website staat nog helemaal aan de zijkant op echte mobiele telefoon
-
 Player content-artikel schrijven
-* Probleem met .meta-files oplossen
+* Hele workflow aanpassen in het artikel
+* Voorbeeldproject maken
 
-Start Steampagina
+Achievements bedenken
+* Sweet Success: complete your first scenario
+* Cool Completionist: finish all scenarios in the game
+* Courageous Carnivores: get one of your animals eaten
+* Adventurous Architect: play the sandbox mode for 5000 years
+* Unbelievable Ultra : choose an animal color humans cannot see
 
 Na test Jordy
 -------------
 * Website online
-* Statistics goedzetten en documenteren
+  * API-adres kloppend maken
+* GA installeren
 
 Na trailer
 ----------
-Cover images:
+Cover images (met logo? zonder logo?)
 * IndieDB: 120x90 
 * Itch: 630x500
 * GameJolt: rectangular
+* Heel veel dingen voor Steam met logo
+
+Plaatjes voor achievements: 64x64
+
+Screenshots
+
+Presskit verder afmaken
 
 Backlog
--------
 Alles responsive, alle browsers
-Presskit verder afmaken
-Matomo installeren
 
 Links leggen met
 ----------------
