@@ -89,7 +89,7 @@ def generate_static_website():
 	RSS_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_template.xml'
 	RSS_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_item_template.xml'
 
-	GOAL_LOCATION = 'latest_website/'
+	GOAL_LOCATION = 'docs/'
 	STATIC_FOLDER = 'static/'
 	PRESS_FOLDER = 'press/'
 

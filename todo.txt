@@ -1,5 +1,10 @@
 NOW
 ===
+Trailer audio:
+* Te grote verschillen in hoe snel, hoe hoog, hoe geanimeerd
+* Redelijk zacht
+* Overal kliks
+
 Trailer shots: 
 * Tijdje stilstaan op een plant, dan ovule erop, klik oke -> draaiend eiland, planten plaatsen, detail view
 * Mooiere plant maken met dikker stuk, groter, blaadjes, takken, en drie ovules
@@ -19,15 +24,10 @@ Trailer shots:
 * Editor shots hoe ik een paar van die mooie planten maak
 
 Player content-artikel schrijven
-* Hele workflow aanpassen in het artikel
+* Hele workflow aanpassen in het artikel: herlezen
 * Voorbeeldproject maken
-
-Achievements bedenken
-* Sweet Success: complete your first scenario
-* Cool Completionist: finish all scenarios in the game
-* Courageous Carnivores: get one of your animals eaten
-* Adventurous Architect: play the sandbox mode for 5000 years
-* Unbelievable Ultra : choose an animal color humans cannot see
+  * Rommel eruit, opslaan
+  * Benoemen waar alles wordt opgeslagen, en waar het heen moet
 
 Na test Jordy
 -------------
@@ -49,8 +49,11 @@ Screenshots
 
 Presskit verder afmaken
 
-Backlog
-Alles responsive, alle browsers
+Landing page verder afmaken
+
+Na release
+----------
+Laatste versie RawResources zippen
 
 Links leggen met
 ----------------
