@@ -91,7 +91,7 @@ def generate_static_website():
 
 	GOAL_LOCATION = 'docs/'
 	STATIC_FOLDER = 'static/'
-	PRESS_FOLDER = 'press/'
+	PRESS_FOLDER = 'press_static/'
 
 	DEVLOG_TAGS = ['Announcement','Behind the scenes','Technical details']
 
