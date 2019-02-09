@@ -1,59 +1,28 @@
 NOW
 ===
-Trailer audio:
-* Te grote verschillen in hoe snel, hoe hoog, hoe geanimeerd
-* Redelijk zacht
-* Overal kliks
+Ubuntu build maken:
+* Build script: optie toevoegen Ubuntu
+* Uitproberen: kan ik een build uitproberen zonder een dual boot te maken?
 
-Trailer shots: 
-* Tijdje stilstaan op een plant, dan ovule erop, klik oke -> draaiend eiland, planten plaatsen, detail view
-* Mooiere plant maken met dikker stuk, groter, blaadjes, takken, en drie ovules
-* Shot dat een plant heel snel het eiland verovert
-* Basic animal maken en een beetje spelen, klik oke -> bestaande wereld, ander level, met heel andere planten, tijdje volgen
-* Shot van een dier in de editor dat er wat beter uitziet, met ogen etc.
-* Gekke planten evolueren, zelf gekke dieren toevoegen, normale camera positie filmen, dan uitzoomen en daar lang wachten
-* 3x ronddraaiend eiland
-* 1x shot met kleine planten en 1 hoge, zijwaarts voor die hoge langs bewegen
-* 2x shot met middelgrote planten en 1 hoge, zijwaarts voor die hoge langs bewegen
-* 3x Mooie hoge planten (oa boom met veel tak 3) en schattige dieren maken, tijd stilzetten op avond
-  * zijwaarts bewegen
-  * voorwaarts bewegen
-  * achterwaarts bewegen
-  * top down bewegen
-  * detail view
-* Editor shots hoe ik een paar van die mooie planten maak
+Trailer
+* Feedback Hilde
 
-Player content-artikel schrijven
-* Hele workflow aanpassen in het artikel: herlezen
-* Voorbeeldproject maken
-  * Rommel eruit, opslaan
-  * Benoemen waar alles wordt opgeslagen, en waar het heen moet
+Website:
+* Landing page verder afmaken
+  * tekst aanpassen
+  * modellen maken voor Sketchfab
+  * nadenken: creators of let's play videos
+* Domeinnaam aanvragen > API-adres kloppend, GA installeren
 
-Na test Jordy
--------------
-* Website online
-  * API-adres kloppend maken
-* GA installeren
-
-Na trailer
+Later punt
 ----------
-Cover images (met logo? zonder logo?)
-* IndieDB: 120x90 
-* Itch: 630x500
-* GameJolt: rectangular
-* Heel veel dingen voor Steam met logo
-
-Plaatjes voor achievements: 64x64
-
-Screenshots
-
-Presskit verder afmaken
-
-Landing page verder afmaken
+* Presskit
+* IndieDB
 
 Na release
 ----------
 Laatste versie RawResources zippen
+Steam announcements koppelen
 
 Links leggen met
 ----------------

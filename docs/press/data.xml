@@ -26,7 +26,7 @@
 		Wessel Stoop works with language and machine learning during his day job, and creates games by night. For more about Wessel, see http://wesselstoop.ruhosting.nl/
 	</description>
 		
-	<histories>
+	<!--<histories>
 		<history>
 			<header>-</header>
 			<text>-</text>
@@ -54,7 +54,7 @@
 			<website>-</website>
 			<link>-</link>
 		</quote>
-	</quotes>
+	</quotes>-->
 	
 	<press-can-request-copy>TRUE</press-can-request-copy> <!-- can be true or false -->
 	<monetization-permission>monetize</monetization-permission> <!-- can be: 	false (no video allowed),
