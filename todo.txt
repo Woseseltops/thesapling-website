@@ -11,6 +11,9 @@ Na nieuwe achtergrond:
 Website:
 * Landing page verder afmaken
   * modellen maken voor Sketchfab
+* Presskit: zorgen dat er automatisch een statische versie meegaat bij het bouwen
+  * Zorgen dat alle links erheen kloppen
+  * Zorgen dat alle onderlinge links kloppen
 * Domeinnaam aanvragen > API-adres kloppend, GA installeren
 
 Later punt
