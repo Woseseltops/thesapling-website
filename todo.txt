@@ -1,16 +1,16 @@
 NOW
 ===
-Ubuntu build maken:
-* Uitproberen: kan ik een build uitproberen zonder een dual boot te maken?
-* Build script: optie toevoegen Ubuntu
-
 Trailer
-* Feedback Hilde
+* You might have noticed that the music became, what you could call, larger as we zoomed out -> As you can hear, the music becomes larger while zooming out
+* Iets bedenken voor laatste stuk
+
+Na nieuwe achtergrond:
+* Filmpje opnieuw opnemen
+* Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
 Website:
 * Landing page verder afmaken
   * modellen maken voor Sketchfab
-  * nadenken: creators of let's play videos
 * Domeinnaam aanvragen > API-adres kloppend, GA installeren
 
 Later punt
