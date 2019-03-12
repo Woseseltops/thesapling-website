@@ -8,9 +8,12 @@ Na nieuwe achtergrond:
 * Filmpje opnieuw opnemen
 * Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
+Muziekartikel:
+* Lead
+* Pull quotes
+
 Website:
-* Landing page verder afmaken
-  * modellen maken voor Sketchfab
+* Modellen naar SketchFab
 * Presskit: zorgen dat er automatisch een statische versie meegaat bij het bouwen
   * Zorgen dat alle links erheen kloppen
   * Zorgen dat alle onderlinge links kloppen
