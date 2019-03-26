@@ -9,8 +9,11 @@ Na nieuwe achtergrond:
 * Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
 Muziekartikel:
-* Lead
-* Pull quotes
+* Player bouwen
+
+Style-artikel:
+* Zoeken: schuifje met gifs... Juxtapose?
+* Scene bouwen in Unity
 
 Website:
 * Modellen naar SketchFab
