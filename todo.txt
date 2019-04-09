@@ -9,11 +9,17 @@ Na nieuwe achtergrond:
 * Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
 Muziekartikel:
-* Player bouwen
+* LayerPlayer bouwen
+  * Aanzetten
+  * Uitzetten
+  * Ding verandert van kleur als je aan of aanzet
+  * Layers toggelen, maar doorspelen als niet alles op 0 staat
 
 Style-artikel:
-* Zoeken: schuifje met gifs... Juxtapose?
-* Scene bouwen in Unity
+* Meerdere slider op 1 pagina
+* Slider stylen
+* Oplossen: JS in markdown
+* Oplossen: Unity player in markdown
 
 Website:
 * Modellen naar SketchFab

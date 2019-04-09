@@ -13,7 +13,7 @@ The Catmull-Clark subdivision algorithm is what started this whole project. It's
 
 Depth of Field
 --------------
-I really like depth of field in film and photography as it guides what the viewer focuses on in a very natural way. Unfortunately it does not work really well in most gaming contexts: in most situations, the player should be able to focus wherever s/he wants. On top of this, depth of field makes objects feel relatively small; depth of field on anything larger than a human makes it look like some kind of miniature version - although some recent city building sims use this to their advantage to create a 'toy city' kind of feel. In The Sapling, the only place I thought depth of field worked well is when the player clicks a plant or animal to focus on it.
+I really like depth of field in film and photography as it guides what the viewer focuses on in a very natural way. Unfortunately it does not work really well in most gaming contexts: in most situations, the player should be able to focus wherever s/he wants. On top of this, depth of field makes objects feel relatively small; depth of field on anything larger than a human makes it look like some kind of miniature version - although some recent city building sims use this to their advantage to create a 'toy city' kind of feel. In The Sapling, the only place I thought depth of field worked well is when the player clicks a plant or animal to focus on it. Look at the background in the image below to see the effect.
 
 [x]
 
