@@ -1,0 +1,32 @@
+<script>
+	var audio1 = new Audio('CL1.mp3');
+	audio1.play();
+
+	var audio2 = new Audio('BG1.mp3');
+	audio2.play();	
+
+	function ToggleVolume()
+	{
+		if (audio2.volume == 0)
+		{
+			audio2.volume = 1;		
+		}
+		else
+		{
+			audio2.volume = 0;
+		}
+	}
+</script>
+
+<script>
+	class LayerPlayer()
+	{
+	
+	}
+
+	var lp1 = LayerPlayer(['',''],[0]);
+	
+	$('#p1').LayerPlayer(['','']);	
+</script>
+
+<button onclick=ToggleVolume()>
