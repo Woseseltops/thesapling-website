@@ -8,18 +8,14 @@ Na nieuwe achtergrond:
 * Filmpje opnieuw opnemen
 * Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
-Muziekartikel:
-* LayerPlayer bouwen
-  * Aanzetten
-  * Uitzetten
-  * Ding verandert van kleur als je aan of aanzet
-  * Layers toggelen, maar doorspelen als niet alles op 0 staat
-
 Style-artikel:
 * Meerdere slider op 1 pagina
 * Slider stylen
 * Oplossen: JS in markdown
 * Oplossen: Unity player in markdown
+
+Muziekartikel:
+* Player stylen bij de rest van de website
 
 Website:
 * Modellen naar SketchFab
@@ -27,6 +23,10 @@ Website:
   * Zorgen dat alle links erheen kloppen
   * Zorgen dat alle onderlinge links kloppen
 * Domeinnaam aanvragen > API-adres kloppend, GA installeren
+
+Teksten schrijven voor elk medium dat ik aan wil schrijven
+* Nieuwssites
+* Subreddits: titel
 
 Later punt
 ----------

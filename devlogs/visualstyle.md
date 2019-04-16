@@ -3,6 +3,10 @@ Breakdown of the visual style of The Sapling
 
 Writing game code and creating game graphics are two fundamentally different beasts, with very different upsides and downsides. One area where programming has the clear advantage, is when you're inspired by another game and want to see if you can replicate a particular idea. If I encounter a game mechanic that I like, I can do a quick internet search and the result is most likely a tutorial on how to build this kind of technology. If I like the graphics in a game, on the other hand, there's not much I can do other than endlessly combining tricks I already know and hope this by chance achieves the graphical style I was trying to reproduce.
 
+---
+I'll set a good example and explain in detail how to achieve the visual style of The Sapling
+---
+
 In this article I'd like to show you it doesn't have to be this way; I'll set a good example and explain in detail how to achieve the visual style of The Sapling. I will do this step by step with sliders so you can compare the impact of the effect, and at the end with an interactive scene so you can turn on and off everything at your heart's desire.
 
 Subdivision
