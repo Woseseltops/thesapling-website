@@ -8,14 +8,19 @@ Na nieuwe achtergrond:
 * Filmpje opnieuw opnemen
 * Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
-Style-artikel:
-* Meerdere slider op 1 pagina
-* Slider stylen
-* Oplossen: JS in markdown
+Generate static website:
+* Iets met fonts gaat niet helemaal goed
+* Iets met lists gaat niet helemaal goed
 * Oplossen: Unity player in markdown
 
+Style-artikel:
+* Slider style implementeren
+* Unity-ding toevoegen
+  * Inclusief knoppen
+
 Muziekartikel:
-* Player stylen bij de rest van de website
+* Player style implementeren
+* Players toevoegen aan artikel
 
 Website:
 * Modellen naar SketchFab

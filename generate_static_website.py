@@ -93,7 +93,7 @@ def generate_static_website():
 	STATIC_FOLDER = 'static/'
 	PRESS_FOLDER = 'press_static/'
 
-	DEVLOG_TAGS = ['Announcement','Behind the scenes','Technical details']
+	DEVLOG_TAGS = ['Announcement','Music','Graphics','Code']
 
 	#Stop the webserver
 	system("taskkill /im Civetweb64.exe")
@@ -112,8 +112,12 @@ def generate_static_website():
 	devlogs = []
 
 	for filename in listdir(DEVLOGS_FOLDER):
-		devlog = parse_devlog(filename.split('.')[0],open(DEVLOGS_FOLDER+filename).read(),DEVLOG_TAGS)
-		devlogs.append(devlog)
+
+		if isdir(DEVLOGS_FOLDER+filename):
+			copytree(DEVLOGS_FOLDER+filename,GOAL_LOCATION+DEVLOGS_FOLDER+filename)
+		else:
+			devlog = parse_devlog(filename.split('.')[0],open(DEVLOGS_FOLDER+filename).read(),DEVLOG_TAGS)
+			devlogs.append(devlog)
 
 	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
 
@@ -149,7 +153,7 @@ def generate_static_website():
 	copytree(PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
 
 	#Start the webserver
-	Popen(['C:\\Users\\Wessel\\Downloads\\CivetWeb_Win32+64_V1.9.1\\CivetWeb64.exe'])
+	Popen(['C:\\Users\\wstoop\\Downloads\\CivetWeb64.exe'])
 
 if __name__ == '__main__':
 	generate_static_website()
