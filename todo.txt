@@ -19,7 +19,7 @@ Style-artikel:
   * Inclusief knoppen
 
 Muziekartikel:
-* Player style implementeren
+* Players echt laten werken met echte fragmenten
 * Players toevoegen aan artikel
 
 Website:

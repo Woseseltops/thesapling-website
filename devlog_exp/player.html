@@ -1,7 +1,118 @@
+<style>
+body
+{
+	background-color: green;
+}
+
+.layerplayer
+{
+	cursor: pointer;
+}
+
+.layerplayer_extra_layer
+{
+	cursor: pointer;
+	position: relative;
+    top: -20px;
+    left: -5px;
+}
+
+</style>
+
 <button id="lp1" onclick="a()">a</button>
 <button onclick="b()">b</button>
 
+<img class="layerplayer" src="quiet.svg" playing='false'>
+<img class="layerplayer_extra_layer" src="extra_layer_quiet.svg" playing='false'>
+
+<img class="layerplayer" src="quiet.svg" playing='false'>
+<img class="layerplayer_extra_layer" src="extra_layer_quiet.svg" playing='false'>
+
+<img class="layerplayer" src="quiet.svg" playing='false'>
+<img class="layerplayer_extra_layer" src="extra_layer_quiet.svg" playing='false'>
+
 <script>
+
+	var players = document.getElementsByClassName('layerplayer');
+
+	for (player_index in players)
+	{
+		if (players[player_index] == players.length) // why can this occur?
+		{
+			break
+		}
+
+		players[player_index].addEventListener('click',function() 
+		{
+			if (this.getAttribute('playing') == 'true')
+			{
+				this.src = 'hovered.svg';
+				this.setAttribute('playing','false');
+			}
+			else
+			{
+				this.src = 'playing.svg';
+				this.setAttribute('playing','true');
+			}
+		});
+
+		players[player_index].addEventListener('mouseover',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'hovered.svg'
+			}
+		});
+
+		players[player_index].addEventListener('mouseout',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'quiet.svg'
+			}
+		});
+	}
+
+	var players = document.getElementsByClassName('layerplayer_extra_layer');
+
+	for (player_index in players)
+	{
+		if (players[player_index] == players.length) // why can this occur?
+		{
+			break
+		}
+
+		players[player_index].addEventListener('click',function() 
+		{
+			if (this.getAttribute('playing') == 'true')
+			{
+				this.src = 'extra_layer_hovered.svg';
+				this.setAttribute('playing','false');
+			}
+			else
+			{
+				this.src = 'extra_layer_playing.svg';
+				this.setAttribute('playing','true');
+			}
+		});
+
+		players[player_index].addEventListener('mouseover',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'extra_layer_hovered.svg'
+			}
+		});
+
+		players[player_index].addEventListener('mouseout',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'extra_layer_quiet.svg'
+			}
+		});
+	}
+
 	class LayerPlayer
 	{
 		constructor(new_layers, playing_by_default)
