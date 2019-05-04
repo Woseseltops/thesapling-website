@@ -1,0 +1,195 @@
+<style>
+body
+{
+	background-color: green;
+}
+
+.layerplayer
+{
+	cursor: pointer;
+}
+
+.layerplayer_extra_layer
+{
+	cursor: pointer;
+	position: relative;
+    top: -20px;
+    left: -5px;
+}
+
+</style>
+
+<button id="lp1" onclick="a()">a</button>
+<button onclick="b()">b</button>
+
+<img class="layerplayer" src="quiet.svg" playing='false'>
+<img class="layerplayer_extra_layer" src="extra_layer_quiet.svg" playing='false'>
+
+<img class="layerplayer" src="quiet.svg" playing='false'>
+<img class="layerplayer_extra_layer" src="extra_layer_quiet.svg" playing='false'>
+
+<img class="layerplayer" src="quiet.svg" playing='false'>
+<img class="layerplayer_extra_layer" src="extra_layer_quiet.svg" playing='false'>
+
+<script>
+
+	var players = document.getElementsByClassName('layerplayer');
+
+	for (player_index in players)
+	{
+		if (players[player_index] == players.length) // why can this occur?
+		{
+			break
+		}
+
+		players[player_index].addEventListener('click',function() 
+		{
+			if (this.getAttribute('playing') == 'true')
+			{
+				this.src = 'hovered.svg';
+				this.setAttribute('playing','false');
+			}
+			else
+			{
+				this.src = 'playing.svg';
+				this.setAttribute('playing','true');
+			}
+		});
+
+		players[player_index].addEventListener('mouseover',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'hovered.svg'
+			}
+		});
+
+		players[player_index].addEventListener('mouseout',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'quiet.svg'
+			}
+		});
+	}
+
+	var players = document.getElementsByClassName('layerplayer_extra_layer');
+
+	for (player_index in players)
+	{
+		if (players[player_index] == players.length) // why can this occur?
+		{
+			break
+		}
+
+		players[player_index].addEventListener('click',function() 
+		{
+			if (this.getAttribute('playing') == 'true')
+			{
+				this.src = 'extra_layer_hovered.svg';
+				this.setAttribute('playing','false');
+			}
+			else
+			{
+				this.src = 'extra_layer_playing.svg';
+				this.setAttribute('playing','true');
+			}
+		});
+
+		players[player_index].addEventListener('mouseover',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'extra_layer_hovered.svg'
+			}
+		});
+
+		players[player_index].addEventListener('mouseout',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'extra_layer_quiet.svg'
+			}
+		});
+	}
+
+	class LayerPlayer
+	{
+		constructor(new_layers, playing_by_default)
+		{
+			this.playing = false;
+			this.layers = []
+
+			for (var layer_index in new_layers)
+			{
+				this.layers.push(new Audio(new_layers[layer_index]));
+			}
+
+			this.layers_playing = playing_by_default;
+		}
+
+		TogglePlaying()
+		{
+			if (this.playing)
+			{
+				for (var layer_index in this.layers)
+				{
+					this.layers[layer_index].pause();
+				}
+
+				this.playing = false;
+			}
+			else
+			{
+				for (var layer_index in this.layers)
+				{
+					this.layers[layer_index].play();
+
+					if (!this.layers_playing[layer_index])
+					{
+						this.layers[layer_index].volume = 0;
+					}
+				}
+
+				this.playing = true;
+			}
+
+			return this.playing;
+		}
+
+		ToggleLayer(index)
+		{
+			if (this.layers_playing[index])
+			{
+				this.layers[index].volume = 0;
+				this.layers_playing[index] = false;
+			}
+			else
+			{
+				this.layers[index].volume = 1;
+				this.layers_playing[index] = true;
+			}
+		}
+	}
+
+	var lp1 = new LayerPlayer(['CL1.mp3','BG1.mp3'],[true,false]);
+
+	function a()
+	{
+		var playing = lp1.TogglePlaying();
+
+		if (playing)
+		{
+			document.getElementById('lp1').style['background-color'] = 'green';
+		}
+		else
+		{
+			document.getElementById('lp1').style['background-color'] = 'red';
+		}
+	}
+
+	function b()
+	{
+		lp1.ToggleLayer(1);
+	}
+</script>

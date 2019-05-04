@@ -11,13 +11,30 @@ Na nieuwe achtergrond:
   * In de website vervangen
 * Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
+Generate static website:
+* Iets met fonts gaat niet helemaal goed
+* Iets met lists gaat niet helemaal goed
+* Oplossen: Unity player in markdown
+
+Style-artikel:
+* Slider style implementeren
+* Unity-ding toevoegen
+  * Inclusief knoppen
+
+Muziekartikel:
+* Players echt laten werken met echte fragmenten
+* Players toevoegen aan artikel
+
 Website:
-* Landing page verder afmaken
-  * modellen maken voor Sketchfab
+* Modellen naar SketchFab
 * Presskit: zorgen dat er automatisch een statische versie meegaat bij het bouwen
   * Zorgen dat alle links erheen kloppen
   * Zorgen dat alle onderlinge links kloppen
 * Domeinnaam aanvragen > API-adres kloppend, GA installeren
+
+Teksten schrijven voor elk medium dat ik aan wil schrijven
+* Nieuwssites
+* Subreddits: titel
 
 Later punt
 ----------
