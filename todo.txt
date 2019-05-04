@@ -6,6 +6,9 @@ Trailer
 
 Na nieuwe achtergrond:
 * Filmpje opnieuw opnemen
+  * Muziek weghalen
+  * Zijn er nog andere dingen?
+  * In de website vervangen
 * Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
 Website:
@@ -20,8 +23,6 @@ Later punt
 ----------
 * Presskit
   * Helemaal afmaken
-  * Statische versie maken
-  * Zorgen dat ie automatisch meegaat bij builden vd website
 * IndieDB
 
 Na release
