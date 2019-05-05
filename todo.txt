@@ -28,6 +28,7 @@ Muziekartikel:
 Website:
 * Modellen naar SketchFab
 * Presskit: zorgen dat er automatisch een statische versie meegaat bij het bouwen
+  * 'Short' toevoegen
   * Zorgen dat alle links erheen kloppen
   * Zorgen dat alle onderlinge links kloppen
 * Domeinnaam aanvragen > API-adres kloppend, GA installeren
