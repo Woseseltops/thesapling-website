@@ -59,18 +59,7 @@ https://www.gameinformer.com/feedback, https://arstechnica.com/contact-us/, http
 Press release: evolution simulation game The Sapling
 
 **Message**
-Dear redaction of [x],
-
-Today I want to announce my game The Sapling. It is a short simulation game where you design your own plants and animals, and put them in a world together. Or you turn on random mutations, and see what evolution does to your ecosystem!
-
-[link to image a] [link to image b]
-
-All code, graphics and music is created by me. I explain how everything works in this 'first look' video: [Youtube link]
-
-For more information, see [the website] and [the presskit]. If you have more questions, you can reach me via this email address. Today I will also be available all day (CEST) on Skype, my username is stoopwessel .
-
-Best regards,
-Wessel Stoop
+TODO
 
 
 
@@ -105,6 +94,25 @@ Tweakers
 **To**
 redactie@tweakers.nl
 
+**Title**
+Aankondiging: mijn spel 'The Sapling'
+
+**Message**
+Beste redactie van Tweakers,
+
+Omdat jullie eerdere bericht over mijn werk (https://tweakers.net/nieuws/91687/nederlandse-student-ontwikkelt-sociale-tekstvoorspeller.html) zo goed bevallen is, wil ik jullie nog iets laten zien. Het gaat dit keer om een kort simulatiespel waarin je je eigen planten en dieren kan ontwerpen, om ze vervolgens samen in een wereld te plaatsen - of zet 'random mutations' aan, en kijk wat evolutie doet met je ecosysteem.
+
+[image a] [image b]
+
+Alle code, graphics en muziek zijn door mijzelf gemaakt. Ik leg uit hoe alles werkt in deze 'First look' video:
+
+[Youtube link]
+
+Voor meer informatie, zie [the website] en [the presskit]. Als jullie meer vragen hebben, kan je me via dit emailadres bereiken. Ik ben vandaag ook beschikbaar op Skype; mijn gebruikersnaam is stoopwessel .
+
+Groeten,
+Wessel Stoop
+
 
 
 Control online (online form)
@@ -112,47 +120,57 @@ Control online (online form)
 **To**
 https://docs.google.com/forms/d/e/1FAIpQLSeaOJviCJpVBLy60i1AvAUuDmqz0jzVKk79mCKjRwA05X3oKQ/viewform
 
+**Title**
+Aankondiging: mijn spel 'The Sapling'
 
-TODO
+**Message**
+Beste redactie van Control Online,
+
+Na lange tijd op de vrijdagen de Control Online-nieuwsbrief met veel plezier gelezen te hebben heb ik zelf iets bij te dragen: het gaat om een kort simulatiespel waarin je je eigen planten en dieren kan ontwerpen, om ze vervolgens samen in een wereld te plaatsen - of zet 'random mutations' aan, en kijk wat evolutie doet met je ecosysteem.
+
+[image a] [image b]
+
+Alle code, graphics en muziek zijn door mijzelf gemaakt. Ik leg uit hoe alles werkt in deze 'First look' video:
+
+[Youtube link]
+
+Voor meer informatie, zie [the website] en [the presskit]. Als jullie meer vragen hebben, kan je me via dit emailadres bereiken. Ik ben vandaag ook beschikbaar op Skype; mijn gebruikersnaam is stoopwessel .
+
+Groeten,
+Wessel Stoop
+
 
 
 EMAILS TO PEOPLE
 ================
-Adriaan de Jongh
-Maarten van Gompel
+Hey Adriaan,
+
+Ter info: de evolution sim waarvoor ik meerdere keren op de playdev club superbruikbare feedback heb gekregen is vandaag officieel bekend gemaakt. Enorm bedankt voor zowel de club als jouw feedback!
+
+[link]
+
+Groeten,
+Wessel
+
+---
+
+Hey Maarten,
+
+Ooit beloofde ik je nog over mijn laatste gamedev-project te vertellen als ik er klaar voor was. Bij dezen:
+
+[link]
+
+Groeten,
+Wessel
 
 
-REDDIT/HN LINK NAAR TRAILER (CHECK: MAG HET HIER WEL?)
-======================================================
+REDDIT/HN LINK NAAR TRAILER
+===========================
 
-Unity
------
-
-gamedev
--------
-
-games
------
-
-gaming
-------
-
-indiegames
-----------
-
-linux_gaming
-------------
-
-something_i_made
-----------------
-
-sideproject
------------
+Unity3d, indiegames, linux_gaming
+----------------------------------
+First look for the evolution sim I'm working on
 
 hacker_news
 -----------
-
-VERDER TODO
-===========
-Nog meer media aanschrijven:
-* Steam review van vergelijkbare spellen
+Show HN: an evolution sim game

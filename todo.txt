@@ -33,9 +33,6 @@ Website:
   * Zorgen dat alle onderlinge links kloppen
 * Domeinnaam aanvragen > API-adres kloppend, GA installeren
 
-Teksten schrijven voor elk medium dat ik aan wil schrijven
-* Nieuwssites
-* Subreddits: titel
 
 Later punt
 ----------
