@@ -1,6 +1,6 @@
 from os import listdir, mkdir, system
 from os.path import isdir
-from shutil import copytree, rmtree
+from shutil import copyfile, copytree, rmtree
 from email.utils import format_datetime
 from subprocess import Popen
 
@@ -74,6 +74,16 @@ def devlogs_to_rss(devlogs,template_location,item_template_location):
 
 	return fill_template(open(template_location,'r').read(),{'items':''.join(rss_items),'date':format_datetime(devlog.date)})
 
+def generate_press_section(php_location,press_folder,goal_location):
+
+	mkdir(goal_location)
+	copyfile(press_folder+'style.css',goal_location+'style.css')
+
+	for page_name, arguments in [('index',''),('sheet','The Sapling')]:
+
+		p = Popen([php_location,press_folder+page_name+'.php',arguments],stdout=open(goal_location+page_name+'.html','w'))	
+		p.wait()
+
 def generate_static_website():
 
 	PAGES_TO_GENERATE_FOLDER = 'pages_to_generate/'
@@ -89,9 +99,11 @@ def generate_static_website():
 	RSS_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_template.xml'
 	RSS_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_item_template.xml'
 
+	PHP_LOCATION = 'C:/Users/wstoop/Downloads/php/php.exe'
+
 	GOAL_LOCATION = 'docs/'
 	STATIC_FOLDER = 'static/'
-	PRESS_FOLDER = 'press_static/'
+	PRESS_FOLDER = 'press/'
 
 	DEVLOG_TAGS = ['Announcement','Music','Graphics','Code']
 
@@ -150,7 +162,9 @@ def generate_static_website():
 
 	#Move over the static files
 	copytree(STATIC_FOLDER,GOAL_LOCATION+STATIC_FOLDER)
-	copytree(PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
+
+	#Make static version of press pages
+	generate_press_section(PHP_LOCATION,PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
 
 	#Start the webserver
 	Popen(['C:\\Users\\wstoop\\Downloads\\CivetWeb64.exe'])

@@ -6,7 +6,8 @@ if( file_exists('install.php') )
 	exit;
 }
 
-$game = $_GET['p'];
+# $game = $_GET['p'];
+$game = $argv[1];
 
 // Language logic
 
@@ -14,13 +15,13 @@ include 'lang/TranslateTool.php';
 $language = TranslateTool::loadLanguage(isset($_GET['l']) ? $_GET['l'] : null, 'sheet.php');
 $languageQuery = ($language != TranslateTool::getDefaultLanguage() ? '?l='. $language : '');
 
-if (file_exists($game.'/data-'. $language .'.xml'))
-	$xml = simplexml_load_file($game.'/data-'. $language .'.xml');
-else if (file_exists($game.'/data.xml'))
-	$xml = simplexml_load_file($game.'/data.xml');
+if (file_exists('press/' . $game.'/data-'. $language .'.xml'))
+	$xml = simplexml_load_file('press/' . $game.'/data-'. $language .'.xml');
+else if (file_exists('press/' . $game.'/press/data.xml'))
+	$xml = simplexml_load_file('press/' . $game.'/press/data.xml');
 
 if( !isset($xml) )
-{
+{	
 	if( $game == "credits" )
 	{
 		echo '<!DOCTYPE html>
@@ -49,8 +50,8 @@ if( !isset($xml) )
 </html>';
 		exit;		
 	}
-	else if( is_dir($game) && $game != "lang" && $game != "images" && $game != "trailers" && $game != "_template" )
-	{
+	else if( is_dir('press/' . $game) && $game != "lang" && $game != "images" && $game != "trailers" && $game != "_template" )
+	{		
 		echo '<!DOCTYPE html>
 <html>
 	<head>
@@ -81,27 +82,27 @@ if( !isset($xml) )
 </html>';
 
 		// Todo: These steps will fail if safemode is turned on
-		if( !is_dir($game.'/images') ) {
-			mkdir($game.'/images');
+		if( !is_dir('press/' . $game.'/images') ) {
+			mkdir('press/' . $game.'/images');
 		}
-		if( !is_dir($game.'/trailers') ) {
-			mkdir($game.'/trailers');
+		if( !is_dir('press/' . $game.'/trailers') ) {
+			mkdir('press/' . $game.'/trailers');
 		}
-		if( !file_exists($game.'/_data.xml') ) {
-			copy('_template/_data.xml',$game.'/_data.xml');
+		if( !file_exists('press/' . $game.'/_data.xml') ) {
+			copy('press/_template/_data.xml','press/' . $game.'/_data.xml');
 		}
 
 		exit;
 	}
 	else
-	{
+	{		
 		header("Location: index.php");
 		exit;
 	}
 }
 
 /* check for distribute() keyfile */
-$files = glob($game.'/ds_*');
+$files = glob('press/' . $game.'/ds_*');
 foreach( $files as $keyfile ) {
 	$keyfileContent = fopen($keyfile, 'r');
 	$presskitURL = fgets($keyfileContent);
@@ -155,6 +156,9 @@ foreach( $files as $keyfile ) {
 // Set default value for monetize
 $monetize = 0;
 
+$histories = array();
+$quotes = array();
+
 foreach( $xml->children() as $child )
 {
 	switch( $child->getName() )
@@ -193,7 +197,6 @@ foreach( $xml->children() as $child )
 			define("GAME_HISTORY", $child);
 			break;
 		case("histories"):
-			$histories = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -229,7 +232,6 @@ foreach( $xml->children() as $child )
 			}
 			break;					
 		case("quotes"):
-			$quotes = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -270,7 +272,7 @@ foreach( $xml->children() as $child )
 if (file_exists('data-'. $language .'.xml'))
 	$xml = simplexml_load_file('data-'. $language .'.xml');
 else
-	$xml = simplexml_load_file('data.xml');
+	$xml = simplexml_load_file('/press/data.xml');
 
 foreach( $xml->children() as $child )
 {
@@ -361,7 +363,7 @@ echo '						<li><a href="#links">'. tl('Additional Links') .'</a></li>
 				</div>
 				<div id="content" class="uk-width-medium-3-4">';
 
-if( file_exists($game."/images/header.png") ) {
+if( file_exists('press/' . $game."/images/header.png") ) {
 	echo '<img src="'.$game.'/images/header.png" class="header">';
 }
 
@@ -552,9 +554,9 @@ echo '					<hr>
 
 					<h2 id="images">'. tl('Images') .'</h2>';
 
-if( file_exists($game."/images/images.zip") )
+if( file_exists('press/' . $game."/images/images.zip") )
 {
-	$filesize = filesize($game."/images/images.zip");
+	$filesize = filesize('press/' . $game."/images/images.zip");
 	if( $filesize > 1024 && $filesize < 1048576 ) {
 		$filesize = (int)( $filesize / 1024 ).'KB';
 	}
@@ -566,7 +568,7 @@ if( file_exists($game."/images/images.zip") )
 }
 
 echo '<div class="uk-grid images">';
-if ($handle = opendir($game.'/images'))
+if ($handle = opendir('press/' . $game.'/images'))
 {
 	$found = 0;
 	/* This is the correct way to loop over the directory. */
@@ -594,9 +596,9 @@ echo '					<hr>
 
 					<h2 id="logo">'. tl('Logo & Icon') .'</h2>';
 
-if( file_exists($game."/images/logo.zip") )
+if( file_exists('press/' . $game."/images/logo.zip") )
 {
-	$filesize = filesize($game."/images/logo.zip");
+	$filesize = filesize('press/' . $game."/images/logo.zip");
 	if( $filesize > 1024 && $filesize < 1048576 ) {
 		$filesize = (int)( $filesize / 1024 ).'KB';
 	}
@@ -609,17 +611,17 @@ if( file_exists($game."/images/logo.zip") )
 
 echo '<div class="uk-grid images">';
 
-if( file_exists($game.'/images/logo.png') ) {
+if( file_exists('press/' . $game.'/images/logo.png') ) {
 	echo '<div class="uk-width-medium-1-2"><a href="'.$game.'/images/logo.png"><img src="'.$game.'/images/logo.png" alt="logo" /></a></div>';
 }
 
-if( file_exists($game.'/images/icon.png') ) {
+if( file_exists('press/' . $game.'/images/icon.png') ) {
 	echo '<div class="uk-width-medium-1-2"><a href="'.$game.'/images/icon.png"><img src="'.$game.'/images/icon.png" alt="logo" /></a></div>';
 }
 
 echo '</div>';
 
-if( !file_exists($game.'/images/logo.png') && !file_exists($game.'/images/icon.png')) {
+if( !file_exists('press/' . $game.'/images/logo.png') && !file_exists('press/' . $game.'/images/icon.png')) {
 	echo '<p>'. tlHtml('There are currently no logos or icons available for %s. Check back later for more or <a href="#contact">contact us</a> for specific requests!', GAME_TITLE) .'</p>';
 }
 

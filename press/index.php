@@ -19,9 +19,9 @@ if( file_exists('validation.js') )
 }
 
 
-if( !file_exists('data.xml') )
+if( !file_exists('press/data.xml') )
 {
-	if( file_exists('_data.xml') )
+	if( file_exists('press/_data.xml') )
 	{
 		echo '<!DOCTYPE html>
 <html>
@@ -64,7 +64,7 @@ $languageQuery = ($language != TranslateTool::getDefaultLanguage() ? '?l='. $lan
 if (file_exists('data-'. $language .'.xml'))
 	$xml = simplexml_load_file('data-'. $language .'.xml');
 else
-	$xml = simplexml_load_file('data.xml');
+	$xml = simplexml_load_file('press/data.xml');
 
 foreach( $xml->children() as $child )
 {
