@@ -22,96 +22,16 @@ body
 <button id="lp1" onclick="a()">a</button>
 <button onclick="b()">b</button>
 
-<img class="layerplayer" src="quiet.svg" playing='false'>
-<img class="layerplayer_extra_layer" src="extra_layer_quiet.svg" playing='false'>
+<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/CL1.mp3'>
+<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing='false'>
 
-<img class="layerplayer" src="quiet.svg" playing='false'>
-<img class="layerplayer_extra_layer" src="extra_layer_quiet.svg" playing='false'>
+<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG1.mp3'>
+<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing='false'>
 
-<img class="layerplayer" src="quiet.svg" playing='false'>
-<img class="layerplayer_extra_layer" src="extra_layer_quiet.svg" playing='false'>
+<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG1.mp3'>
+<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing='false'>
 
 <script>
-
-	var players = document.getElementsByClassName('layerplayer');
-
-	for (player_index in players)
-	{
-		if (players[player_index] == players.length) // why can this occur?
-		{
-			break
-		}
-
-		players[player_index].addEventListener('click',function() 
-		{
-			if (this.getAttribute('playing') == 'true')
-			{
-				this.src = 'hovered.svg';
-				this.setAttribute('playing','false');
-			}
-			else
-			{
-				this.src = 'playing.svg';
-				this.setAttribute('playing','true');
-			}
-		});
-
-		players[player_index].addEventListener('mouseover',function()
-		{
-			if (this.getAttribute('playing') == 'false')
-			{
-				this.src = 'hovered.svg'
-			}
-		});
-
-		players[player_index].addEventListener('mouseout',function()
-		{
-			if (this.getAttribute('playing') == 'false')
-			{
-				this.src = 'quiet.svg'
-			}
-		});
-	}
-
-	var players = document.getElementsByClassName('layerplayer_extra_layer');
-
-	for (player_index in players)
-	{
-		if (players[player_index] == players.length) // why can this occur?
-		{
-			break
-		}
-
-		players[player_index].addEventListener('click',function() 
-		{
-			if (this.getAttribute('playing') == 'true')
-			{
-				this.src = 'extra_layer_hovered.svg';
-				this.setAttribute('playing','false');
-			}
-			else
-			{
-				this.src = 'extra_layer_playing.svg';
-				this.setAttribute('playing','true');
-			}
-		});
-
-		players[player_index].addEventListener('mouseover',function()
-		{
-			if (this.getAttribute('playing') == 'false')
-			{
-				this.src = 'extra_layer_hovered.svg'
-			}
-		});
-
-		players[player_index].addEventListener('mouseout',function()
-		{
-			if (this.getAttribute('playing') == 'false')
-			{
-				this.src = 'extra_layer_quiet.svg'
-			}
-		});
-	}
 
 	class LayerPlayer
 	{
@@ -172,24 +92,90 @@ body
 		}
 	}
 
-	var lp1 = new LayerPlayer(['CL1.mp3','BG1.mp3'],[true,false]);
+	var player_buttons = document.getElementsByClassName('layerplayer');
+	var players = {};
 
-	function a()
+	for (player_index in player_buttons)
 	{
-		var playing = lp1.TogglePlaying();
+		if (player_buttons[player_index] == player_buttons.length) // why can this occur?
+		{
+			break
+		}
 
-		if (playing)
+		var audioFile = player_buttons[player_index].getAttribute('audio');
+		players[audioFile] = new LayerPlayer([audioFile],[true]);
+
+		player_buttons[player_index].addEventListener('click',function() 
 		{
-			document.getElementById('lp1').style['background-color'] = 'green';
-		}
-		else
+			var audioFile = this.getAttribute('audio');
+			players[audioFile].TogglePlaying();
+
+			if (this.getAttribute('playing') == 'true')
+			{
+				this.src = 'music/hovered.svg';
+				this.setAttribute('playing','false');
+			}
+			else
+			{
+				this.src = 'music/playing.svg';
+				this.setAttribute('playing','true');
+			}
+		});
+
+		player_buttons[player_index].addEventListener('mouseover',function()
 		{
-			document.getElementById('lp1').style['background-color'] = 'red';
-		}
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'music/hovered.svg'
+			}
+		});
+
+		player_buttons[player_index].addEventListener('mouseout',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'music/quiet.svg'
+			}
+		});
 	}
 
-	function b()
+	var player_buttons = document.getElementsByClassName('layerplayer_extra_layer');
+
+	for (player_index in player_buttons)
 	{
-		lp1.ToggleLayer(1);
+		if (player_buttons[player_index] == player_buttons.length) // why can this occur?
+		{
+			break
+		}
+
+		player_buttons[player_index].addEventListener('click',function() 
+		{
+			if (this.getAttribute('playing') == 'true')
+			{
+				this.src = 'music/extra_layer_hovered.svg';
+				this.setAttribute('playing','false');
+			}
+			else
+			{
+				this.src = 'music/extra_layer_playing.svg';
+				this.setAttribute('playing','true');
+			}
+		});
+
+		player_buttons[player_index].addEventListener('mouseover',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'music/extra_layer_hovered.svg'
+			}
+		});
+
+		player_buttons[player_index].addEventListener('mouseout',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'music/extra_layer_quiet.svg'
+			}
+		});
 	}
 </script>
