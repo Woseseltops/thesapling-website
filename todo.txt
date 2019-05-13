@@ -6,6 +6,9 @@ Trailer
 
 Na nieuwe achtergrond:
 * Filmpje opnieuw opnemen
+  * Muziek weghalen
+  * Zijn er nog andere dingen?
+  * In de website vervangen
 * Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
 Generate static website:
@@ -25,13 +28,11 @@ Muziekartikel:
 Website:
 * Modellen naar SketchFab
 * Presskit: zorgen dat er automatisch een statische versie meegaat bij het bouwen
+  * 'Short' toevoegen
   * Zorgen dat alle links erheen kloppen
   * Zorgen dat alle onderlinge links kloppen
 * Domeinnaam aanvragen > API-adres kloppend, GA installeren
 
-Teksten schrijven voor elk medium dat ik aan wil schrijven
-* Nieuwssites
-* Subreddits: titel
 
 Presskit automatisch statisch:
 * index.html: 
