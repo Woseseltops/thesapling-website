@@ -129,7 +129,9 @@ def generate_static_website():
 			copytree(DEVLOGS_FOLDER+filename,GOAL_LOCATION+DEVLOGS_FOLDER+filename)
 		else:
 			devlog = parse_devlog(filename.split('.')[0],open(DEVLOGS_FOLDER+filename).read(),DEVLOG_TAGS)
-			devlogs.append(devlog)
+
+			if devlog.published:
+				devlogs.append(devlog)
 
 	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
 

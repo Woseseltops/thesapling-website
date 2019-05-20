@@ -30,9 +30,13 @@ This idea solved my two problems in one go: (1) the genre of ambient music fit t
 My own conclusion, after playing with this for some time, was that although everything indeed sounded good together, some combinations were better for videogame background music than others. In the end, I identified five categories of fragments:
 
 * The background, with long, sleepy tones. These are what gives the music its ambient feel. Strings are the most typical example.
+
 * The foreground, played by a single instrument with short notes, grabbing the listener's attention. I most often use the piano or the celesta for this.
+
 * The color, which is somewhere in between: they are played by a single instrument, but use long notes. These give a bit of flavour to a background that would otherwise always sound similar. This can for example be a clarinet or a trombone.
+
 * The bass, often played by double bases or base clarinets.
+
 * Victory sounds, that temporarily grab the player's attention and give them a satisfactory feeling. 
 
 Furthermore, I discovered that using strings in *unisono with octave intervals* (playing the low and high versions of the same note at the same time) worked quite well to give the mix a more epic feel - I trick I knew from trying to write epic sounding film music. In the end, I used this together with the bass as the player is looking at his/her creations from a distance: as the player zooms out, the bass and *unisono* fade in. 
@@ -47,4 +51,4 @@ One final question you might have is whether these musical fragments are complet
 
 And that's all there is to it! By the way, if you want to do more with these pieces of music, you can! Both [the individual fragments] and [the layers of the main theme] are availale to be used in your own projects, as is the [sheet music] for the main theme. See [this devlog] for more info on that.
 
-29-04-19
+29-04-20

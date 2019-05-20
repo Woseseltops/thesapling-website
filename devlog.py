@@ -13,6 +13,7 @@ class DevLog():
 		self.bare_html = ''
 		self.tags = []
 		self.date = None
+		self.published = False
 		self.lead = ''
 
 	def get_pretty_date(self):
@@ -34,6 +35,7 @@ def parse_devlog(identifier,raw_markdown,tags):
 				devlog.tags = [tag.strip() for tag in line.split('|')[1:-1]]
 			elif len(line) > 5 and line[2] == '-' and line[5] == '-' and not line[0] == '-':
 				devlog.date = datetime.datetime.strptime( line.strip(), "%d-%m-%y" )
+				devlog.published = devlog.date < datetime.datetime.now()
 
 	#Then generate the html
 	html = markdown.markdown('\n'.join(markdown_lines[:-1])).split('\n')

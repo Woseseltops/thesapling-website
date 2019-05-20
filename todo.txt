@@ -11,9 +11,15 @@ Na nieuwe achtergrond:
   * In de website vervangen
 * Zijn er ook nog plaatjes die ik opnieuw wil doen?
 
+Player-content artikel:
+* Vrij druk met informatie, overzichtje bovenaan zetten
+
 Generate static website:
-* Iets met fonts gaat niet helemaal goed
+* Devlog alleen in de lijst en op de homepagina als ie gereleased is
 * Iets met lists gaat niet helemaal goed
+* Parallaxplaatje beneden:
+  * Op geen enkele pagina helemaal naar rechts
+  * Bij devlog list maar halverwege
 * Oplossen: Unity player in markdown
 
 Style-artikel:
@@ -27,18 +33,8 @@ Muziekartikel:
 
 Website:
 * Modellen naar SketchFab
-* Presskit: zorgen dat er automatisch een statische versie meegaat bij het bouwen
-  * 'Short' toevoegen
-  * Zorgen dat alle links erheen kloppen
-  * Zorgen dat alle onderlinge links kloppen
+* Oplossen: de parallax kan niet in de git repo
 * Domeinnaam aanvragen > API-adres kloppend, GA installeren
-
-
-Presskit automatisch statisch:
-* index.html: 
-  * hier en daar nog een count die misgaat
-  * projecten importeren gaat nog vanaf verkeerde pagina
-* Sheet: hij zit weer ergens op een doodlopende route waardoor lege pagina
 
 Later punt
 ----------
