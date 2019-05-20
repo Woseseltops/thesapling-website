@@ -76,7 +76,7 @@ def devlogs_to_rss(devlogs,template_location,item_template_location):
 
 def generate_press_section(php_location,press_folder,goal_location):
 
-	mkdir(goal_location)
+	#mkdir(goal_location)
 	copyfile(press_folder+'style.css',goal_location+'style.css')
 
 	for page_name, arguments in [('index',''),('sheet','The Sapling')]:
@@ -164,6 +164,8 @@ def generate_static_website():
 
 	#Move over the static files
 	copytree(STATIC_FOLDER,GOAL_LOCATION+STATIC_FOLDER)
+	copytree(PRESS_FOLDER+'images',GOAL_LOCATION+PRESS_FOLDER+'images')
+	copytree(PRESS_FOLDER+'The Sapling/images',GOAL_LOCATION+PRESS_FOLDER+'The Sapling/images')
 
 	#Make static version of press pages
 	generate_press_section(PHP_LOCATION,PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)

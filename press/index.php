@@ -66,6 +66,17 @@ if (file_exists('data-'. $language .'.xml'))
 else
 	$xml = simplexml_load_file('press/data.xml');
 
+$awards = array();
+$histories = array();
+$socials = array();
+$address = array();
+$features = array();
+$trailers = array();
+$quotes = array();
+$additionals = array();
+$credits = array();
+$contacts = array();
+
 foreach( $xml->children() as $child )
 {
 	switch( $child->getName() )
@@ -89,7 +100,6 @@ foreach( $xml->children() as $child )
 			define("ANALYTICS", $child);
 			break;
 		case("socials"):
-			$socials = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -98,7 +108,6 @@ foreach( $xml->children() as $child )
 			}
 			break;
 		case("address"):
-			$address = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -113,7 +122,6 @@ foreach( $xml->children() as $child )
 			define("COMPANY_DESCRIPTION", $child);
 			break;
 		case("histories"):
-			$histories = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -122,7 +130,6 @@ foreach( $xml->children() as $child )
 			}
 			break;
 		case("features"):
-			$features = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -131,7 +138,6 @@ foreach( $xml->children() as $child )
 			}
 			break;	
 		case("trailers"):
-			$trailers = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -140,7 +146,6 @@ foreach( $xml->children() as $child )
 			}
 			break;					
 		case("awards"):
-			$awards = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -149,7 +154,6 @@ foreach( $xml->children() as $child )
 			}
 			break;					
 		case("quotes"):
-			$quotes = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -158,7 +162,6 @@ foreach( $xml->children() as $child )
 			}
 			break;					
 		case("additionals"):
-			$additionals = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -167,7 +170,6 @@ foreach( $xml->children() as $child )
 			}
 			break;					
 		case("credits"):
-			$credits = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -176,7 +178,6 @@ foreach( $xml->children() as $child )
 			}
 			break;					
 		case("contacts"):
-			$contacts = array();
 			$i = 0;
 			foreach( $child->children() as $subchild )
 			{
@@ -292,10 +293,10 @@ echo '							</p>
 							<p>
 							<strong>'. tl('Releases:') .'</strong><br />';
 
-if ($handle = opendir('.')) {
+if ($handle = opendir('press')) {
 	while (false !== ($entry = readdir($handle))) {
 		if ($entry != "." && $entry != ".." && $entry != "lang" && substr($entry,0,1) != "_" && strpos($entry, ".") === FALSE && substr($entry,-4) != ".log" && substr($entry,0,6) != "images" && substr($entry,0,8) != "trailers" && substr($entry,0,9) != "error_log") {
-			echo '<a href="sheet.php?p='.$entry . str_replace('?', '&', $languageQuery).'">'.ucwords(str_replace("_", " ", $entry)).'</a><br />';
+			echo '<a href="sheet.html">'.ucwords(str_replace("_", " ", $entry)).'</a><br />';
 		}
 	}
 }
@@ -340,10 +341,10 @@ for( $i = 0; $i < count($histories); $i++ )
 echo '							<h2 id="projects">'. tl('Projects') .'</h2>
 							<ul>';
 
-if ($handle = opendir('.')) {
+if ($handle = opendir('press')) {
 	while (false !== ($entry = readdir($handle))) {
 		if ($entry != "." && $entry != ".." && $entry != "lang" && substr($entry,0,1) != "_" && strpos($entry, ".") === FALSE && substr($entry,-4) != ".log" && substr($entry,0,6) != "images" && substr($entry,0,8) != "trailers" && substr($entry,0,9) != "error_log") {
-			echo '<li><a href="sheet.php?p='.$entry. str_replace('?', '&', $languageQuery).'">'.ucwords(str_replace("_", " ", $entry)).'</a></li>';
+			echo '<li><a href="sheet.html">'.ucwords(str_replace("_", " ", $entry)).'</a></li>';
 		}
 	}
 }
@@ -359,7 +360,7 @@ echo '							</ul>
 
 if( count($trailers) == 0 )
 {
-	echo '<p>'. tlHtml('There are currently no trailers available for %s. Check back later for more or <a href="#contact">contact us</a> for specific requests!', COMPANY_TITLE) .'</p>';
+	echo '<p>'. tlHtml('There are currently no trailers available for %s. Check back later for more or <a href="#contact">contact me</a> for specific requests!', COMPANY_TITLE) .'</p>';
 }
 else
 {
@@ -442,7 +443,7 @@ if( file_exists("images/images.zip") )
 }
 
 echo '<div class="uk-grid images">';
-if ($handle = opendir('images'))
+if ($handle = opendir('press/images'))
 {
 	/* This is the correct way to loop over the directory. */
 	while (false !== ($entry = readdir($handle)))
@@ -460,7 +461,7 @@ echo '</div>';
 
 closedir($handle);
 
-echo '					<p class="images-text">'. tlHtml('There are far more images available for %s, but these are the ones we felt would be most useful to you. If you have specific requests, please do <a href="#contact">contact us</a>!', COMPANY_TITLE) .'</p>
+echo '					<p class="images-text">'. tlHtml('There are far more images available for %s, but these are the ones we felt would be most useful to you. If you have specific requests, please do <a href="#contact">contact me</a>!', COMPANY_TITLE) .'</p>
 
 					<hr>
 
@@ -492,7 +493,7 @@ if( file_exists('images/icon.png') ) {
 echo '</div>';
 
 if( !file_exists('images/logo.png') && !file_exists('images/icon.png')) {
-	echo '<p>'. tlHtml('There are currently no logos or icons available for %s. Check back later for more or <a href="#contact">contact us</a> for specific requests!', COMPANY_TITLE) .'</p>';
+	echo '<p>'. tlHtml('There are currently no logos or icons available for %s. Check back later for more or <a href="#contact">contact me</a> for specific requests!', COMPANY_TITLE) .'</p>';
 }
 
 echo '					<hr>';

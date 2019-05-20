@@ -17,8 +17,8 @@ $languageQuery = ($language != TranslateTool::getDefaultLanguage() ? '?l='. $lan
 
 if (file_exists('press/' . $game.'/data-'. $language .'.xml'))
 	$xml = simplexml_load_file('press/' . $game.'/data-'. $language .'.xml');
-else if (file_exists('press/' . $game.'/press/data.xml'))
-	$xml = simplexml_load_file('press/' . $game.'/press/data.xml');
+else if (file_exists('press/' . $game . '/data.xml'))
+	$xml = simplexml_load_file('press/' . $game . '/data.xml');
 
 if( !isset($xml) )
 {	
@@ -96,7 +96,7 @@ if( !isset($xml) )
 	}
 	else
 	{		
-		header("Location: index.php");
+		header("Location: index.html");
 		exit;
 	}
 }
@@ -272,7 +272,7 @@ foreach( $xml->children() as $child )
 if (file_exists('data-'. $language .'.xml'))
 	$xml = simplexml_load_file('data-'. $language .'.xml');
 else
-	$xml = simplexml_load_file('/press/data.xml');
+	$xml = simplexml_load_file('press/data.xml');
 
 foreach( $xml->children() as $child )
 {
@@ -331,7 +331,7 @@ echo '<!DOCTYPE html>
 			<div class="uk-grid">
 				<div id="navigation" class="uk-width-medium-1-4">
 					<h1 class="nav-header">'. COMPANY_TITLE .'</h1>
-					<a class="nav-header" href="index.php'. $languageQuery .'" target="_self">'. tl('press kit') .'</a></strong>
+					<a class="nav-header" href="index.html'. $languageQuery .'" target="_self">'. tl('press kit') .'</a></strong>
 					<ul class="uk-nav uk-nav-side">';
 
 if (count(TranslateTool::getLanguages()) > 1) {
@@ -372,7 +372,7 @@ echo '					<div class="uk-grid">
 							<h2 id="factsheet">'. tl('Factsheet'). '</h2>
 							<p>
 								<strong>'. tl('Developer:'). '</strong><br/>
-								<a href="index.php'. $languageQuery .'">'. COMPANY_TITLE .'</a><br/>
+								<a href="index.html'. $languageQuery .'">'. COMPANY_TITLE .'</a><br/>
 								'. tl('Based in %s', COMPANY_BASED) .'
 							</p>
 							<p>
@@ -485,7 +485,7 @@ echo '							</ul>
 
 if( count($trailers) == 0 )
 {
-	echo '<p>'. tlHtml('There are currently no trailers available for %s. Check back later for more or <a href="#contact">contact us</a> for specific requests!', GAME_TITLE) .'</p>';
+	echo '<p>'. tlHtml('There are currently no trailers available for %s. Check back later for more or <a href="#contact">contact me</a> for specific requests!', GAME_TITLE) .'</p>';
 }
 else
 {
@@ -589,7 +589,7 @@ echo '</div>';
 closedir($handle);
 
 if ($found == 0) {
-	echo '<p class="images-text">'. tlHtml('There are currently no screenshots available for %s. Check back later for more or <a href="#contact">contact us</a> for specific requests!', GAME_TITLE) .'</p>';
+	echo '<p class="images-text">'. tlHtml('There are currently no screenshots available for %s. Check back later for more or <a href="#contact">contact me</a> for specific requests!', GAME_TITLE) .'</p>';
 }
 					
 echo '					<hr>
@@ -622,7 +622,7 @@ if( file_exists('press/' . $game.'/images/icon.png') ) {
 echo '</div>';
 
 if( !file_exists('press/' . $game.'/images/logo.png') && !file_exists('press/' . $game.'/images/icon.png')) {
-	echo '<p>'. tlHtml('There are currently no logos or icons available for %s. Check back later for more or <a href="#contact">contact us</a> for specific requests!', GAME_TITLE) .'</p>';
+	echo '<p>'. tlHtml('There are currently no logos or icons available for %s. Check back later for more or <a href="#contact">contact me</a> for specific requests!', GAME_TITLE) .'</p>';
 }
 
 echo '<hr>';
@@ -786,7 +786,7 @@ echo '					<hr>
 
 					<p>
 						<strong>'. tl('More information'). '</strong><br/>
-						'. tlHtml('More information on %s, our logo & relevant media are available <a href="%s">here</a>.', COMPANY_TITLE, 'index.php'. $languageQuery). '
+						'. tlHtml('More information on %s, our logo & relevant media are available <a href="%s">here</a>.', COMPANY_TITLE, 'index.html'. $languageQuery). '
 					</p>
 					
 					<hr>
