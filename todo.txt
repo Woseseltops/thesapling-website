@@ -8,10 +8,7 @@ Tot release:
    * Twijfelen over laatste stuk
    * Verborgen op Youtube
 2. Parallaxvideo
-   * Twijfelen: is de nieuwe achtergrond zoveel mooier? Zo ja:
-     * Wil ik ook allerlei plaatjes in de 4 shops aanpassen?
-     * Opnieuw opnemen, geluid weghalen
-   * Oplossen: kan niet in de git repo
+   * Wil ik ook allerlei plaatjes in de 4 shops aanpassen?
 3. Hele website als Github pages maken
    * Nog wat laatste algemene layoutdingen-fixen:
 	* Parallaxplaatje beneden:
