@@ -7,11 +7,11 @@ Tot release:
    * Twijfelen over beginshot
    * Twijfelen over laatste stuk
    * Verborgen op Youtube
-2. Kijken of de nieuwe achtergrond zoveel mooier is dat ik de parallax op de website wil vervangen
-   * Zo ja, opnieuw opnemen, geluid weghalen
-   * Op de website vervangen:
-     * Oplossen: kan niet in de git repo
-   * Twijfelen: wil ik ook allerlei plaatjes in de 4 shops aanpassen?
+2. Parallaxvideo
+   * Twijfelen: is de nieuwe achtergrond zoveel mooier? Zo ja:
+     * Wil ik ook allerlei plaatjes in de 4 shops aanpassen?
+     * Opnieuw opnemen, geluid weghalen
+   * Oplossen: kan niet in de git repo
 3. Hele website als Github pages maken
    * Nog wat laatste algemene layoutdingen-fixen:
 	* Parallaxplaatje beneden:
