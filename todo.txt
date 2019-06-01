@@ -1,62 +1,38 @@
 NOW
 ===
-Trailer
-* You might have noticed that the music became, what you could call, larger as we zoomed out -> As you can hear, the music becomes larger while zooming out
-* Iets bedenken voor laatste stuk
+Tot release:
+1. Trailer af en verborgen op YouTube
+   * Zinnetje opnieuw opnemen:  As you can hear, the music becomes larger while zooming out
+   * Zinnetje vervangen
+   * Twijfelen over beginshot
+   * Twijfelen over laatste stuk
+   * Verborgen op Youtube
+2. Kijken of de nieuwe achtergrond zoveel mooier is dat ik de parallax op de website wil vervangen
+   * Zo ja, opnieuw opnemen, geluid weghalen
+   * Op de website vervangen:
+     * Oplossen: kan niet in de git repo
+   * Twijfelen: wil ik ook allerlei plaatjes in de 4 shops aanpassen?
+3. Hele website als Github pages maken
+   * Nog wat laatste algemene layoutdingen-fixen:
+	* Parallaxplaatje beneden:
+	  * Op geen enkele pagina helemaal naar rechts
+	  * Bij devlog list maar halverwege
+   * Domeinnaam aanmaken
+   * Laatste dingen etc goedzetten
+   * Modellen uploaden naar SketchFab
+   * Google analytics toevoegen
+4. Alle emails klaarzetten
+   * Uitzoeken waar ik allemaal de aankondigingen wil doen
 
-Na nieuwe achtergrond:
-* Filmpje opnieuw opnemen
-  * Muziek weghalen
-  * Zijn er nog andere dingen?
-  * In de website vervangen
-* Zijn er ook nog plaatjes die ik opnieuw wil doen?
-
-Player-content artikel:
-* Vrij druk met informatie, overzichtje bovenaan zetten
-
-Generate static website:
-* Devlog alleen in de lijst en op de homepagina als ie gereleased is
-* Iets met lists gaat niet helemaal goed
-* Parallaxplaatje beneden:
-  * Op geen enkele pagina helemaal naar rechts
-  * Bij devlog list maar halverwege
-* Oplossen: Unity player in markdown
-
-Style-artikel:
-* Slider style implementeren
-* Unity-ding toevoegen
-  * Inclusief knoppen
-
-Muziekartikel:
-* Extra layer echt laten werken met geluid
-* Players toevoegen aan artikel
-
-Website:
-* Modellen naar SketchFab
-* Oplossen: de parallax kan niet in de git repo
-* Domeinnaam aanvragen > API-adres kloppend, GA installeren
-
-Presskit automatisch statisch:
-* index.html: 
-  * hier en daar nog een count die misgaat
-  * projecten importeren gaat nog vanaf verkeerde pagina
-* Sheet: hij zit weer ergens op een doodlopende route waardoor lege pagina
-
-Todo for release
-----------------
-Eigen website afmaken
-Trailer af en verborgen op YouTube
-* Zinnetje opnieuw opnemen
-* Zinnetje vervangen
-* Twijfelen over beginshot
-* Twijfelen over laatste stuk
-Kijken of de nieuwe achtergrond zoveel mooier is dat ik de parallax op de website wil vervangen
-Hele website als Github pages maken
-* Alle stylesheets etc fixen
-* Modellen uploaden naar SketchFab
-* Domeinnaam aanmaken
-Alle emails klaarzetten
-Uitzoeken waar ik allemaal de aankondigingen wil doen
+Interactieve blogs:
+* Player-content artikel: vrij druk met informatie, overzichtje bovenaan zetten
+* Style-artikel: 
+  * slider style implementeren
+  * Unity-ding toevoegen
+    * Inclusief knoppen
+* Muziekartikel:
+  * Extra layer echt laten werken met geluid
+  * Players toevoegen aan artikel
 
 Later punt
 ----------
