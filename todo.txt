@@ -36,6 +36,28 @@ Website:
 * Oplossen: de parallax kan niet in de git repo
 * Domeinnaam aanvragen > API-adres kloppend, GA installeren
 
+Presskit automatisch statisch:
+* index.html: 
+  * hier en daar nog een count die misgaat
+  * projecten importeren gaat nog vanaf verkeerde pagina
+* Sheet: hij zit weer ergens op een doodlopende route waardoor lege pagina
+
+Todo for release
+----------------
+Eigen website afmaken
+Trailer af en verborgen op YouTube
+* Zinnetje opnieuw opnemen
+* Zinnetje vervangen
+* Twijfelen over beginshot
+* Twijfelen over laatste stuk
+Kijken of de nieuwe achtergrond zoveel mooier is dat ik de parallax op de website wil vervangen
+Hele website als Github pages maken
+* Alle stylesheets etc fixen
+* Modellen uploaden naar SketchFab
+* Domeinnaam aanmaken
+Alle emails klaarzetten
+Uitzoeken waar ik allemaal de aankondigingen wil doen
+
 Later punt
 ----------
 * Presskit
