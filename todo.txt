@@ -4,11 +4,9 @@ Tot release:
 1. Trailer af en verborgen op YouTube
    * Zinnetje opnieuw opnemen:  As you can hear, the music becomes larger while zooming out
    * Zinnetje vervangen
-   * Twijfelen over beginshot
    * Twijfelen over laatste stuk
-   * Verborgen op Youtube
-2. Parallaxvideo
-   * Wil ik ook allerlei plaatjes in de 4 shops aanpassen?
+   * Uploaden naar verschillende stores
+2. Steam ter review aanbieden
 3. Hele website als Github pages maken
    * Nog wat laatste algemene layoutdingen-fixen:
 	* Parallaxplaatje beneden:
@@ -20,6 +18,7 @@ Tot release:
    * Google analytics toevoegen
 4. Alle emails klaarzetten
    * Uitzoeken waar ik allemaal de aankondigingen wil doen
+5. Spel nog een keer goed doorspelen
 
 Interactieve blogs:
 * Player-content artikel: vrij druk met informatie, overzichtje bovenaan zetten
