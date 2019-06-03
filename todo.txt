@@ -2,23 +2,24 @@ NOW
 ===
 Tot release:
 1. Trailer af en verborgen op YouTube
-   * Zinnetje opnieuw opnemen:  As you can hear, the music becomes larger while zooming out
-   * Zinnetje vervangen
-   * Twijfelen over laatste stuk
+   * Laatste zinnetje opnieuw opnemen
    * Uploaden naar verschillende stores
 2. Steam ter review aanbieden
+   * Alle missende dingen afmaken
 3. Hele website als Github pages maken
    * Nog wat laatste algemene layoutdingen-fixen:
-	* Parallaxplaatje beneden:
-	  * Op geen enkele pagina helemaal naar rechts
-	  * Bij devlog list maar halverwege
+	* De film moet altijd even hoog zijn, ik wil dat de zijkanten verdwijnen als het niet past
+	  * Let op: het mag bij smalle schermen niet de body smaller maken
+	* Laatste devlog niet in de main column, zodat ie breder kan zijn
+	* Bij kleine schermen wordt er toch nog iets opzij geduwd
    * Domeinnaam aanmaken
    * Laatste dingen etc goedzetten
    * Modellen uploaden naar SketchFab
    * Google analytics toevoegen
 4. Alle emails klaarzetten
    * Uitzoeken waar ik allemaal de aankondigingen wil doen
-5. Spel nog een keer goed doorspelen
+5. Equilinox proberen
+6. Spel nog een keer goed doorspelen
 
 Interactieve blogs:
 * Player-content artikel: vrij druk met informatie, overzichtje bovenaan zetten
@@ -32,8 +33,6 @@ Interactieve blogs:
 
 Later punt
 ----------
-* Presskit
-  * Helemaal afmaken
 * IndieDB
 
 Na release
