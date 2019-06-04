@@ -6,12 +6,10 @@ Tot release:
    * Uploaden naar verschillende stores
 2. Steam ter review aanbieden
    * Alle missende dingen afmaken
+     * Heb ik de startopties goed staan voor beide besturingssystemen?
+     * Google Analytics
+     * Uitgebreidere beschrijving
 3. Hele website als Github pages maken
-   * Nog wat laatste algemene layoutdingen-fixen:
-	* De film moet altijd even hoog zijn, ik wil dat de zijkanten verdwijnen als het niet past
-	  * Let op: het mag bij smalle schermen niet de body smaller maken
-	* Laatste devlog niet in de main column, zodat ie breder kan zijn
-	* Bij kleine schermen wordt er toch nog iets opzij geduwd
    * Domeinnaam aanmaken
    * Laatste dingen etc goedzetten
    * Modellen uploaden naar SketchFab
@@ -25,6 +23,7 @@ Interactieve blogs:
 * Player-content artikel: vrij druk met informatie, overzichtje bovenaan zetten
 * Style-artikel: 
   * slider style implementeren
+    * De SVG staat al bij static
   * Unity-ding toevoegen
     * Inclusief knoppen
 * Muziekartikel:

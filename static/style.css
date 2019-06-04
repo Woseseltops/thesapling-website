@@ -333,13 +333,13 @@ a
 
 #title_area
 {
-    width: 100%;
     height: 540px;
+    overflow: hidden;
 }
 
 video
 {
-    width: 100%;
+    height: 540px;
 }
 
 #main_logo
@@ -359,7 +359,7 @@ video
     margin-top: 20px;    
 }
 
-#main_column
+#main_column, #extra_content
 {
     margin: auto;
 }
@@ -412,7 +412,7 @@ video
 #portrait
 {
     height: 120px;
-    margin-top: 45px;
+    margin-top: -63px;
 }
 
 #portrait_label
@@ -423,7 +423,6 @@ video
 #latest_devlog
 {
     width: 100vw;
-    margin-left:-30vw;
 }
 
 .selected_checkbox
@@ -442,7 +441,7 @@ video
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width: 1023px)
 {
     video
     {
@@ -457,11 +456,6 @@ video
         background-position-x: -230px;
     }
 
-    #title_wrapper
-    {
-        margin-top: -90px;
-    }
-
     #main_area
     {
         padding: 10px;
@@ -471,6 +465,11 @@ video
     {
         margin-left: 0px;
         width: 100%
+    }
+
+    .main, .devlog 
+    {
+        width: 100vw;
     }
 
     .devlog
@@ -605,10 +604,8 @@ ul
   position: absolute;
   z-index: 9;
   cursor: ew-resize;
-  /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  background-color: #2196F3;
   opacity: 0.7;
-  border-radius: 50%;
+  background-image: url(/static/svg/slider.svg);
 }

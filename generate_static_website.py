@@ -7,14 +7,19 @@ from subprocess import Popen
 from devlog import parse_devlog
 from template import fill_template
 
-def create_page(template_location,title_area_file_location,title,content,page_type,content_variables = None):
+def create_page(template_location,title_area_file_location,title,content,page_type,content_variables = None,portrait_area = None):
 
 	title_area = open(title_area_file_location).read()
 
 	if content_variables != None:
 		content = fill_template(content,content_variables)
 
-	return fill_template(open(template_location).read(),{'title_area':title_area,'title':title,'content':content,'page_type':page_type})
+	all_variables = {'title_area':title_area,'title':title,'content':content,'page_type':page_type,'portrait_area':''}
+
+	if portrait_area != None:
+		all_variables['portrait_area'] = open(portrait_area).read()
+
+	return fill_template(open(template_location).read(),all_variables)
 
 def devlog_to_list_item(devlog,devlog_list_item_template_location,even,simplified):
 
@@ -95,6 +100,7 @@ def generate_static_website():
 	DEVLOG_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_title_area.html'
 	DEVLOG_LIST_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_list_title_area.html'
 	DEVLOG_LIST_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'devlog_list_item_template.html'
+	PORTRAIT_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'portrait_template.html'
 
 	RSS_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_template.xml'
 	RSS_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_item_template.xml'
@@ -129,22 +135,23 @@ def generate_static_website():
 			copytree(DEVLOGS_FOLDER+filename,GOAL_LOCATION+DEVLOGS_FOLDER+filename)
 		else:
 			devlog = parse_devlog(filename.split('.')[0],open(DEVLOGS_FOLDER+filename).read(),DEVLOG_TAGS)
-
-			if devlog.published:
-				devlogs.append(devlog)
+			devlogs.append(devlog)
 
 	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
 
 	for n,devlog in enumerate(devlogs):
 		navigation_buttons = create_navigation_buttons(devlogs,n,svg_images)		
-		full_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_TITLE_AREA_FILE_LOCATION,devlog.title.upper(),devlog.html+navigation_buttons,'devlog')
+		full_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_TITLE_AREA_FILE_LOCATION,devlog.title.upper(),
+									devlog.html+navigation_buttons,'devlog',portrait_area=PORTRAIT_TEMPLATE_LOCATION)
 		open(GOAL_LOCATION+'devlogs/'+devlog.identifier+'.html','w').write(full_content)
 
 	#Generate the devlog listview
 	listview_content = '<h3 class="page_header">DEVLOGS</h3>'
 
 	for n,devlog in enumerate(devlogs):
-		listview_content += devlog_to_list_item(devlog,DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,n%2==0,False)
+
+		if devlog.published:
+			listview_content += devlog_to_list_item(devlog,DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,n%2==0,False)
 	
 	listview_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_LIST_TITLE_AREA_FILE_LOCATION,'The Sapling',listview_content,'devlog_list')
 	open(GOAL_LOCATION+'devlogs/index.html','w').write(listview_content)
