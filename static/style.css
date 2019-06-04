@@ -547,7 +547,7 @@ video
 
 .devlog li
 {
-    margin-bottom: -20px;
+    text-align: left;
 }
 
 code
