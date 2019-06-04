@@ -21,9 +21,8 @@ Tot release:
 
 Interactieve blogs:
 * Player-content artikel: vrij druk met informatie, overzichtje bovenaan zetten
+  * Lists opnieuw stijlen: kleur, ruimte eromheen
 * Style-artikel: 
-  * slider style implementeren
-    * De SVG staat al bij static
   * Unity-ding toevoegen
     * Inclusief knoppen
 * Muziekartikel:

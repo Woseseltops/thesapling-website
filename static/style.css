@@ -604,8 +604,8 @@ ul
   position: absolute;
   z-index: 9;
   cursor: ew-resize;
-  width: 40px;
-  height: 40px;
-  opacity: 0.7;
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
   background-image: url(/static/svg/slider.svg);
 }
