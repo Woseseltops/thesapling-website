@@ -20,14 +20,20 @@ Tot release:
 6. Spel nog een keer goed doorspelen
 
 Interactieve blogs:
-* Player-content artikel: vrij druk met informatie, overzichtje bovenaan zetten
-  * Lists opnieuw stijlen: kleur, ruimte eromheen
-* Style-artikel: 
-  * Unity-ding toevoegen
-    * Inclusief knoppen
+* Style-artikel: Unity-ding toevoegen
+  * HTML van de voorbeeldpagina
+    * Doet ie het nog?
+    * Code kopieren
+    * Moet er nog iets mee?
+  * Knoppen
+    * Html toevoegen
+    * CSS
+    * Geactiveerd of gede-activeerd?
 * Muziekartikel:
-  * Extra layer echt laten werken met geluid
   * Players toevoegen aan artikel
+    * HTML overzetten
+    * Gaan alle geluidsbestanden mee?
+  * Extra layer echt laten werken met geluid
 
 Later punt
 ----------
