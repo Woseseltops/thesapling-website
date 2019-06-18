@@ -3,9 +3,9 @@ Breakdown of the visual style of The Sapling
 
 | Graphics |
 
-In this article I'll show you how the graphical style of The Sapling is achieved, step by step. At the bottom there's an interactive scene so you can turn various steps on and off.
+In this article I'll show you how the graphical style of The Sapling is achieved, step by step. At the bottom there's an interactive scene so you can turn all individual effects on and off.
 
-Writing game code and creating game graphics are two fundamentally different beasts, with very different upsides and downsides. One area where programming has the clear advantage, is when you're inspired by another game and want to see if you can replicate a particular idea. If I encounter a game mechanic that I like, I can do a quick internet search and the result is most likely a tutorial on how to build this kind of technology. If I like the graphics in a game, on the other hand, there's not much I can do other than endlessly combining tricks I already know and hope this by chance achieves the graphical style I was trying to reproduce.
+Writing game code and creating game graphics are two fundamentally different beasts, and what is fun about them is very different. One area where programming has the clear advantage, is when you're inspired by another game and want to see if you can replicate a particular idea. If I encounter a game mechanic that I like, I can do a quick internet search and the result is most likely a tutorial on how to build this kind of technology. If I like the graphics in a game, on the other hand, there's not much I can do other than endlessly combining tricks I already know and hope this by chance achieves the graphical style I was trying to reproduce.
 
 ---
 
@@ -30,7 +30,7 @@ The Catmull-Clark subdivision algorithm is what started this whole project. It's
 
 Depth of Field
 --------------
-I really like depth of field in film and photography as it guides what the viewer focuses on in a very natural way. Unfortunately it does not work really well in most gaming contexts: in most situations, the player should be able to focus wherever s/he wants. On top of this, depth of field makes objects feel relatively small; depth of field on anything larger than a human makes it look like some kind of miniature version - although some recent city building sims use this to their advantage to create a 'toy city' kind of feel. In The Sapling, the only place I thought depth of field worked well is when the player clicks a plant or animal to focus on it. Look at the background in the image below to see the effect.
+I really like depth of field in film and photography as it guides what the viewer focuses on in a very natural way. Unfortunately it often does not work well in gaming contexts: in most situations, the player should be able to focus wherever s/he wants. On top of this, depth of field makes objects feel relatively small; depth of field on anything larger than a human makes it look like some kind of miniature version - although some recent city building sims use this to their advantage to create a 'toy city' kind of feel. In The Sapling, I use depth of field when the player clicks a plant or animal to focus on it. Look at the background in the image below to see the effect.
 
 <div class="img-comp-container">
   <div class="img-comp-img">
@@ -57,7 +57,7 @@ Unlike depth of field, I rarely like vignettes in film and photography but I alm
 
 Water animation
 ---------------
-A comment a lot of early playtesters gave was that the island looked empty and boring when you start. While I still haven't come up with a way to really fix this, I think that moving water makes the whole thing feel a little more alive. It's achieved by saving [x] animation in Blender as shapekeys.
+A comment a lot of early playtesters gave was that the island looked empty and boring when you start. While I still haven't come up with a way to really fix this, I think that moving water makes the whole thing feel a little more alive. It's achieved by saving [x] animation in Blender as shapekeys. You can turn the moving water on and off in the interactive scene below.
 
 Gradient skyboxes
 -----------------
@@ -103,8 +103,27 @@ Color correction has the same goal as the colored lights (color the world to fit
   </div>
 </div>
 
+Interactive scene
+-----------------
 
-<div>Unity player</div>
+<button onclick="ToggleVignette()">Toggle vignette</button><button onclick="ToggleDepthOfField()">Toggle depth of field</button><button onclick="ToggleSubdivision()">Toggle subdivision</button><button onclick="ToggleAnimatedWater()">Toggle animated water</button><button onclick="ToggleColoredLights()">Toggle colored lights</button><button onclick="ToggleGradientSkyBox()">Toggle gradient skybox</button><button onclick="ToggleColorGrading()">Toggle color grading</button>
+
+<p>Slide to change where we are in the day-night cycle</p>
+
+<input type="range" min="1" max="100" value="50" id="dayNightCycleSlider">
+
+<script src="visualstyle/UnityProgress.js"></script>  
+<script src="visualstyle/UnityLoader.js"></script>
+<script>
+  var gameInstance = UnityLoader.instantiate("gameContainer", "visualstyle/Builds.json", {onProgress: UnityProgress});
+</script>
+
+<div class="webgl-content">
+  <div id="gameContainer" style="width: 750px; height: 600px"></div>
+  <div class="footer">
+  </div>
+</div>
+
 
 <script>
 function initComparisons() 
@@ -200,6 +219,50 @@ function initComparisons()
 }
 
 initComparisons();
+</script>
+
+<script>
+    var slider = document.getElementById("dayNightCycleSlider");    
+    slider.oninput = function()
+    {
+     gameInstance.SendMessage('Controller','SetPositionInDayNightCycle',this.value/100);    
+    } 
+
+
+    function ToggleVignette()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleVignette');
+    }
+
+    function ToggleDepthOfField()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleDepthOfField');
+    }
+
+    function ToggleSubdivision()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleSubdivisionIterations');
+    }
+    
+    function ToggleAnimatedWater()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleAnimatedWater');
+    }
+
+    function ToggleColoredLights()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleColoredLights');
+    }
+
+    function ToggleGradientSkyBox()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleGradientSkyBox');
+      }     
+
+    function ToggleColorGrading()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleColorGrading');
+      }     
 </script>
 
 29-04-20

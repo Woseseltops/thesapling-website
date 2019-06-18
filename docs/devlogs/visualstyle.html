@@ -55,8 +55,8 @@
 		<div id="main_area">
 			
 <div id="label_bar"><div class="nonselected_tag">Announcement</div><div class="nonselected_tag">Music</div><div class="selected_tag">Graphics</div><div class="nonselected_tag">Code</div></div>
-<p id="first_p">In this article I'll show you how the graphical style of The Sapling is achieved, step by step. At the bottom there's an interactive scene so you can turn various steps on and off.</p>
-<p class="non_first_p"><span id="first_character">W</span>riting game code and creating game graphics are two fundamentally different beasts, with very different upsides and downsides. One area where programming has the clear advantage, is when you're inspired by another game and want to see if you can replicate a particular idea. If I encounter a game mechanic that I like, I can do a quick internet search and the result is most likely a tutorial on how to build this kind of technology. If I like the graphics in a game, on the other hand, there's not much I can do other than endlessly combining tricks I already know and hope this by chance achieves the graphical style I was trying to reproduce.</p>
+<p id="first_p">In this article I'll show you how the graphical style of The Sapling is achieved, step by step. At the bottom there's an interactive scene so you can turn all individual effects on and off.</p>
+<p class="non_first_p"><span id="first_character">W</span>riting game code and creating game graphics are two fundamentally different beasts, and what is fun about them is very different. One area where programming has the clear advantage, is when you're inspired by another game and want to see if you can replicate a particular idea. If I encounter a game mechanic that I like, I can do a quick internet search and the result is most likely a tutorial on how to build this kind of technology. If I like the graphics in a game, on the other hand, there's not much I can do other than endlessly combining tricks I already know and hope this by chance achieves the graphical style I was trying to reproduce.</p>
 <hr class="pull_quote_start" />
 <p class="pull_quote">I'll set a good example and explain in detail how to achieve the visual style of The Sapling</p>
 <hr class="pull_quote_end" />
@@ -73,7 +73,7 @@
 </div>
 
 <h2>Depth of Field</h2>
-<p class="non_first_p">I really like depth of field in film and photography as it guides what the viewer focuses on in a very natural way. Unfortunately it does not work really well in most gaming contexts: in most situations, the player should be able to focus wherever s/he wants. On top of this, depth of field makes objects feel relatively small; depth of field on anything larger than a human makes it look like some kind of miniature version - although some recent city building sims use this to their advantage to create a 'toy city' kind of feel. In The Sapling, the only place I thought depth of field worked well is when the player clicks a plant or animal to focus on it. Look at the background in the image below to see the effect.</p>
+<p class="non_first_p">I really like depth of field in film and photography as it guides what the viewer focuses on in a very natural way. Unfortunately it often does not work well in gaming contexts: in most situations, the player should be able to focus wherever s/he wants. On top of this, depth of field makes objects feel relatively small; depth of field on anything larger than a human makes it look like some kind of miniature version - although some recent city building sims use this to their advantage to create a 'toy city' kind of feel. In The Sapling, I use depth of field when the player clicks a plant or animal to focus on it. Look at the background in the image below to see the effect.</p>
 <div class="img-comp-container">
   <div class="img-comp-img">
     <img src="visualstyle/2.PNG" width="300" height="200">
@@ -95,7 +95,7 @@
 </div>
 
 <h2>Water animation</h2>
-<p class="non_first_p">A comment a lot of early playtesters gave was that the island looked empty and boring when you start. While I still haven't come up with a way to really fix this, I think that moving water makes the whole thing feel a little more alive. It's achieved by saving [x] animation in Blender as shapekeys.</p>
+<p class="non_first_p">A comment a lot of early playtesters gave was that the island looked empty and boring when you start. While I still haven't come up with a way to really fix this, I think that moving water makes the whole thing feel a little more alive. It's achieved by saving [x] animation in Blender as shapekeys. You can turn the moving water on and off in the interactive scene below.</p>
 <h2>Gradient skyboxes</h2>
 <p class="non_first_p">I came up with this idea quite late in the development of the game (before that, the sky in The Sapling was simply always blue), but the effect on the overal atmosphere was enormous. Interestingly, I've achieved in the Unity game engine by using 3 pixel textures like these ones (enlarged versions):</p>
 <p class="non_first_p"><img></img></p>
@@ -131,7 +131,22 @@
   </div>
 </div>
 
-<div>Unity player</div>
+<h2>Interactive scene</h2>
+<p class="non_first_p"><button onclick="ToggleVignette()">Toggle vignette</button><button onclick="ToggleDepthOfField()">Toggle depth of field</button><button onclick="ToggleSubdivision()">Toggle subdivision</button><button onclick="ToggleAnimatedWater()">Toggle animated water</button><button onclick="ToggleColoredLights()">Toggle colored lights</button><button onclick="ToggleGradientSkyBox()">Toggle gradient skybox</button><button onclick="ToggleColorGrading()">Toggle color grading</button></p>
+<p class="non_first_p">Slide to change where we are in the day-night cycle</p>
+
+<p class="non_first_p"><input type="range" min="1" max="100" value="50" id="dayNightCycleSlider"></p>
+<script src="visualstyle/UnityProgress.js"></script>
+
+<p class="non_first_p"><script src="visualstyle/UnityLoader.js"></script>
+<script>
+  var gameInstance = UnityLoader.instantiate("gameContainer", "visualstyle/Builds.json", {onProgress: UnityProgress});
+</script></p>
+<div class="webgl-content">
+  <div id="gameContainer" style="width: 750px; height: 600px"></div>
+  <div class="footer">
+  </div>
+</div>
 
 <script>
 function initComparisons() 
@@ -227,6 +242,49 @@ function initComparisons()
 }
 
 initComparisons();
+</script>
+
+<script>
+    var slider = document.getElementById("dayNightCycleSlider");    
+    slider.oninput = function()
+    {
+     gameInstance.SendMessage('Controller','SetPositionInDayNightCycle',this.value/100);    
+    }
+
+    function ToggleVignette()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleVignette');
+    }
+
+    function ToggleDepthOfField()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleDepthOfField');
+    }
+
+    function ToggleSubdivision()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleSubdivisionIterations');
+    }
+
+    function ToggleAnimatedWater()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleAnimatedWater');
+    }
+
+    function ToggleColoredLights()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleColoredLights');
+    }
+
+    function ToggleGradientSkyBox()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleGradientSkyBox');
+      }     
+
+    function ToggleColorGrading()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleColorGrading');
+      }     
 </script>
 <p id="date">Published Wednesday 29 April 2020</p><div class="iconlabel"><a href="playercontent.html"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
