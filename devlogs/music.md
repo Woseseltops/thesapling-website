@@ -1,7 +1,7 @@
 Under the hood of the procedural music in The Sapling
 =====================================================
 
-| Music |
+| Technical | Music |
 
 This article is an in-depth interactive explanation of how the procedural music in The Sapling works. Furthermore, we see how I had to give up my preference for clear hummable melodies, but got my way in the end.
 
@@ -25,7 +25,20 @@ Creating an ambient sounding procedural soundtrack could simply be a matter of c
 
 This idea solved my two problems in one go: (1) the genre of ambient music fit the game's feel and (2) I could endlessly combine small musical fragments, giving you a fresh sounding soundtrack every time. The result is available for you to play with below. Feel free to click some play buttons at random, and decide for yourself if you think they sound good together.
 
-<div>Multiple layer players</div>
+<div class="player_group">
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG1.mp3'><div class="player_label">Background</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG2.mp3'><div class="player_label">Background</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG3.mp3'><div class="player_label">Background</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS1.mp3'><div class="player_label">Bass</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS2.mp3'><div class="player_label">Bass</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS3.mp3'><div class="player_label">Bass</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/CL1.mp3'><div class="player_label">Color</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/CL2.mp3'><div class="player_label">Color</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG1.mp3'><div class="player_label">Foreground</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG2.mp3'><div class="player_label">Foreground</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG3.mp3'><div class="player_label">Foreground</div></div>
+<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG4.mp3'><div class="player_label">Foreground</div></div>
+</div>
 
 My own conclusion, after playing with this for some time, was that although everything indeed sounded good together, some combinations were better for videogame background music than others. In the end, I identified five categories of fragments:
 
@@ -50,5 +63,154 @@ One final question you might have is whether these musical fragments are complet
 <div>Music player</div>
 
 And that's all there is to it! By the way, if you want to do more with these pieces of music, you can! Both [the individual fragments] and [the layers of the main theme] are availale to be used in your own projects, as is the [sheet music] for the main theme. See [this devlog] for more info on that.
+
+<script>
+
+	class LayerPlayer
+	{
+		constructor(new_layers, playing_by_default)
+		{
+			this.playing = false;
+			this.layers = []
+
+			for (var layer_index in new_layers)
+			{
+				this.layers.push(new Audio(new_layers[layer_index]));
+			}
+
+			this.layers_playing = playing_by_default;
+		}
+
+		TogglePlaying()
+		{
+			if (this.playing)
+			{
+				for (var layer_index in this.layers)
+				{
+					this.layers[layer_index].pause();
+				}
+
+				this.playing = false;
+			}
+			else
+			{
+				for (var layer_index in this.layers)
+				{
+					this.layers[layer_index].play();
+
+					if (!this.layers_playing[layer_index])
+					{
+						this.layers[layer_index].volume = 0;
+					}
+				}
+
+				this.playing = true;
+			}
+
+			return this.playing;
+		}
+
+		ToggleLayer(index)
+		{
+			if (this.layers_playing[index])
+			{
+				this.layers[index].volume = 0;
+				this.layers_playing[index] = false;
+			}
+			else
+			{
+				this.layers[index].volume = 1;
+				this.layers_playing[index] = true;
+			}
+		}
+	}
+
+	var player_buttons = document.getElementsByClassName('layerplayer');
+	var players = {};
+
+	for (player_index in player_buttons)
+	{
+		if (player_buttons[player_index] == player_buttons.length) // why can this occur?
+		{
+			break
+		}
+
+		var audioFile = player_buttons[player_index].getAttribute('audio');
+		players[audioFile] = new LayerPlayer([audioFile],[true]);
+
+		player_buttons[player_index].addEventListener('click',function() 
+		{
+			var audioFile = this.getAttribute('audio');
+			players[audioFile].TogglePlaying();
+
+			if (this.getAttribute('playing') == 'true')
+			{
+				this.src = 'music/hovered.svg';
+				this.setAttribute('playing','false');
+			}
+			else
+			{
+				this.src = 'music/playing.svg';
+				this.setAttribute('playing','true');
+			}
+		});
+
+		player_buttons[player_index].addEventListener('mouseover',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'music/hovered.svg'
+			}
+		});
+
+		player_buttons[player_index].addEventListener('mouseout',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'music/quiet.svg'
+			}
+		});
+	}
+
+	var player_buttons = document.getElementsByClassName('layerplayer_extra_layer');
+
+	for (player_index in player_buttons)
+	{
+		if (player_buttons[player_index] == player_buttons.length) // why can this occur?
+		{
+			break
+		}
+
+		player_buttons[player_index].addEventListener('click',function() 
+		{
+			if (this.getAttribute('playing') == 'true')
+			{
+				this.src = 'music/extra_layer_hovered.svg';
+				this.setAttribute('playing','false');
+			}
+			else
+			{
+				this.src = 'music/extra_layer_playing.svg';
+				this.setAttribute('playing','true');
+			}
+		});
+
+		player_buttons[player_index].addEventListener('mouseover',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'music/extra_layer_hovered.svg'
+			}
+		});
+
+		player_buttons[player_index].addEventListener('mouseout',function()
+		{
+			if (this.getAttribute('playing') == 'false')
+			{
+				this.src = 'music/extra_layer_quiet.svg'
+			}
+		});
+	}
+</script>
 
 29-04-20

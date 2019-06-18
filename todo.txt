@@ -25,8 +25,9 @@ Interactieve blogs:
   * shapekeys
 * Muziekartikel:
   * Players toevoegen aan artikel
-    * HTML overzetten
-    * Gaan alle geluidsbestanden mee?
+    * Bij aanzetten gaan players meest rechtse verspringen
+    * Hele zaak testen op kleinere schermen
+    * Code voor het toggelen van de labels
   * Extra layer echt laten werken met geluid
 
 Later punt
