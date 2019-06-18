@@ -685,3 +685,21 @@ ul ul
     border-radius: 10px;
     height: 10px;
 }
+
+.player_group
+{
+    width: 750px;
+    height: 435px;
+}
+
+.player_container
+{
+    width: 100px;
+    float: left;
+    margin: 25px;
+}
+
+.layerplayer
+{
+    width: 69px;    
+}
