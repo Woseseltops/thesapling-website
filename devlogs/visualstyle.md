@@ -1,7 +1,7 @@
 Breakdown of the visual style of The Sapling
 ============================================
 
-| Graphics |
+| Technical | Graphics |
 
 In this article I'll show you how the graphical style of The Sapling is achieved, step by step. At the bottom there's an interactive scene so you can turn all individual effects on and off.
 

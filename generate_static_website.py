@@ -111,7 +111,7 @@ def generate_static_website():
 	STATIC_FOLDER = 'static/'
 	PRESS_FOLDER = 'press/'
 
-	DEVLOG_TAGS = ['Announcement','Music','Graphics','Code']
+	DEVLOG_TAGS = ['Announcement','Technical','Graphics','Music']
 
 	#Stop the webserver
 	system("taskkill /im Civetweb64.exe")
