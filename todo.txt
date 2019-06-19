@@ -22,13 +22,14 @@ Tot release:
 Interactieve blogs:
 * Style-artikel: lege gaten invullen
   * 3-pixel skyboxes
-  * shapekeys
+  * Water animation: in blender, using a displacement modifier working from a noise texture
 * Muziekartikel:
   * Players toevoegen aan artikel
-    * Bij aanzetten gaan players meest rechtse verspringen
-    * Hele zaak testen op kleinere schermen
     * Code voor het toggelen van de labels
   * Extra layer echt laten werken met geluid
+  * Player in het begin
+  * Tekst aanpassen: erg technisch
+  * URL gaat niet goed
 
 Later punt
 ----------
