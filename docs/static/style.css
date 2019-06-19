@@ -688,13 +688,14 @@ ul ul
 
 .player_group
 {
-    width: 750px;
-    height: 435px;
+    width: 100%;
+    display: inline-block;
 }
 
 .player_container
 {
     width: 100px;
+    height: 100px;
     float: left;
     margin: 25px;
 }
