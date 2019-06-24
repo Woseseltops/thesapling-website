@@ -24,8 +24,9 @@ Interactieve blogs:
   * 3-pixel skyboxes
   * Water animation: in blender, using a displacement modifier working from a noise texture
 * Muziekartikel:
-  * Players toevoegen aan artikel
-    * Code voor het toggelen van de labels
+  * Toggle button
+    * Labels
+    * Epic button
   * Extra layer echt laten werken met geluid
   * Player in het begin
   * Tekst aanpassen: erg technisch

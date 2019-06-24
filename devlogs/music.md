@@ -26,18 +26,54 @@ Creating an ambient sounding procedural soundtrack could simply be a matter of c
 This idea solved my two problems in one go: (1) the genre of ambient music fit the game's feel and (2) I could endlessly combine small musical fragments, giving you a fresh sounding soundtrack every time. The result is available for you to play with below. Feel free to click some play buttons at random, and decide for yourself if you think they sound good together.
 
 <div class="player_group">
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG1.mp3'><div class="player_label">Background</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG2.mp3'><div class="player_label">Background</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG3.mp3'><div class="player_label">Background</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS1.mp3'><div class="player_label">Bass</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS2.mp3'><div class="player_label">Bass</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS3.mp3'><div class="player_label">Bass</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/CL1.mp3'><div class="player_label">Color</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/CL2.mp3'><div class="player_label">Color</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG1.mp3'><div class="player_label">Foreground</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG2.mp3'><div class="player_label">Foreground</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG3.mp3'><div class="player_label">Foreground</div></div>
-<div class="player_container"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG4.mp3'><div class="player_label">Foreground</div></div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG1.mp3'><div class="player_label">Background</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG2.mp3'><div class="player_label">Background</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG3.mp3'><div class="player_label">Background</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS1.mp3'><div class="player_label">Bass</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS2.mp3'><div class="player_label">Bass</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS3.mp3'><div class="player_label">Bass</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/CL1.mp3'><div class="player_label">Color</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/CL2.mp3'><div class="player_label">Color</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG1.mp3'><div class="player_label">Foreground</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG2.mp3'><div class="player_label">Foreground</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG3.mp3'><div class="player_label">Foreground</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG4.mp3'><div class="player_label">Foreground</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+</div>
 </div>
 
 My own conclusion, after playing with this for some time, was that although everything indeed sounded good together, some combinations were better for videogame background music than others. In the end, I identified five categories of fragments:
@@ -56,7 +92,7 @@ Furthermore, I discovered that using strings in *unisono with octave intervals* 
 
 The button below categorizes the musical fragments above, and for the fragments in the background category adds an option to 'switch on' the epic version. If you make sure that for every category only one fragment is playing, you get something that could also be played in game.
 
-<div>Button</div>
+<button id="labels_and_epic_button">Add labels and epic buttons</button>
 
 One final question you might have is whether these musical fragments are completely random sequences of notes chosen by chance from a static scale. The answer is 'of course not': to satisfy my own desire for hummable melodies I actually did write a main theme for the game, and to give the game some musical coherence I echo parts of this theme in various fragments. This button below plays the main theme as you hear it in the main menu. Can you identify which of the musical fragments contain hints of this theme?
 
@@ -211,6 +247,40 @@ And that's all there is to it! By the way, if you want to do more with these pie
 			}
 		});
 	}
+
+	var player_labels = document.getElementsByClassName('player_label');
+	var layerplayer_extra_layers = document.getElementsByClassName('layerplayer_extra_layer');
+	console.log(layerplayer_extra_layers);
+
+	for (player_label_index in player_labels)
+	{
+		if (player_label_index == 'length')
+		{
+			break;
+		}
+
+		player_labels[player_label_index].style.display = 'none';
+		layerplayer_extra_layers[player_label_index].style.display = 'none';
+	}
+
+	document.getElementById('labels_and_epic_button').addEventListener('click',function() 
+	{
+		var player_labels = document.getElementsByClassName('player_label');
+		var layerplayer_extra_layers = document.getElementsByClassName('layerplayer_extra_layer');
+
+		for (player_label_index in player_labels)
+		{
+			if (player_label_index == 'length')
+			{
+				break;
+			}
+
+			player_labels[player_label_index].style.display = 'block';
+			layerplayer_extra_layers[player_label_index].style.display = 'block';
+		}
+	}
+	);	
+
 </script>
 
 29-04-20

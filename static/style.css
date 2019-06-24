@@ -703,4 +703,5 @@ ul ul
 .layerplayer
 {
     width: 69px;    
+    cursor: pointer;
 }
