@@ -57,13 +57,13 @@ Unlike depth of field, I rarely like vignettes in film and photography but I alm
 
 Water animation
 ---------------
-A comment a lot of early playtesters gave was that the island looked empty and boring when you start. While I still haven't come up with a way to really fix this, I think that moving water makes the whole thing feel a little more alive. It's achieved by saving [x] animation in Blender as shapekeys. You can turn the moving water on and off in the interactive scene below.
+A comment a lot of early playtesters gave was that the island looked empty and boring when you start. While I still haven't come up with a way to really fix this, I think that moving water makes the whole thing feel a little more alive. (If you're into the technical terms: it's achieved by saving the effect of displacement modifier in Blender as shapekeys). You can turn the moving water on and off in the interactive scene below.
 
 Gradient skyboxes
 -----------------
 I came up with this idea quite late in the development of the game (before that, the sky in The Sapling was simply always blue), but the effect on the overal atmosphere was enormous. Interestingly, I've achieved in the Unity game engine by using 3 pixel textures like these ones (enlarged versions):
 
-<img></img>
+![](visualstyle/textures.png)
 
 This is the effect for a single point in the day night cycle with a slider for comparison. In the interactive scene below, you can actually move through the whole cycle.
 
