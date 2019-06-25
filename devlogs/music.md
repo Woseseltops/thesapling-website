@@ -15,7 +15,9 @@ I was afraid that I simply would not be able to come up with enough material, me
 
 ---
 
-The solution came from an unexpected direction: during experimentation with ambient background music to get into a more productive mood (which by the way didn't work for me), I noticed that they often used a slideshow of pretty nature photos as 'background visuals'. Would it also work the other way around? If nature makes a good background visual for ambient music, is ambient music good background music for nature visuals? Accepting this, and thus giving up hummable melodies in favor of long slow notes to evoke a relaxed feeling in the listener, was a slow process, but ultimately lead to a second discovery: a lot of ambient music rarely changes chords. Instead, all notes throughout the whole ambient piece are from the same musical scale. This is convenient, because a general (and oversimplified) rule of thumb is that two pieces of music that use notes from the same scale will always sound good together. Creating an ambient sounding procedural soundtrack could simply be a matter of creating a large pool of musical fragments that only use notes from the same scale, and mixing them at random. How well this works is exemplified by the project (http://inbflat.net)['In B Flat'] (which, as the name suggests, uses B Flat as this one scale).
+The solution came from an unexpected direction: during experimentation with ambient background music to get into a more productive programming mood (which by the way didn't work for me), I noticed that ambient music videos on Youtube often used a slideshow of pretty nature photos as 'background visuals'. Would it also work the other way around? If nature makes a good background visual for ambient music, is ambient music good background music for nature visuals? 
+
+Accepting this - and thus giving up hummable melodies in favor of long slow 'ambient' notes to evoke a relaxed feeling in the listener - was a slow process, but ultimately lead to a second discovery: a lot of ambient music rarely changes chords. Instead, all notes throughout the whole song are from the same musical scale. This is convenient, because a general (and oversimplified) rule of thumb is that two pieces of music that use notes from the same musical scale will always sound good together. Creating an ambient sounding soundtrack could simply be a matter of creating a large pool of musical fragments that only use notes from the same scale, and mixing them at random. How well this works is exemplified by the project [In B Flat](http://inbflat.net) (which, as the name suggests, uses B Flat as this one scale).
 
 ---
 
@@ -27,52 +29,43 @@ This idea solved my two problems in one go: (1) the genre of ambient music fit t
 
 <div class="player_group">
 <div class="player_container">
-	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG1.mp3'><div class="player_label">Background</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG1.mp3' epicLayer="music/EP1.mp3"><div class="player_label">Background</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false" baseLayerName="music/BG1.mp3">
 </div>
 <div class="player_container">
-	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG2.mp3'><div class="player_label">Background</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG2.mp3' epicLayer="music/EP2.mp3"><div class="player_label">Background</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false" baseLayerName="music/BG2.mp3">
 </div>
 <div class="player_container">
-	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG3.mp3'><div class="player_label">Background</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG3.mp3' epicLayer="music/EP3.mp3"><div class="player_label">Background</div>
+	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false" baseLayerName="music/BG3.mp3">
 </div>
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS1.mp3'><div class="player_label">Bass</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
 </div>
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS2.mp3'><div class="player_label">Bass</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
 </div>
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BS3.mp3'><div class="player_label">Bass</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
 </div>
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/CL1.mp3'><div class="player_label">Color</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
 </div>
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/CL2.mp3'><div class="player_label">Color</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
 </div>
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG1.mp3'><div class="player_label">Foreground</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
 </div>
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG2.mp3'><div class="player_label">Foreground</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
 </div>
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG3.mp3'><div class="player_label">Foreground</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
 </div>
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG4.mp3'><div class="player_label">Foreground</div>
-	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false">
 </div>
 </div>
 
@@ -88,7 +81,7 @@ My own conclusion, after playing with this for some time, was that although ever
 
 * Victory sounds, that temporarily grab the player's attention and give them a satisfactory feeling. 
 
-Furthermore, I discovered that using strings in *unisono with octave intervals* (playing the low and high versions of the same note at the same time) worked quite well to give the mix a more epic feel - I trick I knew from trying to write epic sounding film music. In the end, I used this together with the bass as the player is looking at his/her creations from a distance: as the player zooms out, the bass and *unisono* fade in. 
+Furthermore, I discovered that using strings in *unisono with octave intervals* (playing the low and high versions of the same note at the same time) worked quite well to give the mix a more epic feel. In the end, I used this together with the bass as the player is looking at his/her creations from a distance: as the player zooms out, the bass and *unisono* fade in. 
 
 The button below categorizes the musical fragments above, and for the fragments in the background category adds an option to 'switch on' the epic version. If you make sure that for every category only one fragment is playing, you get something that could also be played in game.
 
@@ -102,6 +95,7 @@ And that's all there is to it! By the way, if you want to do more with these pie
 
 <script>
 
+	//The general LayerPlayer code
 	class LayerPlayer
 	{
 		constructor(new_layers, playing_by_default)
@@ -161,6 +155,7 @@ And that's all there is to it! By the way, if you want to do more with these pie
 		}
 	}
 
+	//Make the player buttons work
 	var player_buttons = document.getElementsByClassName('layerplayer');
 	var players = {};
 
@@ -172,7 +167,9 @@ And that's all there is to it! By the way, if you want to do more with these pie
 		}
 
 		var audioFile = player_buttons[player_index].getAttribute('audio');
-		players[audioFile] = new LayerPlayer([audioFile],[true]);
+		var epicLayer = player_buttons[player_index].getAttribute('epicLayer');
+
+		players[audioFile] = new LayerPlayer([audioFile,epicLayer],[true,false]);
 
 		player_buttons[player_index].addEventListener('click',function() 
 		{
@@ -208,6 +205,7 @@ And that's all there is to it! By the way, if you want to do more with these pie
 		});
 	}
 
+	//Make the extra epic layer buttons work
 	var player_buttons = document.getElementsByClassName('layerplayer_extra_layer');
 
 	for (player_index in player_buttons)
@@ -219,6 +217,9 @@ And that's all there is to it! By the way, if you want to do more with these pie
 
 		player_buttons[player_index].addEventListener('click',function() 
 		{
+			var baseLayerName = this.getAttribute('baseLayerName');
+			players[baseLayerName].ToggleLayer(1);
+
 			if (this.getAttribute('playing') == 'true')
 			{
 				this.src = 'music/extra_layer_hovered.svg';
@@ -248,9 +249,9 @@ And that's all there is to it! By the way, if you want to do more with these pie
 		});
 	}
 
+	//Hide the labels and the epic buttons initially
 	var player_labels = document.getElementsByClassName('player_label');
 	var layerplayer_extra_layers = document.getElementsByClassName('layerplayer_extra_layer');
-	console.log(layerplayer_extra_layers);
 
 	for (player_label_index in player_labels)
 	{
@@ -260,9 +261,14 @@ And that's all there is to it! By the way, if you want to do more with these pie
 		}
 
 		player_labels[player_label_index].style.display = 'none';
-		layerplayer_extra_layers[player_label_index].style.display = 'none';
+
+		if (player_label_index < 3)
+		{
+			layerplayer_extra_layers[player_label_index].style.display = 'none';
+		}
 	}
 
+	//The toggle button lower int he article
 	document.getElementById('labels_and_epic_button').addEventListener('click',function() 
 	{
 		var player_labels = document.getElementsByClassName('player_label');
@@ -276,7 +282,11 @@ And that's all there is to it! By the way, if you want to do more with these pie
 			}
 
 			player_labels[player_label_index].style.display = 'block';
-			layerplayer_extra_layers[player_label_index].style.display = 'block';
+
+			if (player_label_index < 3)
+			{
+				layerplayer_extra_layers[player_label_index].style.display = 'block';
+			}
 		}
 	}
 	);	

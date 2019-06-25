@@ -705,3 +705,11 @@ ul ul
     width: 69px;    
     cursor: pointer;
 }
+
+.layerplayer_extra_layer
+{
+    cursor: pointer;
+    position: relative;
+    top: -71px;
+    left: 83px;
+}

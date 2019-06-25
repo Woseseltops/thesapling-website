@@ -20,17 +20,9 @@ Tot release:
 6. Spel nog een keer goed doorspelen
 
 Interactieve blogs:
-* Style-artikel: lege gaten invullen
-  * 3-pixel skyboxes
-  * Water animation: in blender, using a displacement modifier working from a noise texture
 * Muziekartikel:
-  * Toggle button
-    * Labels
-    * Epic button
-  * Extra layer echt laten werken met geluid
-  * Player in het begin
-  * Tekst aanpassen: erg technisch
-  * URL gaat niet goed
+  * Een keer met goed geluid luisteren
+  * 2x music player
 
 Later punt
 ----------
