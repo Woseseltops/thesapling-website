@@ -21,8 +21,8 @@ Tot release:
 
 Interactieve blogs:
 * Muziekartikel:
-  * Een keer met goed geluid luisteren
-  * 2x music player
+  * 1x music player
+  * Players moeten loopen
 
 Later punt
 ----------

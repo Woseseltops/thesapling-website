@@ -5,7 +5,9 @@ Under the hood of the procedural music in The Sapling
 
 This article is an in-depth interactive explanation of how the procedural music in The Sapling works. Furthermore, we see how I had to give up my preference for clear hummable melodies, but got my way in the end.
 
-<div>Music player</div>
+<div class="">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/example.mp3'>
+</div>
 
 This is a short excerpt of what the music in The Sapling sounds like. I hesitated a long time before I settled on this musical style. Normally, I prefer memorable, hummable melodies over soundscapes, but for The Sapling I couldn't figure how this would work. This was mainly for two reasons: firstly, every melody I came up with didn't really seem to match with the rest of game's style. Many other simulation games feature either jazzy or bright and jumpy orchestral soundtracks, but both styles somehow seemed to clash with a more serious game about nature. Secondly, I was afraid that I simply would not be able to come up with enough material, meaning that the same melodies would be repeating over and over.
 
@@ -67,6 +69,12 @@ This idea solved my two problems in one go: (1) the genre of ambient music fit t
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/FG4.mp3'><div class="player_label">Foreground</div>
 </div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/milestone.mp3'><div class="player_label">Victory</div>
+</div>
+<div class="player_container">
+	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/scenario.mp3'><div class="player_label">Victory</div>
+</div>
 </div>
 
 My own conclusion, after playing with this for some time, was that although everything indeed sounded good together, some combinations were better for videogame background music than others. In the end, I identified five categories of fragments:
@@ -89,7 +97,7 @@ The button below categorizes the musical fragments above, and for the fragments 
 
 One final question you might have is whether these musical fragments are completely random sequences of notes chosen by chance from a static scale. The answer is 'of course not': to satisfy my own desire for hummable melodies I actually did write a main theme for the game, and to give the game some musical coherence I echo parts of this theme in various fragments. This button below plays the main theme as you hear it in the main menu. Can you identify which of the musical fragments contain hints of this theme?
 
-<div>Music player</div>
+<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/main.mp3'>
 
 And that's all there is to it! By the way, if you want to do more with these pieces of music, you can! Both [the individual fragments] and [the layers of the main theme] are availale to be used in your own projects, as is the [sheet music] for the main theme. See [this devlog] for more info on that.
 
