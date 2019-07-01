@@ -19,10 +19,6 @@ Tot release:
 5. Equilinox proberen
 6. Spel nog een keer goed doorspelen
 
-Interactieve blogs:
-* Muziekartikel:
-  * 1x music player
-  * Players moeten loopen
 
 Later punt
 ----------

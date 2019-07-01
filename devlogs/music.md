@@ -113,7 +113,9 @@ And that's all there is to it! By the way, if you want to do more with these pie
 
 			for (var layer_index in new_layers)
 			{
-				this.layers.push(new Audio(new_layers[layer_index]));
+				var audioElement = new Audio(new_layers[layer_index]);
+				audioElement.loop = true;
+				this.layers.push(audioElement);
 			}
 
 			this.layers_playing = playing_by_default;
