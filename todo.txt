@@ -3,8 +3,9 @@ NOW
 Tot release:
 2. Steam
    * Google Analytics
-   * Uitgebreidere beschrijving?
 3. Hele website als Github pages maken
+   * Zorgen dat de eerste pagina klopt met de planning
+     * Toevoegen: wishlist on Steam!
    * Domeinnaam aanmaken
    * Modellen uploaden naar SketchFab
    * Google analytics toevoegen
