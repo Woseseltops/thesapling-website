@@ -1,23 +1,17 @@
 NOW
 ===
 Tot release:
-1. Trailer af en verborgen op YouTube
-   * Laatste zinnetje opnieuw opnemen
-   * Uploaden naar verschillende stores
-2. Steam ter review aanbieden
-   * Alle missende dingen afmaken
-     * Heb ik de startopties goed staan voor beide besturingssystemen?
-     * Google Analytics
-     * Uitgebreidere beschrijving
+2. Steam
+   * Google Analytics
 3. Hele website als Github pages maken
+   * Zorgen dat de eerste pagina klopt met de planning
+     * Toevoegen: wishlist on Steam!
    * Domeinnaam aanmaken
-   * Laatste dingen etc goedzetten
    * Modellen uploaden naar SketchFab
    * Google analytics toevoegen
-4. Alle emails klaarzetten
-   * Uitzoeken waar ik allemaal de aankondigingen wil doen
-5. Equilinox proberen
-6. Spel nog een keer goed doorspelen
+4. Alle emails nog een keer controleren
+   * Kan ik nog meer bedenken?
+6. Eventueel: spel nog een keer goed doorspelen
 
 
 Later punt
