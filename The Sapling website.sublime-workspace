@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"backgrou",
+				"background-image"
+			],
+			[
 				"devl",
 				"devlog_identifier"
 			],
@@ -510,38 +514,25 @@
 			[
 				"sk",
 				"skyColorsMedium"
-			],
-			[
-				"currentD",
-				"currentDayNr"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "templates/main_template.html",
-			"settings":
-			{
-				"buffer_size": 2933,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/style.css",
-			"settings":
-			{
-				"buffer_size": 6837,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "todo.txt",
 			"settings":
 			{
-				"buffer_size": 749,
+				"buffer_size": 795,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/run_build.bat",
+			"settings":
+			{
+				"buffer_size": 117,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -580,27 +571,64 @@
 	"expanded_folders":
 	[
 		"/C/Users/Wessel/Desktop/thesapling-website",
-		"/C/Users/Wessel/Desktop/thesapling-website/static",
-		"/C/Users/Wessel/Desktop/thesapling-website/templates"
+		"/C/Users/Wessel/Desktop/thesapling-website/credentials"
 	],
 	"file_history":
 	[
 		"/C/Users/Wessel/Desktop/thesapling-website/todo.txt",
-		"/C/Users/Wessel/Desktop/thesapling-website/static/js/jquery.youtubebackground.js",
-		"/C/Users/Wessel/Desktop/thesapling-website/try.html",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/scripts/depot_build_1002.vdf",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/scripts/app_build_1000.vdf",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/output/depot_build_997382.log",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/output/depot_build_997381.log",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/output/app_build_997380.log",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/scripts/depot_build_1001.vdf",
+		"/C/Users/Wessel/Downloads/steamworks_sdk_144/sdk/tools/ContentBuilder/scripts/depot_build_1001.vdf",
+		"/C/Users/Wessel/Downloads/steamworks_sdk_144/sdk/tools/ContentBuilder/scripts/app_build_1000.vdf",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Tools/build_config_thuis.json",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Tools/build.py",
+		"/C/Users/Wessel/Desktop/thesapling-website/manage.py",
+		"/C/Users/Wessel/Desktop/thesapling-website/credentials/twitter.json",
+		"/C/Users/Wessel/Desktop/evernote/Dingen te modeleren.html",
+		"/C/Users/Wessel/Desktop/evernote/Faip.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/templates/main_title_area.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/templates/main_template.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/docs/index.html",
+		"/C/Users/Wessel/Desktop/personal-website/style.css",
+		"/C/Users/Wessel/Desktop/personal-website/index.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/landing1.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
+		"/C/Users/Wessel/Desktop/thesapling-website/press_texts",
+		"/C/Users/Wessel/Desktop/thesapling-website/docs/press_static/index.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/press_static/sheet.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/docs/landing1.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/docs/press/data.xml",
+		"/C/Users/Wessel/Desktop/thesapling-website/docs/press/The Sapling/data.xml",
 		"/C/Users/Wessel/Desktop/thesapling-website/press/data.xml",
 		"/C/Users/Wessel/Desktop/thesapling-website/press/The Sapling/data.xml",
-		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
+		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/playercontent.md",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/MainMenu/MainMenuUIViewTests.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismObjectFileImporter.js",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/fast.armature",
+		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Builds/last_build/the_sapling_Data/output_log.txt",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Builds/last_build/the_sapling_Data/Resources/Music/World/BG1.mp3.meta",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Builds/last_build/the_sapling_Data/Resources/Scenarios/blend/0.blend.meta",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Builds/last_build/the_sapling_Data/Resources/Scenarios/camera_preset_buttons/1_preset0.png.meta",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Builds/last_build/the_sapling_Data/Resources/Scenarios/fbx/0.fbx.meta",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Builds/last_build/the_sapling_Data/Resources/Scenarios/icons/0.png.meta",
+		"/C/Users/Wessel/Desktop/thesapling-website/manage.save",
+		"/C/Users/Wessel/Desktop/thesapling-website/templates/devlog_title_area.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/templates/devlog_list_title_area.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/templates/devlog_list_item_template.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/.gitignore",
+		"/C/Users/Wessel/Desktop/thesapling-website/static/js/jquery.youtubebackground.js",
+		"/C/Users/Wessel/Desktop/thesapling-website/try.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/presskit-text.md",
 		"/C/Users/Wessel/Desktop/thesapling-website/latest_website/devlogs/playercontent.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlog.py",
-		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/playercontent.md",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test1.md",
-		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/Scenarios/icons/0.png.meta",
-		"/C/Users/Wessel/Desktop/thesapling-website/manage.py",
-		"/C/Users/Wessel/Desktop/thesapling-website/manage.save",
 		"/C/Users/Wessel/Desktop/thesapling-website/essay_ideas.md",
 		"/C/Users/Wessel/Desktop/gc_info.py",
 		"/C/Users/Wessel/Desktop/NN/interpret_data.py",
@@ -616,14 +644,12 @@
 		"/C/Users/Wessel/Desktop/thesapling-website/credentials/gmail.json",
 		"/C/Users/Wessel/Desktop/thesapling-website/templates/rss_item_template.xml",
 		"/C/Users/Wessel/Desktop/thesapling-website/templates/rss_template.xml",
-		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/templates/rss_template.html",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/The Sapling.sublime-workspace",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/The Sapling.sublime-project",
 		"/C/Users/Wessel/Desktop/thesapling-website/templates/tss_item_teplate.xml",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlog_list_item_template.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/main_title_area.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/landing1.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/main_template.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/static/svg/devlog_icon.svg",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlog_title_area.html",
@@ -676,43 +702,7 @@
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/SpeciesListView.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/OrganismView.js",
 		"/C/Users/Wessel/Desktop/thesapling-website/style.css",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Website/main_template.html",
-		"/C/Users/Wessel/Desktop/personal-website/style.css",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismObjectBuilder.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalObjectBuilder.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/WeatherView.js",
-		"/C/Users/Wessel/Desktop/personal-website/index.html",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/TimeLine.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/BuildTools/build.py",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GrowingFruitAnimation.fbx",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/AnimalView.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/WorldViewTests.js",
-		"/C/Users/Wessel/Desktop/personal-website/texts/onze.html",
-		"/C/Users/Wessel/Desktop/personal-website/texts/reepjes.html",
-		"/C/Users/Wessel/Desktop/personal-website/texts/snotneus.html",
-		"/C/Users/Wessel/Desktop/personal-website/texts/plasterk.html",
-		"/C/Users/Wessel/Desktop/personal-website/texts/style.css",
-		"/C/Users/Wessel/Downloads/dbbackup_03_04_2018.sql/dbbackup_03_04_2018.sql",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalDefinition.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalStatsTests.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalStats.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismBlenderTests.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismProblemDetection.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismProblemDetectionTests.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantDefinition.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/AnimalEditor/AnimalEditorController.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/SpeciesDefinitionTests.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantDefinitionTests.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantStats.js",
-		"/C/Users/Wessel/Desktop/personal-website/todo.txt",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/MinifiedDescription.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/BuilderTestController.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/scratch.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/AnimalMutator.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/AnimalEditor/AnimalEditorUIView.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismObjectFileImporter.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/MainMenu/MainMenuView.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/GeneralScripts/HoverToDelegate.js"
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Website/main_template.html"
 	],
 	"find":
 	{
@@ -731,6 +721,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h4",
+			"http:",
+			"http",
+			"Shader \"Shader\"",
+			"_selected",
+			"detailmaterial",
+			"steammanager",
+			"steam",
+			"Initialize engine version: 2017.1.0f3",
+			"100",
+			"overflow",
+			"100%",
+			"31452b",
+			"#footer_screenshot_container\n",
+			"li",
+			"20px",
+			"icon",
+			"steam",
+			"gamejolt",
 			"h2",
 			"flv",
 			"js/",
@@ -815,83 +824,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/main_template.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2933,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1375,
-								1375
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 162.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "static/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6837,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								394,
-								394
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "todo.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 749,
+						"buffer_size": 795,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								301,
-								301
+								17,
+								17
 							]
 						],
 						"settings":
@@ -903,6 +853,34 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/run_build.bat",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -957,16 +935,44 @@
 		"selected_items":
 		[
 			[
+				"tod",
+				"todo.txt"
+			],
+			[
+				"land",
+				"docs\\landing1.html"
+			],
+			[
 				"todo",
 				"todo.txt"
+			],
+			[
+				"css",
+				"static\\style.css"
+			],
+			[
+				"plae",
+				"devlogs\\playercontent.md"
+			],
+			[
+				"player",
+				"devlogs\\playercontent.md"
 			],
 			[
 				"genera",
 				"generate_static_website.py"
 			],
 			[
-				"player",
-				"devlogs\\playercontent.md"
+				"styl",
+				"static\\style.css"
+			],
+			[
+				"main",
+				"templates\\main_template.html"
+			],
+			[
+				".git",
+				".gitignore"
 			],
 			[
 				".css",
@@ -995,10 +1001,6 @@
 			[
 				"mana",
 				"manage.py"
-			],
-			[
-				"css",
-				"static\\style.css"
 			],
 			[
 				"man",
@@ -1035,10 +1037,6 @@
 			[
 				"plaevi",
 				"Assets\\PlantEditor\\PlantEditorView.js"
-			],
-			[
-				"tod",
-				"Assets\\todo.txt"
 			],
 			[
 				"tutcon",
@@ -1447,26 +1445,6 @@
 			[
 				"animastat",
 				"Assets\\Organism\\AnimalStats.js"
-			],
-			[
-				"importer",
-				"Assets\\Organism\\OrganismObjectFileImporter.js"
-			],
-			[
-				"animdef",
-				"Assets\\Organism\\AnimalDefinition.js"
-			],
-			[
-				"mainmenuco",
-				"Assets\\MainMenu\\MainMenuController.js"
-			],
-			[
-				"savegamco",
-				"Assets\\GeneralScripts\\SaveGameController.js"
-			],
-			[
-				"savegame",
-				"Assets\\GeneralScripts\\SaveGameController.js"
 			]
 		],
 		"width": 0.0
