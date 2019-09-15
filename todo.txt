@@ -13,10 +13,6 @@ Tot release:
    * Kan ik nog meer bedenken?
 6. Eventueel: spel nog een keer goed doorspelen
 
-Interactieve blogs:
-* Muziekartikel:
-  * 1x music player
-  * Players moeten loopen
 
 Later punt
 ----------
