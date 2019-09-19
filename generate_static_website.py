@@ -1,4 +1,4 @@
-from os import listdir, mkdir, system
+from os import listdir, mkdir, system, chdir, getcwd
 from os.path import isdir
 from shutil import copyfile, copytree, rmtree
 from email.utils import format_datetime
@@ -84,10 +84,16 @@ def generate_press_section(php_location,press_folder,goal_location):
 	#mkdir(goal_location)
 	copyfile(press_folder+'style.css',goal_location+'style.css')
 
+	current_dir = getcwd() + '/'
+	chdir(php_location) #Needed to be able to run php
+
 	for page_name, arguments in [('index',''),('sheet','The Sapling')]:
 
-		p = Popen([php_location,press_folder+page_name+'.php',arguments],stdout=open(goal_location+page_name+'.html','w'))	
+		#print(['php.exe',current_dir+press_folder+page_name+'.php',arguments])
+		p = Popen(['php.exe',current_dir+press_folder+page_name+'.php',arguments],stdout=open(current_dir+goal_location+page_name+'.html','w'))	
 		p.wait()
+
+	chdir(current_dir)
 
 def generate_static_website():
 
@@ -105,7 +111,8 @@ def generate_static_website():
 	RSS_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_template.xml'
 	RSS_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_item_template.xml'
 
-	PHP_LOCATION = 'C:/Users/wstoop/Downloads/php/php.exe'
+	PHP_LOCATION = 'C:/Program Files/php-7.0.9-Win32-VC14-x64/' #'C:/Users/wstoop/Downloads/php/php.exe'
+	CIVETWEB_LOCATION = 'C:/Users/Wessel/Downloads/CivetWeb_Win32+64_V1.9.1/' #'C:\\Users\\wstoop\\Downloads\\CivetWeb64.exe'
 
 	GOAL_LOCATION = 'docs/'
 	STATIC_FOLDER = 'static/'
@@ -178,7 +185,8 @@ def generate_static_website():
 	generate_press_section(PHP_LOCATION,PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
 
 	#Start the webserver
-	Popen(['C:\\Users\\wstoop\\Downloads\\CivetWeb64.exe'])
+	chdir(CIVETWEB_LOCATION)
+	Popen('CivetWeb64.exe')
 
 if __name__ == '__main__':
 	generate_static_website()
