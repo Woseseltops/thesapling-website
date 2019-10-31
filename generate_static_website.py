@@ -89,7 +89,7 @@ def generate_press_section(php_location,press_folder,goal_location):
 
 	for page_name, arguments in [('index',''),('sheet','The Sapling')]:
 
-		#print(['php.exe',current_dir+press_folder+page_name+'.php',arguments])
+		print(' '.join(['php.exe',current_dir+press_folder+page_name+'.php',arguments]))
 		p = Popen(['php.exe',current_dir+press_folder+page_name+'.php',arguments],stdout=open(current_dir+goal_location+page_name+'.html','w'))	
 		p.wait()
 
@@ -117,6 +117,7 @@ def generate_static_website():
 	GOAL_LOCATION = 'docs/'
 	STATIC_FOLDER = 'static/'
 	PRESS_FOLDER = 'press/'
+	PRECOMPILED_PRESS_FOLDER = 'press_precompiled/'
 
 	DEVLOG_TAGS = ['Announcement','Technical','Graphics','Music']
 
@@ -178,11 +179,14 @@ def generate_static_website():
 
 	#Move over the static files
 	copytree(STATIC_FOLDER,GOAL_LOCATION+STATIC_FOLDER)
-	copytree(PRESS_FOLDER+'images',GOAL_LOCATION+PRESS_FOLDER+'images')
-	copytree(PRESS_FOLDER+'The Sapling/images',GOAL_LOCATION+PRESS_FOLDER+'The Sapling/images')
 
 	#Make static version of press pages
-	generate_press_section(PHP_LOCATION,PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
+	#copytree(PRESS_FOLDER+'images',GOAL_LOCATION+PRESS_FOLDER+'images')
+	#copytree(PRESS_FOLDER+'The Sapling/images',GOAL_LOCATION+PRESS_FOLDER+'The Sapling/images')
+	#generate_press_section(PHP_LOCATION,PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
+
+	#Or copy in a precompiled press seciton
+	copytree(PRECOMPILED_PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
 
 	#Start the webserver
 	chdir(CIVETWEB_LOCATION)

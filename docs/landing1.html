@@ -1,0 +1,117 @@
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150457817-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-150457817-1');
+	</script>
+
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#31452b">
+	
+	<link href='https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<title>The Sapling - a game about life and evolution</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script type="text/javascript">
+
+ 	$(document).ready(function()
+ 	{
+	    $('.iconlabel').mouseenter(function()
+	    {
+	    	$(this).find('path').addClass('selected_icon');
+	    });
+
+	    $('.iconlabel').mouseleave(function()
+	    {
+	    	$(this).find('path').removeClass('selected_icon');
+	    });
+
+	    $('.checkbox').click(function()
+	    {
+	    	var checkbox_inside = $('#checkbox_inside');
+
+	    	if (checkbox_inside.hasClass('selected_checkbox'))
+	    	{
+	    		checkbox_inside.removeClass('selected_checkbox');
+	    		$('#newcontent').val('');
+	    	}
+	    	else
+	    	{
+	    		checkbox_inside.addClass('selected_checkbox');
+	    		$('#newcontent').val('yes');
+	    	}
+	    });
+	});
+ 	</script>
+
+</head>
+<body>
+	<div id="title_area" class="main_title_area">
+		<video autoplay muted loop id="myVideo">
+	<source src="https://cls.ru.nl/staff/wstoop/parallax%20t02.mp4" type="video/mp4">
+</video>
+
+<div id="title_wrapper">
+	<a href="/"><img src="/static/svg/logo.svg" id="main_logo"></a>
+	<h1>THE SAPLING</h1>
+	<h2>A game about life and evolution</h2>
+</div>
+	</div>
+	
+	<div id="main_column"  class="main">
+		<div id="main_area">
+			<img src="static/svg/shadow_logo.svg" class="separator_logo">
+<h3>FIRST LOOK VIDEO</h3>
+<p>November 7</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?v=-tFe4_-7cFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<img src="static/svg/shadow_logo.svg" class="separator_logo">
+<h3>ARTICLE: HOW PLAYER CONTENTS WORKS</h3>
+<p>November 21</p>
+
+<img src="static/svg/shadow_logo.svg" class="separator_logo">
+<h3>INTERACTIVE TEASER CONTENT</h3>
+<p>December 5</p>
+
+<img src="static/svg/shadow_logo.svg" class="separator_logo">
+<h3>LAUNCH</h3>
+<p>December 12</p>
+<p>On Steam, Itch, Gamejolt, Kartridge</p>
+<button>Wishlist on Steam</button>
+
+		</div>
+	</div>
+
+	<div id="footer_screenshot_container"><img id="footer_screenshot" src="/static/png/parallax.png"></div>
+	<div id="footer_area">
+		<h4>Get the devlog in your email!</h4>
+		<div id="once_per_month">Roughly once per month</div>
+		<form action="https://thesaplinggame.us18.list-manage.com/subscribe/post?u=bca4144605fedfb39489b6173&amp;id=cee6f2fdcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+			<input class="textfield" name="FNAME" id="first_name" placeholder="First name"><input class="textfield" name="LNAME" id="last_name" placeholder="Last name"><br>
+			<input class="textfield" name="EMAIL" id="email" placeholder="Email"><br>
+			<input type="hidden" name="NEWCONTENT" id="newcontent" value=""><br>
+			<div class="checkbox_area">
+				<div class="checkbox"><div id="checkbox_inside"></div></div><div id="checkboxlabel">Only the ones that announce new content</div>
+			</div>
+			<button>Subscribe</button>
+		</form>
+
+		<br><img src="/static/svg/shadow_logo.svg" class="separator_logo">
+		<div class="footer_link"><a href="press/sheet.html">Presskit</a></div>
+		<div class="footer_link"><a href="http://wesselstoop.ruhosting.nl">Developer website</a></div>
+		<div class="footer_link"><a>Questions<br/>thesapling@gmail.com</a></div>
+
+		<img src="/static/svg/shadow_logo.svg" class="separator_logo">
+		<div class="credits">A game by Wessel Stoop</div>
+	</div>
+</body>
+</html>

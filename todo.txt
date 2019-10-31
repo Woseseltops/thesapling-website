@@ -2,16 +2,18 @@ NOW
 ===
 Tot release:
 3. Hele website als Github pages maken
-   * Google Analytics testen
-   * Mobiele website testen
-   * Email subscribe testen
-   * Press page fixen
+   * HTTPS
+   * Press page helemaal afmaken: oa video
+   * Mobiele website beter: Youtube-film een probleem
    * Modellen uploaden naar SketchFab
 4. Alle emails nog een keer controleren
    * Staat er de planning in?
    * Kan ik nog meer bedenken?  
-6. Eventueel: spel nog een keer goed doorspelen
-
+   * Skype testen
+5. Reveal
+   * Steam online
+   * Website: link naar Steam
+   * Twitter, IndieDB, Hacker News
 
 Later punt
 ----------
