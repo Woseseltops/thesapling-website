@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="256.98147"
+     inkscape:cx="-72.304244"
      inkscape:cy="69.282579"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -62,6 +62,9 @@
        d="m 47.194832,514.36561 0.06505,10.40039 -6.630117,0 0,10.40038 -6.110413,0 0,9.80246 -6.500364,0 0,11.12841 -5.58998,0 0,11.31043 36.713275,0 0,10.27063 -5.642235,0 0,10.53012 -6.370265,0 0,10.6606 6.483347,0.046 0,-5.46023 5.45129,-0.046 0,-5.33012 6.162321,0 0,-5.20036 6.240148,0 0,-5.20001 6.500382,0 0,-5.46023 6.110049,0 0,-5.20037 6.370265,0 0,-5.20038 6.500363,0 0,-5.06989 6.110412,0 0,-5.59035 6.24015,0 0,-5.92838 6.50038,0 0,-5.12217 -18.902832,0 0,-5.07026 6.552272,0 0,-4.42009 5.77199,0 0,-5.98029 6.44845,0 0,-4.6021 6.76024,0 0,-5.66819 z m 6.254381,10.18141 43.400978,0 0,5.23627 -6.434968,0 0,5.05604 -6.342891,0 0,4.87937 -6.343237,0 0,5.33189 -6.251177,0 0,5.50823 -6.159118,0 0,-5.60028 -6.17013,0 0,5.42397 -5.611293,0 0,-5.42397 -6.247282,0 -0.115175,-10.15796 6.343255,0 z m -12.408876,20.49185 6.149872,0 0,5.38095 -6.149872,0 z m 6.156279,5.34648 6.370264,0 0,5.78549 -6.370264,0 z m 11.908336,0.0921 6.370265,0 0,5.78514 -6.370265,0 z m 12.41632,0.13508 6.370265,0 0,5.78515 -6.370265,0 z m 12.805597,0.19482 6.00625,0 0,5.7855 -6.00625,0 z"
        id="path4160"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+       inkscape:export-filename="C:\Users\Wessel\Desktop\thesapling-website\static\png\kartridge_logo.png"
+       inkscape:export-xdpi="719.57916"
+       inkscape:export-ydpi="719.57916" />
   </g>
 </svg>
