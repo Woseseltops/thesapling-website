@@ -1,15 +1,15 @@
 NOW
 ===
 Tot release:
-2. Steam
-   * Google Analytics
 3. Hele website als Github pages maken
-   * Steam wishlist toevoegen
-   * Domeinnaam aanmaken
+   * Landing page = main page
+     * Alle links checken
+   * Google Analytics
+   * Press page fixen
    * Modellen uploaden naar SketchFab
-   * Google analytics toevoegen
 4. Alle emails nog een keer controleren
-   * Kan ik nog meer bedenken?
+   * Staat er de planning in?
+   * Kan ik nog meer bedenken?  
 6. Eventueel: spel nog een keer goed doorspelen
 
 
