@@ -2,13 +2,25 @@
 
 <game>
 	<title>The Sapling</title>
-	<release-date>-</release-date>
+	<release-date>December 12, 2019</release-date>
 	<website>http://www.thesaplinggame.com/</website>
 	<press-can-request-copy>FALSE</press-can-request-copy>
 
 	<platforms>
 		<platform>
-			<name>-</name>
+			<name>Steam</name>
+			<link>-</link>
+		</platform>
+		<platform>
+			<name>Itch</name>
+			<link>-</link>
+		</platform>
+		<platform>
+			<name>GameJolt</name>
+			<link>-</link>
+		</platform>
+		<platform>
+			<name>Kartridge</name>
 			<link>-</link>
 		</platform>
 	</platforms>
@@ -45,7 +57,7 @@
 	<trailers>
 		<trailer>
 			<name>Trailer</name>
-			<youtube>https://www.youtube.com/watch?v=\-tFe4_-7cFA</youtube>
+			<youtube>-tFe4_-7cFA</youtube>
 		</trailer>
 
 	</trailers>
@@ -62,13 +74,13 @@
 		</quote>
 	</quotes>-->
 	
-	<additionals>
+	<!--<additionals>
 		<additional>
 			<title>Release Blog Post</title>
 			<description>The blog-post through which this game was released is available at</description>
 			<link>http://vlambeer.com/bloglink</link>
 		</additional>
-	</additionals>
+	</additionals>-->
 	
 	<credits>
 		<credit>
