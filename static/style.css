@@ -70,6 +70,12 @@ hr
     margin-bottom: 50px;
 }
 
+iframe
+{
+    width: 800px;
+    height: 450px;    
+}
+
 .separator_logo
 {
     display: block;
@@ -447,6 +453,12 @@ video
     {
         visibility: hidden;
         width: 360px;
+    }
+
+    iframe
+    {
+        width: 90vw;
+        height: 50vw;        
     }
 
     #title_area
