@@ -1,4 +1,4 @@
-from os import listdir, mkdir, system, chdir, getcwd
+from os import listdir, mkdir, system, chdir, getcwd, rename, remove
 from os.path import isdir
 from shutil import copyfile, copytree, rmtree
 from email.utils import format_datetime
@@ -97,6 +97,7 @@ def generate_press_section(php_location,press_folder,goal_location):
 
 def generate_static_website():
 
+	#Settings
 	PAGES_TO_GENERATE_FOLDER = 'pages_to_generate/'
 	DEVLOGS_FOLDER = 'devlogs/'
 	TEMPLATE_FOLDER = 'templates/'
@@ -119,6 +120,7 @@ def generate_static_website():
 	PRESS_FOLDER = 'press/'
 	PRECOMPILED_PRESS_FOLDER = 'press_precompiled/'
 
+	FRONT_PAGE = 'landing1.html'
 	DEVLOG_TAGS = ['Announcement','Technical','Graphics','Music']
 
 	#Stop the webserver
@@ -185,8 +187,13 @@ def generate_static_website():
 	#copytree(PRESS_FOLDER+'The Sapling/images',GOAL_LOCATION+PRESS_FOLDER+'The Sapling/images')
 	#generate_press_section(PHP_LOCATION,PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
 
-	#Or copy in a precompiled press seciton
+	#Or copy in a precompiled press section
 	copytree(PRECOMPILED_PRESS_FOLDER,GOAL_LOCATION+PRESS_FOLDER)
+
+	#Landing page
+	if FRONT_PAGE != 'index.html':
+		remove(GOAL_LOCATION+'index.html')	
+		rename(GOAL_LOCATION+FRONT_PAGE,GOAL_LOCATION+'index.html')
 
 	#Start the webserver
 	chdir(CIVETWEB_LOCATION)
