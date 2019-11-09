@@ -1,35 +1,35 @@
-Name				| Type		| Lang	| Ready to send
-========================================================
-twitter				| twitter	| en	|
-indiegames			| reddit	| en	| 
-linux_gaming		| reddit	| en	|
-unity3d				| reddit 	| en	| 
-hacker news			| HN		| en	| 
-rock paper shotgun	| email		| en	| y
-destructoid			| email		| en	| y
-kotaku				| email		| en	| y
-pcinvasion			| email		| en	| y
-linuxgameconsortium | email		| en	| y
-opnoobs				| email		| en	| y
-pcgamer				| email		| en	| y
-pcgamesN			| email		| en	| y
-allgamers			| email		| en	| y
-indiegamesplus	    | email     | en	| y
-gameinformer		| form		| en	|
-arstechnica			| form		| en	|
-polygon				| form		| en	|
-gamingonlinux		| form		| en	|
-nanogamingnews		| form		| en	|
-gamer.nl			| email		| nl	| y
-insidegamer.nl		| email		| nl	| y
-powerunlimited.nl	| email		| nl	| y
-eurogamer.be		| email		| nl	| y
-gamersnet.nl		| email		| nl	| y
-dutchcowboys.nl		| email		| nl	| y
-tweakers.nl			| email		| nl	| y
-control online		| form		| nl	| 
+Name				| Type		| Lang	| Ready to send | Done
+===============================================================
+twitter				| twitter	| en	|               | x
+indiegames			| reddit	| en	|               | x
+linux_gaming		| reddit	| en	|               | x
+unity3d				| reddit 	| en	|               | x
+hacker news			| HN		| en	|               | x
+rock paper shotgun	| email		| en	| y             | x
+destructoid			| email		| en	| y             | x
+kotaku				| email		| en	| y             | x
+pcinvasion			| email		| en	| y             | x 
+linuxgameconsortium | email		| en	| y             | x
+opnoobs				| email		| en	| y             | x
+pcgamer				| email		| en	| y             | x
+pcgamesN			| email		| en	| y x 6	        | x
+allgamers			| email		| en	| y x 7			| x
+indiegamesplus	    | email     | en	| y				| x
+gameinformer		| form		| en	|               | x
+arstechnica			| form		| en	|               | x
+polygon				| form		| en	|               | x
+gamingonlinux		| form		| en	|               | x
+nanogamingnews		| form		| en	|               | x
+gamer.nl			| email		| nl	| y             | x
+insidegamer.nl		| email		| nl	| y             | x
+powerunlimited.nl	| email		| nl	| y             | x
+eurogamer.be		| email		| nl	| y             | x
+gamersnet.nl		| email		| nl	| y             | x
+dutchcowboys.nl		| email		| nl	| y             | x
+tweakers.nl			| email		| nl	| y             | x
+control online		| form		| nl	|               | x
+indiedb			    | indiedb	| en	|				| x
 
 adriaan				| email		| nl	| 
 maarten				| email		| nl	| 
 
-indiedb			| indiedb	| en	|

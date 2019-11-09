@@ -1,19 +1,21 @@
 NOW
 ===
-Tot release:
-3. Hele website als Github pages maken
-   * Modellen uploaden naar SketchFab
-5. Reveal
-   * Overzicht doorwerken
+Uitzoeken: 
+* how to press release
+* LP en streamers EcoSystem, Niche, Equilinox, Thrive
+* Uitzoeken: hoe kan ik featured worden bij stores?
 
-Later punt
-----------
-* IndieDB
+Contact zoeken makers Ecosystem, Niche, Equilinox, Thrive
+* Niche: info@strayfawnstudio.com
+* Equilinox: thinmatrix@gmail.com (Karl)
+* EcoSystem: tom@ecosystem-game.com
+* Thrive: revolutionarygamesstudio@gmail.com
 
-Na release
-----------
-Laatste versie RawResources zippen
-Steam announcements koppelen
+Videobewerking:
+* Itch & IndieDB: bewegend cover image -> IndieDB post
+
+Player interaciton article:
+* Laatste versie RawResources zippen
 
 Links leggen met
 ----------------
