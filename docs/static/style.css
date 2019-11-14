@@ -70,17 +70,24 @@ hr
     margin-bottom: 50px;
 }
 
-iframe
+#ytvideo
 {
     width: 800px;
     height: 450px;    
+}
+
+#audio
+{
+    width: 800px;
+    height: 200px;
+    margin-top: 55px;
 }
 
 .separator_logo
 {
     display: block;
     margin: auto;
-    margin-top: 30px;    
+    margin-top: 130px;    
 }
 
 .icon_label_bar
@@ -455,7 +462,7 @@ video
         width: 360px;
     }
 
-    iframe
+    #ytvideo, #audio
     {
         width: 90vw;
         height: 50vw;        

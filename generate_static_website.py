@@ -150,7 +150,7 @@ def generate_static_website():
 	devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
 
 	for n,devlog in enumerate(devlogs):
-		navigation_buttons = create_navigation_buttons(devlogs,n,svg_images)		
+		navigation_buttons = create_navigation_buttons([devlog for devlog in devlogs if devlog.published],n,svg_images)		
 		full_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_TITLE_AREA_FILE_LOCATION,devlog.title.upper(),
 									devlog.html+navigation_buttons,'devlog',portrait_area=PORTRAIT_TEMPLATE_LOCATION)
 		open(GOAL_LOCATION+'devlogs/'+devlog.identifier+'.html','w').write(full_content)
