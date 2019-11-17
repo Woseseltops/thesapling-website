@@ -99,4 +99,4 @@ When you have all the files you need, finally you will need to convert them to U
 4. For each of the files, select them in project window, and then go to the inspector window. Here, you should see an AssetBundle dropdown. Create a new AssetBundle for the first file, and make sure the rest of all your files are in this same bundle.
 5. In the top menu, Assets > Build AssetBundles. The files will now appear in the `AssetBundles` folder inside the Unity project. From here, you can move them to the correct subfolder of the game files.
 
-28-12-18
+21-11-19

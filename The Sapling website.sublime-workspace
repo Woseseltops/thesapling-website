@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"getcwd"
+			],
+			[
 				"backgrou",
 				"background-image"
 			],
@@ -510,10 +514,6 @@
 			[
 				"sky",
 				"skyColorsLow"
-			],
-			[
-				"sk",
-				"skyColorsMedium"
 			]
 		]
 	},
@@ -523,16 +523,7 @@
 			"file": "todo.txt",
 			"settings":
 			{
-				"buffer_size": 795,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/run_build.bat",
-			"settings":
-			{
-				"buffer_size": 117,
+				"buffer_size": 409,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -571,10 +562,25 @@
 	"expanded_folders":
 	[
 		"/C/Users/Wessel/Desktop/thesapling-website",
-		"/C/Users/Wessel/Desktop/thesapling-website/credentials"
+		"/C/Users/Wessel/Desktop/thesapling-website/press_precompiled"
 	],
 	"file_history":
 	[
+		"/C/Users/Wessel/Desktop/thesapling-website/press-overview",
+		"/C/Users/Wessel/Desktop/thesapling-website/press_texts",
+		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/landing1.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/build_press_section.md",
+		"/C/Users/Wessel/Desktop/thesapling-website/press/The Sapling/data.xml",
+		"/C/Users/Wessel/Desktop/thesapling-website/press_precompiled/sheet.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/press_precompiled/index.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/press/data.xml",
+		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
+		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/run_build.bat",
+		"/C/Users/Wessel/Desktop/thesapling-website/templates/main_title_area.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/docs/press/index.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/docs/index.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/templates/main_template.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/todo.txt",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/scripts/depot_build_1002.vdf",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/scripts/app_build_1000.vdf",
@@ -590,27 +596,18 @@
 		"/C/Users/Wessel/Desktop/thesapling-website/credentials/twitter.json",
 		"/C/Users/Wessel/Desktop/evernote/Dingen te modeleren.html",
 		"/C/Users/Wessel/Desktop/evernote/Faip.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/templates/main_title_area.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/templates/main_template.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/docs/index.html",
 		"/C/Users/Wessel/Desktop/personal-website/style.css",
 		"/C/Users/Wessel/Desktop/personal-website/index.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/landing1.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
-		"/C/Users/Wessel/Desktop/thesapling-website/press_texts",
 		"/C/Users/Wessel/Desktop/thesapling-website/docs/press_static/index.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/press_static/sheet.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/docs/landing1.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/docs/press/data.xml",
 		"/C/Users/Wessel/Desktop/thesapling-website/docs/press/The Sapling/data.xml",
-		"/C/Users/Wessel/Desktop/thesapling-website/press/data.xml",
-		"/C/Users/Wessel/Desktop/thesapling-website/press/The Sapling/data.xml",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/playercontent.md",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/MainMenu/MainMenuUIViewTests.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/OrganismObjectFileImporter.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/BodyParts/Limb/fast.armature",
-		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Builds/last_build/the_sapling_Data/output_log.txt",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Builds/last_build/the_sapling_Data/Resources/Music/World/BG1.mp3.meta",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Builds/last_build/the_sapling_Data/Resources/Scenarios/blend/0.blend.meta",
@@ -696,13 +693,7 @@
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Standard Assets/TestScripts/TestRunner.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/PlantViewTests.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantObjectBuilder.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/TimeLineTests.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Organism/PlantObjectBuilderTests.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/LifeForm.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/GeneralScripts/SpeciesListView.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/OrganismView.js",
-		"/C/Users/Wessel/Desktop/thesapling-website/style.css",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Website/main_template.html"
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Models/TimeLineTests.js"
 	],
 	"find":
 	{
@@ -721,6 +712,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"en",
+			"news",
+			"civetweb",
 			"h4",
 			"http:",
 			"http",
@@ -833,15 +827,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 795,
+						"buffer_size": 409,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17,
-								17
+								149,
+								149
 							]
 						],
 						"settings":
@@ -853,34 +847,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Wessel/Documents/Unity Games/Experiments/steamworks_sdk_144/sdk/tools/ContentBuilder/run_build.bat",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 117,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								39,
-								39
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -935,6 +901,10 @@
 		"selected_items":
 		[
 			[
+				"genera",
+				"generate_static_website.py"
+			],
+			[
 				"tod",
 				"todo.txt"
 			],
@@ -957,10 +927,6 @@
 			[
 				"player",
 				"devlogs\\playercontent.md"
-			],
-			[
-				"genera",
-				"generate_static_website.py"
 			],
 			[
 				"styl",
