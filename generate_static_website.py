@@ -116,6 +116,7 @@ def generate_static_website():
 	CIVETWEB_LOCATION = 'C:/Users/Wessel/Downloads/CivetWeb_Win32+64_V1.9.1/' #'C:\\Users\\wstoop\\Downloads\\CivetWeb64.exe'
 
 	GOAL_LOCATION = 'docs/'
+	DOMAIN_NAME = 'thesaplinggame.com'
 	STATIC_FOLDER = 'static/'
 	PRESS_FOLDER = 'press/'
 	PRECOMPILED_PRESS_FOLDER = 'press_precompiled/'
@@ -130,8 +131,10 @@ def generate_static_website():
 	if isdir(GOAL_LOCATION):
 		rmtree(GOAL_LOCATION)
 
+	#Create the goal folder
 	mkdir(GOAL_LOCATION)
 	mkdir(GOAL_LOCATION+'devlogs/')
+	open(GOAL_LOCATION+'CNAME','w').write(DOMAIN_NAME)
 
 	#Get images
 	svg_images = get_svg_images(['rss_icon','devlog_icon','twitter_icon','steam_icon','itch_icon','kartridge_icon','gamejolt_icon','arrow_left','arrow_up','arrow_right'],STATIC_FOLDER)	
