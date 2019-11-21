@@ -1,15 +1,14 @@
 NOW
 ===
-Uitzoeken: 
-* LP en streamers EcoSystem, Niche, Equilinox, Thrive
-  * Speedrunners Spore
-* Uitzoeken: hoe kan ik featured worden bij stores?
-
-Static website generator:
-* docs/CNAME -> thesaplinggame.com
-
-Player interaciton article:
-* Laatste versie RawResources zippen
+Youtube drafts versturen
+Stores uploaden:
+* Itch
+* Kartridge
+* GameJolt
+Featured worden / vragen hoe goed zal doen:
+* Itch: nog niet eens zichtbaar bij zoeken
+* Kartridge
+* GameJolt
 
 Links leggen met
 ----------------
