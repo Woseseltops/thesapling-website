@@ -1,11 +1,36 @@
 NOW
 ===
+Keys voor Youtubers:
+* Drafts met keys voorbereiden: nog 3 te gaan of zo?
+* Excel bijwerken
+* Keys downloaden en alvast verdelen in Excel
+
+Interactive content:
+* Artikel schrijven: Six 3D models that explain the deep evolution simulation in The Sapling
+* Widgets toevoegen aan artikels
+* Widget toevoegen aan landing page
+* PR voor artikel:
+  * Twitter #madeinunity
+  * Show HN: Six 3D models that explain the deep evolution simulation in my indie game
+  * Steam
+  * IndieDB
+  * Itch.io
+  * GameJolt?
+
+Release voorbereiden:
+* Nederlandse versie maken?
+* Meer nieuwssites toevoegen
+* Daadwerkelijke drafts aanmaken
+  * Gaat de opmaak goed?
+  * Keys
+
 Stores uploaden:
 * Itch
 * Kartridge
 * GameJolt
+
 Featured worden / vragen hoe goed zal doen:
-* Itch: nog niet eens zichtbaar bij zoeken
+* Itch
 * Kartridge
 * GameJolt
 
