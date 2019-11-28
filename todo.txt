@@ -1,20 +1,23 @@
 NOW
 ===
+Beslissing neming over release:
+* Alle tips van Valve lezen
+* Uitzoeken: popular new releases vs wishlists
+* Uitzoeken: wat zegt Valve over early access release
+
+Philomena tips:
+* Keymailer bestuderen
+  * Meer keys opvragen:
+* Artikel lezen: https://www.gamasutra.com/blogs/PhilomenaSchwab/20180207/314432/Nimbatus__How_a_free_demo_got_our_game_funded
+* Promotie op imgur and 9gag
+
 Keys voor Youtubers:
 * Drafts met keys voorbereiden: nog 3 te gaan of zo?
 * Excel bijwerken
 * Keys downloaden en alvast verdelen in Excel
 
 Interactive content:
-* Artikel schrijven: Six 3D models that explain the evolution simulation in The Sapling
-* Widgets toevoegen aan artikels
-* Widget toevoegen aan landing page
 * PR voor artikel:
-  * Twitter #madeinunity
-  * Show HN: Six 3D models that explain the evolution simulation in my indie game
-  * Steam
-  * IndieDB
-  * Itch.io
   * GameJolt?
 
 Release voorbereiden:
