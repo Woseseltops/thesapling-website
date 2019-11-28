@@ -6,12 +6,12 @@ Keys voor Youtubers:
 * Keys downloaden en alvast verdelen in Excel
 
 Interactive content:
-* Artikel schrijven: Six 3D models that explain the deep evolution simulation in The Sapling
+* Artikel schrijven: Six 3D models that explain the evolution simulation in The Sapling
 * Widgets toevoegen aan artikels
 * Widget toevoegen aan landing page
 * PR voor artikel:
   * Twitter #madeinunity
-  * Show HN: Six 3D models that explain the deep evolution simulation in my indie game
+  * Show HN: Six 3D models that explain the evolution simulation in my indie game
   * Steam
   * IndieDB
   * Itch.io

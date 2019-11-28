@@ -462,7 +462,7 @@ video
         width: 360px;
     }
 
-    #ytvideo, #audio
+    #ytvideo, #audio, #model, .sketchfab-embed-wrapper
     {
         width: 90vw;
         height: 50vw;        
