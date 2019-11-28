@@ -2,6 +2,8 @@ NOW
 ===
 Beslissing neming over release:
 * Alle tips van Valve lezen
+  * https://partner.steamgames.com/doc/marketing/visibility
+  * https://partner.steamgames.com/doc/marketing/wishlist
 * Uitzoeken: popular new releases vs wishlists
 * Uitzoeken: wat zegt Valve over early access release
 
