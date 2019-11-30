@@ -1,20 +1,17 @@
 NOW
 ===
-Beslissing neming over release:
-* Alle tips van Valve lezen
-  * https://partner.steamgames.com/doc/marketing/visibility
-  * https://partner.steamgames.com/doc/marketing/wishlist
-* Uitzoeken: popular new releases vs wishlists
-* Uitzoeken: wat zegt Valve over early access release
-
 Philomena tips:
 * Keymailer bestuderen
-  * Meer keys opvragen:
-* Artikel lezen: https://www.gamasutra.com/blogs/PhilomenaSchwab/20180207/314432/Nimbatus__How_a_free_demo_got_our_game_funded
-* Promotie op imgur and 9gag
+  * Meer keys opvragen
+* Promotie op r/gaming, imgur and 9gag
+* Bestuderen: gamepress.com?
 
 Keys voor Youtubers:
+* Twitter follow ups
+  * Hey @Seriiiously ! I emailed you last week about a free key for my game. Let me know if you're interested.
+
 * Drafts met keys voorbereiden: nog 3 te gaan of zo?
+  * Ik wil nog extra dingen zeggen over wishlist en newsletter.
 * Excel bijwerken
 * Keys downloaden en alvast verdelen in Excel
 
@@ -23,6 +20,8 @@ Interactive content:
   * GameJolt?
 
 Release voorbereiden:
+* Aanpassen: early access release
+* Lijstje shoutouts?
 * Nederlandse versie maken?
 * Meer nieuwssites toevoegen
 * Daadwerkelijke drafts aanmaken
