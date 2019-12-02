@@ -1,12 +1,7 @@
 NOW
 ===
-Philomena tips:
-* Promotie op r/gaming, imgur and 9gag
-* Bestuderen: gamepress.com?
-
-Interactive content:
-* PR voor artikel:
-  * GameJolt?
+Imgur:
+* Want langere GIF maken met Premiere Pro, en posten met tags 'gamedev' 'indie game' 'gaming' 'games' 'videogames' 'indiegame' 'indiegaming'
 
 Release voorbereiden:
 * Shoutouts vragen van Philomena, Tom Johnson en Equilinox-man
@@ -15,7 +10,6 @@ Release voorbereiden:
   * Administratie met keys op orde
 
 Stores uploaden:
-* Itch
 * Kartridge
 * GameJolt
 
