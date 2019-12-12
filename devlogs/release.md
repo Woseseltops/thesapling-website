@@ -7,7 +7,7 @@ The Sapling as available as an Early Access title today! In this post I describe
 
 As of today, The Sapling is available as [an Early Access title on Steam](https://store.steampowered.com/app/997380/The_Sapling/) (and soon on itch.io, GameJolt and Kartridge). Let's celebrate with a microtrailer:
 
-<iframe id="ytvideo" src="https://youtu.be/4_SaPvPj80Y" frameborder="0" allowfullscreen=""></iframe>
+<iframe id="ytvideo" src="https://www.youtube.com/embed/4_SaPvPj80Y" frameborder="0" allowfullscreen=""></iframe>
 
 Out in the open
 ---------------
