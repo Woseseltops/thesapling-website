@@ -1,22 +1,9 @@
 NOW
 ===
 Release:
-* Nieuwe build
-  * Probleem met draaien: onthoud laatste muispositie
-  * Uitzoeken: kan ik ervoor zorgen dat post processing er altijd is?
-  * Nieuwe build maken 7.14?
-  * Uploaden
-  * Testen in Steam: deinstalleren: eerste level spelen
-* Microtrailer maken
-  * Editen
-  * Toevoegen: now available on Steam
-  * Renderen
-  * YouTube
 * Pagina aanpassen
-  * Git pull
   * Blogpost online
     * Microtrailer toevoegen
-    * Speedrun toevoegen
 * In Steam op 'release' drukken
 * Twitter #madeinunity #thesapling
 * MailChimp
