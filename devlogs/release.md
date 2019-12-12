@@ -17,7 +17,7 @@ There are comments everywhere talking about 'potential' - it's a feeling that's 
 
 ---
 
-The nicest responses have come, perhaps unsurprisingly, from Spore fans. For example, my absolute favorite video of the game is [this one by KinglyValence](xxx). KinglyValence is a speedrunner that currently holds the world record for all individual Spore stages but the first, in all difficulties. He spent some analyzing The Sapling and managed to complete all four scenarios in a whopping 10 minutes and 16 seconds!
+The nicest responses have come, perhaps unsurprisingly, from Spore fans. For example, my absolute favorite video of the game is [this one by KinglyValence](https://www.youtube.com/watch?v=pD9ZuuW5lc0). KinglyValence is a speedrunner that currently holds the world record for all individual Spore stages but the first, in all difficulties. He spent some analyzing The Sapling and managed to complete all four scenarios in a whopping 10 minutes and 16 seconds!
 
 The Sapling and Spore
 ---------------------
