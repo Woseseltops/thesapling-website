@@ -1,22 +1,6 @@
 NOW
 ===
-Release:
-* Pagina aanpassen
-  * Blogpost online
-    * Microtrailer toevoegen
-* In Steam op 'release' drukken
-* Twitter #madeinunity #thesapling
-* MailChimp
-* IndieDB
-
-Stores uploaden:
-* Kartridge
-* GameJolt
-
-Featured worden / vragen hoe goed zal doen:
-* Itch
-* Kartridge
-* GameJolt
+Contact zoeken met info@rocketshipstudios.org
 
 Links leggen met
 ----------------
