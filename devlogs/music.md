@@ -1,5 +1,5 @@
-Interactive explanation of the procedural music in The Sapling
-==============================================================
+Under the hood of the procedural music in The Sapling
+=====================================================
 
 | Technical | Music |
 
