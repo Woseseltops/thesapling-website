@@ -8,18 +8,18 @@
  <pubDate>Thu, 14 Nov 2019 00:00:00 -0000</pubDate>
 
   <item>
-  <title>Under the hood of the procedural music in The Sapling</title>
-  <description>This article is an in-depth interactive explanation of how the procedural music in The Sapling works. Furthermore, we see how I had to give up my preference for clear hummable melodies, but got my way in the end.</description>
-  <link>http://www.thesaplinggame.com/devlogs/music</link>
-  <guid>http://www.thesaplinggame.com/devlogs/music</guid>
-  <pubDate>Wed, 29 Apr 2020 00:00:00 -0000</pubDate>
- </item>
- <item>
   <title>Breakdown of the visual style of The Sapling</title>
   <description>In this article I'll show you how the graphical style of The Sapling is achieved, step by step. At the bottom there's an interactive scene so you can turn all individual effects on and off.</description>
   <link>http://www.thesaplinggame.com/devlogs/visualstyle</link>
   <guid>http://www.thesaplinggame.com/devlogs/visualstyle</guid>
   <pubDate>Wed, 29 Apr 2020 00:00:00 -0000</pubDate>
+ </item>
+ <item>
+  <title>Interactive explanation of the procedural music in The Sapling</title>
+  <description>This article is an in-depth interactive explanation of how the procedural music in The Sapling works. Furthermore, we see how I had to give up my preference for clear hummable melodies, but got my way in the end.</description>
+  <link>http://www.thesaplinggame.com/devlogs/music</link>
+  <guid>http://www.thesaplinggame.com/devlogs/music</guid>
+  <pubDate>Sun, 12 Jan 2020 00:00:00 -0000</pubDate>
  </item>
  <item>
   <title>The Sapling available in Early Access today</title>

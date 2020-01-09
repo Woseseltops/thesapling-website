@@ -56,7 +56,7 @@
 	<div id="title_area" class="devlog_title_area">
 		<div id="dark_overlay"></div>
 <h2 class="devlog_label">DEVLOG</h2>
-<h1 class="devlog_title">UNDER THE HOOD OF THE PROCEDURAL MUSIC IN THE SAPLING</h1>
+<h1 class="devlog_title">INTERACTIVE EXPLANATION OF THE PROCEDURAL MUSIC IN THE SAPLING</h1>
 	</div>
 		<img id="portrait" src="/static/png/wessel.png">
 	<p id="portrait_label">Wessel Stoop</p>
@@ -70,12 +70,12 @@
     <img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/example.mp3'>
 </div>
 
-<p class="non_first_p"><span id="first_character">T</span>his is a short excerpt of what the music in The Sapling sounds like. I hesitated a long time before I settled on this musical style. Normally, I prefer memorable, hummable melodies over soundscapes, but for The Sapling I couldn't figure how this would work. This was mainly for two reasons: firstly, every melody I came up with didn't really seem to match with the rest of game's style. Many other simulation games feature either jazzy or bright and jumpy orchestral soundtracks, but both styles somehow seemed to clash with a more serious game about nature. Secondly, I was afraid that I simply would not be able to come up with enough material, meaning that the same melodies would be repeating over and over.</p>
+<p class="non_first_p"><span id="first_character">T</span>he arrow button above players a short excerpt of what the music in The Sapling sounds like. I hesitated a long time before I settled on this musical style. Normally, I prefer memorable, hummable melodies over soundscapes, but for The Sapling I couldn't figure how this would work. This was mainly for two reasons: firstly, every melody I came up with didn't really seem to match with the rest of game's style. Many other simulation games feature either jazzy (like SimCity) or bright and jumpy (Equilinox, Planet Coaster) soundtracks, but both styles somehow seemed to clash with a more serious game about nature. Secondly, I was afraid that I simply would not be able to come up with enough material, meaning that the same melodies would be repeating over and over.</p>
 <hr class="pull_quote_start" />
 <p class="pull_quote">I was afraid that I simply would not be able to come up with enough material, meaning that the same melodies would be repeating over and over</p>
 <hr class="pull_quote_end" />
 <p class="non_first_p">The solution came from an unexpected direction: during experimentation with ambient background music to get into a more productive programming mood (which by the way didn't work for me), I noticed that ambient music videos on Youtube often used a slideshow of pretty nature photos as 'background visuals'. Would it also work the other way around? If nature makes a good background visual for ambient music, is ambient music good background music for nature visuals? </p>
-<p class="non_first_p">Accepting this - and thus giving up hummable melodies in favor of long slow 'ambient' notes to evoke a relaxed feeling in the listener - was a slow process, but ultimately lead to a second discovery: a lot of ambient music rarely changes chords. Instead, all notes throughout the whole song are from the same musical scale. This is convenient, because a general (and oversimplified) rule of thumb is that two pieces of music that use notes from the same musical scale will always sound good together. Creating an ambient sounding soundtrack could simply be a matter of creating a large pool of musical fragments that only use notes from the same scale, and mixing them at random. How well this works is exemplified by the project <a href="http://inbflat.net">In B Flat</a> (which, as the name suggests, uses B Flat as this one scale).</p>
+<p class="non_first_p">Accepting this - and thus giving up hummable melodies in favor of long slow 'ambient' notes to evoke a relaxed feeling in the listener - was a slow process, but ultimately lead to a second discovery: a lot of ambient music rarely changes chords. Instead, all notes throughout the whole song are from the same musical scale. This is convenient, because a general (and oversimplified) rule of thumb is that two pieces of music that use notes from the same musical scale are likely to sound good together. Creating an ambient sounding soundtrack could simply be a matter of creating a large pool of musical fragments that only use notes from the same scale, and mixing them at random. How well this works is exemplified by the project <a href="http://inbflat.net">In B Flat</a> (which, as the name suggests, uses B Flat as this one scale).</p>
 <hr class="pull_quote_start" />
 <p class="pull_quote">Creating an ambient sounding procedural soundtrack could simply be a matter of creating a large pool of musical fragments that only use notes from the same scale</p>
 <hr class="pull_quote_end" />
@@ -152,6 +152,7 @@
 <p class="non_first_p">One final question you might have is whether these musical fragments are completely random sequences of notes chosen by chance from a static scale. The answer is 'of course not': to satisfy my own desire for hummable melodies I actually did write a main theme for the game, and to give the game some musical coherence I echo parts of this theme in various fragments. This button below plays the main theme as you hear it in the main menu. Can you identify which of the musical fragments contain hints of this theme?</p>
 <p class="non_first_p"><img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/main.mp3'></p>
 <p class="non_first_p">And that's all there is to it! By the way, if you want to do more with these pieces of music, you can! Both <a href="/static/procedural_music_pieces.zip">the individual fragments</a> and <a href="/static/separate_layers_main_theme.zip">the layers of the main theme</a> are availale to be used in your own projects, as is the <a href="/static/main_theme_sheet_music.pdf">sheet music</a> for the main theme. See <a href="/devlogs/playercontent.html">this devlog</a> for more info on that.</p>
+<p class="non_first_p">Want more like this? I write articles like this roughly once per month; you can subscribe for email reminders below! If you want more fine-grained info on my game development work, there also is a <a href="https://twitter.com/thesaplinggame">Twitter account</a>.</p>
 <script>
 
     //The general LayerPlayer code
@@ -353,7 +354,7 @@
     );  
 
 </script>
-<p id="date">Published Wednesday 29 April 2020</p><div class="iconlabel"><a href="modelsrelease.html"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<p id="date">Published Sunday 12 January 2020</p><div class="iconlabel"><a href="playercontent.html"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg class="icon"
@@ -487,7 +488,74 @@
        sodipodi:nodetypes="cccc" />
   </g>
 </svg>
-<br>Overview</a></div>
+<br>Overview</a></div><div class="iconlabel"><a href="release.html"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg class="icon"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="5.1382222mm"
+   height="6.4575267mm"
+   viewBox="0 0 18.206299 22.881"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="arrow_right.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="46.318205"
+     inkscape:cy="57.219619"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-368.03971,-523.77885)">
+    <path
+       style="display:inline;fill:#dedede;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 386.24601,534.93755 -18.2063,-11.1587 0.7063,22.881 z"
+       id="path8692"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>
+<br>Newer</a></div>
 		</div>
 	</div>
 
