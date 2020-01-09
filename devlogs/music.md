@@ -9,7 +9,7 @@ This article is an in-depth interactive explanation of how the procedural music 
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/example.mp3'>
 </div>
 
-The arrow button above players a short excerpt of what the music in The Sapling sounds like. I hesitated a long time before I settled on this musical style. Normally, I prefer memorable, hummable melodies over soundscapes, but for The Sapling I couldn't figure how this would work. This was mainly for two reasons: firstly, every melody I came up with didn't really seem to match with the rest of game's style. Many other simulation games feature either jazzy (like SimCity) or bright and jumpy (Equilinox, Planet Coaster) soundtracks, but both styles somehow seemed to clash with a more serious game about nature. Secondly, I was afraid that I simply would not be able to come up with enough material, meaning that the same melodies would be repeating over and over.
+The arrow button above plays a short excerpt of what the music in The Sapling sounds like. I hesitated a long time before I settled on this musical style. Normally, I prefer memorable, hummable melodies over soundscapes, but for The Sapling I couldn't figure how this would work. This was mainly for two reasons: firstly, every melody I came up with didn't really seem to match with the rest of game's style. Many other simulation games feature either jazzy (like SimCity) or bright and jumpy (Equilinox, Planet Coaster) soundtracks, but both styles somehow seemed to clash with a more serious game about nature. Secondly, I was afraid that I simply would not be able to come up with enough material, meaning that the same melodies would be repeating over and over.
 
 ---
 
