@@ -29,7 +29,7 @@ Creating an ambient sounding procedural soundtrack could simply be a matter of c
 
 This idea solved my two problems in one go: (1) the genre of ambient music fit the game's feel and (2) I could endlessly combine small musical fragments, giving you a fresh sounding soundtrack every time. The result is available for you to play with below. Feel free to click some play buttons at random, and decide for yourself if you think they sound good together.
 
-<div class="player_group">
+<div id="main_interactive_part" class="player_group">
 <div class="player_container">
 	<img class="layerplayer" src="music/quiet.svg" playing='false' audio='music/BG1.mp3' epicLayer="music/EP1.mp3"><div class="player_label">Background</div>
 	<img class="layerplayer_extra_layer" src="music/extra_layer_quiet.svg" playing="false" baseLayerName="music/BG1.mp3">
@@ -300,6 +300,8 @@ Want more like this? I write articles like this roughly once per month; you can 
 				layerplayer_extra_layers[player_label_index].style.display = 'block';
 			}
 		}
+
+		document.getElementById('main_interactive_part').scrollIntoView({behavior: 'smooth'});
 	}
 	);	
 
