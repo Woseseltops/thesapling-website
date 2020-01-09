@@ -101,6 +101,8 @@ One final question you might have is whether these musical fragments are complet
 
 And that's all there is to it! By the way, if you want to do more with these pieces of music, you can! Both [the individual fragments](/static/procedural_music_pieces.zip) and [the layers of the main theme](/static/separate_layers_main_theme.zip) are availale to be used in your own projects, as is the [sheet music](/static/main_theme_sheet_music.pdf) for the main theme. See [this devlog](/devlogs/playercontent.html) for more info on that.
 
+Want more like this? I write articles like this roughly once per month; you can subscribe for email reminders below! If you want more fine-grained info on my game development work, there also is a [Twitter account](https://twitter.com/thesaplinggame).
+
 <script>
 
 	//The general LayerPlayer code
