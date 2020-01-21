@@ -8,6 +8,7 @@ Marketing The Sapling flower update:
   * Nieuwe Youtubers zoeken: oa Bibites en Species ALRE
 * Week 1
   * teaser 1 uit de trailer op Twitter en imgur, datum trailer en release noemen
+  * Melden Steam/Itch, see Twitter for more
   * teaser 2 uit de trailer op Twitter en imgur, datum trailer en release noemen
 * Week 2: 
   * teaser 3 uit de trailer op Twitter en imgur, datum trailer en release noemen
@@ -36,8 +37,8 @@ Marketing The Sapling flower update:
   * Twitch Stream week 1
   * Blogpost en newsletter: about the update: vorige twee weken, nu live stream, binnenkort videos
   * Verspreiden op: Twitter, Steam, IndieDB, itch.io
-  * aankondigen op aantal subreddits, hacker news
-  * De keys opsturen  
+  * Stream aankondigen op hacker news, algemene subreddits zoals gaming, videogames, indiegames
+  * De keys opsturen, met links naar de video en inzoom van de afgelopen twee weken, en livestream vermelden  
 * Week 7: 
   * Twitch Stream week 2
 * Week 8
