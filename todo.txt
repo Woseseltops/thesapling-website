@@ -14,6 +14,7 @@ Marketing The Sapling flower update:
   * teaser 3 uit de trailer op Twitter en imgur, datum trailer en release noemen
   * teaser 4 uit de trailer op Twitter en imgur, datum trailer en release noemen
   * press release met keys, link naar filmpje, weer aan iedereen
+    * Als het omhoog of omlaag zetten van de temperatuur interessante effecten heeft, dit essentieel onderdeel maken van de press release: 'Twitch Plays Climate Change: sandbox mode of ecology sim The Sapling as an interactive Twitch stream'
 * Week 3: 
   * landing page thesaplinggame.com/flower
   * trailer release
@@ -37,7 +38,8 @@ Marketing The Sapling flower update:
   * Twitch Stream week 1
   * Blogpost en newsletter: about the update: vorige twee weken, nu live stream, binnenkort videos
   * Verspreiden op: Twitter, Steam, IndieDB, itch.io
-  * Stream aankondigen op hacker news, algemene subreddits zoals gaming, videogames, indiegames
+  * Stream aankondigen op hacker news, algemene subreddits zoals r/gaming, r/videogames, r/indiegames
+  * Als het omhoog of omlaag zetten van de temperatuur interessante effecten heeft ook op r/ecology, r/teachingresources, r/enviroaction
   * De keys opsturen, met links naar de video en inzoom van de afgelopen twee weken, en livestream vermelden  
 * Week 7: 
   * Twitch Stream week 2
