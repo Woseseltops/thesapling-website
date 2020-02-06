@@ -3,7 +3,7 @@ Breakdown of the visual style of The Sapling
 
 | Technical | Graphics |
 
-How was the graphical style of The Sapling is achieved? In this interactive breakdown I'll show you, step by step. At the bottom there's an interactive scene so you can turn all individual effects on and off.
+How was the graphical style of The Sapling achieved? In this interactive breakdown I'll show you, step by step. At the bottom there's an interactive scene so you can turn all individual effects on and off.
 
 Writing game code and creating game graphics are two fundamentally different beasts, and what is fun about them is very different. Programming has the clear advantage when I'm inspired by another game and want to see if I can replicate a particular idea. For example, if I encounter a game mechanic that I like, I can do a quick internet search and the result is most likely a tutorial on how to build this kind of technology. If I like the graphics in a game, on the other hand, there's not much I can do other than endlessly combining tricks I already know and hope this by chance achieves the graphical style I was trying to reproduce.
 
