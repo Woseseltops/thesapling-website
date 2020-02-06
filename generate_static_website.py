@@ -22,7 +22,7 @@ def create_page(template_location,title_area_file_location,title,content,page_ty
 	if open_graph_tags != None:
 
 		for item in open_graph_tags.keys():
-			all_variables['open_graph_tags_area'] += '<meta property="og:'+item+'" content="'+open_graph_tags[item]+'" />'
+			all_variables['open_graph_tags_area'] += '\t<meta property="og:'+item+'" content="'+open_graph_tags[item]+'" />\n'
 
 	return fill_template(open(template_location).read(),all_variables)
 
@@ -163,7 +163,7 @@ def generate_static_website():
 	published_devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
 
 	for n,devlog in enumerate(devlogs):
-		devlog_url = 'https://'+DOMAIN_NAME+'devlogs/'+devlog.identifier
+		devlog_url = 'https://'+DOMAIN_NAME+'/devlogs/'+devlog.identifier
 		open_graph_tags = {'title':devlog.title,
 							'url':devlog_url+'.html',
 							'type':'article',
@@ -173,7 +173,7 @@ def generate_static_website():
 		navigation_buttons = create_navigation_buttons([devlog for devlog in devlogs if devlog.published],n,svg_images)		
 
 		full_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_TITLE_AREA_FILE_LOCATION,devlog.title.upper(),
-									devlog.html+navigation_buttons,'devlog',portrait_area=PORTRAIT_TEMPLATE_LOCATION)
+									devlog.html+navigation_buttons,'devlog',portrait_area=PORTRAIT_TEMPLATE_LOCATION,open_graph_tags=open_graph_tags)
 		open(GOAL_LOCATION+'devlogs/'+devlog.identifier+'.html','w').write(full_content)
 
 	#Generate the devlog listview
