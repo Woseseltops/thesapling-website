@@ -5,7 +5,7 @@ Breakdown of the visual style of The Sapling
 
 In this article I'll show you how the graphical style of The Sapling is achieved, step by step. At the bottom there's an interactive scene so you can turn all individual effects on and off.
 
-Writing game code and creating game graphics are two fundamentally different beasts, and what is fun about them is very different. One area where programming has the clear advantage, is when you're inspired by another game and want to see if you can replicate a particular idea. If I encounter a game mechanic that I like, I can do a quick internet search and the result is most likely a tutorial on how to build this kind of technology. If I like the graphics in a game, on the other hand, there's not much I can do other than endlessly combining tricks I already know and hope this by chance achieves the graphical style I was trying to reproduce.
+Writing game code and creating game graphics are two fundamentally different beasts, and what is fun about them is very different. Programming has the clear advantage when I'm inspired by another game and want to see if I can replicate a particular idea. For example, if I encounter a game mechanic that I like, I can do a quick internet search and the result is most likely a tutorial on how to build this kind of technology. If I like the graphics in a game, on the other hand, there's not much I can do other than endlessly combining tricks I already know and hope this by chance achieves the graphical style I was trying to reproduce.
 
 ---
 
@@ -17,7 +17,7 @@ In this article I'd like to show you it doesn't have to be this way; I'll set a 
 
 Subdivision
 -----------
-The Catmull-Clark subdivision algorithm is what started this whole project. It's like a machine where you can put in a simple 3D object, and a smooth more detailed object comes out. Implementing it was my first experiment in Unity, and with it showed myself that I was able to do 3D game programming. I allows me to work with basic shapes for the models of plants and animals under the hood, while they appear more realistic to the player.
+The Catmull-Clark subdivision algorithm is like a machine where you can put in a simple 3D object, and a smooth more detailed object comes out. Fun fact: the Catmull in the name is actually Edwin Catmull, former president of Pixar and Walt Disney Animation Studios. Implementing it was my first experiment in Unity, and with it I showed myself that I was able to do 3D game programming. The algorithm allows the game to work with basic shapes for the models of plants and animals under the hood, while they appear more realistic to the player.
 
 <div class="img-comp-container">
   <div class="img-comp-img">
@@ -30,7 +30,7 @@ The Catmull-Clark subdivision algorithm is what started this whole project. It's
 
 Depth of Field
 --------------
-I really like depth of field in film and photography as it guides what the viewer focuses on in a very natural way. Unfortunately it often does not work well in gaming contexts: in most situations, the player should be able to focus wherever s/he wants. On top of this, depth of field makes objects feel relatively small; depth of field on anything larger than a human makes it look like some kind of miniature version - although some recent city building sims use this to their advantage to create a 'toy city' kind of feel. In The Sapling, I use depth of field when the player clicks a plant or animal to focus on it. Look at the background in the image below to see the effect.
+Depth of field is a fancy term for making the background blurry. I really like depth of field in film and photography as it guides what the viewer focuses on in a very natural way. Unfortunately it often does not work well in gaming contexts: in most situations, the player should be able to focus wherever s/he wants. On top of this, depth of field makes objects feel relatively small; depth of field on anything larger than a human makes it look like some kind of miniature version - although recent city building sims use this to their advantage to create a 'toy city' kind of feel. In The Sapling, depth of field is used when the player clicks a plant or animal to focus on it. Look at the background in the image below to see the effect.
 
 <div class="img-comp-container">
   <div class="img-comp-img">
@@ -44,7 +44,7 @@ I really like depth of field in film and photography as it guides what the viewe
 
 Vignette
 --------
-Unlike depth of field, I rarely like vignettes in film and photography but I almost always do in games. I guess it's because a really simple trick that most players won't actively notice, while it does give the game a more artistic and modern look.
+A vignette can be many things, but I think its default meaning is to make the corners of an image darker. Unlike depth of field, I rarely like vignettes in film and photography but I almost always do in games. I guess it's because a really simple trick that most players won't actively notice, while it does give the game a more artistic look.
 
 <div class="img-comp-container">
   <div class="img-comp-img">
@@ -57,11 +57,11 @@ Unlike depth of field, I rarely like vignettes in film and photography but I alm
 
 Water animation
 ---------------
-A comment a lot of early playtesters gave was that the island looked empty and boring when you start. While I still haven't come up with a way to really fix this, I think that moving water makes the whole thing feel a little more alive. (If you're into the technical terms: it's achieved by saving the effect of displacement modifier in Blender as shapekeys). You can turn the moving water on and off in the interactive scene below.
+A comment a lot of early playtesters gave was that the island looked empty and boring when you start. While I still haven't come up with a way to really fix this, I think that moving water makes the whole thing feel a little more alive. If you're into the technical terms, it's achieved by saving the effect of displacement modifier in Blender as shapekeys. You can turn the moving water on and off in the interactive scene below.
 
 Gradient skyboxes
 -----------------
-I came up with this idea quite late in the development of the game (before that, the sky in The Sapling was simply always blue), but the effect on the overal atmosphere was enormous. Interestingly, I've achieved in the Unity game engine by using 3 pixel textures like these ones (enlarged versions):
+I came up with this idea quite late in the development of the game (before that, the sky in The Sapling was simply always blue), but the effect on the overal atmosphere was enormous. Interestingly, this can be achieved in the Unity game engine by using 3 pixel textures like these ones (enlarged versions):
 
 ![](visualstyle/textures.png)
 
@@ -124,6 +124,7 @@ Interactive scene
   </div>
 </div>
 
+Want more like this? I write articles like this roughly once per month; you can subscribe for email reminders below! If you want more fine-grained info on my game development work, there also is a [Twitter account](https://twitter.com/thesaplinggame).
 
 <script>
 function initComparisons() 
@@ -265,4 +266,4 @@ initComparisons();
       }     
 </script>
 
-29-04-20
+13-02-20

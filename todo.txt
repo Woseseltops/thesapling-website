@@ -1,24 +1,17 @@
 NOW
 ===
-Music article links:
-* Twitter: "Interactive explanation of the procedural music in The Sapling #madeinunity #thesapling."
-* Hacker News: "Interactive explanation of my procedural music system."
-* /r/gamedev: "Interactive explanation of the procedural music system in my game."
-* /r/gamemusic: "Interactive explanation of the procedural music system in indie The Sapling."
-* /r/proceduralgeneration: "Interactive explanation of the procedural music system in my game."
-
-Music article clones: "Interactive explanation of the procedural music in The Sapling.", met plaatjes en een reminder onderaan
-* Steam 
-* Mailchimp
-* IndieDB 
-* Itch.io
+Aanschrijven:
+* Alessandra
+* Gamasutra: vragen... hoeveel wordt het bekeken?
 
 Contact zoeken met info@rocketshipstudios.org
 Contact zoeken met hello@dreamstormstudios.com
 
+Bekijken: https://www.gamespress.com/
+
 Links leggen met
 ----------------
-Twitter #madeinunity		x
+Twitter #madewithunity		x
 Reddit /r/gamedev			x
 Gmail signature				x
 mailchimp					x
