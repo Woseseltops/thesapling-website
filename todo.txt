@@ -1,6 +1,26 @@
 NOW
 ===
-Open Graph tags toevoegen aan website
+Todo
+* Iframe
+* IndieDb, Gamasutra en Itch voorbereiden
+* Tips Alessandra bekijken
+* Meer subreddits zoeken
+
+Marketing devlog visual style
+* Devlog
+  * Twitter: The latest devlog: a step-by-step interactive breakdown of the visual style of The Sapling #madewithunity
+  * Reddit: 
+    * r/unity: A step-by-step interactive breakdown of the visual style of my Unity game
+    * r/gamedev: Tutorial: a step-by-step interactive breakdown of the visual style of my game
+    * r/gamedevscreens: A step-by-step interactive breakdown of the visual style of my indie game
+
+  * Hacker News: step-by-step interactive breakdown of the visual effects of a videogame
+
+* Mailchimp
+* Steam
+* IndieDB
+* Gamasutra
+* Itch
 
 Marketing The Sapling flower update:
 * Week 0
@@ -23,8 +43,9 @@ Marketing The Sapling flower update:
     * buy on steam of itch.io noemen
     * landing page noemen
   * posten op Twitter, Steam, IndieDB, itch.io, newsletter
+    * Steam voor dit artikel ook een library stoplight banner
   * posten op r/spore, r/procedural_generation, r/linuxgaming, r/flowers, nog wat indiegame subreddits, hacker news
-  * Shoutouts vragen info@rocketshipstudios.org, hello@dreamstormstudios.com, TheBibites@gmail.com, Equilinox, world building magazine, philomena... meer?
+  * Shoutouts vragen info@rocketshipstudios.org, hello@dreamstormstudios.com, TheBibites@gmail.com, Equilinox, world building magazine, philomena... meer, bijv wetenschappers?
   * Contact zoeken met Youtubers die niet reageerden: ik ga je een key sturen
 * Week 4: 
   * inzoomen op nieuwe sandbox met Sketchfab en gifs
@@ -38,6 +59,7 @@ Marketing The Sapling flower update:
   * Twitch Stream week 1
   * Blogpost en newsletter: about the update: vorige twee weken, nu live stream, binnenkort videos
   * Verspreiden op: Twitter, Steam, IndieDB, itch.io
+    * Steam voor dit artikel ook een library stoplight banner 
   * Stream aankondigen op hacker news, algemene subreddits zoals r/gaming, r/videogames, r/indiegames
   * Als het omhoog of omlaag zetten van de temperatuur interessante effecten heeft ook op r/ecology, r/teachingresources, r/enviroaction
   * De keys opsturen, met links naar de video en inzoom van de afgelopen twee weken, en livestream vermelden  
