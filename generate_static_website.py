@@ -21,6 +21,8 @@ def create_page(template_location,title_area_file_location,title,content,page_ty
 
 	if open_graph_tags != None:
 
+		all_variables['open_graph_tags_area'] = '\t<meta name="twitter:card" content="summary_large_image">\n'
+
 		for item in open_graph_tags.keys():
 			all_variables['open_graph_tags_area'] += '\t<meta property="og:'+item+'" content="'+open_graph_tags[item]+'" />\n'
 
