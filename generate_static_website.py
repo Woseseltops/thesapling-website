@@ -7,17 +7,22 @@ from subprocess import Popen
 from devlog import parse_devlog
 from template import fill_template
 
-def create_page(template_location,title_area_file_location,title,content,page_type,content_variables = None,portrait_area = None):
+def create_page(template_location,title_area_file_location,title,content,page_type,open_graph_tags = None,content_variables = None,portrait_area = None):
 
 	title_area = open(title_area_file_location).read()
 
 	if content_variables != None:
 		content = fill_template(content,content_variables)
 
-	all_variables = {'title_area':title_area,'title':title,'content':content,'page_type':page_type,'portrait_area':''}
+	all_variables = {'title_area':title_area,'title':title,'content':content,'page_type':page_type,'portrait_area':'','open_graph_tags_area':''}
 
 	if portrait_area != None:
 		all_variables['portrait_area'] = open(portrait_area).read()
+
+	if open_graph_tags != None:
+
+		for item in open_graph_tags.keys():
+			all_variables['open_graph_tags_area'] += '<meta property="og:'+item+'" content="'+open_graph_tags[item]+'" />'
 
 	return fill_template(open(template_location).read(),all_variables)
 
@@ -158,7 +163,15 @@ def generate_static_website():
 	published_devlogs.sort(key=lambda devlog: devlog.date,reverse=True)
 
 	for n,devlog in enumerate(devlogs):
+		devlog_url = 'https://'+DOMAIN_NAME+'devlogs/'+devlog.identifier
+		open_graph_tags = {'title':devlog.title,
+							'url':devlog_url+'.html',
+							'type':'article',
+							'description':devlog.lead,
+							'image':devlog_url+'/og_image.png'}
+
 		navigation_buttons = create_navigation_buttons([devlog for devlog in devlogs if devlog.published],n,svg_images)		
+
 		full_content = create_page(MAIN_TEMPLATE_LOCATION,DEVLOG_TITLE_AREA_FILE_LOCATION,devlog.title.upper(),
 									devlog.html+navigation_buttons,'devlog',portrait_area=PORTRAIT_TEMPLATE_LOCATION)
 		open(GOAL_LOCATION+'devlogs/'+devlog.identifier+'.html','w').write(full_content)
