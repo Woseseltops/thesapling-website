@@ -13,8 +13,9 @@ Marketing devlog visual style
     * r/unity: A step-by-step interactive breakdown of the visual style of my Unity game
     * r/gamedev: Tutorial: a step-by-step interactive breakdown of the visual style of my game
     * r/gamedevscreens: A step-by-step interactive breakdown of the visual style of my indie game
+    * r/postprocessing: A step-by-step interactive breakdown of the post processing effects in a videogame
 
-  * Hacker News: step-by-step interactive breakdown of the visual effects of a videogame
+  * Hacker News: step-by-step interactive breakdown of the visual effects in a videogame
 
 * Mailchimp
 * Steam
