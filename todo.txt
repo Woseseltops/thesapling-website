@@ -3,6 +3,7 @@ NOW
 Todo
 * Iframe
 * IndieDb, Gamasutra en Itch voorbereiden
+* Responsive
 * Tips Alessandra bekijken
 * Meer subreddits zoeken
 
