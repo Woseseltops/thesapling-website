@@ -1,0 +1,89 @@
+<header>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<style>
+		body
+		{		
+			background: white;
+			color: black;
+		}
+
+		button
+		{
+			color: black;
+		}
+
+		#dayNightCycleSlider::-webkit-slider-runnable-track
+		{
+		    background-color: grey;
+		}		
+
+		#dayNightCycleSlider::-webkit-slider-thumb
+		{
+		    background-color: hsl(0, 0%, 85%);
+		}
+	</style>
+</header>
+<body>
+<button onclick="ToggleVignette()">Toggle vignette</button><button onclick="ToggleDepthOfField()">Toggle depth of field</button><button onclick="ToggleSubdivision()">Toggle subdivision</button><button onclick="ToggleAnimatedWater()">Toggle animated water</button><button onclick="ToggleColoredLights()">Toggle colored lights</button><button onclick="ToggleGradientSkyBox()">Toggle gradient skybox</button><button onclick="ToggleColorGrading()">Toggle color grading</button>
+
+<p>Slide to change where we are in the day-night cycle</p>
+
+<input type="range" min="1" max="100" value="50" id="dayNightCycleSlider">
+
+<script src="UnityProgress.js"></script>  
+<script src="UnityLoader.js"></script>
+<script>
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Builds.json", {onProgress: UnityProgress});
+</script>
+
+<div class="webgl-content">
+  <div id="gameContainer" style="width: 750px; height: 600px"></div>
+  <div class="footer">
+  </div>
+</div>
+
+<script>
+    var slider = document.getElementById("dayNightCycleSlider");    
+    slider.oninput = function()
+    {
+     gameInstance.SendMessage('Controller','SetPositionInDayNightCycle',this.value/100);    
+    } 
+
+
+    function ToggleVignette()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleVignette');
+    }
+
+    function ToggleDepthOfField()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleDepthOfField');
+    }
+
+    function ToggleSubdivision()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleSubdivisionIterations');
+    }
+    
+    function ToggleAnimatedWater()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleAnimatedWater');
+    }
+
+    function ToggleColoredLights()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleColoredLights');
+    }
+
+    function ToggleGradientSkyBox()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleGradientSkyBox');
+      }     
+
+    function ToggleColorGrading()
+    {
+       gameInstance.SendMessage('Controller', 'ToggleColorGrading');
+      }     
+</script>	
+
+</body>
