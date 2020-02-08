@@ -167,11 +167,11 @@ def generate_static_website():
 
 	for n,devlog in enumerate(devlogs):
 		devlog_url = 'https://'+DOMAIN_NAME+'/devlogs/'+devlog.identifier
-		open_graph_tags = OrderedDict({'title':devlog.title,
-							'url':devlog_url+'.html',
-							'type':'article',
-							'description':devlog.lead,
-							'image':devlog_url+'/og_image.png'})
+		open_graph_tags = OrderedDict([('title',devlog.title),
+							('url',devlog_url+'.html'),
+							('type','article'),
+							('description',devlog.lead),
+							('image',devlog_url+'/og_image.png')])
 
 		navigation_buttons = create_navigation_buttons([devlog for devlog in devlogs if devlog.published],n,svg_images)		
 
