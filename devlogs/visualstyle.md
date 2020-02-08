@@ -13,7 +13,7 @@ I'll set a good example and explain in detail how to achieve the visual style of
 
 ---
 
-In this article I'd like to show you it doesn't have to be this way; I'll set a good example and explain in detail how to achieve the visual style of The Sapling. I will do this step by step with sliders so you can compare the impact of the effect, and at the end with an interactive scene so you can turn on and off everything to your heart's desire.
+In this article I'd like to show you it doesn't have to be this way; I'll set a good example and explain in detail how to achieve the visual style of The Sapling. I will do this step by step, and (inspired by the large number of visitors for [my previous interactive devlog](music.html)) interactively with sliders, so you can compare the impact of the effect. At the end there's an interactive scene so you can turn on and off everything to your heart's desire.
 
 Subdivision
 -----------

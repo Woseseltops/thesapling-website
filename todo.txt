@@ -1,11 +1,8 @@
 NOW
 ===
 Todo
-* Iframe
-* IndieDb, Gamasutra en Itch voorbereiden
 * Responsive
 * Tips Alessandra bekijken
-* Meer subreddits zoeken
 
 Marketing devlog visual style
 * Devlog
@@ -20,9 +17,7 @@ Marketing devlog visual style
 
 * Mailchimp
 * Steam
-* IndieDB
-* Gamasutra
-* Itch
+* IndieDB, Gamasutra, Itch
 
 Marketing The Sapling flower update:
 * Week 0
