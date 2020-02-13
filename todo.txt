@@ -31,6 +31,7 @@ Marketing The Sapling flower update:
   * teaser 3 uit de trailer op Twitter en imgur, datum trailer en release noemen
   * teaser 4 uit de trailer op Twitter en imgur, datum trailer en release noemen
   * press release met keys, link naar filmpje, weer aan iedereen
+    * Toevoegen: info@player.one, pr@thegamer.com
     * Als het omhoog of omlaag zetten van de temperatuur interessante effecten heeft, dit essentieel onderdeel maken van de press release: 'Twitch Plays Climate Change: sandbox mode of ecology sim The Sapling as an interactive Twitch stream'
 * Week 3: 
   * landing page thesaplinggame.com/flower
