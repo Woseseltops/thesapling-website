@@ -1,25 +1,10 @@
 NOW
 ===
-Todo
-* Responsive
-* Tips Alessandra bekijken
+Presskit updaten
+thesaplinggame.com/newsletter
 
-Marketing devlog visual style
-* Devlog
-  * Twitter: The latest devlog: a step-by-step interactive breakdown of the visual style of The Sapling #madewithunity
-  * Reddit: 
-    * r/unity: A step-by-step interactive breakdown of the visual style of my Unity game
-    * r/gamedev: Tutorial: a step-by-step interactive breakdown of the visual style of my game
-    * r/gamedevscreens: A step-by-step interactive breakdown of the visual style of my indie game
-    * r/postprocessing: A step-by-step interactive breakdown of the post processing effects in a videogame
-
-  * Hacker News: step-by-step interactive breakdown of the visual effects in a videogame
-
-* Mailchimp
-* Steam
-* IndieDB, Gamasutra, Itch
-
-Marketing The Sapling flower update:
+Marketing The Sapling flower update
+-----------------------------------
 * Week 0
   * Contact zoeken met filmpjesmakers: dit is een secret draft voor een trailer die eraan komt, ik ga dan en dan je een beta key geven, en mag ik een paar seconden uit je video gebruiken?
   * Nieuwe Youtubers zoeken: oa Bibites, Species ALRE, Among Ripples
