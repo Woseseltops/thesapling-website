@@ -5,16 +5,19 @@ thesaplinggame.com/newsletter
 
 Marketing The Sapling flower update
 -----------------------------------
+Plan
 * Week 0
   * Contact zoeken met filmpjesmakers: dit is een secret draft voor een trailer die eraan komt, ik ga dan en dan je een beta key geven, en mag ik een paar seconden uit je video gebruiken?
   * Nieuwe Youtubers zoeken: oa Bibites, Species ALRE, Among Ripples
 * Week 1
-  * teaser 1 uit de trailer op Twitter en imgur, datum trailer en release noemen
+  * teaser 1 uit de trailer op Twitter en imgur, 'I'm gonna leave this here and be mysterious about it. More to follow over the coming days.'
   * Melden Steam/Itch, see Twitter for more
   * teaser 2 uit de trailer op Twitter en imgur, datum trailer en release noemen
+  * trailermuziek op Twitter, datum trailer en release noemen
 * Week 2: 
   * teaser 3 uit de trailer op Twitter en imgur, datum trailer en release noemen
   * teaser 4 uit de trailer op Twitter en imgur, datum trailer en release noemen
+  * voorproefje website op Twitter, datum release noemen
   * press release met keys, link naar filmpje, weer aan iedereen
     * Toevoegen: info@player.one, pr@thegamer.com, 	info@askgamedev.com
     * Solo dev noemen
