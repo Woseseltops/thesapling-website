@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"publi",
+				"published_devlogs"
+			],
+			[
+				"pub",
+				"published_devlogs"
+			],
+			[
 				"us",
 				"userId"
 			],
@@ -506,14 +514,6 @@
 			[
 				"siz",
 				"sizeFactorWhenYoung"
-			],
-			[
-				"stemP",
-				"stemPart"
-			],
-			[
-				"you",
-				"youngVersion"
 			]
 		]
 	},
@@ -523,25 +523,7 @@
 			"file": "todo.txt",
 			"settings":
 			{
-				"buffer_size": 649,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "press-overview",
-			"settings":
-			{
-				"buffer_size": 4053,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "press_texts",
-			"settings":
-			{
-				"buffer_size": 9091,
+				"buffer_size": 414,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -580,17 +562,20 @@
 	"expanded_folders":
 	[
 		"/C/Users/Wessel/Desktop/thesapling-website",
-		"/C/Users/Wessel/Desktop/thesapling-website/devlogs",
-		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate",
-		"/C/Users/Wessel/Desktop/thesapling-website/static"
+		"/C/Users/Wessel/Desktop/thesapling-website/devlogs"
 	],
 	"file_history":
 	[
-		"/C/Users/Wessel/Desktop/thesapling-website/create_drafs.py",
-		"/C/Users/Wessel/Desktop/thesapling-website/press-overview",
-		"/C/Users/Wessel/Desktop/thesapling-website/press_texts",
-		"/C/Users/Wessel/Desktop/thesapling-website/Free keys at launch",
+		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/music.md",
+		"/C/Users/Wessel/Desktop/thesapling-website/essay_ideas.md",
 		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/landing1.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
+		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/release.md",
+		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
+		"/C/Users/Wessel/Desktop/thesapling-website/press_texts",
+		"/C/Users/Wessel/Desktop/thesapling-website/press-overview",
+		"/C/Users/Wessel/Desktop/thesapling-website/create_drafs.py",
+		"/C/Users/Wessel/Desktop/thesapling-website/Free keys at launch",
 		"/C/Users/Wessel/Desktop/thesapling-website/static/style.css",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/modelsrelease.md",
 		"/C/Users/Wessel/Desktop/thesapling-website/credentials/gmail.json",
@@ -600,7 +585,6 @@
 		"/C/Users/Wessel/Desktop/thesapling-website/credentials/gmail_client_secret_save.json",
 		"/C/Users/Wessel/Desktop/thesapling-website/credentials/gmail_client_secret.json",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/playercontent.md",
-		"/C/Users/Wessel/Desktop/thesapling-website/generate_static_website.py",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/musicrelease.md",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlog.py",
 		"/C/Users/Wessel/Desktop/thesapling-website/build_press_section.md",
@@ -627,7 +611,6 @@
 		"/C/Users/Wessel/Desktop/thesapling-website/credentials/twitter.json",
 		"/C/Users/Wessel/Desktop/evernote/Dingen te modeleren.html",
 		"/C/Users/Wessel/Desktop/evernote/Faip.html",
-		"/C/Users/Wessel/Desktop/thesapling-website/pages_to_generate/index.html",
 		"/C/Users/Wessel/Desktop/personal-website/style.css",
 		"/C/Users/Wessel/Desktop/personal-website/index.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/docs/press_static/index.html",
@@ -655,7 +638,6 @@
 		"/C/Users/Wessel/Desktop/thesapling-website/latest_website/devlogs/playercontent.html",
 		"/C/Users/Wessel/Desktop/thesapling-website/devlogs/test1.md",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Resources/Scenarios/icons/0.png.meta",
-		"/C/Users/Wessel/Desktop/thesapling-website/essay_ideas.md",
 		"/C/Users/Wessel/Desktop/gc_info.py",
 		"/C/Users/Wessel/Desktop/NN/interpret_data.py",
 		"/C/Users/Wessel/Desktop/NN/nn.py",
@@ -711,9 +693,7 @@
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/AlertViewController.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/Objective/ObjectiveDefinition.js",
 		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/ObjectiveListView.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/ObjectiveListViewTests.js",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/playdevclub",
-		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/PlantView.js"
+		"/C/Users/Wessel/Documents/Unity Games/Experiments/Assets/World/Views/ObjectiveListViewTests.js"
 	],
 	"find":
 	{
@@ -732,6 +712,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"</p>",
+			"<p>",
+			"cc4365d5c8379dc4ef92863f0b6f8f6c7a9537ad",
 			"h2",
 			"<li>",
 			"\n",
@@ -856,15 +839,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 649,
+						"buffer_size": 414,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								270,
+								270
 							]
 						],
 						"settings":
@@ -876,62 +859,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "press-overview",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4053,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1527,
-								1527
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 162.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "press_texts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9091,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								102,
-								2893
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -985,6 +912,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"music.",
+				"devlogs\\music.md"
+			],
+			[
+				"relea",
+				"devlogs\\release.md"
+			],
 			[
 				"py",
 				"create_drafs.py"
@@ -1488,14 +1423,6 @@
 			[
 				"aniedui",
 				"Assets\\AnimalEditor\\AnimalEditorUIView.js"
-			],
-			[
-				"planu",
-				"Assets\\PlantEditor\\PlantEditorUIView.js"
-			],
-			[
-				"planted",
-				"Assets\\PlantEditor\\PlantEditorController.js"
 			]
 		],
 		"width": 0.0
