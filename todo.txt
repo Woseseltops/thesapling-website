@@ -48,6 +48,7 @@ Plan
     * tooltips
     * hotkeys
     * upgrade everything at once
+    * settings menu
   * Verspreiden op: Twitter, Steam, IndieDB, itch.io
 * Week 6: 
   * Twitch Stream week 1
