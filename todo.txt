@@ -1,37 +1,26 @@
 NOW
 ===
-Todo
-* Responsive
-* Tips Alessandra bekijken
+Presskit updaten
+thesaplinggame.com/newsletter
 
-Marketing devlog visual style
-* Devlog
-  * Twitter: The latest devlog: a step-by-step interactive breakdown of the visual style of The Sapling #madewithunity
-  * Reddit: 
-    * r/unity: A step-by-step interactive breakdown of the visual style of my Unity game
-    * r/gamedev: Tutorial: a step-by-step interactive breakdown of the visual style of my game
-    * r/gamedevscreens: A step-by-step interactive breakdown of the visual style of my indie game
-    * r/postprocessing: A step-by-step interactive breakdown of the post processing effects in a videogame
-
-  * Hacker News: step-by-step interactive breakdown of the visual effects in a videogame
-
-* Mailchimp
-* Steam
-* IndieDB, Gamasutra, Itch
-
-Marketing The Sapling flower update:
+Marketing The Sapling flower update
+-----------------------------------
+Plan
 * Week 0
   * Contact zoeken met filmpjesmakers: dit is een secret draft voor een trailer die eraan komt, ik ga dan en dan je een beta key geven, en mag ik een paar seconden uit je video gebruiken?
-  * Nieuwe Youtubers zoeken: oa Bibites, Species ALRE
+  * Nieuwe Youtubers zoeken: oa Bibites, Species ALRE, Among Ripples
 * Week 1
-  * teaser 1 uit de trailer op Twitter en imgur, datum trailer en release noemen
+  * teaser 1 uit de trailer op Twitter en imgur, 'I'm gonna leave this here and be mysterious about it. More to follow over the coming days.'
   * Melden Steam/Itch, see Twitter for more
   * teaser 2 uit de trailer op Twitter en imgur, datum trailer en release noemen
+  * trailermuziek op Twitter, datum trailer en release noemen
 * Week 2: 
   * teaser 3 uit de trailer op Twitter en imgur, datum trailer en release noemen
   * teaser 4 uit de trailer op Twitter en imgur, datum trailer en release noemen
+  * voorproefje website op Twitter, datum release noemen
   * press release met keys, link naar filmpje, weer aan iedereen
-    * Toevoegen: info@player.one, pr@thegamer.com
+    * Toevoegen: info@player.one, pr@thegamer.com, 	info@askgamedev.com
+    * Solo dev noemen
     * Als het omhoog of omlaag zetten van de temperatuur interessante effecten heeft, dit essentieel onderdeel maken van de press release: 'Twitch Plays Climate Change: sandbox mode of ecology sim The Sapling as an interactive Twitch stream'
 * Week 3: 
   * landing page thesaplinggame.com/flower
@@ -42,8 +31,9 @@ Marketing The Sapling flower update:
     * landing page noemen
   * posten op Twitter, Steam, IndieDB, itch.io, newsletter
     * Steam voor dit artikel ook een library stoplight banner
+    * Als grapje toevoegen https://tvtropes.org/pmwiki/pmwiki.php/Main/BioluminescenceIsCool
   * posten op r/spore, r/procedural_generation, r/linuxgaming, r/flowers, nog wat indiegame subreddits, hacker news
-  * Shoutouts vragen info@rocketshipstudios.org, hello@dreamstormstudios.com, TheBibites@gmail.com, Equilinox, world building magazine, philomena... meer, bijv wetenschappers?
+  * Shoutouts vragen info@rocketshipstudios.org, hello@dreamstormstudios.com, TheBibites@gmail.com, Equilinox, PrimerLearning, Among Ripples, world building magazine, philomena... meer, bijv wetenschappers?
   * Contact zoeken met Youtubers die niet reageerden: ik ga je een key sturen
 * Week 4: 
   * inzoomen op nieuwe sandbox met Sketchfab en gifs
@@ -52,6 +42,13 @@ Marketing The Sapling flower update:
 * Week 5: 
   * inzoomen op biolumi mechanics met Sketchfab en gifs
   * inzoomen op nieuwe scenarios and nieuwe UI met Sketchfab en gifs
+    * ears can also go on top
+    * mountpoints
+    * filter tools
+    * tooltips
+    * hotkeys
+    * upgrade everything at once
+    * settings menu
   * Verspreiden op: Twitter, Steam, IndieDB, itch.io
 * Week 6: 
   * Twitch Stream week 1
