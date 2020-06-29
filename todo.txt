@@ -43,7 +43,6 @@ Plan
   * inzoomen op biolumi mechanics met Sketchfab en gifs
   * inzoomen op nieuwe scenarios and nieuwe UI met Sketchfab en gifs
     * ears can also go on top
-    * mountpoints
     * filter tools
     * tooltips
     * hotkeys
