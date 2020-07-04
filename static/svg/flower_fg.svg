@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="264.86343mm"
+   height="461.599mm"
+   viewBox="0 0 264.86343 461.599"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="flower_fg.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient897">
+      <stop
+         style="stop-color:#9f1532;stop-opacity:1"
+         offset="0"
+         id="stop893" />
+      <stop
+         style="stop-color:#821648;stop-opacity:1"
+         offset="1"
+         id="stop895" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient889">
+      <stop
+         style="stop-color:#f7ad4c;stop-opacity:1"
+         offset="0"
+         id="stop885" />
+      <stop
+         style="stop-color:#fbe1bc;stop-opacity:1"
+         offset="1"
+         id="stop887" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient897"
+       id="linearGradient1149"
+       x1="-490.14874"
+       y1="398.88159"
+       x2="-487.37103"
+       y2="354.2804"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.0857934,0.07152973,-0.07152973,2.0857934,445.26742,-252.14007)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient889"
+       id="linearGradient1050-4-7-7"
+       x1="-716.15533"
+       y1="248.84171"
+       x2="-717.35889"
+       y2="232.36172"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.44671652,-0.26047967,0.26047967,0.44671652,-373.09334,234.10512)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient889"
+       id="linearGradient1050-4-7-7-1"
+       x1="-716.15533"
+       y1="248.84171"
+       x2="-717.35889"
+       y2="232.36172"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.45181002,0.25154127,-0.25154127,0.45181002,-223.98497,569.90788)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient889"
+       id="linearGradient1050-4-7-7-1-9"
+       x1="-716.15533"
+       y1="248.84171"
+       x2="-717.35889"
+       y2="232.36172"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.45181001,0.25154127,-0.25154127,0.45181001,-220.59583,610.52345)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient889"
+       id="linearGradient1050-4-7-7-1-9-8"
+       x1="-716.15533"
+       y1="248.84171"
+       x2="-717.35889"
+       y2="232.36172"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.45181001,0.25154127,-0.25154127,0.45181001,-213.79225,482.38952)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient889"
+       id="linearGradient1050-4-7-7-1-9-8-3"
+       x1="-716.15533"
+       y1="248.84171"
+       x2="-717.35889"
+       y2="232.36172"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.47172126,-0.21185926,0.21185926,0.47172126,-377.05573,147.50267)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="540.48939"
+     inkscape:cy="1283.2731"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-nodes="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(850.5257,-383.46643)">
+    <path
+       style="fill:url(#linearGradient1149);fill-opacity:1;stroke-width:0.55219066"
+       d="m -625.59561,536.51802 c 0.73267,-9.5462 0.27564,-11.83179 -2.92902,-14.64672 -4.56533,-4.01023 -10.02568,-11.94221 -15.39935,-22.36996 -5.76478,-11.18672 -10.65486,-30.07295 -13.26276,-51.22283 -0.20697,-1.67847 -0.68234,-5.54856 -1.05638,-8.60023 -0.37403,-3.05164 -0.99643,-7.67267 -1.38309,-10.26896 -0.44098,-2.96101 -0.56401,-6.87808 -0.33009,-10.5091 l 0.3729,-5.78862 -2.39609,0.10785 c -1.3178,0.0592 -4.64745,0.75317 -7.39914,1.54194 -5.79847,1.66213 -5.95402,1.66828 -10.53595,0.41647 -1.90596,-0.52071 -4.69731,-1.27445 -6.20297,-1.675 -1.5057,-0.40051 -3.3077,-1.00912 -4.00448,-1.35247 -1.14809,-0.56566 -1.17095,-0.65423 -0.24387,-0.9446 0.56267,-0.17616 2.50802,-0.12259 4.32303,0.11944 1.81498,0.24183 5.73529,0.44379 8.71172,0.44869 5.05656,0.008 5.39195,-0.0617 5.11018,-1.06791 -0.25863,-0.92353 -0.0273,-1.06746 1.62468,-1.01081 1.40446,0.0482 2.39011,-0.36704 3.63866,-1.53276 1.4475,-1.35151 2.14058,-1.58414 4.48082,-1.50388 2.73467,0.0938 2.80573,0.0528 5.82123,-3.36613 l 3.05275,-3.4611 1.62598,1.68774 c 1.62145,1.68306 1.64471,1.68836 8.39723,1.91993 6.52015,0.2236 6.75968,0.19089 6.45882,-0.88353 -0.25078,-0.89555 -0.0599,-1.10857 0.96668,-1.07942 2.06264,0.0581 3.78361,-0.49221 3.80853,-1.21888 0.0342,-0.99678 2.55418,-1.86802 5.1984,-1.79725 2.47893,0.0662 2.08979,0.42746 6.6786,-6.1979 0.47956,-0.69242 1.16318,-1.24939 1.51915,-1.23773 0.35596,0.0117 1.7383,1.39074 3.07185,3.06464 2.17875,2.73475 2.41508,3.32355 2.32996,5.80555 l -0.0947,2.76211 10.88615,0.75881 c 8.69499,0.6061 11.96323,0.62113 16.23743,0.0747 5.09889,-0.65184 7.45022,-0.47742 6.79606,0.50413 -0.43896,0.65864 -3.67491,2.05976 -4.69874,2.03447 -0.48469,-0.0126 -1.24396,0.19072 -1.68724,0.45039 -0.58636,0.34352 0.0521,0.75385 2.34298,1.50589 3.12694,1.0265 3.1586,1.02523 4.53523,-0.18194 l 1.38631,-1.21568 2.25844,2.33275 2.25844,2.33274 5.78042,0.61224 c 8.90578,0.94325 16.90387,1.14371 22.02643,0.55218 6.72549,-0.77679 7.42814,0.61554 1.21577,2.40909 -1.61133,0.46518 -2.93754,1.07418 -2.94711,1.35331 -0.025,0.7286 -9.82124,0.2913 -11.86968,-0.52983 -1.76047,-0.70573 -5.77738,-0.44492 -5.80557,0.37693 -0.008,0.24587 0.74079,0.69539 1.66491,0.99896 3.22269,1.05861 1.91137,1.66266 -3.55092,1.63571 l -5.38612,-0.0266 -0.17169,2.32232 c -0.0944,1.27724 -0.2755,4.55641 -0.40255,7.28698 -0.12696,2.73061 -0.72152,7.06128 -1.32118,9.62372 -0.59964,2.56245 -1.5552,7.25368 -2.12346,10.42498 -2.8042,15.64959 -6.17739,32.05909 -6.99248,34.01615 -0.31196,0.749 -1.03003,3.33502 -1.5957,5.74667 -1.29392,5.5164 -2.96112,10.37174 -4.82475,14.05092 -1.44459,2.852 -3.44352,6.91891 -4.54445,9.24602 -0.31876,0.6738 -1.76243,2.92492 -3.20817,5.00254 -1.44568,2.07759 -2.88505,4.32807 -3.19859,5.00106 -0.31354,0.67298 -0.78467,1.21624 -1.047,1.20724 -1.77814,-0.061 -2.69799,10.54395 -1.88735,21.75964 42.81482,19.53832 39.11512,45.16435 18.27686,38.0596 -11.63957,-3.96848 -41.8888,-26.47045 -40.35591,-45.86467 z m 2.48624,-32.74909 c -0.53943,-4.95104 -0.84678,-18.15044 -0.92468,-39.71183 -0.0297,-8.20588 -0.10392,-16.6619 -0.16508,-18.79118 -0.061,-2.12928 -0.23212,-8.97252 -0.37993,-15.2072 -0.2472,-10.42791 -0.35928,-11.41534 -1.39946,-12.32918 -0.62192,-0.54636 -1.70038,-1.01845 -2.39657,-1.04908 -1.65365,-0.0735 -8.3407,-1.88477 -9.54822,-2.58731 -1.22513,-0.71278 -9.81656,-1.00123 -8.69636,-0.29222 0.44787,0.28359 3.10422,1.13673 5.90298,1.8959 6.78637,1.8408 6.38831,2.65374 -1.27066,2.59489 l -5.89304,-0.0453 -0.60203,15.01669 c -0.71044,17.72011 -0.81288,14.39254 0.82641,26.83218 1.0931,8.29476 1.84179,11.71076 4.08755,18.64943 1.51212,4.67204 3.45112,9.55384 4.30889,10.84848 0.85775,1.29463 1.55411,2.51273 1.54745,2.70692 -0.007,0.19419 1.24997,2.18569 2.79252,4.42556 3.50328,5.08704 10.93762,12.63411 11.72299,11.90082 0.36561,-0.34136 0.39582,-2.02546 0.0873,-4.85785 z m 20.26708,2.85306 c 0.008,-0.2358 1.04035,-1.70053 2.29391,-3.25495 1.98439,-2.4606 4.23786,-6.35923 7.91574,-13.69466 0.53738,-1.07183 1.51319,-3.77329 2.16845,-6.0033 0.65527,-2.22997 1.64801,-5.40631 2.20612,-7.05855 1.02713,-3.0407 2.65974,-13.18796 3.58051,-22.25406 0.3106,-3.059 0.27822,-8.3462 -0.0873,-13.81589 -0.32479,-4.87325 -0.46015,-11.2742 -0.30074,-14.22431 0.15941,-2.95011 0.13491,-5.52968 -0.0543,-5.73239 -0.18934,-0.20279 -2.1989,-0.25875 -4.46586,-0.12433 l -4.12174,0.24409 -0.53215,5.05055 c -0.2926,2.77783 -0.95212,7.02524 -1.46544,9.4387 -2.71704,12.77465 -4.13664,23.28998 -5.53142,40.97267 -1.47603,18.71272 -1.8516,22.9717 -2.3924,27.12934 -0.34003,2.61427 -0.29732,3.71928 0.14447,3.73443 0.3451,0.0118 0.63405,-0.17142 0.64214,-0.40723 z m -7.72741,-12.26732 c 2.04766,-9.33499 2.43523,-11.53921 3.32859,-18.93083 1.01326,-8.38379 1.30131,-27.58404 0.47227,-31.47955 -0.93108,-4.37493 -1.65414,-15.61045 -1.43573,-22.30895 l 0.21211,-6.4913 -2.3567,0.24803 c -1.29616,0.1364 -2.63696,0.32152 -2.97952,0.41136 -0.39331,0.10303 -0.85053,2.86998 -1.24075,7.50848 -0.33985,4.03981 -0.97306,10.06791 -1.40714,13.39575 -0.55351,4.24377 -0.77259,10.67093 -0.7341,21.52292 0.069,19.19958 0.65165,27.16035 2.93449,40.09714 0.70085,3.97175 0.74807,4.05576 1.42433,2.53516 0.38469,-0.865 1.18661,-3.79371 1.78204,-6.50822 z m 25.71467,-77.23462 c 0.0435,-1.26961 -1.37119,-1.75142 -5.5979,-1.90641 -3.30318,-0.12128 -4.31526,0.68255 -1.70394,1.3531 0.82838,0.21281 2.11989,0.61508 2.87005,0.8941 2.53254,0.94206 4.3927,0.79904 4.43179,-0.34079 z m -40.0358,-8.68379 0.13466,-3.92665 -3.18621,0.26956 c -1.7524,0.14831 -4.19709,0.74641 -5.4326,1.32926 -2.39933,1.13185 -9.25789,1.29449 -12.85645,0.30488 l -1.77888,-0.48919 -0.0866,2.52603 -0.0866,2.52606 5.37451,0.36496 c 2.95596,0.20083 8.16655,0.5127 11.57904,0.69334 l 6.20453,0.32846 z m 32.00432,0.64502 c 0.93248,-1.60737 0.84755,-1.66617 -2.5446,-1.76126 l -3.17394,-0.088 1.60905,1.41386 c 1.93832,1.70318 3.2912,1.84685 4.10945,0.4364 z m -9.2833,-2.30183 c 0.39981,-0.44946 0.63242,-0.90757 0.51696,-1.01802 -0.48174,-0.46071 -11.49787,-1.32877 -11.51232,-0.90716 -0.0192,0.55882 6.14598,2.44895 8.54462,2.61968 0.94809,0.0676 2.05093,-0.24504 2.45074,-0.6945 z"
+       id="path1141"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsccccccscccccccsssccssccsccscsccsccccccccccsscsccccscscscscsscsccsccccccsccssccscsccscccscccccccsscssscsccccccccccccscccscccccccccccccccccccssccs" />
+    <path
+       style="fill:url(#linearGradient1050-4-7-7);fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -622.96409,531.7532 c 0,0 -7.00806,2.04688 -11.22225,-1.61448 l 3.79479,0.36668 c -5.58308,-6.70225 3.72636,-5.892 4.65144,-3.61203 0.60123,-9.46855 5.65194,-4.07544 5.36536,-2.28874 1.95618,-7.73915 1.12913,1.44119 1.12913,1.44119 0,0 -1.60641,4.47585 -3.71847,5.70738 z"
+       id="path3867-9-9-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161" />
+    <path
+       style="fill:#000000;fill-opacity:0.07536232;stroke:none;stroke-width:0.09950035px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -630.19311,530.50967 c 2.2803,-1.20967 6.51466,0.0404 6.51466,0.0404 -0.0908,-5.46572 3.53191,-4.99875 3.53191,-4.99875 0,0 0.81237,-4.31281 0.96896,-4.04425 0.15667,0.26861 1.1341,4.55757 -3.07027,9.76849 -2.46219,2.03554 -10.44269,1.23026 -11.72174,-0.96328 0.88213,-0.77562 2.55691,0.0531 3.77648,0.19737 z"
+       id="path3869-8-1-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccsccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161" />
+    <path
+       style="fill:#bc374f;fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -623.79027,530.43535 c -1.08481,-1.16702 -1.72948,-2.47077 -1.34157,-2.69697 0.38793,-0.22621 1.55347,1.67362 1.55347,1.67362 z"
+       id="path3871-3-0-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161" />
+    <path
+       style="fill:url(#linearGradient1050-4-7-7-1);fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -607.42987,506.66412 c 0,0 -5.33333,-4.9858 -4.33156,-10.47774 l 1.61893,3.45166 c 2.92013,-8.21972 6.96853,0.20244 5.47858,2.16052 8.45249,-4.30934 6.38727,2.78504 4.70405,3.44926 7.65533,-2.26208 -0.66432,1.70606 -0.66432,1.70606 0,0 -4.66954,0.89953 -6.80568,-0.28976 z"
+       id="path3867-9-9-9-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="0.68882509"
+       inkscape:transform-center-y="-0.75595238" />
+    <path
+       style="fill:#000000;fill-opacity:0.07536232;stroke:none;stroke-width:0.09950035px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -610.04502,499.81094 c 2.20309,1.34517 3.28609,5.62531 3.28609,5.62531 4.656,-2.86426 6.10093,0.49047 6.10093,0.49047 0,0 4.12451,-1.49955 3.97328,-1.22793 -0.15122,0.27171 -3.34287,3.29891 -9.96912,2.33806 -3.00632,-1.08067 -6.38157,-8.35697 -5.14641,-10.57552 1.11694,0.36355 1.25769,2.22684 1.75525,3.3496 z"
+       id="path3869-8-1-3-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccsccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="0.75595238"
+       inkscape:transform-center-y="-0.60396985" />
+    <path
+       style="fill:#bc374f;fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -606.71724,505.28157 c 0.45104,-1.52818 1.24406,-2.74739 1.63641,-2.52896 0.39236,0.21843 -0.64798,2.18961 -0.64798,2.18961 z"
+       id="path3871-3-0-5-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="2.2394764"
+       inkscape:transform-center-y="1.5574751" />
+    <path
+       style="fill:url(#linearGradient1050-4-7-7-1-9);fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -604.04071,547.2797 c 0,0 -5.33333,-4.9858 -4.33156,-10.47774 l 1.61893,3.45166 c 2.92013,-8.21972 6.96853,0.20244 5.47858,2.16052 8.45249,-4.30934 6.38727,2.78504 4.70405,3.44926 7.65533,-2.26208 -0.66432,1.70606 -0.66432,1.70606 0,0 -4.66954,0.89953 -6.80568,-0.28976 z"
+       id="path3867-9-9-9-8-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="0.68882509"
+       inkscape:transform-center-y="-0.75595238" />
+    <path
+       style="fill:#000000;fill-opacity:0.07536232;stroke:none;stroke-width:0.09950035px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -606.65586,540.42652 c 2.20309,1.34517 3.28609,5.62531 3.28609,5.62531 4.656,-2.86426 6.10093,0.49047 6.10093,0.49047 0,0 4.12451,-1.49955 3.97328,-1.22793 -0.15122,0.27171 -3.34287,3.29891 -9.96912,2.33806 -3.00632,-1.08067 -6.38157,-8.35697 -5.14641,-10.57552 1.11694,0.36355 1.25769,2.22684 1.75525,3.3496 z"
+       id="path3869-8-1-3-8-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccsccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="0.75595238"
+       inkscape:transform-center-y="-0.60396985" />
+    <path
+       style="fill:#bc374f;fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -603.32808,545.89715 c 0.45104,-1.52818 1.24406,-2.74739 1.63641,-2.52896 0.39236,0.21843 -0.64798,2.18961 -0.64798,2.18961 z"
+       id="path3871-3-0-5-5-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="2.2394764"
+       inkscape:transform-center-y="1.5574751" />
+    <path
+       style="fill:url(#linearGradient1050-4-7-7-1-9-8);fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -597.23714,419.14578 c 0,0 -5.33333,-4.9858 -4.33156,-10.47774 l 1.61893,3.45166 c 2.92013,-8.21972 6.96853,0.20244 5.47858,2.16052 8.45249,-4.30934 6.38727,2.78504 4.70405,3.44926 7.65533,-2.26208 -0.66432,1.70606 -0.66432,1.70606 0,0 -4.66954,0.89953 -6.80568,-0.28976 z"
+       id="path3867-9-9-9-8-7-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="0.68882509"
+       inkscape:transform-center-y="-0.75595238" />
+    <path
+       style="fill:#000000;fill-opacity:0.07536232;stroke:none;stroke-width:0.09950035px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -599.85229,412.2926 c 2.20309,1.34517 3.28609,5.62531 3.28609,5.62531 4.656,-2.86426 6.10093,0.49047 6.10093,0.49047 0,0 4.12451,-1.49955 3.97328,-1.22793 -0.15122,0.27171 -3.34287,3.29891 -9.96912,2.33806 -3.00632,-1.08067 -6.38157,-8.35697 -5.14641,-10.57552 1.11694,0.36355 1.25769,2.22684 1.75525,3.3496 z"
+       id="path3869-8-1-3-8-9-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccsccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="0.75595238"
+       inkscape:transform-center-y="-0.60396985" />
+    <path
+       style="fill:#bc374f;fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -596.52451,417.76323 c 0.45104,-1.52818 1.24406,-2.74739 1.63641,-2.52896 0.39236,0.21843 -0.64798,2.18961 -0.64798,2.18961 z"
+       id="path3871-3-0-5-5-8-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="2.2394764"
+       inkscape:transform-center-y="1.5574751" />
+    <path
+       style="fill:url(#linearGradient1050-4-7-7-1-9-8-3);fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -656.9557,417.10564 c 0,0 -7.185,1.29552 -10.98907,-2.79031 l 3.73487,0.76529 c -4.84425,-7.25426 4.32762,-5.46563 5.00681,-3.10074 1.59756,-9.35215 6.05064,-3.45593 5.57702,-1.70948 2.76235,-7.48936 0.97065,1.55236 0.97065,1.55236 0,0 -2.06999,4.28122 -4.30028,5.28288 z"
+       id="path3867-9-9-9-8-7-8-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="1.9578878"
+       inkscape:transform-center-y="0.53774342" />
+    <path
+       style="fill:#000000;fill-opacity:0.07536232;stroke:none;stroke-width:0.09950035px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -664.01302,415.10582 c 2.39528,-0.96216 6.47399,0.72799 6.47399,0.72799 0.48678,-5.44476 4.03994,-4.59792 4.03994,-4.59792 0,0 1.26317,-4.20293 1.39053,-3.91933 0.12744,0.28364 0.64658,4.65183 -4.08446,9.38973 -2.66335,1.7642 -10.51422,0.12083 -11.55452,-2.19549 0.95909,-0.67814 2.53701,0.32277 3.73453,0.59499 z"
+       id="path3869-8-1-3-8-9-2-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccsccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="1.8307495"
+       inkscape:transform-center-y="0.848733" />
+    <path
+       style="fill:#bc374f;fill-opacity:1;stroke:none;stroke-width:0.10169708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -657.63812,415.70793 c -0.95553,-1.27504 -1.45895,-2.63956 -1.04931,-2.82355 0.40964,-0.18399 1.36808,1.82829 1.36808,1.82829 z"
+       id="path3871-3-0-5-5-8-0-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\RawRecources\BodyParts\PollinationOrgan\buttercup\icon.png"
+       inkscape:export-xdpi="151.26161"
+       inkscape:export-ydpi="151.26161"
+       inkscape:transform-center-x="0.018619846"
+       inkscape:transform-center-y="2.7634297" />
+    <g
+       id="g1240"
+       transform="translate(-466.725,-30.427087)" />
+  </g>
+</svg>
