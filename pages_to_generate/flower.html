@@ -1,0 +1,97 @@
+<header>
+	<style>
+		body
+		{
+			margin: 0px;
+		}
+
+		.layer
+		{
+			background-image: url(../static/svg/flower_bg.svg);
+			background-size: 100%;
+			width: 100%;
+			height: 127vw;
+			position: absolute;	
+		}
+
+		.panel
+		{
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			top: 100vw;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		h1, h2
+		{
+			font-family: 'Montserrat', sans-serif;
+		    position: absolute;
+		    margin: 0 auto;
+		    left: 0px;
+		    right: 0px;
+		    width: 528px;
+		    text-align: center;
+		    color: hsl(336, 72%, 31%);
+		}
+
+		h1
+		{
+		    top: 290px;
+		    font-size: 75px;
+		}
+
+		h2
+		{
+		    top: 380px;
+		    font-size: 35px;
+		    font-weight: 300;
+		    letter-spacing: 10;
+		}
+
+	</style>
+	<meta name="theme-color" content="#31452b">	
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
+
+	<script src="rellax.min.js"></script>
+
+</header>
+<body>
+	<div class="layer rellax" style='background-image: url("../static/svg/flower_bg.svg");''></div>
+	<div class="layer rellax" data-rellax-speed="2" style='background-image: url("../static/svg/flower_mountains.svg");''></div>
+	<div class="layer rellax" data-rellax-speed="8" style='background-image: url("../static/svg/flower_mg.svg");''></div>
+	<div class="layer rellax" data-rellax-speed="14" style='background-image: url("../static/svg/flower_fg.svg");''></div>
+
+	<img class="logo">
+	<h1 class="rellax" data-rellax-speed="-6">THE SAPLING</h1>
+	<h2 class="rellax" data-rellax-speed="-6.1">FLOWER UPDATE</h2>
+
+	<div id="sales" class="panel">
+		<h3>UPDATE AVAILABLE SEPTEMBER 10</h3>
+
+		<video></video>
+
+		<h3>BUY THE SAPLING IN EARLY ACCESS NOW</h3>
+		<div class="logo_area">
+			<div class="logo"><p>Steam</p></div>
+			<div class="logo"><p>Itch</p></div>
+		</div>
+	</div>
+
+	<div id="pollination-panel" class="panel">
+	</div>
+
+	<div id="sandbox-panel" class="panel">
+	</div>
+
+	<div id="bioluminescence-panel" class="panel">
+	</div>
+
+	<div id="ui-panel" class="panel">
+	</div>
+
+	<script>
+	  // Accepts any class name
+	  var rellax = new Rellax('.rellax');
+	</script>
+</body>
