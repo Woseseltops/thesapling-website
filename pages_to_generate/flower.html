@@ -10,17 +10,34 @@
 			background-image: url(../static/svg/flower_bg.svg);
 			background-size: 100%;
 			width: 100%;
-			height: 127vw;
+			height: 150vw;
 			position: absolute;	
 		}
 
 		.panel
 		{
-			position: absolute;
 			text-align: center;
 			width: 100%;
-			top: 100vw;
 			font-family: 'Montserrat', sans-serif;
+			height: 500px;			
+		}
+
+		.panel-body
+		{
+			width: 1000px;
+			margin: auto;
+			height: 500px;			
+   		}
+
+		#sales-panel
+		{
+			margin-top: 100vw;
+			position: absolute;			
+		}
+
+		#pollination-panel
+		{
+			margin-top: 120vw;
 		}
 
 		h1, h2
@@ -32,7 +49,7 @@
 		    right: 0px;
 		    width: 528px;
 		    text-align: center;
-		    color: hsl(336, 72%, 31%);
+		    color: hsl(349, 55%, 48%);;
 		}
 
 		h1
@@ -49,6 +66,128 @@
 		    letter-spacing: 10;
 		}
 
+		.main-logo
+		{
+		    top: 115px;
+		    width: 150px;
+		    position: relative;
+		    display: block;
+		    margin: auto;
+		}
+
+		h3
+		{
+			color: hsl(34, 84%, 61%);
+		    letter-spacing: 15px;
+		    font-size: 22px;			
+		}
+
+		h3.buy
+		{
+			font-weight: 300;
+		    font-size: 18px;
+		    letter-spacing: 4px;
+		}
+
+		h4
+		{
+			color: hsl(34, 84%, 61%);	
+			margin: 0px;
+			font-size: 28px;		
+			text-align: right;
+		}
+
+		td img
+		{
+			width: 60px;
+		}
+
+		.left-column
+		{
+			float: left;
+			width: 525px;
+		}
+
+		.left-column p
+		{
+			margin: 0px;
+			text-align: justify;
+			color: hsl(0, 0%, 45%);
+    		line-height: 1.5;
+		    letter-spacing: 1.5px;
+		}
+
+		.right-column
+		{
+		}
+
+		#information-panel h4
+		{
+			text-align: center;
+		}
+
+		#information-panel .logo
+		{
+			margin: 25px;
+		    width: 90px;			
+		}
+
+		table
+		{
+		    margin: auto;
+		    margin-top: 80px;			
+			color: hsl(34, 84%, 61%);	
+			text-align: center;		    
+		}
+
+		td
+		{
+			padding: 10px;
+			padding-left: 30px;	
+			padding-right: 30px;	
+		}
+
+		.footer
+		{
+		    background-image: radial-gradient(ellipse at left bottom,hsl(356, 100%, 18%), hsl(355, 72%, 44%), hsl(34, 84%, 51%));
+		    margin-bottom: -15px;
+		    height: 700px;
+		    padding: 50px;
+		}
+
+		.footer-body
+		{
+			color: white;
+			font-family: 'Montserrat', sans-serif;			
+		    font-weight: 300;
+		    letter-spacing: 4px;
+			margin: auto;
+			width: 1000px;
+			text-align: center;
+		}
+
+		.footer a
+		{
+			padding: 30px;
+			margin: 10px;
+			display: block;
+		}
+
+		.footer a:link, .footer a:visited, .footer a:hover, .footer a:active
+		{
+			color: white;
+		}
+
+		.faded
+		{
+		    color: hsla(0, 0%, 0%, 0.13);
+		    font-weight: 600;
+		}
+
+		img.faded
+		{
+	    	margin-top: 100px;
+		}
 	</style>
 	<meta name="theme-color" content="#31452b">	
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
@@ -62,32 +201,95 @@
 	<div class="layer rellax" data-rellax-speed="8" style='background-image: url("../static/svg/flower_mg.svg");''></div>
 	<div class="layer rellax" data-rellax-speed="14" style='background-image: url("../static/svg/flower_fg.svg");''></div>
 
-	<img class="logo">
-	<h1 class="rellax" data-rellax-speed="-6">THE SAPLING</h1>
-	<h2 class="rellax" data-rellax-speed="-6.1">FLOWER UPDATE</h2>
+	<img class="main-logo rellax" data-rellax-speed="-4" src="../static/svg/logo_pink.svg">
+	<h1 class="rellax" data-rellax-speed="-4">THE SAPLING</h1>
+	<h2 class="rellax" data-rellax-speed="-4.1">FLOWER UPDATE</h2>
 
-	<div id="sales" class="panel">
+	<div id="sales-panel" class="panel rellax" data-rellax-speed="4">
 		<h3>UPDATE AVAILABLE SEPTEMBER 10</h3>
 
 		<video></video>
 
-		<h3>BUY THE SAPLING IN EARLY ACCESS NOW</h3>
-		<div class="logo_area">
-			<div class="logo"><p>Steam</p></div>
-			<div class="logo"><p>Itch</p></div>
-		</div>
+		<h3 class="buy">BUY THE SAPLING IN EARLY ACCESS NOW</h3>
+			<table>
+				<tr><td><img src="../static/svg/steam_orange.svg"></td><td><img src="../static/svg/itch_orange.svg"></td></tr>
+				<tr><td>Steam</td><td>Itch</td></tr>
+			</table>
 	</div>
 
 	<div id="pollination-panel" class="panel">
+		<div class="panel-body">
+			<div class="left-column">
+				<p>When plants are fighting for space, as in the smaller levels, using sexuality to exchange genes did not really add much to the simulation. With the larger levels in place, it finally makes sense. Plants can spread their genes in the form of pollen, either by wind or by animals. All plants with the same pollination organs can mix their genes, so this means as long as you have two different plants sharing, for example, the same type of flower, interesting new combinations will pop up throughout your worlds.</p>
+	 
+				<p>To achieve the animal pollination, plants can now grow colorful flowers with nectar to attract nectar eating animals. Two new mouths specialized in eating nectar have also been added. To make sure animal pollination can be gradually introduced, the more primitive nectar producing organs also allow wind pollination, and the more primitive nectar eating mouth can also eat plants as a whole.</p>
+			</div>
+			<div class="right-column">
+				<h4>POLLINATION & FLOWERS</h4>
+			</div>
+		</div>
 	</div>
 
 	<div id="sandbox-panel" class="panel">
+		<div class="panel-body">
+			<div class="left-column">
+				<p>The new sandbox level is 100x times as large, so you can finally play with all kinds of simulation mechanics that previously were limited by the small terrain. The new level has been carefully designed to have as much environment variety as possible: hot terrain, cold terrain, wet terrain, rocky terrain, it's all there.</p>
+ 
+				<p>And not only that; you can influence the general temperature in the world with the click of a button. Make it colder, and see heath loving plants migrate to the warmer places (and the animals that eat these plants along with them), or make your world a burning hell and see how your ecosystem adapts (or fails to do so).</p>
+			</div>
+			<div class="right-column">
+				<h4>NEW SANDBOX</h4>
+			</div>
+ 		</div>
 	</div>
 
 	<div id="bioluminescence-panel" class="panel">
+		<div class="panel-body">
+			<div class="left-column">
+				<p>Having colorful flowers is not the only way to attract pollinators; you can also add glowing bodyparts to stand out in the dark. Besides bodyparts that serve this purpose only, it also possible to make all flowers glow. The instinct system for animals has been extended so you can design instincts that respond to light in the dark.</p>
+ 
+				<p>Animals that respond to light also brings an interesting opportunity for carnivores... why not emit some light yourself? Three new glowing bodyparts have been added for animals to achieve this. They have been wired to the instinct system as well, so you can make animals glow when they hear danger, or see food, or whatever you can come up with.</p>
+			</div>
+			<div class="right-column">
+				<h4>BIOLUMINESCENCE</h4>
+			</div>
+		</div>
 	</div>
 
 	<div id="ui-panel" class="panel">
+		<div class="panel-body">
+			<div class="left-column">
+				<p>While The Sapling was playtested extensively, these sessions often lasted 90 minutes maximum. As a result, there was a clear hole in tools for players who played for longer periods of time, and returned to the game multiple times. Fortunately, these are also the players willing to communicate what they need. I have listened, and extended the game with a number of things to make everyone's life more convenient.</p>
+			</div>
+			<div class="right-column">
+				<h4>UI OVERHAUL</h4>
+			</div>
+		</div>
+	</div>
+
+	<div id="information-panel" class="panel">
+		<div class="panel-body">
+			<img class="logo" src="../static/svg/logo_orange.svg">
+			<h4>MORE INFORMATION</h4>
+			<table>
+				<tr><td><img src="../static/svg/homepage_orange.svg"></td><td><img src="../static/svg/devlog_orange.svg"></td><td><img src="../static/svg/newsletter_orange.svg"></td><td><img src="../static/svg/twitter_orange.svg"></td></tr>
+				<tr><td>Homepage</td><td>Devlog</td><td>Newsletter</td><td>Twitter</td></tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-body">
+			<img src="../static/svg/logo_white.svg">
+
+			<a href="">Presskit</a>
+			<a href="http://wesselstoop.ruhosting.nl/">Developer website</a>		
+
+			<p>Questions?<br>
+			thesaplinggame@gmail.com</p>
+
+			<img class="faded" src="../static/svg/logo_faded.svg">
+			<p class="faded">A game by Wessel Stoop</p>					
 	</div>
 
 	<script>
