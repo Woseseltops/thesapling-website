@@ -12,6 +12,7 @@
 			width: 100%;
 			height: 150vw;
 			position: absolute;	
+			top: 0px;
 		}
 
 		.panel
@@ -19,14 +20,21 @@
 			text-align: center;
 			width: 100%;
 			font-family: 'Montserrat', sans-serif;
-			height: 500px;			
+			height: 800px;			
 		}
 
 		.panel-body
 		{
-			width: 1000px;
+			max-width: 1000px;
 			margin: auto;
+			margin-top: 50px;
 			height: 500px;			
+   		}
+
+		.panel-footer
+		{
+			height: 300px;		
+			background-image: radial-gradient(ellipse at left bottom,hsl(356, 100%, 36%), hsl(355, 68%, 48%), hsl(34, 84%, 51%));
    		}
 
 		#sales-panel
@@ -43,33 +51,40 @@
 		h1, h2
 		{
 			font-family: 'Montserrat', sans-serif;
-		    position: absolute;
 		    margin: 0 auto;
 		    left: 0px;
 		    right: 0px;
-		    width: 528px;
-		    text-align: center;
-		    color: hsl(349, 55%, 48%);;
+			text-align: center;
+    		width: 100%;
+   		    text-align: center;
+		    color: hsl(349, 55%, 48%);
 		}
 
 		h1
 		{
-		    top: 290px;
-		    font-size: 75px;
+		    font-size: 5vw;
 		}
 
 		h2
 		{
-		    top: 380px;
-		    font-size: 35px;
+		    font-size: 2vw;
 		    font-weight: 300;
 		    letter-spacing: 10;
+		    position: relative;
+		    top: 15px;
+		}
+
+		.logo-area
+		{
+			width: 55vw;
+		    height: 20vw;
+		    margin: auto;
+		    margin-top: 20vw;
 		}
 
 		.main-logo
 		{
-		    top: 115px;
-		    width: 150px;
+		    width: 10vw;
 		    position: relative;
 		    display: block;
 		    margin: auto;
@@ -105,7 +120,7 @@
 		.left-column
 		{
 			float: left;
-			width: 525px;
+			max-width: 525px;
 		}
 
 		.left-column p
@@ -162,7 +177,7 @@
 		    font-weight: 300;
 		    letter-spacing: 4px;
 			margin: auto;
-			width: 1000px;
+			max-width: 1000px;
 			text-align: center;
 		}
 
@@ -188,9 +203,58 @@
 		{
 	    	margin-top: 100px;
 		}
+
+		.icon-area
+		{
+			max-width: 430px;
+			margin: auto;
+			height: 100px;
+		}
+
+		.icon
+		{
+			float: left;
+			margin: 15px;
+		}
+
+		.icon img
+		{
+			width: 50px;
+		}
+
+		.icon-label
+		{
+			margin-top: 10px;
+			color: hsl(34, 84%, 61%);
+		}
+
+		@media only screen and (min-width: 830px)
+		{
+			.layer
+			{
+				top: -30vw;
+			}
+
+			#flower-fg
+			{
+				top: -15vw;
+			}
+
+			.logo-area
+			{
+			    margin-top: 5vw;
+			}
+
+			h1, h2
+			{
+				margin-top: 56px;
+			}
+		}
+
 	</style>
 	<meta name="theme-color" content="#31452b">	
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<script src="rellax.min.js"></script>
 
@@ -199,11 +263,13 @@
 	<div class="layer rellax" style='background-image: url("../static/svg/flower_bg.svg");''></div>
 	<div class="layer rellax" data-rellax-speed="2" style='background-image: url("../static/svg/flower_mountains.svg");''></div>
 	<div class="layer rellax" data-rellax-speed="8" style='background-image: url("../static/svg/flower_mg.svg");''></div>
-	<div class="layer rellax" data-rellax-speed="14" style='background-image: url("../static/svg/flower_fg.svg");''></div>
+	<div id="flower-fg" class="layer rellax" data-rellax-speed="14" style='background-image: url("../static/svg/flower_fg.svg");''></div>
 
-	<img class="main-logo rellax" data-rellax-speed="-4" src="../static/svg/logo_pink.svg">
-	<h1 class="rellax" data-rellax-speed="-4">THE SAPLING</h1>
-	<h2 class="rellax" data-rellax-speed="-4.1">FLOWER UPDATE</h2>
+	<div class="logo-area">
+		<img class="main-logo rellax" data-rellax-speed="-4" src="../static/svg/logo_pink.svg">
+		<h1 class="rellax" data-rellax-speed="-4">THE SAPLING</h1>
+		<h2 class="rellax" data-rellax-speed="-4.1">FLOWER UPDATE</h2>
+	</div>
 
 	<div id="sales-panel" class="panel rellax" data-rellax-speed="4">
 		<h3>UPDATE AVAILABLE SEPTEMBER 10</h3>
@@ -228,6 +294,8 @@
 				<h4>POLLINATION & FLOWERS</h4>
 			</div>
 		</div>
+		<div class="panel-footer">			
+		</div>
 	</div>
 
 	<div id="sandbox-panel" class="panel">
@@ -241,6 +309,8 @@
 				<h4>NEW SANDBOX</h4>
 			</div>
  		</div>
+		<div class="panel-footer">			
+		</div>
 	</div>
 
 	<div id="bioluminescence-panel" class="panel">
@@ -254,6 +324,8 @@
 				<h4>BIOLUMINESCENCE</h4>
 			</div>
 		</div>
+		<div class="panel-footer">			
+		</div>		
 	</div>
 
 	<div id="ui-panel" class="panel">
@@ -265,16 +337,33 @@
 				<h4>UI OVERHAUL</h4>
 			</div>
 		</div>
+		<div class="panel-footer">			
+		</div>		
 	</div>
 
 	<div id="information-panel" class="panel">
 		<div class="panel-body">
 			<img class="logo" src="../static/svg/logo_orange.svg">
 			<h4>MORE INFORMATION</h4>
-			<table>
-				<tr><td><img src="../static/svg/homepage_orange.svg"></td><td><img src="../static/svg/devlog_orange.svg"></td><td><img src="../static/svg/newsletter_orange.svg"></td><td><img src="../static/svg/twitter_orange.svg"></td></tr>
-				<tr><td>Homepage</td><td>Devlog</td><td>Newsletter</td><td>Twitter</td></tr>
-			</table>
+
+			<div class="icon-area">
+				<div class="icon">
+					<img src="../static/svg/homepage_orange.svg">
+					<div class="icon-label">Homepage</div>
+				</div>
+				<div class="icon">
+					<img src="../static/svg/devlog_orange.svg">
+					<div class="icon-label">Devlog</div>
+				</div>
+				<div class="icon">
+					<img src="../static/svg/newsletter_orange.svg">
+					<div class="icon-label">Newsletter</div>
+				</div>
+				<div class="icon">
+					<img src="../static/svg/twitter_orange.svg">
+					<div class="icon-label">Twitter</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
