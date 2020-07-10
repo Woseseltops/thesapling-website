@@ -20,15 +20,15 @@
 			text-align: center;
 			width: 100%;
 			font-family: 'Montserrat', sans-serif;
-			height: 800px;			
 		}
 
 		.panel-body
 		{
-			max-width: 1000px;
+			max-width: 85vw;
 			margin: auto;
 			margin-top: 50px;
-			height: 500px;			
+			margin-bottom: 50px;
+			overflow: auto;			
    		}
 
 		.panel-footer
@@ -39,13 +39,13 @@
 
 		#sales-panel
 		{
-			margin-top: 100vw;
+			margin-top: 40vw;
 			position: absolute;			
 		}
 
 		#pollination-panel
 		{
-			margin-top: 120vw;
+			margin-top: 715px;
 		}
 
 		h1, h2
@@ -90,11 +90,22 @@
 		    margin: auto;
 		}
 
+		iframe
+		{
+		    margin-top: 40px;
+		    margin-bottom: 45px;
+			width: 280px;
+		    height: 155px;
+		}
+
 		h3
 		{
 			color: hsl(34, 84%, 61%);
 		    letter-spacing: 15px;
 		    font-size: 22px;			
+		    padding-left: 15px;
+		    padding-right: 15px;
+		    margin-top: 80px;
 		}
 
 		h3.buy
@@ -102,6 +113,7 @@
 			font-weight: 300;
 		    font-size: 18px;
 		    letter-spacing: 4px;
+			margin-top: 45px;
 		}
 
 		h4
@@ -120,7 +132,7 @@
 		.left-column
 		{
 			float: left;
-			max-width: 525px;
+			max-width: 50vw;
 		}
 
 		.left-column p
@@ -249,7 +261,93 @@
 			{
 				margin-top: 56px;
 			}
+
+			h3
+			{
+			    padding-left: 0px;
+			    padding-right: 0px;
+			    margin-top: 0px;
+			}
 		}
+
+		@media only screen and (min-width: 350px)
+		{
+			#flower-mg
+			{
+				height: 310vw;
+			}
+		}				
+
+		@media only screen and (min-width: 425px)
+		{
+			#flower-mg
+			{
+				height: 285vw;
+			}
+		}
+
+		@media only screen and (min-width: 750px)
+		{
+			#flower-mg
+			{
+				height: 200vw;
+			}
+
+			iframe
+			{
+			    width: 500px;
+			    height: 280px;							
+			}
+
+			#pollination-panel
+			{
+			    margin-top: 900px;
+			}
+		}		
+
+		@media only screen and (min-width: 1000px)
+		{
+			#flower-mg
+			{
+				height: 174vw;
+			}
+
+			.panel-body
+			{
+				max-width: 1000px;
+			}
+
+			.left-column
+			{
+				max-width: 575px;
+			}
+		}		
+
+		@media only screen and (min-width: 1430px)
+		{
+			#flower-mg
+			{
+				height: 150vw;
+			}
+
+			#pollination-panel
+			{
+				margin-top: 1130px;
+			}
+		}		
+
+		@media only screen and (min-width: 2550px)
+		{
+			#flower-mg
+			{
+				height: 125vw;
+			}
+
+			#pollination-panel
+			{
+				margin-top: 1560px;
+			}			
+		}		
 
 	</style>
 	<meta name="theme-color" content="#31452b">	
@@ -262,7 +360,7 @@
 <body>
 	<div class="layer rellax" style='background-image: url("../static/svg/flower_bg.svg");''></div>
 	<div class="layer rellax" data-rellax-speed="2" style='background-image: url("../static/svg/flower_mountains.svg");''></div>
-	<div class="layer rellax" data-rellax-speed="8" style='background-image: url("../static/svg/flower_mg.svg");''></div>
+	<div id="flower-mg" class="layer rellax" data-rellax-speed="8" style='background-image: url("../static/svg/flower_mg.svg");''></div>
 	<div id="flower-fg" class="layer rellax" data-rellax-speed="14" style='background-image: url("../static/svg/flower_fg.svg");''></div>
 
 	<div class="logo-area">
@@ -274,7 +372,7 @@
 	<div id="sales-panel" class="panel rellax" data-rellax-speed="4">
 		<h3>UPDATE AVAILABLE SEPTEMBER 10</h3>
 
-		<video></video>
+		<iframe id="ytvideo" src="https://www.youtube.com/embed/-tFe4_-7cFA" frameborder="0" allowfullscreen=""></iframe>
 
 		<h3 class="buy">BUY THE SAPLING IN EARLY ACCESS NOW</h3>
 			<table>
