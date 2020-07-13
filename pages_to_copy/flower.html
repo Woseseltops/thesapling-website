@@ -33,8 +33,19 @@
 
 		.panel-footer
 		{
-			height: 300px;		
+			min-height: 300px;		
 			background-image: radial-gradient(ellipse at left bottom,hsl(356, 100%, 36%), hsl(355, 68%, 48%), hsl(34, 84%, 51%));
+   		}
+
+   		video
+   		{
+   			max-width: 295px;
+   			margin: 45px;
+   		}
+
+   		#pollination-panel video
+   		{
+   			max-width: 400px;
    		}
 
 		#sales-panel
@@ -218,7 +229,7 @@
 
 		.icon-area
 		{
-			max-width: 430px;
+			max-width: 480px;
 			margin: auto;
 			height: 100px;
 		}
@@ -238,6 +249,11 @@
 		{
 			margin-top: 10px;
 			color: hsl(34, 84%, 61%);
+		}
+
+		.selected-icon
+		{
+			fill: hsl(34, 85%, 53%) !important; /*this is because we want to overwrite the locally specified color in the svg*/
 		}
 
 		@media only screen and (min-width: 830px)
@@ -358,11 +374,31 @@
 		}
 
 	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script type="text/javascript">
+
+ 	$(document).ready(function()
+ 	{
+	    $('.icon').mouseenter(function()
+	    {
+	    	console.log('enter');
+	    	$(this).find('path').addClass('selected-icon');
+	    });
+
+	    $('.icon').mouseleave(function()
+	    {
+	    	console.log('leave');
+	    	$(this).find('path').removeClass('selected-icon');
+	    });
+	});
+ 	</script>
+
 	<meta name="theme-color" content="#31452b">	
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<script src="rellax.min.js"></script>
+	<script src="static/js/rellax.min.js"></script>
 
 </header>
 <body>
@@ -384,7 +420,7 @@
 
 		<h3 class="buy">BUY THE SAPLING IN EARLY ACCESS NOW</h3>
 			<table>
-				<tr><td><img src="../static/svg/steam_orange.svg"></td><td><img src="../static/svg/itch_orange.svg"></td></tr>
+				<tr><td><a href="https://store.steampowered.com/app/997380/The_Sapling/">{{steam_orange}}</a></td><td><a href="https://woseseltops.itch.io/thesapling">{{itch_orange}}</a></td></tr>
 				<tr><td>Steam</td><td>Itch</td></tr>
 			</table>
 	</div>
@@ -392,8 +428,7 @@
 	<div id="pollination-panel" class="panel">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>When plants are fighting for space, as in the smaller levels, using sexuality to exchange genes did not really add much to the simulation. With the larger levels in place, it finally makes sense. Plants can spread their genes in the form of pollen, either by wind or by animals. All plants with the same pollination organs can mix their genes, so this means as long as you have two different plants sharing, for example, the same type of flower, interesting new combinations will pop up throughout your worlds.</p>
-	 
+				<p>When plants are fighting for space, as in the smaller levels, using sexuality to exchange genes did not really add much to the simulation. With the larger levels in place, it finally makes sense. Plants can spread their genes in the form of pollen, either by wind or by animals. All plants with the same pollination organs can mix their genes, so this means as long as you have two different plants sharing, for example, the same type of flower, interesting new combinations will pop up throughout your worlds.</p><br>
 				<p>To achieve the animal pollination, plants can now grow colorful flowers with nectar to attract nectar eating animals. Two new mouths specialized in eating nectar have also been added. To make sure animal pollination can be gradually introduced, the more primitive nectar producing organs also allow wind pollination, and the more primitive nectar eating mouth can also eat plants as a whole.</p>
 			</div>
 			<div class="right-column">
@@ -401,36 +436,38 @@
 			</div>
 		</div>
 		<div class="panel-footer">			
+			<video autoplay muted loop="true"><source src="../static/webm/plant_sexuality_1.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/plant_sexuality_2.webm" type="video/webm"></video>
 		</div>
 	</div>
 
 	<div id="sandbox-panel" class="panel">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>The new sandbox level is 100x times as large, so you can finally play with all kinds of simulation mechanics that previously were limited by the small terrain. The new level has been carefully designed to have as much environment variety as possible: hot terrain, cold terrain, wet terrain, rocky terrain, it's all there.</p>
- 
+				<p>The new sandbox level is 100x times as large, so you can finally play with all kinds of simulation mechanics that previously were limited by the small terrain. The new level has been carefully designed to have as much environment variety as possible: hot terrain, cold terrain, wet terrain, rocky terrain, it's all there.</p><br>
 				<p>And not only that; you can influence the general temperature in the world with the click of a button. Make it colder, and see heath loving plants migrate to the warmer places (and the animals that eat these plants along with them), or make your world a burning hell and see how your ecosystem adapts (or fails to do so).</p>
 			</div>
 			<div class="right-column">
 				<h4>NEW SANDBOX</h4>
 			</div>
- 		</div>
-		<div class="panel-footer">			
 		</div>
+		<div class="panel-footer"></div>
 	</div>
 
 	<div id="bioluminescence-panel" class="panel">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>Having colorful flowers is not the only way to attract pollinators; you can also add glowing bodyparts to stand out in the dark. Besides bodyparts that serve this purpose only, it also possible to make all flowers glow. The instinct system for animals has been extended so you can design instincts that respond to light in the dark.</p>
- 
+				<p>Having colorful flowers is not the only way to attract pollinators; you can also add glowing bodyparts to stand out in the dark. Besides bodyparts that serve this purpose only, it also possible to make all flowers glow. The instinct system for animals has been extended so you can design instincts that respond to light in the dark.</p><br>
 				<p>Animals that respond to light also brings an interesting opportunity for carnivores... why not emit some light yourself? Three new glowing bodyparts have been added for animals to achieve this. They have been wired to the instinct system as well, so you can make animals glow when they hear danger, or see food, or whatever you can come up with.</p>
 			</div>
 			<div class="right-column">
 				<h4>BIOLUMINESCENCE</h4>
 			</div>
 		</div>
-		<div class="panel-footer">			
+		<div class="panel-footer">
+			<video autoplay muted loop="true"><source src="../static/webm/biolum_animal_1.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/biolum_animal_2.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/biolum_animal_3.webm" type="video/webm"></video>
 		</div>		
 	</div>
 
@@ -444,6 +481,9 @@
 			</div>
 		</div>
 		<div class="panel-footer">			
+			<video autoplay muted loop="true"><source src="../static/webm/ui_editor.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/ui_list.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/ui_world.webm" type="video/webm"></video>
 		</div>		
 	</div>
 
@@ -453,21 +493,13 @@
 			<h4>MORE INFORMATION</h4>
 
 			<div class="icon-area">
-				<div class="icon">
-					<img src="../static/svg/homepage_orange.svg">
-					<div class="icon-label">Homepage</div>
+				<div class="icon"><a href="/">{{homepage_orange}}</a><div class="icon-label">Homepage</div>
 				</div>
-				<div class="icon">
-					<img src="../static/svg/devlog_orange.svg">
-					<div class="icon-label">Devlog</div>
+				<div class="icon"><a href="/devlogs">{{devlog_orange}}</a><div class="icon-label">Devlog</div>
 				</div>
-				<div class="icon">
-					<img src="../static/svg/newsletter_orange.svg">
-					<div class="icon-label">Newsletter</div>
+				<div class="icon"><a href="/newsletter">{{newsletter_orange}}</a><div class="icon-label">Newsletter</div>
 				</div>
-				<div class="icon">
-					<img src="../static/svg/twitter_orange.svg">
-					<div class="icon-label">Twitter</div>
+				<div class="icon"><a href="https://twitter.com/thesaplinggame">{{twitter_orange}}</a><div class="icon-label">Twitter</div>
 				</div>
 			</div>
 		</div>
