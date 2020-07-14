@@ -732,3 +732,11 @@ ul ul
     top: -71px;
     left: 83px;
 }
+
+.overlay
+{
+    position: absolute;
+    right: -17px;
+    height: 540px;
+    top: 0px;    
+}
