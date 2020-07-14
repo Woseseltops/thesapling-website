@@ -735,8 +735,13 @@ ul ul
 
 .overlay
 {
-    position: absolute;
-    right: -17px;
     height: 540px;
-    top: 0px;    
+    position: absolute;
+    right: -9px;
+    top: 0px;
+    z-index: 10;
+}
+
+.overlay img
+{
 }
