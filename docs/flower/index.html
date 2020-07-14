@@ -373,6 +373,16 @@
 			}
 		}
 
+		.locked .panel-body
+		{
+			height: 150px;
+		}
+
+		.locked .panel-footer
+		{
+			min-height: 110px;
+		}
+
 	</style>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -398,7 +408,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<script src="static/js/rellax.min.js"></script>
+	<script src="../static/js/rellax.min.js"></script>
 
 </header>
 <body>
@@ -579,27 +589,23 @@
 			</table>
 	</div>
 
-	<div id="pollination-panel" class="panel">
+	<div id="pollination-panel" class="panel locked">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>When plants are fighting for space, as in the smaller levels, using sexuality to exchange genes did not really add much to the simulation. With the larger levels in place, it finally makes sense. Plants can spread their genes in the form of pollen, either by wind or by animals. All plants with the same pollination organs can mix their genes, so this means as long as you have two different plants sharing, for example, the same type of flower, interesting new combinations will pop up throughout your worlds.</p><br>
-				<p>To achieve the animal pollination, plants can now grow colorful flowers with nectar to attract nectar eating animals. Two new mouths specialized in eating nectar have also been added. To make sure animal pollination can be gradually introduced, the more primitive nectar producing organs also allow wind pollination, and the more primitive nectar eating mouth can also eat plants as a whole.</p>
+				Information will follow <strong>AUGUST 17</strong>.
 			</div>
 			<div class="right-column">
 				<h4>POLLINATION & FLOWERS</h4>
 			</div>
 		</div>
 		<div class="panel-footer">			
-			<video autoplay muted loop="true"><source src="../static/webm/plant_sexuality_1.webm" type="video/webm"></video>
-			<video autoplay muted loop="true"><source src="../static/webm/plant_sexuality_2.webm" type="video/webm"></video>
 		</div>
 	</div>
 
-	<div id="sandbox-panel" class="panel">
+	<div id="sandbox-panel" class="panel locked">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>The new sandbox level is 100x times as large, so you can finally play with all kinds of simulation mechanics that previously were limited by the small terrain. The new level has been carefully designed to have as much environment variety as possible: hot terrain, cold terrain, wet terrain, rocky terrain, it's all there.</p><br>
-				<p>And not only that; you can influence the general temperature in the world with the click of a button. Make it colder, and see heath loving plants migrate to the warmer places (and the animals that eat these plants along with them), or make your world a burning hell and see how your ecosystem adapts (or fails to do so).</p>
+				Information will follow <strong>AUGUST 20</strong>.				
 			</div>
 			<div class="right-column">
 				<h4>NEW SANDBOX</h4>
@@ -608,36 +614,56 @@
 		<div class="panel-footer"></div>
 	</div>
 
-	<div id="bioluminescence-panel" class="panel">
+	<div id="bioluminescence-panel" class="panel locked">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>Having colorful flowers is not the only way to attract pollinators; you can also add glowing bodyparts to stand out in the dark. Besides bodyparts that serve this purpose only, it also possible to make all flowers glow. The instinct system for animals has been extended so you can design instincts that respond to light in the dark.</p><br>
-				<p>Animals that respond to light also brings an interesting opportunity for carnivores... why not emit some light yourself? Three new glowing bodyparts have been added for animals to achieve this. They have been wired to the instinct system as well, so you can make animals glow when they hear danger, or see food, or whatever you can come up with.</p>
+				Information will follow <strong>AUGUST 24</strong>.
 			</div>
 			<div class="right-column">
 				<h4>BIOLUMINESCENCE</h4>
 			</div>
 		</div>
 		<div class="panel-footer">
-			<video autoplay muted loop="true"><source src="../static/webm/biolum_animal_1.webm" type="video/webm"></video>
-			<video autoplay muted loop="true"><source src="../static/webm/biolum_animal_2.webm" type="video/webm"></video>
-			<video autoplay muted loop="true"><source src="../static/webm/biolum_animal_3.webm" type="video/webm"></video>
 		</div>		
 	</div>
 
-	<div id="ui-panel" class="panel">
+	<div id="ui-panel" class="panel locked">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>While The Sapling was playtested extensively, these sessions often lasted 90 minutes maximum. As a result, there was a clear hole in tools for players who played for longer periods of time, and returned to the game multiple times. Fortunately, these are also the players willing to communicate what they need. I have listened, and extended the game with a number of things to make everyone's life more convenient.</p>
+				Information will follow <strong>AUGUST 27</strong>.
 			</div>
 			<div class="right-column">
 				<h4>UI OVERHAUL</h4>
 			</div>
 		</div>
 		<div class="panel-footer">			
-			<video autoplay muted loop="true"><source src="../static/webm/ui_editor.webm" type="video/webm"></video>
-			<video autoplay muted loop="true"><source src="../static/webm/ui_list.webm" type="video/webm"></video>
-			<video autoplay muted loop="true"><source src="../static/webm/ui_world.webm" type="video/webm"></video>
+		</div>		
+	</div>
+
+	<div id="ui-panel" class="panel locked">
+		<div class="panel-body">
+			<div class="left-column">
+				Stream will start on <strong>SEPTEMBER 3</strong>.
+			</div>
+			<div class="right-column">
+				<h4>TWITCH LIVESTREAM</h4>
+			</div>
+		</div>
+		<div class="panel-footer">	
+		    <!-- Add a placeholder for the Twitch embed -->
+		    <div id="twitch-embed"></div>
+
+		    <!-- Load the Twitch embed script -->
+		    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+		    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+		    <script type="text/javascript">
+		      new Twitch.Embed("twitch-embed", {
+		        width: 854,
+		        height: 480,
+		        channel: "woseseltops",
+		      });
+		    </script>				
 		</div>		
 	</div>
 
@@ -955,7 +981,7 @@
 		<div class="footer-body">
 			<img src="../static/svg/logo_white.svg">
 
-			<a href="">Presskit</a>
+			<a href="/press/sheet.html">Presskit</a>
 			<a href="http://wesselstoop.ruhosting.nl/">Developer website</a>		
 
 			<p>Questions?<br>

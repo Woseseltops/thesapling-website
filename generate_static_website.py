@@ -208,9 +208,12 @@ def generate_static_website():
 		open(GOAL_LOCATION+filename,'w').write(full_content)
 
 	for filename in listdir(PAGES_TO_COPY_FOLDER):
+		filename_without_extension = filename.split('.')[0]
+		mkdir(GOAL_LOCATION+filename_without_extension)
+
 		content = open(PAGES_TO_COPY_FOLDER+filename).read()
-		content = fill_template(content,content_variables)		
-		open(GOAL_LOCATION+filename,'w').write(content)
+		content = fill_template(content,content_variables)
+		open(GOAL_LOCATION+filename_without_extension+'/index.html','w').write(content)
 
 	#Move over the static files
 	copytree(STATIC_FOLDER,GOAL_LOCATION+STATIC_FOLDER)
