@@ -203,9 +203,17 @@ def generate_static_website():
 	content_variables['latest_devlog'] = devlog_to_list_item(published_devlogs[0],DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,False,True)
 
 	for filename in listdir(PAGES_TO_GENERATE_FOLDER):
+		filename_without_extension = filename.split('.')[0]
+
+		if filename_without_extension == 'index':
+			path = GOAL_LOCATION
+		else:
+			path = GOAL_LOCATION+filename_without_extension 	
+			mkdir(path)
+
 		full_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',open(PAGES_TO_GENERATE_FOLDER+filename).read(),'main',
 									content_variables=content_variables)
-		open(GOAL_LOCATION+filename,'w').write(full_content)
+		open(path+'/index.html','w').write(full_content)
 
 	for filename in listdir(PAGES_TO_COPY_FOLDER):
 		filename_without_extension = filename.split('.')[0]
