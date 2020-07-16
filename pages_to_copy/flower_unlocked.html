@@ -52,7 +52,7 @@
 		    margin: auto;
 		    margin-top: 85px;
 		    margin-bottom: 85px;   			
-   		}
+   		}   		
 
    		video
    		{
@@ -73,7 +73,7 @@
 
 		#pollination-panel
 		{
-			margin-top: 715px;
+			margin-top: 200vw;
 		}
 
 		h1, h2
@@ -91,6 +91,7 @@
 		h1
 		{
 		    font-size: 5vw;
+		    font-weight: 500;
 		}
 
 		h2
@@ -150,6 +151,7 @@
 			margin: 0px;
 			font-size: 28px;		
 			text-align: right;
+			font-weight: 500;
 		}
 
 		td img
@@ -334,7 +336,7 @@
 
 			#pollination-panel
 			{
-			    margin-top: 900px;
+			    margin-top: 120vw;
 			}
 		}		
 
@@ -354,6 +356,11 @@
 			{
 				max-width: 575px;
 			}
+
+			#pollination-panel
+			{
+			    margin-top: 100vw;
+			}	
 		}		
 
 		@media only screen and (min-width: 1430px)
@@ -365,7 +372,7 @@
 
 			#pollination-panel
 			{
-				margin-top: 1130px;
+				margin-top: 80vw;
 			}
 		}		
 
@@ -400,6 +407,15 @@
 			}			
 		}
 
+		.locked .panel-body
+		{
+			height: 150px;
+		}
+
+		.locked .panel-footer
+		{
+			min-height: 110px;
+		}
 	</style>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -480,7 +496,6 @@
 		</div>
 		<div class="panel-footer"><img src='/static/svg/sandbox_map.svg'></div>
 	</div>
-
 	<div id="bioluminescence-panel" class="panel">
 		<div class="panel-body">
 			<div class="left-column">
