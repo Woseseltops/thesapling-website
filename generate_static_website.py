@@ -107,6 +107,7 @@ def generate_static_website():
 
 	#Settings
 	PAGES_TO_GENERATE_FOLDER = 'pages_to_generate/'
+	PAGES_TO_COPY_FOLDER = 'pages_to_copy/'
 	DEVLOGS_FOLDER = 'devlogs/'
 	TEMPLATE_FOLDER = 'templates/'
 
@@ -120,8 +121,10 @@ def generate_static_website():
 	RSS_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_template.xml'
 	RSS_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'rss_item_template.xml'
 
-	PHP_LOCATION = 'C:/Program Files/php-7.0.9-Win32-VC14-x64/' #'C:/Users/wstoop/Downloads/php/php.exe'
-	CIVETWEB_LOCATION = 'C:/Users/Wessel/Downloads/CivetWeb_Win32+64_V1.9.1/' #'C:\\Users\\wstoop\\Downloads\\CivetWeb64.exe'
+	#PHP_LOCATION = 'C:/Program Files/php-7.0.9-Win32-VC14-x64/' 
+	PHP_LOCATION = 'C:/Users/wstoop/Downloads/php/php.exe'
+	#CIVETWEB_LOCATION = 'C:/Users/Wessel/Downloads/CivetWeb_Win32+64_V1.9.1/' 
+	CIVETWEB_LOCATION = 'C:\\Users\\wstoop\\Downloads\\'
 
 	GOAL_LOCATION = 'docs/'
 	DOMAIN_NAME = 'thesaplinggame.com'
@@ -145,7 +148,9 @@ def generate_static_website():
 	open(GOAL_LOCATION+'CNAME','w').write(DOMAIN_NAME)
 
 	#Get images
-	svg_images = get_svg_images(['rss_icon','devlog_icon','twitter_icon','steam_icon','itch_icon','kartridge_icon','gamejolt_icon','arrow_left','arrow_up','arrow_right'],STATIC_FOLDER)	
+	svg_images = get_svg_images(['rss_icon','devlog_icon','twitter_icon','steam_icon','itch_icon','kartridge_icon','gamejolt_icon','arrow_left',
+								'arrow_up','arrow_right','homepage_orange','devlog_orange','newsletter_orange','twitter_orange','steam_orange',
+								'itch_orange'],STATIC_FOLDER)	
 
 	#Generate devlogs
 	devlogs = []
@@ -198,9 +203,25 @@ def generate_static_website():
 	content_variables['latest_devlog'] = devlog_to_list_item(published_devlogs[0],DEVLOG_LIST_ITEM_TEMPLATE_LOCATION,False,True)
 
 	for filename in listdir(PAGES_TO_GENERATE_FOLDER):
+		filename_without_extension = filename.split('.')[0]
+
+		if filename_without_extension == 'index':
+			path = GOAL_LOCATION
+		else:
+			path = GOAL_LOCATION+filename_without_extension 	
+			mkdir(path)
+
 		full_content = create_page(MAIN_TEMPLATE_LOCATION,MAIN_TITLE_AREA_FILE_LOCATION,'The Sapling',open(PAGES_TO_GENERATE_FOLDER+filename).read(),'main',
 									content_variables=content_variables)
-		open(GOAL_LOCATION+filename,'w').write(full_content)
+		open(path+'/index.html','w').write(full_content)
+
+	for filename in listdir(PAGES_TO_COPY_FOLDER):
+		filename_without_extension = filename.split('.')[0]
+		mkdir(GOAL_LOCATION+filename_without_extension)
+
+		content = open(PAGES_TO_COPY_FOLDER+filename).read()
+		content = fill_template(content,content_variables)
+		open(GOAL_LOCATION+filename_without_extension+'/index.html','w').write(content)
 
 	#Move over the static files
 	copytree(STATIC_FOLDER,GOAL_LOCATION+STATIC_FOLDER)

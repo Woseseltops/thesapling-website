@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="15mm"
-   height="15mm"
-   viewBox="0 0 14.999999 14.999999"
+   width="12.990347mm"
+   height="13.247603mm"
+   viewBox="0 0 12.990346 13.247603"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="steam_orange.svg">
+   sodipodi:docname="logo_white.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="26.801946"
-     inkscape:cy="37.185765"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-37.820001"
+     inkscape:cy="18.791285"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,7 +56,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-27.495887,-213.46148)">
+     transform="translate(-51.07052,-123.98687)">
     <path
        inkscape:connector-curvature="0"
        style="display:inline;fill:#ffffff;fill-opacity:0.9188406;fill-rule:evenodd;stroke:none;stroke-width:1.58044446;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6.32177794, 1.58044448;stroke-dashoffset:0;stroke-opacity:0.5739645"
@@ -65,13 +65,5 @@
        inkscape:export-xdpi="96.3367"
        inkscape:export-ydpi="96.3367"
        inkscape:export-filename="C:\Users\Wessel\Documents\Unity Games\Experiments\Assets\MainMenu\logo.png" />
-    <path
-       inkscape:connector-curvature="0"
-       style="fill:#eda342;fill-opacity:1;stroke:none;stroke-width:0.06405634;stroke-opacity:1"
-       d="m 34.942436,213.53629 c -3.954901,0 -7.190964,3.07655 -7.446549,6.96675 0.0012,0.002 0.0021,0.003 0.0033,0.005 1e-6,-1e-5 0,-9.7e-4 0,-9.7e-4 l 4.009778,1.65071 c 0.109088,-0.0718 0.225355,-0.13381 0.349433,-0.18441 0.281462,-0.11594 0.578331,-0.16785 0.874143,-0.15439 l 1.826107,-2.65271 c -6.3e-4,-0.0118 -6.3e-4,-0.0244 -6.3e-4,-0.0368 1.6e-5,-1.56554 1.271534,-2.83912 2.834508,-2.83912 1.563616,0 2.834494,1.27358 2.834494,2.83912 0,1.56541 -1.270878,2.84012 -2.834494,2.84012 -0.02114,0 -0.04292,-7.2e-4 -0.06405,-9.9e-4 l -2.612797,1.86715 c 0.0078,0.28825 -0.0455,0.57717 -0.159516,0.85262 -0.438146,1.05373 -1.652602,1.5553 -2.705881,1.11523 -0.643766,-0.2684 -1.080117,-0.82633 -1.222449,-1.46241 l -2.824986,-1.16566 c 0.93163,3.05965 3.775442,5.28578 7.139655,5.28578 4.121386,0 7.462564,-3.34119 7.462564,-7.46257 0,-4.12144 -3.341178,-7.46256 -7.462564,-7.46256 z m 2.450031,3.70201 c -1.040916,0 -1.888411,0.84902 -1.888411,1.89153 0,1.04335 0.847495,1.89204 1.888411,1.89204 1.041557,0 1.889037,-0.84869 1.889037,-1.89204 0,-1.04251 -0.84748,-1.89153 -1.889037,-1.89153 z m 0.0033,0.46716 c 0.783409,0 1.418748,0.63661 1.418748,1.4215 0,0.78494 -0.635339,1.42099 -1.418748,1.42099 -0.782768,0 -1.418247,-0.63605 -1.418247,-1.42099 0,-0.78489 0.635479,-1.4215 1.418247,-1.4215 z m -4.732664,4.58666 c -0.19948,-0.002 -0.396101,0.0346 -0.580136,0.10446 l 0.953965,0.39523 c 0.59944,0.24981 0.883133,0.93902 0.633057,1.53922 -0.249308,0.59957 -0.937469,0.88401 -1.537227,0.6342 l -0.922688,-0.38247 c 0.163408,0.34142 0.446672,0.62777 0.821849,0.78406 0.813258,0.33886 1.748847,-0.0473 2.087962,-0.8615 0.163984,-0.39331 0.164565,-0.82888 0.0025,-1.22346 -0.162062,-0.39458 -0.46787,-0.70341 -0.862008,-0.86739 -0.195469,-0.0813 -0.397796,-0.12075 -0.597275,-0.12235 z"
-       id="path4155"
-       inkscape:export-filename="C:\Users\Wessel\Desktop\thesapling-website\static\png\steam_logo.png"
-       inkscape:export-xdpi="309.39914"
-       inkscape:export-ydpi="309.39914" />
   </g>
 </svg>

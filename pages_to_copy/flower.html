@@ -1,4 +1,13 @@
 <header>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150457817-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-150457817-1');
+	</script>	
 	<style>
 		body
 		{
@@ -33,8 +42,27 @@
 
 		.panel-footer
 		{
-			height: 300px;		
+			min-height: 300px;		
 			background-image: radial-gradient(ellipse at left bottom,hsl(356, 100%, 36%), hsl(355, 68%, 48%), hsl(34, 84%, 51%));
+   		}
+
+   		.panel-footer img
+   		{
+			max-width: 60vw;
+		    margin: auto;
+		    margin-top: 85px;
+		    margin-bottom: 85px;   			
+   		}   		
+
+   		video
+   		{
+   			max-width: 295px;
+   			margin: 45px;
+   		}
+
+   		#pollination-panel video
+   		{
+   			max-width: 400px;
    		}
 
 		#sales-panel
@@ -218,7 +246,7 @@
 
 		.icon-area
 		{
-			max-width: 430px;
+			max-width: 480px;
 			margin: auto;
 			height: 100px;
 		}
@@ -238,6 +266,11 @@
 		{
 			margin-top: 10px;
 			color: hsl(34, 84%, 61%);
+		}
+
+		.selected-icon
+		{
+			fill: hsl(34, 85%, 53%) !important; /*this is because we want to overwrite the locally specified color in the svg*/
 		}
 
 		@media only screen and (min-width: 830px)
@@ -274,7 +307,7 @@
 		{
 			#flower-mg
 			{
-				height: 310vw;
+				height: 340vw;
 			}
 		}				
 
@@ -349,12 +382,60 @@
 			}			
 		}		
 
+		@media only screen and (max-width: 426px)
+		{
+			.left-column
+			{
+				max-width: none;
+			}
+
+			#pollination-panel
+			{
+				margin-top: 800px;
+			}
+
+			#pollination-panel video
+			{
+				max-width: -webkit-fill-available;	
+			}			
+		}
+
+		.locked .panel-body
+		{
+			height: 150px;
+		}
+
+		.locked .panel-footer
+		{
+			min-height: 110px;
+		}
+
 	</style>
-	<meta name="theme-color" content="#31452b">	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script type="text/javascript">
+
+ 	$(document).ready(function()
+ 	{
+	    $('.icon').mouseenter(function()
+	    {
+	    	console.log('enter');
+	    	$(this).find('path').addClass('selected-icon');
+	    });
+
+	    $('.icon').mouseleave(function()
+	    {
+	    	console.log('leave');
+	    	$(this).find('path').removeClass('selected-icon');
+	    });
+	});
+ 	</script>
+
+	<meta name="theme-color" content="#d65980">	
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<script src="rellax.min.js"></script>
+	<script src="../static/js/rellax.min.js"></script>
 
 </header>
 <body>
@@ -376,17 +457,15 @@
 
 		<h3 class="buy">BUY THE SAPLING IN EARLY ACCESS NOW</h3>
 			<table>
-				<tr><td><img src="../static/svg/steam_orange.svg"></td><td><img src="../static/svg/itch_orange.svg"></td></tr>
+				<tr><td><a href="https://store.steampowered.com/app/997380/The_Sapling/">{{steam_orange}}</a></td><td><a href="https://woseseltops.itch.io/thesapling">{{itch_orange}}</a></td></tr>
 				<tr><td>Steam</td><td>Itch</td></tr>
 			</table>
 	</div>
 
-	<div id="pollination-panel" class="panel">
+	<div id="pollination-panel" class="panel locked">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>When plants are fighting for space, as in the smaller levels, using sexuality to exchange genes did not really add much to the simulation. With the larger levels in place, it finally makes sense. Plants can spread their genes in the form of pollen, either by wind or by animals. All plants with the same pollination organs can mix their genes, so this means as long as you have two different plants sharing, for example, the same type of flower, interesting new combinations will pop up throughout your worlds.</p>
-	 
-				<p>To achieve the animal pollination, plants can now grow colorful flowers with nectar to attract nectar eating animals. Two new mouths specialized in eating nectar have also been added. To make sure animal pollination can be gradually introduced, the more primitive nectar producing organs also allow wind pollination, and the more primitive nectar eating mouth can also eat plants as a whole.</p>
+				Information will follow <strong>AUGUST 17</strong>.
 			</div>
 			<div class="right-column">
 				<h4>POLLINATION & FLOWERS</h4>
@@ -396,40 +475,35 @@
 		</div>
 	</div>
 
-	<div id="sandbox-panel" class="panel">
+	<div id="sandbox-panel" class="panel locked">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>The new sandbox level is 100x times as large, so you can finally play with all kinds of simulation mechanics that previously were limited by the small terrain. The new level has been carefully designed to have as much environment variety as possible: hot terrain, cold terrain, wet terrain, rocky terrain, it's all there.</p>
- 
-				<p>And not only that; you can influence the general temperature in the world with the click of a button. Make it colder, and see heath loving plants migrate to the warmer places (and the animals that eat these plants along with them), or make your world a burning hell and see how your ecosystem adapts (or fails to do so).</p>
+				Information will follow <strong>AUGUST 20</strong>.				
 			</div>
 			<div class="right-column">
 				<h4>NEW SANDBOX</h4>
 			</div>
- 		</div>
-		<div class="panel-footer">			
 		</div>
+		<div class="panel-footer"></div>
 	</div>
 
-	<div id="bioluminescence-panel" class="panel">
+	<div id="bioluminescence-panel" class="panel locked">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>Having colorful flowers is not the only way to attract pollinators; you can also add glowing bodyparts to stand out in the dark. Besides bodyparts that serve this purpose only, it also possible to make all flowers glow. The instinct system for animals has been extended so you can design instincts that respond to light in the dark.</p>
- 
-				<p>Animals that respond to light also brings an interesting opportunity for carnivores... why not emit some light yourself? Three new glowing bodyparts have been added for animals to achieve this. They have been wired to the instinct system as well, so you can make animals glow when they hear danger, or see food, or whatever you can come up with.</p>
+				Information will follow <strong>AUGUST 24</strong>.
 			</div>
 			<div class="right-column">
 				<h4>BIOLUMINESCENCE</h4>
 			</div>
 		</div>
-		<div class="panel-footer">			
+		<div class="panel-footer">
 		</div>		
 	</div>
 
-	<div id="ui-panel" class="panel">
+	<div id="ui-panel" class="panel locked">
 		<div class="panel-body">
 			<div class="left-column">
-				<p>While The Sapling was playtested extensively, these sessions often lasted 90 minutes maximum. As a result, there was a clear hole in tools for players who played for longer periods of time, and returned to the game multiple times. Fortunately, these are also the players willing to communicate what they need. I have listened, and extended the game with a number of things to make everyone's life more convenient.</p>
+				Information will follow <strong>AUGUST 27</strong>.
 			</div>
 			<div class="right-column">
 				<h4>UI OVERHAUL</h4>
@@ -439,27 +513,46 @@
 		</div>		
 	</div>
 
+	<div id="ui-panel" class="panel locked">
+		<div class="panel-body">
+			<div class="left-column">
+				Stream will start on <strong>SEPTEMBER 3</strong>.
+			</div>
+			<div class="right-column">
+				<h4>TWITCH LIVESTREAM</h4>
+			</div>
+		</div>
+		<div class="panel-footer">	
+		    <!-- Add a placeholder for the Twitch embed -->
+		    <div id="twitch-embed"></div>
+
+		    <!-- Load the Twitch embed script -->
+		    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+		    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+		    <script type="text/javascript">
+		      new Twitch.Embed("twitch-embed", {
+		        width: 854,
+		        height: 480,
+		        channel: "woseseltops",
+		      });
+		    </script>				
+		</div>		
+	</div>
+
 	<div id="information-panel" class="panel">
 		<div class="panel-body">
 			<img class="logo" src="../static/svg/logo_orange.svg">
 			<h4>MORE INFORMATION</h4>
 
 			<div class="icon-area">
-				<div class="icon">
-					<img src="../static/svg/homepage_orange.svg">
-					<div class="icon-label">Homepage</div>
+				<div class="icon"><a href="/">{{homepage_orange}}</a><div class="icon-label">Homepage</div>
 				</div>
-				<div class="icon">
-					<img src="../static/svg/devlog_orange.svg">
-					<div class="icon-label">Devlog</div>
+				<div class="icon"><a href="/devlogs">{{devlog_orange}}</a><div class="icon-label">Devlog</div>
 				</div>
-				<div class="icon">
-					<img src="../static/svg/newsletter_orange.svg">
-					<div class="icon-label">Newsletter</div>
+				<div class="icon"><a href="/newsletter">{{newsletter_orange}}</a><div class="icon-label">Newsletter</div>
 				</div>
-				<div class="icon">
-					<img src="../static/svg/twitter_orange.svg">
-					<div class="icon-label">Twitter</div>
+				<div class="icon"><a href="https://twitter.com/thesaplinggame">{{twitter_orange}}</a><div class="icon-label">Twitter</div>
 				</div>
 			</div>
 		</div>
@@ -469,7 +562,7 @@
 		<div class="footer-body">
 			<img src="../static/svg/logo_white.svg">
 
-			<a href="">Presskit</a>
+			<a href="/press/sheet.html">Presskit</a>
 			<a href="http://wesselstoop.ruhosting.nl/">Developer website</a>		
 
 			<p>Questions?<br>

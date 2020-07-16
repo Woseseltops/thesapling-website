@@ -1,0 +1,580 @@
+<header>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150457817-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-150457817-1');
+	</script>	
+	<style>
+		body
+		{
+			margin: 0px;
+		}
+
+		.layer
+		{
+			background-image: url(../static/svg/flower_bg.svg);
+			background-size: 100%;
+			width: 100%;
+			height: 150vw;
+			position: absolute;	
+			top: 0px;
+		}
+
+		.panel
+		{
+			text-align: center;
+			width: 100%;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.panel-body
+		{
+			max-width: 85vw;
+			margin: auto;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			overflow: auto;			
+   		}
+
+		.panel-footer
+		{
+			min-height: 300px;		
+			background-image: radial-gradient(ellipse at left bottom,hsl(356, 100%, 36%), hsl(355, 68%, 48%), hsl(34, 84%, 51%));
+   		}
+
+   		.panel-footer img
+   		{
+			max-width: 60vw;
+		    margin: auto;
+		    margin-top: 85px;
+		    margin-bottom: 85px;   			
+   		}
+
+   		video
+   		{
+   			max-width: 295px;
+   			margin: 45px;
+   		}
+
+   		#pollination-panel video
+   		{
+   			max-width: 400px;
+   		}
+
+		#sales-panel
+		{
+			margin-top: 40vw;
+			position: absolute;			
+		}
+
+		#pollination-panel
+		{
+			margin-top: 715px;
+		}
+
+		h1, h2
+		{
+			font-family: 'Montserrat', sans-serif;
+		    margin: 0 auto;
+		    left: 0px;
+		    right: 0px;
+			text-align: center;
+    		width: 100%;
+   		    text-align: center;
+		    color: hsl(349, 55%, 48%);
+		}
+
+		h1
+		{
+		    font-size: 5vw;
+		}
+
+		h2
+		{
+		    font-size: 2vw;
+		    font-weight: 300;
+		    letter-spacing: 10;
+		    position: relative;
+		    top: 15px;
+		}
+
+		.logo-area
+		{
+			width: 55vw;
+		    height: 20vw;
+		    margin: auto;
+		    margin-top: 20vw;
+		}
+
+		.main-logo
+		{
+		    width: 10vw;
+		    position: relative;
+		    display: block;
+		    margin: auto;
+		}
+
+		iframe
+		{
+		    margin-top: 40px;
+		    margin-bottom: 45px;
+			width: 280px;
+		    height: 155px;
+		}
+
+		h3
+		{
+			color: hsl(34, 84%, 61%);
+		    letter-spacing: 15px;
+		    font-size: 22px;			
+		    padding-left: 15px;
+		    padding-right: 15px;
+		    margin-top: 80px;
+		}
+
+		h3.buy
+		{
+			font-weight: 300;
+		    font-size: 18px;
+		    letter-spacing: 4px;
+			margin-top: 45px;
+		}
+
+		h4
+		{
+			color: hsl(34, 84%, 61%);	
+			margin: 0px;
+			font-size: 28px;		
+			text-align: right;
+		}
+
+		td img
+		{
+			width: 60px;
+		}
+
+		.left-column
+		{
+			float: left;
+			max-width: 50vw;
+		}
+
+		.left-column p
+		{
+			margin: 0px;
+			text-align: justify;
+			color: hsl(0, 0%, 45%);
+    		line-height: 1.5;
+		    letter-spacing: 1.5px;
+		}
+
+		.right-column
+		{
+		}
+
+		#information-panel h4
+		{
+			text-align: center;
+		}
+
+		#information-panel .logo
+		{
+			margin: 25px;
+		    width: 90px;			
+		}
+
+		table
+		{
+		    margin: auto;
+		    margin-top: 80px;			
+			color: hsl(34, 84%, 61%);	
+			text-align: center;		    
+		}
+
+		td
+		{
+			padding: 10px;
+			padding-left: 30px;	
+			padding-right: 30px;	
+		}
+
+		.footer
+		{
+		    background-image: radial-gradient(ellipse at left bottom,hsl(356, 100%, 18%), hsl(355, 72%, 44%), hsl(34, 84%, 51%));
+		    margin-bottom: -15px;
+		    height: 700px;
+		    padding: 50px;
+		}
+
+		.footer-body
+		{
+			color: white;
+			font-family: 'Montserrat', sans-serif;			
+		    font-weight: 300;
+		    letter-spacing: 4px;
+			margin: auto;
+			max-width: 1000px;
+			text-align: center;
+		}
+
+		.footer a
+		{
+			padding: 30px;
+			margin: 10px;
+			display: block;
+		}
+
+		.footer a:link, .footer a:visited, .footer a:hover, .footer a:active
+		{
+			color: white;
+		}
+
+		.faded
+		{
+		    color: hsla(0, 0%, 0%, 0.13);
+		    font-weight: 600;
+		}
+
+		img.faded
+		{
+	    	margin-top: 100px;
+		}
+
+		.icon-area
+		{
+			max-width: 480px;
+			margin: auto;
+			height: 100px;
+		}
+
+		.icon
+		{
+			float: left;
+			margin: 15px;
+		}
+
+		.icon img
+		{
+			width: 50px;
+		}
+
+		.icon-label
+		{
+			margin-top: 10px;
+			color: hsl(34, 84%, 61%);
+		}
+
+		.selected-icon
+		{
+			fill: hsl(34, 85%, 53%) !important; /*this is because we want to overwrite the locally specified color in the svg*/
+		}
+
+		@media only screen and (min-width: 830px)
+		{
+			.layer
+			{
+				top: -30vw;
+			}
+
+			#flower-fg
+			{
+				top: -15vw;
+			}
+
+			.logo-area
+			{
+			    margin-top: 5vw;
+			}
+
+			h1, h2
+			{
+				margin-top: 56px;
+			}
+
+			h3
+			{
+			    padding-left: 0px;
+			    padding-right: 0px;
+			    margin-top: 0px;
+			}
+		}
+
+		@media only screen and (min-width: 350px)
+		{
+			#flower-mg
+			{
+				height: 340vw;
+			}
+		}				
+
+		@media only screen and (min-width: 425px)
+		{
+			#flower-mg
+			{
+				height: 285vw;
+			}
+		}
+
+		@media only screen and (min-width: 750px)
+		{
+			#flower-mg
+			{
+				height: 200vw;
+			}
+
+			iframe
+			{
+			    width: 500px;
+			    height: 280px;							
+			}
+
+			#pollination-panel
+			{
+			    margin-top: 900px;
+			}
+		}		
+
+		@media only screen and (min-width: 1000px)
+		{
+			#flower-mg
+			{
+				height: 174vw;
+			}
+
+			.panel-body
+			{
+				max-width: 1000px;
+			}
+
+			.left-column
+			{
+				max-width: 575px;
+			}
+		}		
+
+		@media only screen and (min-width: 1430px)
+		{
+			#flower-mg
+			{
+				height: 150vw;
+			}
+
+			#pollination-panel
+			{
+				margin-top: 1130px;
+			}
+		}		
+
+		@media only screen and (min-width: 2550px)
+		{
+			#flower-mg
+			{
+				height: 125vw;
+			}
+
+			#pollination-panel
+			{
+				margin-top: 1560px;
+			}			
+		}		
+
+		@media only screen and (max-width: 426px)
+		{
+			.left-column
+			{
+				max-width: none;
+			}
+
+			#pollination-panel
+			{
+				margin-top: 800px;
+			}
+
+			#pollination-panel video
+			{
+				max-width: -webkit-fill-available;	
+			}			
+		}
+
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script type="text/javascript">
+
+ 	$(document).ready(function()
+ 	{
+	    $('.icon').mouseenter(function()
+	    {
+	    	console.log('enter');
+	    	$(this).find('path').addClass('selected-icon');
+	    });
+
+	    $('.icon').mouseleave(function()
+	    {
+	    	console.log('leave');
+	    	$(this).find('path').removeClass('selected-icon');
+	    });
+	});
+ 	</script>
+
+	<meta name="theme-color" content="#d65980">	
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<script src="../static/js/rellax.min.js"></script>
+
+</header>
+<body>
+	<div class="layer rellax" style='background-image: url("../static/svg/flower_bg.svg");''></div>
+	<div class="layer rellax" data-rellax-speed="2" style='background-image: url("../static/svg/flower_mountains.svg");''></div>
+	<div id="flower-mg" class="layer rellax" data-rellax-speed="8" style='background-image: url("../static/svg/flower_mg.svg");''></div>
+	<div id="flower-fg" class="layer rellax" data-rellax-speed="14" style='background-image: url("../static/svg/flower_fg.svg");''></div>
+
+	<div class="logo-area">
+		<img class="main-logo rellax" data-rellax-speed="-4" src="../static/svg/logo_pink.svg">
+		<h1 class="rellax" data-rellax-speed="-4">THE SAPLING</h1>
+		<h2 class="rellax" data-rellax-speed="-4.1">FLOWER UPDATE</h2>
+	</div>
+
+	<div id="sales-panel" class="panel rellax" data-rellax-speed="4">
+		<h3>UPDATE AVAILABLE SEPTEMBER 10</h3>
+
+		<iframe id="ytvideo" src="https://www.youtube.com/embed/-tFe4_-7cFA" frameborder="0" allowfullscreen=""></iframe>
+
+		<h3 class="buy">BUY THE SAPLING IN EARLY ACCESS NOW</h3>
+			<table>
+				<tr><td><a href="https://store.steampowered.com/app/997380/The_Sapling/">{{steam_orange}}</a></td><td><a href="https://woseseltops.itch.io/thesapling">{{itch_orange}}</a></td></tr>
+				<tr><td>Steam</td><td>Itch</td></tr>
+			</table>
+	</div>
+
+	<div id="pollination-panel" class="panel">
+		<div class="panel-body">
+			<div class="left-column">
+				<p>When plants are fighting for space, as in the smaller levels, using sexuality to exchange genes did not really add much to the simulation. With the larger levels in place, it finally makes sense. Plants can spread their genes in the form of pollen, either by wind or by animals. All plants with the same pollination organs can mix their genes, so this means as long as you have two different plants sharing, for example, the same type of flower, interesting new combinations will pop up throughout your worlds.</p><br>
+				<p>To achieve the animal pollination, plants can now grow colorful flowers with nectar to attract nectar eating animals. Two new mouths specialized in eating nectar have also been added. To make sure animal pollination can be gradually introduced, the more primitive nectar producing organs also allow wind pollination, and the more primitive nectar eating mouth can also eat plants as a whole.</p>
+			</div>
+			<div class="right-column">
+				<h4>POLLINATION & FLOWERS</h4>
+			</div>
+		</div>
+		<div class="panel-footer">			
+			<video autoplay muted loop="true"><source src="../static/webm/plant_sexuality_1.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/plant_sexuality_2.webm" type="video/webm"></video>
+		</div>
+	</div>
+
+	<div id="sandbox-panel" class="panel">
+		<div class="panel-body">
+			<div class="left-column">
+				<p>The new sandbox level is 100x times as large, so you can finally play with all kinds of simulation mechanics that previously were limited by the small terrain. The new level has been carefully designed to have as much environment variety as possible: hot terrain, cold terrain, wet terrain, rocky terrain, it's all there.</p><br>
+				<p>And not only that; you can influence the general temperature in the world with the click of a button. Make it colder, and see heath loving plants migrate to the warmer places (and the animals that eat these plants along with them), or make your world a burning hell and see how your ecosystem adapts (or fails to do so).</p>
+			</div>
+			<div class="right-column">
+				<h4>NEW SANDBOX</h4>
+			</div>
+		</div>
+		<div class="panel-footer"><img src='/static/svg/sandbox_map.svg'></div>
+	</div>
+
+	<div id="bioluminescence-panel" class="panel">
+		<div class="panel-body">
+			<div class="left-column">
+				<p>Having colorful flowers is not the only way to attract pollinators; you can also add glowing bodyparts to stand out in the dark. Besides bodyparts that serve this purpose only, it also possible to make all flowers glow. The instinct system for animals has been extended so you can design instincts that respond to light in the dark.</p><br>
+				<p>Animals that respond to light also brings an interesting opportunity for carnivores... why not emit some light yourself? Three new glowing bodyparts have been added for animals to achieve this. They have been wired to the instinct system as well, so you can make animals glow when they hear danger, or see food, or whatever you can come up with.</p>
+			</div>
+			<div class="right-column">
+				<h4>BIOLUMINESCENCE</h4>
+			</div>
+		</div>
+		<div class="panel-footer">
+			<video autoplay muted loop="true"><source src="../static/webm/biolum_animal_1.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/biolum_animal_2.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/biolum_animal_3.webm" type="video/webm"></video>
+		</div>		
+	</div>
+
+	<div id="ui-panel" class="panel">
+		<div class="panel-body">
+			<div class="left-column">
+				<p>While The Sapling was playtested extensively, these sessions often lasted 90 minutes maximum. As a result, there was a clear hole in tools for players who played for longer periods of time, and returned to the game multiple times. Fortunately, these are also the players willing to communicate what they need. I have listened, and extended the game with a number of things to make everyone's life more convenient.</p>
+			</div>
+			<div class="right-column">
+				<h4>UI OVERHAUL</h4>
+			</div>
+		</div>
+		<div class="panel-footer">			
+			<video autoplay muted loop="true"><source src="../static/webm/ui_editor.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/ui_list.webm" type="video/webm"></video>
+			<video autoplay muted loop="true"><source src="../static/webm/ui_world.webm" type="video/webm"></video>
+		</div>		
+	</div>
+
+	<div id="ui-panel" class="panel">
+		<div class="panel-body">
+			<div class="left-column">
+				<p>A 168 hour continuous stream of the game, running in sandbox mode, with random mutations on. Nobody knows what will happen, but you should see the effects of evolution over time. On top of that, players can write 'up' or 'down' in the chat to influence the overall temperature; the voting bot will collect votes and send a decision to the game roughly once per hour.</p>
+			</div>
+			<div class="right-column">
+				<h4>TWITCH LIVESTREAM</h4>
+			</div>
+		</div>
+		<div class="panel-footer">	
+		    <!-- Add a placeholder for the Twitch embed -->
+		    <div id="twitch-embed"></div>
+
+		    <!-- Load the Twitch embed script -->
+		    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+		    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+		    <script type="text/javascript">
+		      new Twitch.Embed("twitch-embed", {
+		        width: 854,
+		        height: 480,
+		        channel: "woseseltops",
+		      });
+		    </script>				
+		</div>		
+	</div>
+
+	<div id="information-panel" class="panel">
+		<div class="panel-body">
+			<img class="logo" src="../static/svg/logo_orange.svg">
+			<h4>MORE INFORMATION</h4>
+
+			<div class="icon-area">
+				<div class="icon"><a href="/">{{homepage_orange}}</a><div class="icon-label">Homepage</div>
+				</div>
+				<div class="icon"><a href="/devlogs">{{devlog_orange}}</a><div class="icon-label">Devlog</div>
+				</div>
+				<div class="icon"><a href="/newsletter">{{newsletter_orange}}</a><div class="icon-label">Newsletter</div>
+				</div>
+				<div class="icon"><a href="https://twitter.com/thesaplinggame">{{twitter_orange}}</a><div class="icon-label">Twitter</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-body">
+			<img src="../static/svg/logo_white.svg">
+
+			<a href="/press/sheet.html">Presskit</a>
+			<a href="http://wesselstoop.ruhosting.nl/">Developer website</a>		
+
+			<p>Questions?<br>
+			thesaplinggame@gmail.com</p>
+
+			<img class="faded" src="../static/svg/logo_faded.svg">
+			<p class="faded">A game by Wessel Stoop</p>					
+	</div>
+
+	<script>
+	  // Accepts any class name
+	  var rellax = new Rellax('.rellax');
+	</script>
+</body>
