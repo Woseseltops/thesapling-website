@@ -70,6 +70,11 @@ hr
     margin-bottom: 50px;
 }
 
+li
+{
+    color: hsla(0, 0%, 100%, 0.85);    
+}
+
 #ytvideo
 {
     width: 800px;
@@ -744,4 +749,9 @@ ul ul
 
 .overlay img
 {
+}
+
+p img
+{
+    max-width: 650px;
 }
