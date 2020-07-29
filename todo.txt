@@ -1,7 +1,39 @@
 NOW
 ===
-Presskit updaten
-thesaplinggame.com/newsletter
+Reveal day todo
+* Website:
+  * Art override
+  * Artikel zichtbaar
+* Steam
+  * Screenhots
+  * Trailer
+  * Artikel
+* Itch.io:
+  * Art override
+  * Screenhots
+  * Trailer
+  * Artikel  
+* Tweet
+* Mailchimp lijst
+* Emails:
+  * 1x voor pers, journalisten
+* Eerste subreddit
+* Forms pers
+* IndieDB: artikel maken en posten
+
+Dagen erna
+* Elke dag een subreddit
+* Nieuwe Youtubers
+  * Batch A
+  * Batch B
+  * Batch C
+  * Batch retry
+
+Launch day todo:
+* Persoonlijk voor outshouters (vragen om retweet)
+* Steam
+  * Art override
+  * Game uploaden
 
 Marketing The Sapling flower update
 -----------------------------------
