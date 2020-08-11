@@ -20,8 +20,8 @@ store = file.Storage('credentials/gmail.json')
 creds = store.get()
 
 #Rerun this if permission problems
-#flow = client.flow_from_clientsecrets('credentials/gmail_client_secret.json', SCOPES)
-#creds = tools.run_flow(flow, store)
+flow = client.flow_from_clientsecrets('credentials/gmail_client_secret.json', SCOPES)
+creds = tools.run_flow(flow, store)
 
 connection = build('gmail', 'v1', http=creds.authorize(Http()))
 
@@ -36,14 +36,7 @@ TEMPLATE['nl'] = '<html><body><p>GRAAG PAS 12 DECEMBER OF LATER PUBLICEREN</p><h
 DRAFT_ID = 'r-6416627266572108012'
 draft = connection.users().drafts().get(id=DRAFT_ID,userId='me').execute()
 
-for line in open(PRESS_CONTACT_FILE):
+for line in ['test','test']:
 
-	print(line)
-	if '#STOP' in line:
-		break
-
-	name, language, emailaddress, key = line.strip().split('\t')
-
-	body = TEMPLATE[language].replace('{{NAME}}',name).replace('xxx',key)
-	message = {'message': create_message('thesaplinggame@gmail.com',emailaddress,SUBJECT[language],body)}
+	message = {'message': create_message('thesaplinggame@gmail.com',line,'test','test')}
 	connection.users().drafts().create(userId='thesaplinggame@gmail.com', body=message).execute()

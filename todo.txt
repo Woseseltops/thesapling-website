@@ -9,7 +9,6 @@ Reveal day todo
   * Trailer
   * Artikel
 * Itch.io:
-  * Art override
   * Screenhots
   * Trailer
   * Artikel  
