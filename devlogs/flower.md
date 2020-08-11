@@ -5,7 +5,7 @@ The Sapling: flower update
 
 Today the first big update for evolution simulation game The Sapling is announced: the flower update. It will release September 10th, and will extend the indie sim with major new functionality.
 
-<iframe id="ytvideo" src="https://www.youtube.com/embed/4_SaPvPj80Y" frameborder="0" allowfullscreen=""></iframe>
+<iframe id="ytvideo" src="https://www.youtube.com/embed/_aglK-7GFCI" frameborder="0" allowfullscreen=""></iframe>
 
 A very general overview of the new features can be found in the list below. More details on the flower update will be revealed gradually over the coming weeks on [thesaplinggame.com/flower](https://thesaplinggame.com/flower).
 
