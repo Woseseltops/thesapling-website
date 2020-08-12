@@ -32,8 +32,9 @@ Dagen erna
 Launch day todo:
 * Persoonlijk voor outshouters (vragen om retweet)
 * Steam
-  * Art override
   * Game uploaden
+  * Art override
+  * Aankondiging groot over de Steam page
 
 Marketing The Sapling flower update
 -----------------------------------
