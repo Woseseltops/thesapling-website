@@ -112,7 +112,7 @@ def generate_static_website():
 	TEMPLATE_FOLDER = 'templates/'
 
 	MAIN_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'main_template.html'
-	MAIN_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'main_title_area.html'
+	MAIN_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'main_title_area_flower.html'
 	DEVLOG_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_title_area.html'
 	DEVLOG_LIST_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_list_title_area.html'
 	DEVLOG_LIST_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'devlog_list_item_template.html'
@@ -123,8 +123,8 @@ def generate_static_website():
 
 	PHP_LOCATION = 'C:/Program Files/php-7.0.9-Win32-VC14-x64/' 
 	#PHP_LOCATION = 'C:/Users/wstoop/Downloads/php/php.exe'
-	#CIVETWEB_LOCATION = 'C:/Users/Wessel/Downloads/CivetWeb_Win32+64_V1.9.1/' 
-	CIVETWEB_LOCATION = 'C:\\Users\\wstoop\\Downloads\\'
+	CIVETWEB_LOCATION = 'C:/Users/Wessel/Downloads/CivetWeb_Win32+64_V1.9.1/' 
+	#CIVETWEB_LOCATION = 'C:\\Users\\wstoop\\Downloads\\'
 
 	GOAL_LOCATION = 'docs/'
 	DOMAIN_NAME = 'thesaplinggame.com'
