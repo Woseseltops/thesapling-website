@@ -1,23 +1,23 @@
 NOW
 ===
 Reveal day todo
-* Website:
-  * Art override
-  * Artikel zichtbaar
-* Steam
-  * Screenhots
-  * Trailer
-  * Artikel
-* Itch.io:
-  * Screenhots
-  * Trailer
-  * Artikel  
-* Tweet
-* Imgur: 960x960 highlights
-* Mailchimp lijst
-* Emails:
-  * 1x voor pers, journalisten
-* Eerste subreddit
+x Website:
+  x Art override
+  x Artikel zichtbaar
+x Steam
+  x Screenhots
+  x Trailer
+  x Artikel
+x Itch.io:
+  x Screenhots
+  - Trailer
+  x Artikel  
+x Tweet
+x Imgur: 960x960 highlights
+x Mailchimp lijst
+x Eerste subreddit
+x Hacker news
+x Emails: pers, journalisten
 * Forms pers
 * IndieDB: artikel maken en posten
 
