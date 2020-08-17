@@ -123,8 +123,11 @@ def generate_static_website():
 
 	PHP_LOCATION = 'C:/Program Files/php-7.0.9-Win32-VC14-x64/' 
 	#PHP_LOCATION = 'C:/Users/wstoop/Downloads/php/php.exe'
-	CIVETWEB_LOCATION = 'C:/Users/Wessel/Downloads/CivetWeb_Win32+64_V1.9.1/' 
-	#CIVETWEB_LOCATION = 'C:\\Users\\wstoop\\Downloads\\'
+
+	if isdir('C:/Users/Wessel/Downloads/CivetWeb_Win32+64_V1.9.1/'):
+		CIVETWEB_LOCATION = 'C:/Users/Wessel/Downloads/CivetWeb_Win32+64_V1.9.1/' 
+	else:
+		CIVETWEB_LOCATION = 'C:\\Users\\wstoop\\Downloads\\'
 
 	GOAL_LOCATION = 'docs/'
 	DOMAIN_NAME = 'thesaplinggame.com'
