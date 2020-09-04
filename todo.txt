@@ -1,13 +1,5 @@
 NOW
 ===
-Stream day:
-* Stream herstarten en overzetten naar echte account
-* Tweet over stream: The Twitch stream is live! We will see evolution happen before our eyes for 1 whole week: https://www.twitch.tv/woseseltops . Type 'up' or 'down' in the chat to influence the temperature. #twitch #twitchstreamer #madewithunity #gamedev #indiegames #indiedev 
-* Tweet commentaar: I will give commentary here. So far, it's all very empty and the organisms are really basic, but this should change quickly as in the first hours we always see rapid changes to fill all the empty niches. https://www.twitch.tv/woseseltops #twitch #madewithunity #evolution #artificiallife 
-* Anders depot in beta package... testen met nieuwe Steamaccount
-* Filmpjesmakers sturen: je zou er al bij moeten kunnen
-* Drafts versturen retry
-
 Volgende dag:
 * Nieuwe Youtubers allemaal antwoorden op bericht
 
