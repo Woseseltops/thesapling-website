@@ -99,3 +99,16 @@ def batch_youtubers():
 	no_email = sorted(no_email,key=lambda youtuber: (len(youtuber.games),youtuber.highest),reverse=True)
 	
 	return batch_a,batch_b,batch_c,batch_d,batch_e,no_email
+
+if __name__ == '__main__':
+	second_batch = batch_youtubers()[1]
+	selection = []
+
+	for tuber in second_batch:
+		average = sum(tuber.views_per_game.values()) / len(tuber.views_per_game)
+
+		if (average < 100 and average > 1):
+			print(tuber)
+			selection.append(tuber)
+
+	print(len(selection))
