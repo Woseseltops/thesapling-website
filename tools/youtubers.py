@@ -101,10 +101,11 @@ def batch_youtubers():
 	return batch_a,batch_b,batch_c,batch_d,batch_e,no_email
 
 if __name__ == '__main__':
-	second_batch = batch_youtubers()[1]
+	batch = batch_youtubers()[2]
+	print(batch)
 	selection = []
 
-	for tuber in second_batch:
+	for tuber in batch:
 		average = sum(tuber.views_per_game.values()) / len(tuber.views_per_game)
 
 		if (average < 100 and average > 1):
