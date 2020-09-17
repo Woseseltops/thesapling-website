@@ -1,14 +1,22 @@
 NOW
 ===
-Volgende dag:
-* Nieuwe Youtubers allemaal antwoorden op bericht
-
 Launch day todo:
-* Persoonlijk voor outshouters (vragen om retweet)
 * Steam
-  * Game uploaden
-  * Art override
-  * Aankondiging groot over de Steam page
+  x Game uploaden
+  X Art override
+  x Aankondiging groot over de Steam page
+  * Publicity round
+  * Bericht
+* Itch
+  x Game uploaden
+  * Bericht
+* Tweet met gif
+* Stream
+  x Twitch uit
+  x savefiles in veiligheid
+  o Fluidstack cancelen
+* Persoonlijk voor outshouters (vragen om retweet)
+* Devlog
 
 Marketing The Sapling flower update
 -----------------------------------
