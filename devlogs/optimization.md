@@ -56,8 +56,6 @@ This means that if an organism is born that is not in the pool and not in the li
 
 Todo
 ====
-Text ending
-Font
-Add to library functionality
-... more working
 No plants flashing when you click a button: don't refresh everything
+Text ending
+Add to library functionality

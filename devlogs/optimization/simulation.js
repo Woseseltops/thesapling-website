@@ -71,12 +71,12 @@ class Simulation
 			this.nextModelIndex++;
 		}
 
-		this.nextLifeFormIndex++;
-
 		if (this.useLibrary)
 		{
-			this.library.add(definitionIndex);
+			this.library.add(this.cells[cellIndex].definitionIndexShown);
 		}
+
+		this.nextLifeFormIndex++;
 	}
 
 	addPlantAtRandomLocation(definitionIndex)
@@ -134,21 +134,16 @@ class Simulation
 				{
 					if (plant.definitionIndex in this.poolPerDefinitionIndex)
 					{
-						this.poolPerDefinitionIndex[plant.definitionIndex].push(plant.modelIndex);
+						this.poolPerDefinitionIndex[plant.definitionIndexShown].push(plant.modelIndex);
 					}
 					else
 					{
-						this.poolPerDefinitionIndex[plant.definitionIndex] = [plant.modelIndex];
+						this.poolPerDefinitionIndex[plant.definitionIndexShown] = [plant.modelIndex];
 					}					
 				}
 
 				this.cells[cellIndex] = null;
 			}
-		}
-
-		if (this.fakeWithAncestors && this.definitionIndicesWithoutModel.length > 0)
-		{
-			this.library.add(this.definitionIndicesWithoutModel[Math.floor(Math.random() * this.definitionIndicesWithoutModel.length)])
 		}
 
 		this.definitionIndicesWithoutModel = new Set();
@@ -207,7 +202,7 @@ function visualize_simulation(simulation,elem,name)
 {
 	var html = '<div class="buttonArea"><button id="'+name+'_1day"><img src="simulate_1_day_button.svg"></button><button id="'+name+'_10days"><img src="simulate_10_days_button.svg"></button><button id="'+name+'_reset"><img src="reset_button.svg"></button><button id="'+name+'_addPlant1"><img src="add_plant_1_button.svg"></button><button id="'+name+'_addPlant2"><img src="add_plant_2_button.svg"></button>';
 
-	if (simulation.useLibrary)
+	if (simulation.randomMutations)
 	{
 		html += '<button id="library"><img src="library_button.svg"></button>';
 	}
@@ -261,6 +256,9 @@ function visualize_simulation(simulation,elem,name)
 	document.getElementById(name+'_reset').onclick = function()
 	{
 		simulation.cells = [];
+		simulation.poolPerDefinitionIndex = {};
+		simulation.library = [];
+
 		update_cells(simulation,table);
 		update_pool(simulation,pool);
 		update_library(simulation,library);				
@@ -318,7 +316,9 @@ function update_cells(simulation, elem)
 
 function update_pool(simulation,elem)
 {
-	var todo = -7;
+	var maxNumberOfItems = 11;
+
+	var todo = -maxNumberOfItems;
 
 	for (var [definitionIndex,pool] of Object.entries(simulation.poolPerDefinitionIndex))
 	{
@@ -335,14 +335,14 @@ function update_pool(simulation,elem)
 			html+= '<img src="plant_model_'+definitionIndex%5+'.svg"><div class="speciesIdentifier">'+definitionIndex+'</div><div>MODEL <span class="stress_nr">'+model+'</span></div>';
 			nr++;
 
-			if (nr == 7)
+			if (nr == maxNumberOfItems)
 			{
-				html += '<div>'+todo+' more</div>';
+				html += '<div class="not_shown_plants">'+todo+' more</div>';
 				break;
 			}
 		}
 
-		if (nr == 7)
+		if (nr == maxNumberOfItems)
 		{
 			break;
 		}
@@ -352,7 +352,9 @@ function update_pool(simulation,elem)
 }
 
 function update_library(simulation,elem)
-{
+{	
+	var maxNumberOfItems = 11;
+
 	var html = '';
 	var nr = 0;
 
@@ -361,9 +363,9 @@ function update_library(simulation,elem)
 		html+= '<img src="plant_model_'+definitionIndex%5+'.svg"><div class="speciesIdentifier">'+definitionIndex+'</div>';
 		nr++;
 
-		if (nr == 7)
+		if (nr == maxNumberOfItems)
 		{
-			todo = simulation.library.length - 7;
+			todo = simulation.library.length - maxNumberOfItems;
 			html += '<div>'+todo+' more</div>';
 			break;
 		}
