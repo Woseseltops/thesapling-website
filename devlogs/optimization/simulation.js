@@ -51,20 +51,29 @@ class Simulation
 		}
 
 		//Use an ancestor
-		else if (this.fakeWithAncestors && !(definitionIndex in this.library))
+		else if (this.fakeWithAncestors && !this.library.has(definitionIndex))
 		{
-			this.cells[cellIndex] = new Plant(definitionIndex,this.nextLifeFormIndex,this.nextModelIndex);
+			//First check the pool 
+			if (definitionIndexShownForParent in this.poolPerDefinitionIndex && this.poolPerDefinitionIndex[definitionIndexShownForParent].length > 0)
+			{
+				this.cells[cellIndex] = new Plant(definitionIndex,this.nextLifeFormIndex,this.poolPerDefinitionIndex[definitionIndexShownForParent].pop());
+			}
+			//Else, copy from the library
+			else
+			{
+				this.cells[cellIndex] = new Plant(definitionIndex,this.nextLifeFormIndex,this.nextModelIndex);
+				this.nextModelIndex++;
+			}
+
 			this.cells[cellIndex].definitionIndexShown = definitionIndexShownForParent;
 
 			if (definitionIndex != definitionIndexShownForParent)
 			{
 				this.definitionIndicesWithoutModel.add(definitionIndex);
 			}
-
-			this.nextModelIndex++;
 		}
 
-		//Build from scratch
+		//Build from scratch or copy from the library
 		else
 		{
 			this.cells[cellIndex] = new Plant(definitionIndex,this.nextLifeFormIndex,this.nextModelIndex);
@@ -132,7 +141,7 @@ class Simulation
 			{
 				if (this.usePool)
 				{
-					if (plant.definitionIndex in this.poolPerDefinitionIndex)
+					if (plant.definitionIndexShown in this.poolPerDefinitionIndex)
 					{
 						this.poolPerDefinitionIndex[plant.definitionIndexShown].push(plant.modelIndex);
 					}
@@ -204,7 +213,7 @@ function visualize_simulation(simulation,elem,name)
 
 	if (simulation.randomMutations)
 	{
-		html += '<button id="library"><img src="library_button.svg"></button>';
+		html += '<button id="'+name+'_addToLibrary"><img src="library_button.svg"></button>';
 	}
 
 	html += '</div><table id="'+name+'_table"></table>';
@@ -280,6 +289,15 @@ function visualize_simulation(simulation,elem,name)
 		update_library(simulation,library);		
 	};
 
+	if (simulation.randomMutations)
+	{
+		document.getElementById(name+'_addToLibrary').onclick = function()
+		{
+			console.log(simulation.library);
+			simulation.library.add(simulation.library.size+1);
+			update_library(simulation,library);
+		};		
+	}
 }
 
 function update_cells(simulation, elem)
