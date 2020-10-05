@@ -1,12 +1,8 @@
-<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
-
-<script src="simulation.js"></script>
-
 <style>
 .sim
 {
-	height: 772px;
-    width: 713px;
+	height: 842px;
+    width: 783px;
     padding: 35px;	
     font-family: 'Montserrat';
 }
@@ -31,10 +27,14 @@
 	background: url('simulation_background_ancestors.svg');	
 }
 
-button
+.devlog button
 {
-	background-color: hsl(0deg 0% 100% / 0%);
+	background-color: transparent;
     border: none;
+    padding: 0px;
+    width: inherit;
+    margin: 0px;    
+    margin-right: 10px;
 }	
 
 button:focus
@@ -64,7 +64,7 @@ td
 	color: white;
 	text-align: center;
 	width: 100px;
-	height: 112px;
+	height: 116px;
     font-size: 12px;
     font-weight: 200;
 }
@@ -123,8 +123,9 @@ td
 .showing_fake
 {
     color: hsl(47deg 100% 50%);	
-}
+}		
 </style>
+<script src="simulation.js"></script>
 
 <div class="sim" id="basic">
 </div>
@@ -133,42 +134,5 @@ td
 	var sim = new Simulation();
 		
 	elem = document.getElementById('basic');
-	visualize_simulation(sim,elem,'basic');	
-</script>
-
-<div class="sim" id="pool">
-</div>
-
-<script>
-	var sim = new Simulation();
-	sim.usePool = true;
-		
-	elem = document.getElementById('pool');
-	visualize_simulation(sim,elem,'pool');	
-</script>
-
-<div class="sim" id="library">
-</div>
-
-<script>
-	var sim = new Simulation();
-	sim.usePool = true;
-	sim.useLibrary = true;
-		
-	elem = document.getElementById('library');
-	visualize_simulation(sim,elem,'library');	
-</script>
-
-<div class="sim" id="ancestors">
-</div>
-
-<script>
-	var sim = new Simulation();
-	sim.usePool = true;
-	sim.useLibrary = true;
-	sim.fakeWithAncestors = true;
-	sim.randomMutations = true;
-		
-	elem = document.getElementById('ancestors');
-	visualize_simulation(sim,elem,'ancestors');	
+	visualize_simulation(sim,elem,'basic','');	
 </script>
