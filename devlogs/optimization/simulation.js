@@ -51,20 +51,29 @@ class Simulation
 		}
 
 		//Use an ancestor
-		else if (this.fakeWithAncestors && !(definitionIndex in this.library))
+		else if (this.fakeWithAncestors && !this.library.has(definitionIndex))
 		{
-			this.cells[cellIndex] = new Plant(definitionIndex,this.nextLifeFormIndex,this.nextModelIndex);
+			//First check the pool 
+			if (definitionIndexShownForParent in this.poolPerDefinitionIndex && this.poolPerDefinitionIndex[definitionIndexShownForParent].length > 0)
+			{
+				this.cells[cellIndex] = new Plant(definitionIndex,this.nextLifeFormIndex,this.poolPerDefinitionIndex[definitionIndexShownForParent].pop());
+			}
+			//Else, copy from the library
+			else
+			{
+				this.cells[cellIndex] = new Plant(definitionIndex,this.nextLifeFormIndex,this.nextModelIndex);
+				this.nextModelIndex++;
+			}
+
 			this.cells[cellIndex].definitionIndexShown = definitionIndexShownForParent;
 
 			if (definitionIndex != definitionIndexShownForParent)
 			{
 				this.definitionIndicesWithoutModel.add(definitionIndex);
 			}
-
-			this.nextModelIndex++;
 		}
 
-		//Build from scratch
+		//Build from scratch or copy from the library
 		else
 		{
 			this.cells[cellIndex] = new Plant(definitionIndex,this.nextLifeFormIndex,this.nextModelIndex);
@@ -132,7 +141,7 @@ class Simulation
 			{
 				if (this.usePool)
 				{
-					if (plant.definitionIndex in this.poolPerDefinitionIndex)
+					if (plant.definitionIndexShown in this.poolPerDefinitionIndex)
 					{
 						this.poolPerDefinitionIndex[plant.definitionIndexShown].push(plant.modelIndex);
 					}
@@ -194,17 +203,33 @@ class Simulation
 	{
 		return this.height*y + x;
 	}
+
+	addModelToLibrary()
+	{
+		var newModelIndex = 1;
+
+		while (true)
+		{
+			if (!this.library.has(newModelIndex))
+			{
+				this.library.add(newModelIndex);
+				break;
+			}
+
+			newModelIndex++;
+		}
+	}
 }
 
 // ========= only visualization below ============
 
-function visualize_simulation(simulation,elem,name)
+function visualize_simulation(simulation,elem,name,prefix)
 {
-	var html = '<div class="buttonArea"><button id="'+name+'_1day"><img src="simulate_1_day_button.svg"></button><button id="'+name+'_10days"><img src="simulate_10_days_button.svg"></button><button id="'+name+'_reset"><img src="reset_button.svg"></button><button id="'+name+'_addPlant1"><img src="add_plant_1_button.svg"></button><button id="'+name+'_addPlant2"><img src="add_plant_2_button.svg"></button>';
+	var html = '<div class="buttonArea"><button id="'+name+'_1day"><img src="'+prefix+'simulate_1_day_button.svg"></button><button id="'+name+'_10days"><img src="'+prefix+'simulate_10_days_button.svg"></button><button id="'+name+'_reset"><img src="'+prefix+'reset_button.svg"></button><button id="'+name+'_addPlant1"><img src="'+prefix+'add_plant_1_button.svg"></button><button id="'+name+'_addPlant2"><img src="'+prefix+'add_plant_2_button.svg"></button>';
 
 	if (simulation.randomMutations)
 	{
-		html += '<button id="library"><img src="library_button.svg"></button>';
+		html += '<button id="'+name+'_addToLibrary"><img src="'+prefix+'library_button.svg"></button>';
 	}
 
 	html += '</div><table id="'+name+'_table"></table>';
@@ -224,14 +249,14 @@ function visualize_simulation(simulation,elem,name)
 	var pool = document.getElementById(name+'_pool');
 	var library = document.getElementById(name+'_library');
 
-	update_cells(simulation,table);
+	update_cells(simulation,table,prefix);
 
 	document.getElementById(name+'_1day').onclick = function()
 	{
 		simulation.liveADay();
-		update_cells(simulation,table);
+		update_cells(simulation,table,prefix);
 		update_pool(simulation,pool);		
-		update_library(simulation,library);		
+		update_library(simulation,library,prefix);		
 	};
 
 	document.getElementById(name+'_10days').onclick = function()
@@ -248,41 +273,52 @@ function visualize_simulation(simulation,elem,name)
 		simulation.liveADay();
 		simulation.liveADay();
 
-		update_cells(simulation,table);
+		update_cells(simulation,table,prefix);
 		update_pool(simulation,pool);		
-		update_library(simulation,library);		
+		update_library(simulation,library,prefix);		
 	};
 
 	document.getElementById(name+'_reset').onclick = function()
 	{
 		simulation.cells = [];
 		simulation.poolPerDefinitionIndex = {};
-		simulation.library = [];
+		simulation.library = new Set();
 
-		update_cells(simulation,table);
+		simulation.nextLifeFormIndex = 1;
+		simulation.nextModelIndex = 1;
+
+		update_cells(simulation,table,prefix);
 		update_pool(simulation,pool);
-		update_library(simulation,library);				
+		update_library(simulation,library,prefix);				
 	};
 
 	document.getElementById(name+'_addPlant1').onclick = function()
 	{
 		simulation.addPlantAtRandomLocation(1);
-		update_cells(simulation,table);
+		update_cells(simulation,table,prefix);
 		update_pool(simulation,pool);
-		update_library(simulation,library);				
+		update_library(simulation,library,prefix);				
 	};
 
 	document.getElementById(name+'_addPlant2').onclick = function()
 	{
 		simulation.addPlantAtRandomLocation(2);
-		update_cells(simulation,table);
+		update_cells(simulation,table,prefix);
 		update_pool(simulation,pool);
-		update_library(simulation,library);		
+		update_library(simulation,library,prefix);		
 	};
 
+	if (simulation.randomMutations)
+	{
+		document.getElementById(name+'_addToLibrary').onclick = function()
+		{
+			simulation.addModelToLibrary();
+			update_library(simulation,library,prefix);
+		};		
+	}
 }
 
-function update_cells(simulation, elem)
+function update_cells(simulation, elem, prefix)
 {
 	var cellIndex;
 	var html = '';
@@ -301,7 +337,14 @@ function update_cells(simulation, elem)
 
 			if (plant != null)
 			{
-				html += '<img src="plant_model_'+plant.definitionIndexShown%5+'.svg"><div class="speciesIdentifier">'+plant.definitionIndexShown+'</div><div>PLANT <span class="stress_nr">'+plant.definitionIndex+'</span></div><div>ORGANISM <span class="stress_nr">'+plant.lifeFormIndex+'</span></div><div>MODEL <span class="stress_nr">'+plant.modelIndex+'</span></div>';
+				html += '<img src="'+prefix+'plant_model_'+plant.definitionIndexShown%5+'.svg"><div class="speciesIdentifier">'+plant.definitionIndexShown+'</div><div ';
+
+				if (plant.definitionIndex != plant.definitionIndexShown)
+				{
+					html += 'class="showing_fake"';
+				}
+
+				html += '>PLANT <span class="stress_nr">'+plant.definitionIndex+'</span></div><div>ORGANISM <span class="stress_nr">'+plant.lifeFormIndex+'</span></div><div>MODEL <span class="stress_nr">'+plant.modelIndex+'</span></div>';
 			}
 
 			html += '</td>';
@@ -332,7 +375,7 @@ function update_pool(simulation,elem)
 	{
 		for (var model of pool)
 		{
-			html+= '<img src="plant_model_'+definitionIndex%5+'.svg"><div class="speciesIdentifier">'+definitionIndex+'</div><div>MODEL <span class="stress_nr">'+model+'</span></div>';
+			html+= '<img src="'+prefix+'plant_model_'+definitionIndex%5+'.svg"><div class="speciesIdentifier">'+definitionIndex+'</div><div>MODEL <span class="stress_nr">'+model+'</span></div>';
 			nr++;
 
 			if (nr == maxNumberOfItems)
@@ -351,7 +394,7 @@ function update_pool(simulation,elem)
 	elem.innerHTML = html;		
 }
 
-function update_library(simulation,elem)
+function update_library(simulation,elem,prefix)
 {	
 	var maxNumberOfItems = 11;
 
@@ -360,7 +403,7 @@ function update_library(simulation,elem)
 
 	for (var definitionIndex of simulation.library)
 	{
-		html+= '<img src="plant_model_'+definitionIndex%5+'.svg"><div class="speciesIdentifier">'+definitionIndex+'</div>';
+		html+= '<img src="'+prefix+'plant_model_'+definitionIndex%5+'.svg"><div class="speciesIdentifier">'+definitionIndex+'</div>';
 		nr++;
 
 		if (nr == maxNumberOfItems)

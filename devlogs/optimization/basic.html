@@ -1,0 +1,138 @@
+<style>
+.sim
+{
+	height: 842px;
+    width: 783px;
+    padding: 35px;	
+    font-family: 'Montserrat';
+}
+
+#basic
+{
+	background: url('simulation_background_basic.svg');	
+}
+
+#pool
+{
+	background: url('simulation_background_pool.svg');	
+}
+
+#library
+{
+	background: url('simulation_background_library.svg');	
+}
+
+#ancestors
+{
+	background: url('simulation_background_ancestors.svg');	
+}
+
+.devlog button
+{
+	background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: inherit;
+    margin: 0px;    
+    margin-right: 10px;
+}	
+
+button:focus
+{
+	outline: none;
+}
+
+button img
+{
+	height: 51px;
+	margin-bottom: 17px;
+	cursor: pointer;
+}
+
+button img:hover
+{
+	filter: brightness(0.9);
+}
+
+table
+{
+	height: 590px;
+}
+
+td
+{
+	color: white;
+	text-align: center;
+	width: 100px;
+	height: 116px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.stress_nr
+{
+	font-weight: 800;
+}
+
+.speciesIdentifier
+{
+	font-size: 50px;
+	margin-top: -57px;
+	font-weight: 500;
+}
+
+.library, .pool
+{
+	width: 62px;
+    height: 582px;	
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.pool
+{
+	margin-top: -552px;
+    margin-left: 566px;
+}
+
+.pool img, .library img
+{
+	width: 40px;
+}
+
+.pool .speciesIdentifier, .library .speciesIdentifier
+{
+	font-size: 30px;
+	margin-top: -36px;
+}
+
+.library
+{
+    margin-top: -582px;
+    margin-left: 658px;    
+}
+
+.not_shown_plants
+{
+    font-weight: 800;
+    margin-top: 7px;
+    color: hsl(36deg 35% 28%);	
+}
+
+.showing_fake
+{
+    color: hsl(47deg 100% 50%);	
+}		
+</style>
+<script src="simulation.js"></script>
+
+<div class="sim" id="basic">
+</div>
+
+<script>
+	var sim = new Simulation();
+		
+	elem = document.getElementById('basic');
+	visualize_simulation(sim,elem,'basic','');	
+</script>
