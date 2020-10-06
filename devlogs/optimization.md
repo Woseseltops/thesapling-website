@@ -250,6 +250,6 @@ So, now the game is running at >60 FPS all the time, right? Well... it depends. 
 
 Overall, though, the goal was that most players will have a smooth experience with larger levels, and with the optimizations described above I believe this was well achieved. This is why, after three months, I moved on to creating mechanics that were made possible because of these larger levels, which in turn led to the flower update. The things added in the flower update, in turn, open up a whole world of new possibilities, and I can't wait to share them with you.
 
-The next devlog will announce a series of short videos; it will be published around a month from now. Subscribe below if you are interested!
+The next devlog will announce a series of short videos; it will be published around a month from now. Follow [The Sapling on Twitter](https://twitter.com/thesaplinggame) or subscribe to the newsletter below if you are interested!
 
 03-11-20

@@ -1,0 +1,310 @@
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150457817-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-150457817-1');
+	</script>
+
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#31452b">
+		<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:title" content="Running The Sapling for 7 days straight: this is what happened" />
+	<meta property="og:url" content="https://thesaplinggame.com/devlogs/stream.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:description" content="To celebrate the release of the flower update of The Sapling, there was a 1 week live stream of the game on Twitch in the beginning of September. I have now created a video that summarizes and explains the most important things that happened." />
+	<meta property="og:image" content="https://thesaplinggame.com/devlogs/stream/og_image.png" />
+
+	
+	<link href='https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<title>The Sapling - a game about life and evolution</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script type="text/javascript">
+
+ 	$(document).ready(function()
+ 	{
+	    $('.iconlabel').mouseenter(function()
+	    {
+	    	$(this).find('path').addClass('selected_icon');
+	    });
+
+	    $('.iconlabel').mouseleave(function()
+	    {
+	    	$(this).find('path').removeClass('selected_icon');
+	    });
+
+	    $('.checkbox').click(function()
+	    {
+	    	var checkbox_inside = $('#checkbox_inside');
+
+	    	if (checkbox_inside.hasClass('selected_checkbox'))
+	    	{
+	    		checkbox_inside.removeClass('selected_checkbox');
+	    		$('#newcontent').val('');
+	    	}
+	    	else
+	    	{
+	    		checkbox_inside.addClass('selected_checkbox');
+	    		$('#newcontent').val('yes');
+	    	}
+	    });
+	});
+ 	</script>
+
+</head>
+<body>
+	<div id="title_area" class="devlog_title_area">
+		<div id="dark_overlay"></div>
+<h2 class="devlog_label">DEVLOG</h2>
+<h1 class="devlog_title">RUNNING THE SAPLING FOR 7 DAYS STRAIGHT: THIS IS WHAT HAPPENED</h1>
+	</div>
+		<img id="portrait" src="/static/png/wessel.png">
+	<p id="portrait_label">Wessel Stoop</p>
+
+	<div id="main_column"  class="devlog">
+		<div id="main_area">
+			
+<div id="label_bar"><div class="selected_tag">Announcement</div><div class="nonselected_tag">Technical</div><div class="nonselected_tag">Graphics</div><div class="nonselected_tag">Music</div></div>
+<p id="first_p">To celebrate the release of the flower update of The Sapling, there was a 1 week live stream of the game on Twitch in the beginning of September. I have now created a video that summarizes and explains the most important things that happened.</p>
+<p class="non_first_p"><span id="first_character">I</span>t seemed a rather innocent idea: a week before the release of the flower update, rent a cheap gaming setup in the cloud, let it stream The Sapling with random mutations on, and watch what happens. When testing this idea, however, it turned out that there is a lot of time for things to go wrong when streaming 24/7... so everything that can possibly go wrong will eventually: think of memory leaks that only show up after hours of play, or connection hiccups that make the streaming software stop (switched to StreamLabs last moment, which solved everything). It all resulted in many sleepless hours, but also in many fixed bugs.</p>
+<p class="non_first_p">To make sure that a crash of the game didn't result in multiple days of progress being reset, I implemented a mechanism that made regular backups of the save file. It wasn't needed in the end, but had the unintended side effect that I can now go back to various stages in the 1 week simulation and relive what happened. To share this experience with all of you, I made a video of it:</p>
+<iframe id="ytvideo" src="https://www.youtube.com/embed/flmm-Y5KePo" frameborder="0" allowfullscreen=""></iframe>
+
+<p class="non_first_p">The next devlog will be an interactive dive into the details of the optimizations I have to make the flower update work; it will be published around a month from now. Follow <a href="https://twitter.com/thesaplinggame">The Sapling on Twitter</a> or subscribe to the newsletter below if you are interested!</p>
+<p id="date">Published Tuesday 06 October 2020</p><div class="iconlabel"><a href="visualstyle.html"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg class="icon"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="5.1382222mm"
+   height="6.4575267mm"
+   viewBox="0 0 18.206299 22.881"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="arrow_left.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="46.318205"
+     inkscape:cy="57.219619"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-368.03971,-523.77885)">
+    <path
+       style="display:inline;fill:#dedede;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 368.03971,534.93755 18.2063,-11.1587 -0.7063,22.881 z"
+       id="path8692"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>
+<br>Older</a></div><div class="iconlabel"><a href="/devlogs"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg class="icon"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="6.4575267mm"
+   height="5.1382222mm"
+   viewBox="0 0 22.881 18.206299"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="arrow_up.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="-15.373915"
+     inkscape:cy="35.636901"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-365.70236,-526.1162)">
+    <path
+       style="display:inline;fill:#dedede;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 376.86106,526.1162 -11.1587,18.2063 22.881,-0.7063 z"
+       id="path8692"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>
+<br>Overview</a></div><div class="iconlabel"><a href="stream.html"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg class="icon"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="5.1382222mm"
+   height="6.4575267mm"
+   viewBox="0 0 18.206299 22.881"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="arrow_right.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="46.318205"
+     inkscape:cy="57.219619"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-368.03971,-523.77885)">
+    <path
+       style="display:inline;fill:#dedede;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 386.24601,534.93755 -18.2063,-11.1587 0.7063,22.881 z"
+       id="path8692"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>
+<br>Newer</a></div>
+		</div>
+	</div>
+
+	<div id="footer_screenshot_container"><img id="footer_screenshot" src="/static/png/parallax.png"></div>
+	<div id="footer_area">
+		<h4>Get the devlog in your email!</h4>
+		<div id="once_per_month">Roughly once per month</div>
+		<form action="https://thesaplinggame.us18.list-manage.com/subscribe/post?u=bca4144605fedfb39489b6173&amp;id=cee6f2fdcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+			<input class="textfield" name="FNAME" id="first_name" placeholder="First name"><input class="textfield" name="LNAME" id="last_name" placeholder="Last name"><br>
+			<input class="textfield" name="EMAIL" id="email" placeholder="Email"><br>
+			<input type="hidden" name="NEWCONTENT" id="newcontent" value=""><br>
+			<div class="checkbox_area">
+				<div class="checkbox"><div id="checkbox_inside"></div></div><div id="checkboxlabel">Only the ones that announce new content</div>
+			</div>
+			<button>Subscribe</button>
+		</form>
+
+		<br><img src="/static/svg/shadow_logo.svg" class="separator_logo">
+		<div class="footer_link"><a href="press/sheet.html">Presskit</a></div>
+		<div class="footer_link"><a href="http://wesselstoop.ruhosting.nl">Developer website</a></div>
+		<div class="footer_link"><a>Questions<br/>thesapling@gmail.com</a></div>
+
+		<img src="/static/svg/shadow_logo.svg" class="separator_logo">
+		<div class="credits">A game by Wessel Stoop</div>
+	</div>
+</body>
+</html>
