@@ -127,12 +127,15 @@ td
 </style>
 <script src="simulation.js"></script>
 
-<div class="sim" id="basic">
+<div class="sim" id="ancestors">
 </div>
 
 <script>
 	var sim = new Simulation();
+	sim.usePool = true;
+	sim.useLibrary = true;
+	sim.randomMutations = true;
 		
-	elem = document.getElementById('basic');
-	visualize_simulation(sim,elem,'basic','');	
+	elem = document.getElementById('ancestors');
+	visualize_simulation(sim,elem,'ancestors','');	
 </script>

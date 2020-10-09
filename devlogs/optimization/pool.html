@@ -127,12 +127,13 @@ td
 </style>
 <script src="simulation.js"></script>
 
-<div class="sim" id="basic">
+<div class="sim" id="pool">
 </div>
 
 <script>
 	var sim = new Simulation();
+	sim.usePool = true;
 		
-	elem = document.getElementById('basic');
-	visualize_simulation(sim,elem,'basic','');	
+	elem = document.getElementById('pool');
+	visualize_simulation(sim,elem,'pool','');	
 </script>
