@@ -255,7 +255,7 @@ function visualize_simulation(simulation,elem,name,prefix)
 	{
 		simulation.liveADay();
 		update_cells(simulation,table,prefix);
-		update_pool(simulation,pool);		
+		update_pool(simulation,pool,prefix);		
 		update_library(simulation,library,prefix);		
 	};
 
@@ -274,7 +274,7 @@ function visualize_simulation(simulation,elem,name,prefix)
 		simulation.liveADay();
 
 		update_cells(simulation,table,prefix);
-		update_pool(simulation,pool);		
+		update_pool(simulation,pool,prefix);		
 		update_library(simulation,library,prefix);		
 	};
 
@@ -288,7 +288,7 @@ function visualize_simulation(simulation,elem,name,prefix)
 		simulation.nextModelIndex = 1;
 
 		update_cells(simulation,table,prefix);
-		update_pool(simulation,pool);
+		update_pool(simulation,pool,prefix);
 		update_library(simulation,library,prefix);				
 	};
 
@@ -296,7 +296,7 @@ function visualize_simulation(simulation,elem,name,prefix)
 	{
 		simulation.addPlantAtRandomLocation(1);
 		update_cells(simulation,table,prefix);
-		update_pool(simulation,pool);
+		update_pool(simulation,pool,prefix);
 		update_library(simulation,library,prefix);				
 	};
 
@@ -304,7 +304,7 @@ function visualize_simulation(simulation,elem,name,prefix)
 	{
 		simulation.addPlantAtRandomLocation(2);
 		update_cells(simulation,table,prefix);
-		update_pool(simulation,pool);
+		update_pool(simulation,pool,prefix);
 		update_library(simulation,library,prefix);		
 	};
 
@@ -357,8 +357,13 @@ function update_cells(simulation, elem, prefix)
 
 }
 
-function update_pool(simulation,elem)
+function update_pool(simulation,elem,prefix)
 {
+	if (elem == null)
+	{
+		return;
+	}
+
 	var maxNumberOfItems = 11;
 
 	var todo = -maxNumberOfItems;
@@ -396,7 +401,12 @@ function update_pool(simulation,elem)
 
 function update_library(simulation,elem,prefix)
 {	
-	var maxNumberOfItems = 11;
+	if (elem == null)
+	{
+		return;
+	}
+
+	var maxNumberOfItems = 15;
 
 	var html = '';
 	var nr = 0;
@@ -408,7 +418,7 @@ function update_library(simulation,elem,prefix)
 
 		if (nr == maxNumberOfItems)
 		{
-			todo = simulation.library.length - maxNumberOfItems;
+			todo = simulation.library.size - maxNumberOfItems;
 			html += '<div>'+todo+' more</div>';
 			break;
 		}

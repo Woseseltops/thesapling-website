@@ -1,40 +1,11 @@
 NOW
 ===
-Launch day todo:
-* Steam
-  x Game uploaden
-  X Art override
-  x Aankondiging groot over de Steam page
-  * Publicity round
-  * Bericht
-* Itch
-  x Game uploaden
-  * Bericht
-* Tweet met gif
-* Stream
-  x Twitch uit
-  x savefiles in veiligheid
-  o Fluidstack cancelen
-* Persoonlijk voor outshouters (vragen om retweet)
-* Devlog
-
-Marketing The Sapling flower update
------------------------------------
-Plan
-* Week 6: 
-  * Twitch Stream week 1
-  * Blogpost en newsletter: about the update: vorige twee weken, nu live stream, binnenkort videos
-  * Verspreiden op: Twitter, Steam, IndieDB, itch.io
-    * Steam voor dit artikel ook een library stoplight banner 
-  * Stream aankondigen op hacker news, algemene subreddits zoals r/gaming, r/videogames, r/indiegames
-  * Als het omhoog of omlaag zetten van de temperatuur interessante effecten heeft ook op r/ecology, r/teachingresources, r/enviroaction
-  * De keys opsturen, met links naar de video en inzoom van de afgelopen twee weken, en livestream vermelden  
-* Week 8
-  * release
-  * alle banners ed aanpassen
-  * posten op Twitter, Steam, IndieDB, itch.io
-
-Bekijken: https://www.gamespress.com/
+Promote:
+* Thursday: indiegaming
+* Friday: indiegames
+* Saturday: unity3d
+* Sunday: worldbuilding
+* Monday: thrive (flower trailer), alien biospheres
 
 Links leggen met
 ----------------
