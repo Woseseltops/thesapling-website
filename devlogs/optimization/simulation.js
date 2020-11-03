@@ -344,7 +344,7 @@ function update_cells(simulation, elem, prefix)
 					html += 'class="showing_fake"';
 				}
 
-				html += '>PLANT <span class="stress_nr">'+plant.definitionIndex+'</span></div><div>ORGANISM <span class="stress_nr">'+plant.lifeFormIndex+'</span></div><div>MODEL <span class="stress_nr">'+plant.modelIndex+'</span></div>';
+				html += '>SPECIES <span class="stress_nr">'+plant.definitionIndex+'</span></div><div>ORGANISM <span class="stress_nr">'+plant.lifeFormIndex+'</span></div><div>MODEL <span class="stress_nr">'+plant.modelIndex+'</span></div>';
 			}
 
 			html += '</td>';
