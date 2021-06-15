@@ -112,7 +112,7 @@ def generate_static_website():
 	TEMPLATE_FOLDER = 'templates/'
 
 	MAIN_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'main_template.html'
-	MAIN_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'main_title_area_flower.html'
+	MAIN_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'main_title_area.html'
 	DEVLOG_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_title_area.html'
 	DEVLOG_LIST_TITLE_AREA_FILE_LOCATION = TEMPLATE_FOLDER+'devlog_list_title_area.html'
 	DEVLOG_LIST_ITEM_TEMPLATE_LOCATION = TEMPLATE_FOLDER+'devlog_list_item_template.html'
