@@ -73,8 +73,11 @@
 <h2>You should add tools / intelligence / civilization / spaceships!</h2>
 <p>I wonder where you got this idea ;). Seriously, though, the main focus of this game will remain ecosystems and evolution in the form of a SIMULATION game. Still, to what extent intelligence and tool use have a place in an ecosystem simulation is an open question.</p>
 
+<h2>You should add plate techtonics!</h2>
+<p>This is requested surprisingly often, usually because players want their continents to split or merge. With the current terrain generation algorithms, this is quite hard to realize... but the same has been true for many other features that eventually made it into the game, so never say never. In any case, it's good to keep in mind that you can always higher and lower the ocean level for a somewhat similar effect.</p>
+		
 <h2>Where can I find / rename / delete saved games?</h2>
-<p>Savegames are just files on your computer, you can find them in C:\Users\YOURUSERNAME\AppData\LocalLow\Wessel Stoop\The Sapling</p>
+<p>Savegames are just files on your computer, you can find them in C:\Users\YOURUSERNAME\AppData\LocalLow\Wessel Stoop\The Sapling . There's also a button in the load menu that points to this location.</p>
 
 
 
@@ -107,8 +110,13 @@
 
 
 
-<h1>Bugs</h1>
+<h1>Bugs and other problems</h1>
 
+<h2>This game is running with very low FPS, why is this not optimized?</h2>
+<p>Evolution simulations are, by nature, heavy on your hardware, as thousands of individual organisms need to be simulated simultaneously. As you can imagine, a lot of optimization was already needed to make anything but the smallest maps possible (see for example <a href="https://thesaplinggame.com/devlogs/optimization.html">this blogpost</a> about it ), and optimization continues to be a major focus point: more recent optimization projects related to alga animation and cursor hitbox detection have improved the game's performance with over 30 FPS in some situations.</p>
+
+<p>Having said that, I'm aware there is still a long way to go. Major contributors to low FPS are (1) large sandbox maps, (2) a faster timespeed and (3) having random mutations turned on. Until the performance is fully fixed, you can use the organism caps in the ESC menu as workaround; the lower the cap, the higher your FPS.</p>
+		
 <h2>My game doesn't start!</h2>
 <p>I heard from lots of players that having Citrix installed blocks the game from starting. This is related to he Unity engine and not something I can change. If this does not help you getting the game to work, don't forget Steam lets you refund within 14 days!</p>
 
@@ -121,11 +129,6 @@
 </ul>
 
 <p>If this does not help you getting the game to work, don't forget Steam lets you refund within 14 days!</p>
-
-<h2>This game is running with very low FPS, why is this not optimized?</h2>
-<p>Believe or not, but important parts of the game are already optimized quite heavily (see for example <a href="https://thesaplinggame.com/devlogs/optimization.html">this blogpost</a> about it ) to make anything but the smallest maps possible, but unfortunately there is still plenty of room for improvement. Therefore, nearly every patch I realize contains some sort of optimization.</p>
-
-<p>There are various discussions online about the exact time the game starts having performance problems (like players saying: 'it always happens around 2M years', or hesitating customers asking 'how long will I be able to play?') but this depends on so much things that it's impossible to say. Major factors include the hardware, the map size, the time speed and the reproduction rate of various organisms.</p>
 
 <h2>This game is using up all of my RAM!</h2>
 <p>If you run the game for longer periods of time without reloading, sooner or later there will be problems with low framerates and running out of RAM, in particular on a large map with the fast timespeed.</p>
@@ -175,7 +178,7 @@
 </ol>
 
 <h2>Can I make mods for this game?</h2>
-<p>I'm very open to community made mods. If you are a modder that wants to mod The Sapling, reach out via thesaplinggame@gmail.com, and let me know what you are planning to do; I'll try to get the tools you need. This project could be a starting point: <a href="https://github.com/Gnareto/saplingtexturerrip">https://github.com/Gnareto/saplingtexturerrip</a> </p>
+<p>See <a href="/ugc">this page</a> for more information.</p>
 
 <h2>Is there a Discord for this game?</h2>
 <p>There is: <a href="https://discord.gg/Dg87jbWkPQ">https://discord.gg/Dg87jbWkPQ</a> . I'm not a Discord user myself, and to prevent losing even more time to community management, this one is run by the community.</p>
