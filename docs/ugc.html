@@ -62,28 +62,15 @@
 <div id="main_column"  class="devlog">
 	<div id="main_area">
     
-<h1>Creating your own body parts</h1>
+<h1>Modding body parts</h1>
 
 <h2>Introduction</h2>
 
-<p>I believe user-generated content is essential for gaming communities to thrive (in particular if the only other source of content is a single person). Ideally, there should be interesting stuff to look at every week or so, which I believe is only possible if creating custom content is so easy nearly anyone can do it. This page, about creating custom body parts, is a first step in that direction.</p>
+<p>I believe user-generated content is essential for gaming communities to thrive (in particular if the only other source of content is a single person). Ideally, there should be interesting stuff to look at every week or so, which I believe is only possible if creating custom content is so easy nearly anyone can do it. This page, about making changes to existing body parts and creating your own, is a first step in that direction.</p>
 
-<h2>The plan</h2>
+<h2>How to tweak the statistics of existing body parts</h2>
 
-<p>Adding support for player-generated body parts will be a multistage project. The goal of the first stage is:</p>
-
-<ul>
-    <li>An example folder with all files and configuration needed, for each body part type.</li>
-    <li>Press 'm' to load and show the content of the example folder into the game</li>
-</ul>
-
-<p>Later stages should include (but no promises):</p>
-
-<ul>
-    <li>Working on more body parts of the same type simultaneously; right now there's only one folder of files to edit per body part type.</li>
-    <li>Showing all player-generated creations as a 'list' somewhere in the game, so content consumers can pick from them.</li>
-    <li>Tools to easily share creations with other players, like a Steam workshop.</li>
-</ul>
+<p>At <code>C:\Program Files (x86)\Steam\steamapps\common\The Sapling\the_sapling_Data\Resources\BodyPartStats</code> you can find the files where the statistics of body parts are defined. If you feel a statistic should be increased or decreased (buffed or nerfed), you can do it there and test the results in the game. The game imports these files at startup, so you will need to restart to see your changes in game.</p>
 
 <h2>How to create your own body parts</h2>
 
@@ -104,6 +91,18 @@
 </ul>
 
 <p>For a first-time creator, ears are by far the easiest body part to start with. For inspiration and education, all source files for all vanilla body parts can be found <a href="https://the-sapling-builds.s3.eu-central-1.amazonaws.com/raw_resources.zip">here</a>.</p>
+
+<h2>Future plans</h2>
+
+<p>Depending on how many players are using it, I might extend this system. Without making promises, these are more features I feel the game needs</p>
+
+<ul>
+    <li>More in-game feedback if a custom body part is not valid.</li>
+    <li>Working on more body parts of the same type simultaneously; right now there's only one folder of files to edit per body part type.</li>
+    <li>Showing all player-generated creations as a 'list' somewhere in the game, so content consumers can pick from them.</li>
+    <li>Tools to easily share creations with other players, like a Steam workshop.</li>
+</ul>
+
 
 <h2>Keep in mind: your creation might be similar to what I'm planning to include</h2>
 
