@@ -1,0 +1,99 @@
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#31452b">
+		<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:title" content="The Sapling: Bug bounty" />
+	<meta property="og:type" content="article" />
+	<meta property="og:description" content="Bug bounty" />
+	
+	<link href='https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<title>The Sapling - a game about life and evolution</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script type="text/javascript">
+
+ 	$(document).ready(function()
+ 	{
+	    $('.iconlabel').mouseenter(function()
+	    {
+	    	$(this).find('path').addClass('selected_icon');
+	    });
+
+	    $('.iconlabel').mouseleave(function()
+	    {
+	    	$(this).find('path').removeClass('selected_icon');
+	    });
+
+	    $('.checkbox').click(function()
+	    {
+	    	var checkbox_inside = $('#checkbox_inside');
+
+	    	if (checkbox_inside.hasClass('selected_checkbox'))
+	    	{
+	    		checkbox_inside.removeClass('selected_checkbox');
+	    		$('#newcontent').val('');
+	    	}
+	    	else
+	    	{
+	    		checkbox_inside.addClass('selected_checkbox');
+	    		$('#newcontent').val('yes');
+	    	}
+	    });
+	});
+ 	</script>
+
+</head>
+<body>
+	<div id="title_area" class="devlog_title_area">
+		<div id="dark_overlay"></div>
+<h2 class="devlog_label">The Sapling</h2>
+<h1 class="devlog_title"></h1>
+</div>
+
+<img id="portrait" src="/static/png/wessel.png">
+<p id="portrait_label">Wessel Stoop</p>
+
+<div id="main_column"  class="devlog">
+	<div id="main_area">
+		
+  <p>As a developer, fixing a bug is nearly impossible without being able to <strong>reproduce</strong> it: if you cannot make a problem appear at will, you also cannot be sure your changes to the code have any effect. Whereas for some reported bugs, the description already includes how to reproduce ('button does not respond'), for others I cannot get them to show up no matter how hard I try. These bugs do show up in, and in severe cases even cause, negative reviews, so I am desperate to discover the reproduction steps. This page is an experiment to see if I can crowdsource a solution to this problem, and what the effects of a monetary reward are.</p>
+
+  <p>If you know the reproduction steps to a problem below, please reach out to thesaplinggame@gmail.com. Keep in mind that your submission is only eligible for a reward if it works on the PC of the developer, and that it may take several days before you get a reply. Besides the monetary reward, you will also be mentioned in the patch notes!</p>
+    
+  <h1>Negative population sizes: $60</h1>
+
+  <p>Requirement: written reproduction steps, starting from an empty sandbox, not from a save file. There is randomness involved here, so I understand if the problem will not show up 100% of the time.</p>
+
+  <h1>Plants duplicating in place after leaving the editor: $60</h1>
+
+  <p>Requirement: written reproduction steps, starting from an empty sandbox, not from a save file. There is randomness involved here, so I understand if the problem will not show up 100% of the time.</p>
+
+  <h1>Incorrent family relations between species (like an animal descending from a plant): $40</h1>
+
+  <p>Requirement: written reproduction steps, starting from an empty sandbox, not from a save file.</p>
+
+  <h1>Camera ends up in a unexpected place, so you cannot see the map anymore: $40</h1>
+
+  <p>Requirement: written reproduction steps or a video. You may start from save file if you provide it.</p>
+
+  <h1>Floating organisms: $30</h1>
+
+  <p>Written reproduction steps, starting from an empty sandbox.</p>
+    
+	</div>
+	<div id="footer_screenshot_container"><img id="footer_screenshot" src="/static/png/parallax.png"></div>
+	<div id="footer_area">
+		<br><img src="/static/svg/shadow_logo.svg" class="separator_logo">
+		<div class="footer_link"><a href="press/sheet.html">Presskit</a></div>
+		<div class="footer_link"><a href="http://wesselstoop.ruhosting.nl">Developer website</a></div>
+		<div class="footer_link"><a>Questions<br/>thesaplinggame@gmail.com</a></div>
+
+		<img src="/static/svg/shadow_logo.svg" class="separator_logo">
+		<div class="credits">A game by Wessel Stoop</div>
+	</div>
+</body>
+</html>
